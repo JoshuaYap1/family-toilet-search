@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Young Family Urban Access</title>
+
+
+  <!-- =====================================================
+       LEAFLET CSS
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  />
+
+
+  <!-- =====================================================
+       PROJECT CSS
+  ====================================================== -->
+
+  <link
+    rel="stylesheet"
+    href="./style.css"
+  />
+
+
+  <!--
+    CRITICAL FALLBACKS.
+    These make sure Leaflet is visible even if style.css
+    contains an accidental conflicting rule.
+  -->
+
+  <style>
+
+    #map {
+      position: relative;
+      width: 100%;
+      height: 600px;
+      min-height: 600px;
+      background: #eeeae2;
+      z-index: 1;
+    }
+
+    .map-wrapper {
+      width: 100%;
+      min-height: 600px;
+    }
+
+    .leaflet-container {
+      width: 100%;
+      height: 100%;
+      min-height: 600px;
+    }
+
+    .leaflet-tile {
+      visibility: inherit !important;
+      opacity: 1 !important;
+    }
+
+    .search-status {
+      margin-top: 12px;
+    }
+
+    .search-progress {
+      margin-top: 6px;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+
+    .search-progress.is-running {
+      opacity: 1;
+      font-weight: 600;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: wait;
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+
+  <header class="hero">
+
+    <div class="hero-inner">
+
+      <p class="eyebrow">
+        SEARCH + DESIGN
+      </p>
+
+      <h1>
+        Young Family Urban Access
+      </h1>
+
+      <p class="hero-text">
+        Explore how toilets, family-care facilities,
+        demographics and the surrounding urban environment
+        shape the everyday journeys of young families
+        across Singapore.
+      </p>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =====================================================
+       APPLICATION
+  ====================================================== -->
+
+  <main class="app-shell">
+
+
+    <!-- ===================================================
+         SIDEBAR
+    ==================================================== -->
+
+    <aside class="sidebar">
+
+
+      <!-- SEARCH -->
+
+      <section class="panel search-panel">
+
+        <p class="eyebrow">
+          SEARCH
+        </p>
+
+        <h2>
+          Journey origin
+        </h2>
+
+
+        <div class="form-group">
+
+          <label for="locationSelect">
+            Starting location
+          </label>
+
+          <select id="locationSelect">
+
+            <option value="">
+              Loading MRT exits...
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="contextSelect">
+            Urban context
+          </label>
+
+          <select id="contextSelect">
+
+            <option value="auto" selected>
+              Auto-detect context
+            </option>
+
+            <option value="mall">
+              Shopping mall / retail
+            </option>
+
+            <option value="hawker">
+              Hawker centre / food
+            </option>
+
+            <option value="hdb">
+              Residential / HDB
+            </option>
+
+            <option value="park">
+              Park / recreation
+            </option>
+
+            <option value="tourist">
+              Tourist / attraction
+            </option>
+
+            <option value="hospital">
+              Hospital / healthcare
+            </option>
+
+            <option value="school">
+              School / childcare
+            </option>
+
+            <option value="mixed">
+              Mixed urban area
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <div class="form-group">
+
+          <label for="radiusSelect">
+            Search radius
+          </label>
+
+          <select id="radiusSelect">
+
+            <option value="300">
+              300 m
+            </option>
+
+            <option value="500" selected>
+              500 m
+            </option>
+
+            <option value="750">
+              750 m
+            </option>
+
+            <option value="1000">
+              1 km
+            </option>
+
+          </select>
+
+        </div>
+
+
+        <fieldset class="priority-group">
+
+          <legend>
+            Young-family priorities
+          </legend>
+
+
+          <label class="checkbox-row">
+
+            <input
+              id="changingTableCheck"
+              type="checkbox"
+              checked
+            />
+
+            <span>
+              Changing table
+            </span>
+
+          </label>
+
+
+          <label class="checkbox-row">
+
+            <input
+              id="accessibleCheck"
+              type="checkbox"
+              checked
+            />
+
+            <span>
+              Accessible / stroller-friendly
+            </span>
+
+          </label>
+
+        </fieldset>
+
+
+        <button
+          id="searchButton"
+          class="primary-button"
+          type="button"
+        >
+          Search family journey
+        </button>
+
+
+        <p
+          id="searchStatus"
+          class="search-status"
+          aria-live="polite"
+        >
+          Starting application...
+        </p>
+
+
+        <p
+          id="searchProgress"
+          class="search-progress"
+          aria-live="polite"
+        ></p>
+
+      </section>
+
+
+
+      <!-- MAP LAYERS -->
+
+      <section class="panel layer-panel">
+
+        <p class="eyebrow">
+          MAP LAYERS
+        </p>
+
+        <h2>
+          Spatial data
+        </h2>
+
+
+        <label class="checkbox-row">
+
+          <input
+            id="toiletLayerToggle"
+            type="checkbox"
+            checked
+          />
+
+          <span>
+            Toilet access
+          </span>
+
+        </label>
+
+
+        <label class="checkbox-row">
+
+          <input
+            id="populationLayerToggle"
+            type="checkbox"
+          />
+
+          <span>
+            Young-family population
+          </span>
+
+        </label>
+
+      </section>
+
+
+
+      <!-- RESULTS -->
+
+      <section class="panel results-panel">
+
+        <div class="panel-heading-row">
+
+          <h2>
+            Results
+          </h2>
+
+          <span id="resultCount">
+            0 found
+          </span>
+
+        </div>
+
+
+        <div id="resultsList">
+
+          <div class="empty-state">
+            Run a search to compare nearby facilities.
+          </div>
+
+        </div>
+
+      </section>
+
+
+    </aside>
+
+
+
+    <!-- ===================================================
+         MAIN CONTENT
+    ==================================================== -->
+
+    <section class="main-content">
+
+
+      <!-- MAP -->
+
+      <section class="panel map-panel">
+
+        <p class="eyebrow">
+          SPATIAL SEARCH
+        </p>
+
+        <h2>
+          Journey map
+        </h2>
+
+        <p class="panel-note">
+          MRT origin + toilets + demographic layers
+        </p>
+
+
+        <div class="map-wrapper">
+
+          <div id="map"></div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- JOURNEY PROFILE -->
+
+      <section class="panel journey-panel">
+
+        <div class="panel-heading-row">
+
+          <div>
+
+            <p class="eyebrow">
+              JOURNEY PROFILE
+            </p>
+
+            <h2>
+              Young-family journey
+            </h2>
+
+          </div>
+
+        </div>
+
+
+        <div class="journey-context-card">
+
+          <span class="metric-label">
+            Detected context
+          </span>
+
+          <strong id="journeyContext">
+            —
+          </strong>
+
+
+          <p
+            id="journeyNarrative"
+            class="journey-narrative"
+          >
+            Search a location to generate a journey profile.
+          </p>
+
+        </div>
+
+
+        <div class="journey-metrics">
+
+
+          <article class="metric-card">
+
+            <span class="metric-label">
+              Accessibility
+            </span>
+
+            <div
+              id="accessibilityScore"
+              class="metric-score"
+            >
+              —
+            </div>
+
+            <p>
+              Distance and ease of reaching facilities.
+            </p>
+
+          </article>
+
+
+          <article class="metric-card">
+
+            <span class="metric-label">
+              Family support
+            </span>
+
+            <div
+              id="familySupportScore"
+              class="metric-score"
+            >
+              —
+            </div>
+
+            <p>
+              Changing tables and accessible facilities.
+            </p>
+
+          </article>
+
+
+          <article class="metric-card">
+
+            <span class="metric-label">
+              Journey comfort
+            </span>
+
+            <div
+              id="journeyComfortScore"
+              class="metric-score"
+            >
+              —
+            </div>
+
+            <p>
+              Environmental comfort along the journey.
+            </p>
+
+          </article>
+
+
+          <article class="metric-card">
+
+            <span class="metric-label">
+              Amenity support
+            </span>
+
+            <div
+              id="amenitySupportScore"
+              class="metric-score"
+            >
+              —
+            </div>
+
+            <p>
+              Food, retail, parks and supporting services.
+            </p>
+
+          </article>
+
+
+          <article class="metric-card">
+
+            <span class="metric-label">
+              Access gap
+            </span>
+
+            <div
+              id="accessGapScore"
+              class="metric-score"
+            >
+              —
+            </div>
+
+            <p>
+              Potential mismatch between demand and provision.
+            </p>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- DEMOGRAPHICS -->
+
+      <section class="panel demographics-panel">
+
+        <p class="eyebrow">
+          DEMOGRAPHICS
+        </p>
+
+        <h2>
+          Young-family demand
+        </h2>
+
+
+        <div class="demographic-summary-grid">
+
+
+          <article class="demographic-card">
+
+            <span>
+              Local child population
+            </span>
+
+            <strong id="localChildPopulation">
+              —
+            </strong>
+
+          </article>
+
+
+          <article class="demographic-card">
+
+            <span>
+              Demand level
+            </span>
+
+            <strong id="familyDemandLevel">
+              —
+            </strong>
+
+          </article>
+
+
+          <article class="demographic-card">
+
+            <span>
+              Supply-demand condition
+            </span>
+
+            <strong id="supplyDemandCondition">
+              —
+            </strong>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- JOURNEY STORIES -->
+
+      <section class="panel journey-stories-panel">
+
+        <div class="panel-heading-row">
+
+          <div>
+
+            <p class="eyebrow">
+              JOURNEY STORIES
+            </p>
+
+            <h2>
+              Street-level family journeys
+            </h2>
+
+            <p class="panel-note">
+              Actual walking routes and sampled street-level
+              moments for the highest-ranked toilet options.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div
+          id="journeyStories"
+          class="journey-stories"
+        >
+
+          <div class="empty-state">
+            Run a search to generate journey stories.
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- NETWORK -->
+
+      <section class="panel graph-panel">
+
+        <div class="panel-heading-row">
+
+          <div>
+
+            <p class="eyebrow">
+              NETWORK ANALYSIS
+            </p>
+
+            <h2>
+              Young Family Access Network
+            </h2>
+
+          </div>
+
+
+          <button
+            id="exportGraphButton"
+            class="secondary-button"
+            type="button"
+          >
+            Export JPG
+          </button>
+
+        </div>
+
+
+        <div
+          id="graphContainer"
+          class="graph-container"
+        >
+
+          <div class="empty-state">
+            Run a search to generate the network.
+          </div>
+
+        </div>
+
+      </section>
+
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =====================================================
+       LEAFLET JS
+  ====================================================== -->
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin=""
+  ></script>
+
+
+  <!-- =====================================================
+       APPLICATION
+  ====================================================== -->
+
+  <script
+    type="module"
+    src="./script.js"
+  ></script>
+
+
+</body>
+
+</html>
