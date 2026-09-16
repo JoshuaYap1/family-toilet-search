@@ -1,0 +1,263 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "NOVENA MRT",
+  "routeId": "NOVENA__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.321094868302358,
+    "lon": 103.84438933387052
+  },
+  "toilet": {
+    "osmType": "way",
+    "osmId": 261019244,
+    "lat": 1.3246171,
+    "lon": 103.8470262,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "building": "yes"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 489.2004759937203,
+  "distance": 489.2004759937203,
+  "duration": 407.66706332810026,
+  "points": [
+    {
+      "lat": 1.321094868302358,
+      "lon": 103.84438933387052
+    },
+    {
+      "lat": 1.3246171,
+      "lon": 103.8470262
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.321094868302358,
+      "lon": 103.84438933387052,
+      "imageCandidates": [
+        {
+          "id": "462294121510432",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-YIP3htOHE0KnC-8rspqrJypBk74-JxGP_pU91jOwSRBBn18ARj--ovW6N18k8sCLW11Dfky8stx236yK4OfcwWl64ducm88N2ZXNdS1ZFsD6reBMSZa0twAIJ8Ciy0PoA87nwEim1D2hqDHczkQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdraUwppJyzCy5Y9sWEDGp1z8tZU5lNUouVgltgTGnGsDow-Fo23xtt_zlr31Kduv0k&ccb=10-5&oh=00_AQJc7GfRAclWciHGz2Jfm5MNs8d39aDAvrmWRzqZRoU-xA&oe=6AD17D56&_nc_sid=201bca",
+          "lat": 1.3211990397846,
+          "lon": 103.84454935697,
+          "captured_at": 1547268489459,
+          "compass_angle": 139.25033569336,
+          "distance": 21.251766006745342
+        },
+        {
+          "id": "478189666767781",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_j-yHeFg1E3smCeLHid7pWt2ONJdVnC6mm373FkghSIH8n2RdTtwviOsEHN-TUAajoV2wpnQmuBdSWzIQN8wHq3ciTolN6qqlviBKdXfC5lrSY2j5LkjqeRMBckwNXbGsCeNL4iT8xYGUyaMdBB5A?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdoA2-Cg9ExjT1UQUHYOWbnZ1o38x3WtOP0m05M1BScJ3swBRKXsmHpEH9qlsjPIClQ&ccb=10-5&oh=00_AQL0r4E6NKy4q3hBnvZXb6qYO7YlXYX1hs0zSNeCUEAhog&oe=6AD1908C&_nc_sid=201bca",
+          "lat": 1.3212632104524,
+          "lon": 103.84448671701,
+          "captured_at": 1547268488320,
+          "compass_angle": 136.39208984375,
+          "distance": 21.648095143409126
+        }
+      ],
+      "checkpointId": "NOVENA__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3216708663842056,
+      "lon": 103.84482054622765,
+      "imageCandidates": [
+        {
+          "id": "3803722769748668",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An81NLtxZjeGeMY6RL9KlXZlomxs1cJd6dhBmOdsc-35YcSzB30ySyraTk0lHCIFeoDRE609KEGeW6Sd6FWJOT3oWX3TKGA0A5POaVZPIHkh6nZFuQBpsjFoOYULPH2coxMHRoBBJ8VjX7E4ld2WZw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdpIPyWTPYOvGCzcaV8TqClJgJd1dKCEb495Bw7Q7jFjapg4QXfx1wiURS4pO3FOoDQ&ccb=10-5&oh=00_AQJ_QvbMd2_QkTaBj_MTjXp9HL5fyMQ4iRcL42DuRWnBjQ&oe=6AD16E3F&_nc_sid=201bca",
+          "lat": 1.3215788512943,
+          "lon": 103.84485779183,
+          "captured_at": 1547268471499,
+          "compass_angle": 242.3635559082,
+          "distance": 11.050030315536555
+        },
+        {
+          "id": "303009197875848",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_DUX4bu5nS1fJNRM3-qh6qUufBJzSMZfcNQlR14zI7m0hNqTI-6LKUPxN8EE9tiN9Oc5euMJeDNrGFObPOFRhtk7vCAP0cD2Wu7EMz0_uLlIDor4GHst4BIAl5Hq2EdgE0pUEsAFNZJVDt_3DaE-I?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdqWEcxVAVZJeBocT9EUXXNX8SBO2PJ-NlgcR9eZeJ6XaSVNAGCY6uAhkLfi_H0METk&ccb=10-5&oh=00_AQLOiQM2yQ11APJM626Vte36Rn_Ee48GnHeiGs2nvOo1GA&oe=6AD18BB0&_nc_sid=201bca",
+          "lat": 1.321564275167,
+          "lon": 103.84478855634,
+          "captured_at": 1547268472426,
+          "compass_angle": 246.96376037598,
+          "distance": 12.388318638695655
+        }
+      ],
+      "checkpointId": "NOVENA__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3222468644660534,
+      "lon": 103.84525175858477,
+      "imageCandidates": [
+        {
+          "id": "530586424596164",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_Vj7q5Wa-IGejRYIwFzKbbFHNPi_KYWeV3Psn9UpnSDi5DqVEWyF4L9BUq-JW38s6ffzQrS1ZWB_0Vh2QhIyKyTm7lQecDcStysZJR39tbVfQQB8xp2hzCe8kb-ARxvkkJAShnMkQx5uET_PZgvQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdqYVendlWURYHR-JdhvzBT4-tX5cEr5uf-0uy23vK1u0SMs_XgTFMnUrqlzIvAsN1k&ccb=10-5&oh=00_AQL-urts-IvryPvto1EKeXbuUzd2fu9qUk0WkPv6h_ppMQ&oe=6AD1932A&_nc_sid=201bca",
+          "lat": 1.3223970614384,
+          "lon": 103.84539327612,
+          "captured_at": 1530981891493,
+          "compass_angle": 226.689,
+          "distance": 22.96962950295397
+        },
+        {
+          "id": "2473555892790210",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-B3JS-9h3x4Jmtdf6WTWHQwInqij_Px9F3v6vT2h1ubhOc3qZmbBwMqTZxAuJHp58CICKpZIMpWK-i-7Qy4O4K5nu8bfMUWaXsqv7PwWmGyW4vlO8qFPCRBUVnebRQRO9WSSbeqbwcDtcC4HGEKoE?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdrCfyuG9IKK_zLiZdYjygJGa2Cg23U3ISeg95RHWqZw6wMaVJjM8H5gCAiCM5SiLiE&ccb=10-5&oh=00_AQKdDCztwlLmx_GKVyJwJ3CItyHA6UpEDaIk5cflxLHllw&oe=6AD197F3&_nc_sid=201bca",
+          "lat": 1.3226622858413,
+          "lon": 103.84556645651,
+          "captured_at": 1530981809731,
+          "compass_angle": 212.564,
+          "distance": 58.01010801456517
+        }
+      ],
+      "checkpointId": "NOVENA__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.322822862547901,
+      "lon": 103.8456829709419,
+      "imageCandidates": [
+        {
+          "id": "954872741960946",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9iWnKabLdIjt447Q_oUPrJQ1eTAoUdaX-QCZ37v-oxyH2rSg_02E4HOV0rGN_WDp8rOHNEOiYEsK2wkvXTAoDLyZL-CN-VUVH6F1oR1MGPhDRLn6SyIqmvd1-o26lWvsW9H3TlWcVeGEE4zeCymg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdpUydnldkJAjPfp9sc2EmHRLibJI-KG5Bw4mnV0U0f1pzdYOp4Bh-NDfcJqC0zRi6g&ccb=10-5&oh=00_AQJJGImsAormUR35DYhqhNtld2a59cHc5qUEn7RtUA4DZQ&oe=6AD16CBE&_nc_sid=201bca",
+          "lat": 1.3229919444444,
+          "lon": 103.84567277778,
+          "captured_at": 1530981748904,
+          "compass_angle": 203.239,
+          "distance": 18.856350482387903
+        },
+        {
+          "id": "2473555892790210",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-B3JS-9h3x4Jmtdf6WTWHQwInqij_Px9F3v6vT2h1ubhOc3qZmbBwMqTZxAuJHp58CICKpZIMpWK-i-7Qy4O4K5nu8bfMUWaXsqv7PwWmGyW4vlO8qFPCRBUVnebRQRO9WSSbeqbwcDtcC4HGEKoE?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdrCfyuG9IKK_zLiZdYjygJGa2Cg23U3ISeg95RHWqZw6wMaVJjM8H5gCAiCM5SiLiE&ccb=10-5&oh=00_AQKdDCztwlLmx_GKVyJwJ3CItyHA6UpEDaIk5cflxLHllw&oe=6AD197F3&_nc_sid=201bca",
+          "lat": 1.3226622858413,
+          "lon": 103.84556645651,
+          "captured_at": 1530981809731,
+          "compass_angle": 212.564,
+          "distance": 22.083277804598005
+        }
+      ],
+      "checkpointId": "NOVENA__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.3233988606297487,
+      "lon": 103.84611418329901,
+      "imageCandidates": [
+        {
+          "id": "261180739026983",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-nwXpuG7Lx9SrOu_iZR-7JT5ZFmUVvHXPvPbdo1PG4xrPOqA_lduhEycYTZ_s8qlWq0k1jURFZS12gwfm8M_iFkuBwnBCbWLf2cvenoe7ja0gT7Lx-Fjohuvk9XE1mqwr6-FqhsQEpy69y3JPdrEk?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=Ado6oX7PN8uf94EuYN3ABauv2Wo3v6rnFth-bQP-xm9RB26TtOszK_e0_7cI4JXeh14&ccb=10-5&oh=00_AQKbdbiB91uA-CVX32o80riie57YgY3ghXoLNwJlY6BuMw&oe=6AD19652&_nc_sid=201bca",
+          "lat": 1.3235394879234,
+          "lon": 103.84586149265,
+          "captured_at": 1530924111157,
+          "compass_angle": 269.02282714844,
+          "distance": 32.18564040578185
+        },
+        {
+          "id": "268400658344906",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8H8g9EqPnLWgisE2H0GcH5fQa72LW_wdgM-nDK1dAzOHeWpRR0xA7q3RT5meWb2SSb6WkCbiL1MhVLabc9R_px6AAoABcJiOVCB589bsnHuZQbkjdJTjI89eFIYkjJl8M7rYe3RwhNCw-A7zlWdQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=Adq28LqCspEVWBiwRTQx3mzp9rmrWzR6ulVPk-Me2WuuMaBdrkrLzi1lQf2u9_TLyBI&ccb=10-5&oh=00_AQJdj4oTTuxJUYCQjSNDEnu0w0boPgo8P52CVlXTevq8DA&oe=6AD17B9D&_nc_sid=201bca",
+          "lat": 1.3232480046813,
+          "lon": 103.84577649216,
+          "captured_at": 1530981748904,
+          "compass_angle": 203.239,
+          "distance": 41.163118881883165
+        }
+      ],
+      "checkpointId": "NOVENA__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 400.0,
+      "lat": 1.3239748587115965,
+      "lon": 103.84654539565614,
+      "imageCandidates": [
+        {
+          "id": "1009823323161419",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8cuv9Sk4k3VszQyxWjBQRxFQD4h0IUQpsj-BgHahJtWn1PRdHJLcaQFp5kwPTouBFYrJgsTiiz9vD88j6ykJHYp7DvSyxHluTFgXpl5xvxyU3fzhffdddVdndRFb4TUVAYZRkQt_7xYznghG-Lfw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdpsB2tRQwJSD0U4KtnoO7POYijc4NSQX_jnUMklYcZu0CQNVKo8I-ojvITPMj9Q5Xs&ccb=10-5&oh=00_AQJAhVnX9woHFaib9oUDPQiuEriXPT7Ii-Cg6eki_iWgKg&oe=6AD17A85&_nc_sid=201bca",
+          "lat": 1.3240573105246,
+          "lon": 103.84596127386,
+          "captured_at": 1530924083488,
+          "compass_angle": 208.3623046875,
+          "distance": 65.65185296449359
+        },
+        {
+          "id": "148948293878445",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8aJcIPwfUZLDYPbxwDwLykOMLesqS7sk0F2X1x2-i1QF5vTsHjXLBXEpubi7-EqcNNiPSybGCicGl0Y0enE21fK0JR14vStoIhOr3g359NZMZs_ezrZisZfE5KPF7nb92fSsvIoEf1-5wGt3foog?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdoaFQY6jWP_4tq8DvK8lSHv1PQgUzUrLr1sZC6ot7vvSi8-DJqqaWkMQlQQ0AAOUYc&ccb=10-5&oh=00_AQIq984dQur9wtenU_IjiVG6we3mFSoxiAkRTwzVycCVfg&oe=6AD1A385&_nc_sid=201bca",
+          "lat": 1.3240532905291,
+          "lon": 103.84596031628,
+          "captured_at": 1530924083488,
+          "compass_angle": 208.3623046875,
+          "distance": 65.69640813787096
+        }
+      ],
+      "checkpointId": "NOVENA__R01__C005"
+    },
+    {
+      "checkpointIndex": 6,
+      "distanceFromStart": 480.0,
+      "lat": 1.324550856793444,
+      "lon": 103.84697660801325,
+      "imageCandidates": [
+        {
+          "id": "506813767300016",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9WGBnXP2ntqacoY-DQi88CeTWSQTGDgthi_MY8tew5sdBNleQl0k0_-842HcnBA4J_jsBgC0SDxhewF07Lfollf91JC0iMzSc9RghX-4UwsOSoOkoxb7TeJa_zYK8Y4lZDE-_iQvEZHi8Le2wzTQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdqJjXIGw4gWpsAKnd7r3Qv2jxXqM2038vOMWCEI_sTglkNqtT_f6Vg9KusFPPK9fgM&ccb=10-5&oh=00_AQKOgkxY5nZPE3vOdxaMLC2k_6cEFAApePW0Lfxv4GbyVw&oe=6AD19EB8&_nc_sid=201bca",
+          "lat": 1.3246460685503,
+          "lon": 103.84589248067,
+          "captured_at": 1530923993808,
+          "compass_angle": 219.88549804688,
+          "distance": 121.11745697691578
+        },
+        {
+          "id": "214823520176414",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9_HIcbqe658iIz1Fc8XWDTskHHoe3aF0VBtWnHfb63Ryl7V_D-DwTvwxnqIRUYLrT2I_teDi93JMAWx3tVYYbNUhYY7UQZQ6iCt1uaX2Rl4OAQS8ejaY7y8iiXoWIBijCJX-q6X7jiRcdarY7Umg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=Ado6479C65vwMuZI45I4n5SMebyfP0EnHy8illQ7Cfozw4h-3Cwkxi9CFFYaSceOEkg&ccb=10-5&oh=00_AQLNdj4EAuq8Thq41Ss8i07VNfPyADhw8WQhXQC9sWFtMg&oe=6AD171F8&_nc_sid=201bca",
+          "lat": 1.3247505509772,
+          "lon": 103.84588910282,
+          "captured_at": 1530923990642,
+          "compass_angle": 119.62084960938,
+          "distance": 123.05333999691801
+        }
+      ],
+      "checkpointId": "NOVENA__R01__C006"
+    },
+    {
+      "checkpointIndex": 7,
+      "distanceFromStart": 489.2004759937203,
+      "lat": 1.3246171,
+      "lon": 103.8470262,
+      "imageCandidates": [
+        {
+          "id": "506813767300016",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9WGBnXP2ntqacoY-DQi88CeTWSQTGDgthi_MY8tew5sdBNleQl0k0_-842HcnBA4J_jsBgC0SDxhewF07Lfollf91JC0iMzSc9RghX-4UwsOSoOkoxb7TeJa_zYK8Y4lZDE-_iQvEZHi8Le2wzTQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=AdqJjXIGw4gWpsAKnd7r3Qv2jxXqM2038vOMWCEI_sTglkNqtT_f6Vg9KusFPPK9fgM&ccb=10-5&oh=00_AQKOgkxY5nZPE3vOdxaMLC2k_6cEFAApePW0Lfxv4GbyVw&oe=6AD19EB8&_nc_sid=201bca",
+          "lat": 1.3246460685503,
+          "lon": 103.84589248067,
+          "captured_at": 1530923993808,
+          "compass_angle": 219.88549804688,
+          "distance": 126.2131135253352
+        },
+        {
+          "id": "214823520176414",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9_HIcbqe658iIz1Fc8XWDTskHHoe3aF0VBtWnHfb63Ryl7V_D-DwTvwxnqIRUYLrT2I_teDi93JMAWx3tVYYbNUhYY7UQZQ6iCt1uaX2Rl4OAQS8ejaY7y8iiXoWIBijCJX-q6X7jiRcdarY7Umg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=_pjsax2wQMND2-XKv_h8xA&_nc_oc=Ado6479C65vwMuZI45I4n5SMebyfP0EnHy8illQ7Cfozw4h-3Cwkxi9CFFYaSceOEkg&ccb=10-5&oh=00_AQLNdj4EAuq8Thq41Ss8i07VNfPyADhw8WQhXQC9sWFtMg&oe=6AD171F8&_nc_sid=201bca",
+          "lat": 1.3247505509772,
+          "lon": 103.84588910282,
+          "captured_at": 1530923990642,
+          "compass_angle": 119.62084960938,
+          "distance": 127.41682529565222
+        }
+      ],
+      "checkpointId": "NOVENA__R01__C007"
+    }
+  ],
+  "mapillaryImageCount": 16,
+  "uniqueMapillaryImageCount": 13,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.84438933387052,1.321094868302358;103.8470262,1.3246171?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c2a210>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531808.5786924
+}

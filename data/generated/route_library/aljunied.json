@@ -1,0 +1,104 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "ALJUNIED MRT",
+  "routeId": "ALJUNIED__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.316238485344709,
+    "lon": 103.88249665045747
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 11395311730,
+    "lat": 1.316229,
+    "lon": 103.8822855,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "fee": "no"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 23.496349054058335,
+  "distance": 23.2,
+  "duration": 18.6,
+  "points": [
+    {
+      "lat": 1.316242,
+      "lon": 103.882496
+    },
+    {
+      "lat": 1.316216,
+      "lon": 103.882338
+    },
+    {
+      "lat": 1.316208,
+      "lon": 103.88229
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.316242,
+      "lon": 103.882496,
+      "imageCandidates": [
+        {
+          "id": "2259696187859328",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-H_HmznCg4s55xjMlyB5p1Yk0eHc-QFP_b1pGrDksSkbSyo1tRB4pvSCN0jqRzhSUNnBB4ISeme_JNLUD-lVGFY0H1iHzASJXKVAVB0p2jPvbcsmubq4JHbd0JFAVr0eAWoIF7Ewdv8lOrI7Ax9A?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=YsnphGY8MCK4GMGfPeOQeA&_nc_oc=Adrz9Zb691IeZ3Q5R62jBcuvGMSzp8AcZkA88ywZ8GVQtZNGoeP13tSNHrVkd2Lfy8c&ccb=10-5&oh=00_AQIuTHCuKx9z8f0pPr_Qo0h_lrIvIg8d-KtYSk83RZY_mg&oe=6AD1917C&_nc_sid=201bca",
+          "lat": 1.3162007599699,
+          "lon": 103.88255865805,
+          "captured_at": 1766729798069,
+          "compass_angle": 281,
+          "distance": 8.34877715170842
+        },
+        {
+          "id": "1614422486594353",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_bBTfxThwtq2b4oayY0LRXZTZ0s1CsYrLbU5UWfaFGiNwTbKKtOZKfCIXo9tUdEeLKlV3vVW7dIgYh38resO99L-0abGVx9cDjMZ3gyXDc26GsOY8eepE9I-Dlow__85CEQ0kcM17oCzCFFBYroDA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=YsnphGY8MCK4GMGfPeOQeA&_nc_oc=AdpkwQunbsfE1afIrTEQQJo3fs-IclCHjrujmdlbSKqGWJ61Wc1qMYaMmYxbMKEgrSM&ccb=10-5&oh=00_AQKiRHN4ZZ2E7PwAsrO-yOg4uNye7t5_vbGk1ZGfilxdnQ&oe=6AD19859&_nc_sid=201bca",
+          "lat": 1.3162077688067,
+          "lon": 103.88259076814,
+          "captured_at": 1766729797033,
+          "compass_angle": 283,
+          "distance": 11.214094179668063
+        }
+      ],
+      "checkpointId": "ALJUNIED__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 23.210097659602777,
+      "lat": 1.316208,
+      "lon": 103.88229,
+      "imageCandidates": [
+        {
+          "id": "267501325056102",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8SZIZ5KI0uf2pmu-5XPzTF6Ow4USeSBQxVEO2_E2jA5TO4RKB6qaglf1FyoHPZKCfutErfjcq_Z0Bc_NPlSo254hah1nh1ExT7-QSEE8rlWJMLeLu0oVjynyn9NUybmQ9tCuAyAY4nIMVJKuC-Ag?stp=s1024x764&edm=AOnQwmMEAAAA&_nc_gid=YsnphGY8MCK4GMGfPeOQeA&_nc_oc=AdqkeAOy7Nwj2AXCt0sxBwPoVK1x9QSWT134K9wGeANDHpIKRVusWA-QvP-NsESEAAo&ccb=10-5&oh=00_AQIKRwPZ8zF5HD7vixHoXB8sZvjgBhCp_tzStgHUmYzX9w&oe=6AD19196&_nc_sid=201bca",
+          "lat": 1.316200001007,
+          "lon": 103.88210401005,
+          "captured_at": 1433755563684,
+          "compass_angle": 242.1521,
+          "distance": 20.71808264948732
+        },
+        {
+          "id": "1430147237331503",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9f9MVnCvhIsNym_uwui5eRrBE_OyXYc0nyGbVtWjeCZLMiWp3df65w06fKcvIiGFkqsHF3cCK72-6_ar9ECkSuA2s8wp-jdJLCxuuNlp8haAqFcmltORtfGkrcuIekF8YWwEfaJqFF5JxBkgmpdQ?stp=s1024x764&edm=AOnQwmMEAAAA&_nc_gid=YsnphGY8MCK4GMGfPeOQeA&_nc_oc=AdqdoUcA_AKK9-ECXQgrmSdR9FkQaxhcwgZGscRsXwB89ctt_el77Hj9EnJGXZLrZKM&ccb=10-5&oh=00_AQJHwWycVMRTuvMbE9kuHwavgYO4mqcdoKb5ktbP5vXN-g&oe=6AD19325&_nc_sid=201bca",
+          "lat": 1.3164039772358,
+          "lon": 103.88227092662,
+          "captured_at": 1434163761952,
+          "compass_angle": 1.682373,
+          "distance": 21.919210136148276
+        }
+      ],
+      "checkpointId": "ALJUNIED__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531526.6975973
+}

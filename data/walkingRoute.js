@@ -1,137 +1,408 @@
-// ======================================================
+// ============================================================
 // WALKING ROUTE
-// OpenStreetMap pedestrian routing
-// ======================================================
+// ============================================================
 
-const FOOT_ROUTER =
-  "https://routing.openstreetmap.de/routed-foot/route/v1/driving";
+const ROUTE_CACHE =
+    new Map();
 
+
+const ROUTE_TIMEOUT_MS =
+    6000;
+
+
+const OSRM_BASE =
+    "https://router.project-osrm.org";
+
+
+// ============================================================
+// PUBLIC
+// ============================================================
 
 export async function getWalkingRoute(
-  origin,
-  destination
+    origin,
+    destination
 ) {
-  if (
-    !origin ||
-    !destination
-  ) {
-    throw new Error(
-      "Origin or destination is missing."
-    );
-  }
 
-  const coordinates =
-    `${origin.lon},${origin.lat};${destination.lon},${destination.lat}`;
+    const cacheKey =
+        makeRouteKey(
+            origin,
+            destination
+        );
 
-  const url =
-    `${FOOT_ROUTER}/${coordinates}` +
-    "?overview=full" +
-    "&geometries=geojson" +
-    "&steps=true";
 
-  const response =
-    await fetch(url);
+    if (
+        ROUTE_CACHE.has(
+            cacheKey
+        )
+    ) {
 
-  if (!response.ok) {
-    throw new Error(
-      `Walking route request failed (${response.status}).`
-    );
-  }
+        return ROUTE_CACHE.get(
+            cacheKey
+        );
+    }
 
-  const data =
-    await response.json();
 
-  if (
-    data.code !== "Ok" ||
-    !data.routes ||
-    !data.routes.length
-  ) {
-    throw new Error(
-      "No pedestrian route was found."
-    );
-  }
+    const stored =
+        readStoredRoute(
+            cacheKey
+        );
 
-  const route =
-    data.routes[0];
 
-  const geometry =
-    route.geometry;
+    if (stored) {
 
-  if (
-    !geometry ||
-    !Array.isArray(
-      geometry.coordinates
-    )
-  ) {
-    throw new Error(
-      "Walking route contains no geometry."
-    );
-  }
+        ROUTE_CACHE.set(
+            cacheKey,
+            stored
+        );
 
-  const points =
-    geometry.coordinates.map(
-      coordinate => ({
-        lon:
-          coordinate[0],
 
-        lat:
-          coordinate[1]
-      })
-    );
+        return stored;
+    }
 
-  return {
-    distance:
-      Math.round(
-        route.distance || 0
-      ),
 
-    duration:
-      Math.round(
-        route.duration || 0
-      ),
+    const route =
+        await fetchWalkingRoute(
+            origin,
+            destination
+        );
 
-    points,
 
-    steps:
-      extractSteps(
+    ROUTE_CACHE.set(
+        cacheKey,
         route
-      )
-  };
+    );
+
+
+    writeStoredRoute(
+        cacheKey,
+        route
+    );
+
+
+    return route;
 }
 
 
-function extractSteps(route) {
-  const steps = [];
+// ============================================================
+// FETCH ROUTE
+// ============================================================
 
-  (
-    route.legs || []
-  ).forEach(
-    leg => {
-      (
-        leg.steps || []
-      ).forEach(
-        step => {
-          steps.push({
+async function fetchWalkingRoute(
+    origin,
+    destination
+) {
+
+    const startLat =
+        Number(origin.lat);
+
+    const startLon =
+        Number(origin.lon);
+
+    const endLat =
+        Number(destination.lat);
+
+    const endLon =
+        Number(destination.lon);
+
+
+    const url =
+        `${OSRM_BASE}`
+        +
+        `/route/v1/foot/`
+        +
+        `${startLon},${startLat};`
+        +
+        `${endLon},${endLat}`
+        +
+        `?overview=full`
+        +
+        `&geometries=geojson`
+        +
+        `&steps=false`;
+
+
+    const controller =
+        new AbortController();
+
+
+    const timeout =
+        setTimeout(
+            () => controller.abort(),
+            ROUTE_TIMEOUT_MS
+        );
+
+
+    try {
+
+        const response =
+            await fetch(
+                url,
+                {
+                    signal:
+                        controller.signal
+                }
+            );
+
+
+        if (!response.ok) {
+
+            throw new Error(
+                `Routing HTTP ${response.status}`
+            );
+        }
+
+
+        const data =
+            await response.json();
+
+
+        const route =
+            data.routes?.[0];
+
+
+        if (!route) {
+
+            throw new Error(
+                "No walking route returned."
+            );
+        }
+
+
+        const points =
+            (
+                route.geometry
+                ?.coordinates
+                ||
+                []
+            )
+            .map(
+                coordinate => ({
+
+                    lon:
+                        Number(
+                            coordinate[0]
+                        ),
+
+                    lat:
+                        Number(
+                            coordinate[1]
+                        )
+
+                })
+            );
+
+
+        return {
+
             distance:
-              Math.round(
-                step.distance || 0
-              ),
+                Number(
+                    route.distance
+                ),
 
             duration:
-              Math.round(
-                step.duration || 0
-              ),
+                Number(
+                    route.duration
+                ),
 
-            name:
-              step.name || "",
+            points,
 
-            maneuver:
-              step.maneuver || null
-          });
-        }
-      );
+            isApproximate:
+                false
+
+        };
+
+    } catch (error) {
+
+        console.warn(
+            "Precise routing unavailable:",
+            error
+        );
+
+
+        return {
+
+            distance:
+                haversineMeters(
+                    startLat,
+                    startLon,
+                    endLat,
+                    endLon
+                ),
+
+            duration:
+                null,
+
+            points: [
+                {
+                    lat:
+                        startLat,
+
+                    lon:
+                        startLon
+                },
+
+                {
+                    lat:
+                        endLat,
+
+                    lon:
+                        endLon
+                }
+            ],
+
+            isApproximate:
+                true
+
+        };
+
+    } finally {
+
+        clearTimeout(
+            timeout
+        );
     }
-  );
+}
 
-  return steps;
+
+// ============================================================
+// CACHE
+// ============================================================
+
+function makeRouteKey(
+    origin,
+    destination
+) {
+
+    return [
+
+        Number(origin.lat)
+            .toFixed(5),
+
+        Number(origin.lon)
+            .toFixed(5),
+
+        Number(destination.lat)
+            .toFixed(5),
+
+        Number(destination.lon)
+            .toFixed(5)
+
+    ]
+    .join(":");
+}
+
+
+function readStoredRoute(
+    key
+) {
+
+    try {
+
+        const raw =
+            sessionStorage.getItem(
+                `route:${key}`
+            );
+
+
+        return raw
+            ?
+            JSON.parse(raw)
+            :
+            null;
+
+    } catch {
+
+        return null;
+    }
+}
+
+
+function writeStoredRoute(
+    key,
+    route
+) {
+
+    try {
+
+        sessionStorage.setItem(
+            `route:${key}`,
+            JSON.stringify(
+                route
+            )
+        );
+
+    } catch {
+
+        // Ignore.
+    }
+}
+
+
+// ============================================================
+// DISTANCE
+// ============================================================
+
+function haversineMeters(
+    lat1,
+    lon1,
+    lat2,
+    lon2
+) {
+
+    const R =
+        6371000;
+
+
+    const p1 =
+        Number(lat1)
+        *
+        Math.PI / 180;
+
+
+    const p2 =
+        Number(lat2)
+        *
+        Math.PI / 180;
+
+
+    const dp =
+        (
+            Number(lat2)
+            -
+            Number(lat1)
+        )
+        *
+        Math.PI / 180;
+
+
+    const dl =
+        (
+            Number(lon2)
+            -
+            Number(lon1)
+        )
+        *
+        Math.PI / 180;
+
+
+    const a =
+        Math.sin(dp / 2) ** 2
+        +
+        Math.cos(p1)
+        *
+        Math.cos(p2)
+        *
+        Math.sin(dl / 2) ** 2;
+
+
+    return (
+        R
+        *
+        2
+        *
+        Math.atan2(
+            Math.sqrt(a),
+            Math.sqrt(1 - a)
+        )
+    );
 }

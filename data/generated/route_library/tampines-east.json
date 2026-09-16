@@ -1,0 +1,478 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "TAMPINES EAST MRT",
+  "routeId": "TAMPINES_EAST__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.356460761667418,
+    "lon": 103.95454044078075
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 4946586721,
+    "lat": 1.3616287,
+    "lon": 103.9452043,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 1186.3101082184853,
+  "distance": 1186.3101082184853,
+  "duration": 988.5917568487378,
+  "points": [
+    {
+      "lat": 1.356460761667418,
+      "lon": 103.95454044078075
+    },
+    {
+      "lat": 1.3616287,
+      "lon": 103.9452043
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.356460761667418,
+      "lon": 103.95454044078075,
+      "imageCandidates": [
+        {
+          "id": "282134990324511",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8h19p38gK-VOUoR9HY2KfrEhpgAstyZZWWeg8TzBMslQaP4EZqGEu6hy4fypgtr9wDSv-ebQmYbXfWzGslgY1lb22q49yysqa05Q2DWzpPiBDLAKopsOxosy8tl7-hGSREpWwej0TON825wc9xD-Y?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=Adoi6rCdQQzVPvalLj-Aztbz1CotTjBmVFQjJfej_vo4TyYfl8CBkLkGAV4D0EoVo7k&ccb=10-5&oh=00_AQIBi4L860ejhQkLXFDdqS-3IFV69w0c2_c0ejN9JfwYMA&oe=6AD18020&_nc_sid=201bca",
+          "lat": 1.3563082312088,
+          "lon": 103.95458153986,
+          "captured_at": 1550121693000,
+          "compass_angle": 89.930000305176,
+          "distance": 17.584941217931473
+        },
+        {
+          "id": "162481832498865",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9Du0aAV6CfKuH4rLw6S6dwB7bWNmi9ZLody75KTIi_Q14Qn7sW1Avj6fmWTNiRwSjg53_Z8R1nG95LTxLF8k8hcvfnMS7uRLzHafsVEdNyX-lU9c_VbnHzdq_Hk1JLFg3AUYhOLGCVJbfXJczw6Q?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=AdocPrPr7vKAAnMeKz46LazNbPFWm4c7lT2WG8j1uX-O3IKysQBFlJiHF1-En6Qhu1M&ccb=10-5&oh=00_AQLCsrRUf1pkXsl8op3h9MRgRtLXLqfGegofXKv50auPuQ&oe=6AD184C5&_nc_sid=201bca",
+          "lat": 1.3563065350438,
+          "lon": 103.95446131455,
+          "captured_at": 1550121692000,
+          "compass_angle": 89.669998168945,
+          "distance": 19.295100212442335
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3568092667199692,
+      "lon": 103.95391084885762,
+      "imageCandidates": [
+        {
+          "id": "497133791607578",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_mOFiCrnqFe22FYNQTygyRMrDE2XVuerCgeyi4FuzmXcWWWQHYPSJQK-R1mK5RFbHksJ1m_e0LltKMpeQn5Xs728bYOOB7dKfowcPbmP_CuD8T3tnDXaX076dEYTaQqSmWXet6u3EEegMDhxi8Pg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=AdrqFMhgZ-EBFOvqbLnqok5ib8kzWxVGZHUPH9-wVsfxuwy3kCghAUdYT4vrf5ln4ck&ccb=10-5&oh=00_AQJec5SawR9jQqlaEUpYzztw23EHEOprcXZOQnBPxR16kQ&oe=6AD17156&_nc_sid=201bca",
+          "lat": 1.3571172919208,
+          "lon": 103.95405487644,
+          "captured_at": 1552539251000,
+          "compass_angle": 262.0299987793,
+          "distance": 37.850737937126986
+        },
+        {
+          "id": "447051323343866",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8T_3CGBHxHlWSonybKX0lpCCwZJSdq4UwqqKAC94VI00sam8H83Ts9ezRVuJrfMTiEIOVKx49B75YtTDPqkqrkZnKpXwiZz-vOd92TJrkV1hSyY5zHGVwfMaVpOwZhnL6VqMqw0dG6RhkUrFAMUU4?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=AdoUzTOZAYeNZLp7mgxR0L5WXHUQFn8SJpq_7m-YXSIswAO6BAhISELpHKIuTBXQzQM&ccb=10-5&oh=00_AQKqDvICydH3PKZdwH25z0A1KrC2BntsXKgfU4wxAwK1nA&oe=6AD16F14&_nc_sid=201bca",
+          "lat": 1.3571177743944,
+          "lon": 103.95405410875,
+          "captured_at": 1552539251000,
+          "compass_angle": 262.0299987793,
+          "distance": 37.86334656391019
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3571577717725203,
+      "lon": 103.95328125693449,
+      "imageCandidates": [
+        {
+          "id": "764849794179335",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8fZ13p7h1wER9zGbhDoQigG1l9kJ0XP2TtwICjh5rwB2veJ1vHLUvYyTv4d21trJoNJbbj7bRe6qRM7Be6ipHJzKgSO6jx6S-_kEqVqD8wr_IVS3fOHiqmr0wMmcOHm8uaMZpN8OKtOEzc0p8-Jek?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=AdoPar7Lj6Hux1vYMiPKh1VRtUcWYlvtbttFTj71pXgk5u2foyTG-eucotYkDKFlczI&ccb=10-5&oh=00_AQLZ_Pi933QKj_UPHNTgQKkC6_DtQUXUyI62EJB2pIJa7A&oe=6AD193D1&_nc_sid=201bca",
+          "lat": 1.3571623967331,
+          "lon": 103.95362085712,
+          "captured_at": 1550120861000,
+          "compass_angle": 62.330001831055,
+          "distance": 37.79719441490557
+        },
+        {
+          "id": "232529481973614",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-mI55jH1ZnqQrbrMd6VZis-REXwRC0NaWmIJgQ1ZuOlq2jrHnJtWyVOFO6EtwaRwPqxnFYEQoEJM3xJghI9TgO5hGcDolYfYt2xnugnd9bunmgP2usm3ISFYATztJf8GbIzqrmfdYBCabMi1f3Iw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=AdqydSpx2kuaDMJkv0YdVu02g05K24HGv4IZ--_kLTIlFwSIfvO9b2AxMOgFpUgJ9_Y&ccb=10-5&oh=00_AQKWmA8OA_d3xXNWtxnYM01KC43GiIdGReq93Xlrt9U_Dg&oe=6AD18AD3&_nc_sid=201bca",
+          "lat": 1.3572204537112,
+          "lon": 103.95361801533,
+          "captured_at": 1550120845000,
+          "compass_angle": 278.4700012207,
+          "distance": 38.12147275570941
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.3575062768250712,
+      "lon": 103.95265166501136,
+      "imageCandidates": [
+        {
+          "id": "478769766742219",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_YW7JWEiZA-U4YN2yER5RmX2psmL-yBX0YDwt_P5ejJVw-pMA3B3Aylt_AZI8bnmRzaXoz0i53AjY7LPrJM87UASwGS12HopL2Ar9SKed_4qBsSX2OPXw2vsI6EL6bf3m_7cetd85YmJAGavv8tg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=AdohnELIn3FdyrGuVf0sk-seIXJGNwu8Uz4UevUPHr7NslfKiXRNT2XuFQA_jDJLrYE&ccb=10-5&oh=00_AQIo9LC1AWEhoDCu2Cn1gtTeNGUuiGw98sjS731y_0ldTw&oe=6AD16D7B&_nc_sid=201bca",
+          "lat": 1.3574717771081,
+          "lon": 103.95174842522,
+          "captured_at": 1550121327000,
+          "compass_angle": 130.07000732422,
+          "distance": 100.59377204931809
+        },
+        {
+          "id": "973976843339739",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9ZueBjQCzOj_NeebJrgjya_KOguPi3iwbW9hsI0njNiU2Wd-dR6tb1VgC3dTlr0cVcbmLkrgFoqSt3qBmWFccv2ECtW0epMxcm1nKVFqFhlOWc_GuhncGWn0zx_vK9sVbsjZ2ZRcyRCkmqprYc_Q?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=Adqumfdm1RYSbRYAQYPRMzcegLVofbvt3wWcrdRLIEznrlHQ_oAhmqy_z9azshvBLQ4&ccb=10-5&oh=00_AQKYg79Nc54UizeA3dEWSfcIOVCBevBB-whmFhjst5dFQw&oe=6AD18799&_nc_sid=201bca",
+          "lat": 1.3575039655081,
+          "lon": 103.95174268074,
+          "captured_at": 1550121326000,
+          "compass_angle": 106,
+          "distance": 101.16005634142249
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.3578547818776223,
+      "lon": 103.95202207308823,
+      "imageCandidates": [
+        {
+          "id": "141482361356640",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_wzydMI-ZkMiihtXtpM0uLwi063MPppJPhSflOVX42bwMtkRcBWyPdqBqZ2PshPmUdVL6VwtZGNbZ0CKa9OXBdBhTxBpGaFy7v2qxT7ei_szMjvyMaSjRHR2UquLfYNfLoe5hTAKigUUG54P762A?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=AdplEp_e1va-nbXhCX_nkTaWqz2b9yXC74k153Jx3uXp709rF86ZZ1D5ksLZwpow2t0&ccb=10-5&oh=00_AQLjJsxF4pNpx61I-7XTtXd0QcRIF0cloSpbyULzs6ZDyw&oe=6AD1797E&_nc_sid=201bca",
+          "lat": 1.3577297898549,
+          "lon": 103.9516745603,
+          "captured_at": 1550121317000,
+          "compass_angle": 177.52000427246,
+          "distance": 41.1011062320541
+        },
+        {
+          "id": "1403079563380738",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9T77yV0F6m8aLsg0ulgwbWfMp5YFbzLes9ci_9B8CKBJZqffMmu8DVqHhTq5HuT1iR7H_rIEehoOjdhjm6zdNIROVi9xu9g2zqf7krCYPMgem8OG-x5WvRFzw9JIuCDraXJr1VDz5vB54FHfhdZxQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=Adq1qxQ2e6cLPTa3LsIJI0lUBxTwV4CHTnegMeKC4y4eXyjq3YVxfacw0heGzGGBRyU&ccb=10-5&oh=00_AQKMX5hi01HJ-IDKrivjhdRXePc4M6ZGMjbEtx2aYUgjZg&oe=6AD19AE3&_nc_sid=201bca",
+          "lat": 1.3577590837082,
+          "lon": 103.95166528812,
+          "captured_at": 1550121316000,
+          "compass_angle": 185.5,
+          "distance": 41.11042803660911
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 400.0,
+      "lat": 1.3582032869301734,
+      "lon": 103.9513924811651,
+      "imageCandidates": [
+        {
+          "id": "227474438805051",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8Eu8TNKJsyuikJ47KmztGznUZ9vOmv6zQxmuoO5sBoL_Xx9Wg7o4O3aF1UU4q0GXDnEvrbs2PyNFKwatLga-tnUKqTIiLqTdAT3AA5iv3HgSb397qvCGUjt6ap8NcVaZMLsX5q0eb8pO5r1IBx1A?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=AdpdTSNQEU2UL26qeDg50xuJnSDkhPrFBDdDeVI1okEEuvklbtVCIQGpL5qD8hczqR4&ccb=10-5&oh=00_AQIyCMMwZ75EvfWB0K56ZKF6hLDgR5JW_WTXjvY9-XRjCQ&oe=6AD1855B&_nc_sid=201bca",
+          "lat": 1.3581507367906,
+          "lon": 103.95138300666,
+          "captured_at": 1550121295000,
+          "compass_angle": 100.9700012207,
+          "distance": 5.944147133226503
+        },
+        {
+          "id": "287460259784714",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9P-fz0Tl1VRIR15Ley0ArdgOuV_m-kLW4ktk6hAcM6Y2FdsNir9p9L1Svzp2KEVVr7CNX5kykzjTqBJlw09G6AYrCzaD0_xX_Ff4TOLzN8nnODcAl2GpcguJMBHkVpmsoOV4Yo22wsw1O92EzxxQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=RtHBZEfes97DEK2nTrsTCQ&_nc_oc=AdpZGSIY05D11h5QEF5h9XgAb0d8149EXHVw0QOm_QhZKCoXpfQAmXircEFXKMW4f3s&ccb=10-5&oh=00_AQJ_iwihTVNmJ0Vx9WpIKLJiM2AuXgF1o1nvFtGEpqkmxw&oe=6AD16DE6&_nc_sid=201bca",
+          "lat": 1.3581487095481,
+          "lon": 103.95141347565,
+          "captured_at": 1550121296000,
+          "compass_angle": 98.900001525879,
+          "distance": 6.509328267573469
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C005"
+    },
+    {
+      "checkpointIndex": 6,
+      "distanceFromStart": 480.0,
+      "lat": 1.3585517919827246,
+      "lon": 103.95076288924197,
+      "imageCandidates": [
+        {
+          "id": "234101198483374",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9UFBZPS9t3K0PCjh_pjODeDJHNaAtnwL8nQl3mO0twxV-A1I05_qDRIsZKE0rB687ePnbaEDN9r9-X3AhioOfJIX2HDiHVmnSeT9qm8r9mOtlqLtnuquZIB0wi67yH0hYyDRtqD8mLUgKGo5zfhw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdpZRLsbHrvLnMEGVxdr_j0AP0wu1SCtvtXspuzSZtqp9n3wkh-pegW4NMaOUI-KHN4&ccb=10-5&oh=00_AQJZQ8Jh3zfyKx0Go2PRGy3fiJaXAylCuPtfH1apWopRDA&oe=6AD1882C&_nc_sid=201bca",
+          "lat": 1.3585541418951,
+          "lon": 103.95074536372,
+          "captured_at": 1484291712000,
+          "compass_angle": 171.24679944537,
+          "distance": 1.9678572589550443
+        },
+        {
+          "id": "482799932994010",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-nvUin9QmTThqX6l_4B7hsXFkLyrMjtE59LNHNfSsRIOZ9LVgBJZQNI4-E4b-fjIRt_wUWoKXGEkvVglG3J0-7lOrGdvvNRkw_dWf17KP0Ve0nC29-RnJU24BFpnx2IZE3Oshxvb2A78UUI_SZIw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=Adpk01X2Im_rdUYm12LYN1h3YjhSUl2ta57IMw2l3hsGXXYJIX1BoArLmMYbpaKxgwc&ccb=10-5&oh=00_AQJ1DDlDDGuUG5cVTBb44rZHwjjZDRnL0l_C6sBA-nH14Q&oe=6AD1992A&_nc_sid=201bca",
+          "lat": 1.3585012462175,
+          "lon": 103.95074594058,
+          "captured_at": 1550121523000,
+          "compass_angle": 270.07000732422,
+          "distance": 5.934483767853531
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C006"
+    },
+    {
+      "checkpointIndex": 7,
+      "distanceFromStart": 560.0,
+      "lat": 1.3589002970352755,
+      "lon": 103.95013329731884,
+      "imageCandidates": [
+        {
+          "id": "2250518241750426",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_yNJYT4julSjb9v9fveT4P_CUXSEss3G-7r0ioQW8Bzh6qjk42lghw-4YUmCjtoDTjaDcs9XuY6O3t-ISBntcne_CoQLtox9Dz9sJ1foMxlWVlpxKjoxmb0RAf3Mlz-t6_Xc3RMsY7uYCNGJam3iA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdqRsxckG2cotBBPgXdmHMsQBtyg2OtpyHvtcFpmcIarSbhR8Js3MDPclJ4sO-8feoM&ccb=10-5&oh=00_AQIbqw3V5K7H2Hh9fnoTkcjzkwet1mNzJSD0xln0tIvCbg&oe=6AD1795C&_nc_sid=201bca",
+          "lat": 1.3589075560232,
+          "lon": 103.95010414318,
+          "captured_at": 1550118238000,
+          "compass_angle": 23.889999389648,
+          "distance": 3.3436397607107886
+        },
+        {
+          "id": "2833394680255600",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_KmKG9GU8AafkNMrCF-MJxBIxuC96QSqsWLFAzQ-Aoa9fYV7kC_lACUYvl6ImC8uh6l8b4xpjREuxxHibOpsZ7KNuDrtJiVk2w2OaIh5MpciIhRz32HE3rBb3pinuzmuhm6lHWRRXWX-0JwjAO0g?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdqG1eVGrtW6uZuZdcn7rQ6xJs2FLq4LFP7UIh8gjJV-JdKmkf7xezrJm82PHoB57L8&ccb=10-5&oh=00_AQJ46ErlwPohK_1kdRpE5b0vJyplijrIDBAGVFEKf4qQMQ&oe=6AD18E2D&_nc_sid=201bca",
+          "lat": 1.3588874541557,
+          "lon": 103.95010363641,
+          "captured_at": 1550118237000,
+          "compass_angle": 56.819999694824,
+          "distance": 3.5972283898479893
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C007"
+    },
+    {
+      "checkpointIndex": 8,
+      "distanceFromStart": 640.0,
+      "lat": 1.3592488020878266,
+      "lon": 103.94950370539573,
+      "imageCandidates": [
+        {
+          "id": "472651463997381",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9FzRuR3Wt763oBfNZae8asWWTb5VL71LMnI3LfXfKCWrHdqau-n0A7ucZpnsK0TeB_gY0DKurNL3pIZCg7MECD1lXhW5311UmB3mt6zUkxz0Rv0D9kBeY7Jzob-Wbc6fUYVUuYkbKnElPNaOMbtA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdoUw4phUv7tinnK0XyiNZRc7p5fj6SfztjzVIyzoAwqsON97OEDs-LDDIqZAQkt7hg&ccb=10-5&oh=00_AQKfqKpvNGZn2P3ceFe73kbAvvykkxK-yZP7RmYK0VNVmw&oe=6AD1A054&_nc_sid=201bca",
+          "lat": 1.3591817503945,
+          "lon": 103.94939899485,
+          "captured_at": 1484289360000,
+          "compass_angle": 85.076821068048,
+          "distance": 13.83867380886471
+        },
+        {
+          "id": "904771190084420",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-key_uatESN_0oJz00uMng8iY_vQQ0KMVlPOf2OAyA0bgTkxQxrcFhKTBBQgua4WqUW4AYbDwR9YIKPjc3qsGxZYsB5KfOooobaGpb26UVLrW2bqnWrF6DbWB1cMHMHIWUlJK2OmJlSUu1tZyQrA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdojvuBI-zIlhUKQ_iIFSxr4wuGn7HK1Ci9dybhyOiygIL_kPcIsSjhxf1jd-eTCHBE&ccb=10-5&oh=00_AQJyi5cQNy77iGwc-w52upMIQBCyiHBit_Alb1RMf0F_cw&oe=6AD18BEE&_nc_sid=201bca",
+          "lat": 1.3590970514306,
+          "lon": 103.94939954732,
+          "captured_at": 1484289359000,
+          "compass_angle": 80.025061343453,
+          "distance": 20.487435781685463
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C008"
+    },
+    {
+      "checkpointIndex": 9,
+      "distanceFromStart": 720.0,
+      "lat": 1.3595973071403777,
+      "lon": 103.9488741134726,
+      "imageCandidates": [
+        {
+          "id": "302387588027521",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-F1k0pv5PHlmFQ7mIJd4KW-bASQfXlkcg8fTKzQe6AQyR81QJNCUjFG0JAqjacZ6MMhO4RdTKjycRHdvxzI9hmzz-eor4WuaaSIsyNS4JIy9goywlDCcab5rUnXzYHZScVOXVdDFGKntuTPYBEPPA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdrAelpyVCn3ga4TcutrSrhEh0ME9pHDL3N1Fg-NXt4ptzNcAhMW6su-A0MrfyaDDAI&ccb=10-5&oh=00_AQIy963ow9VCpcAJ3e9Bf5yq-RTFX0ZTao1OwP2sGsFoMw&oe=6AD183AF&_nc_sid=201bca",
+          "lat": 1.3594264204384,
+          "lon": 103.94885691074,
+          "captured_at": 1550118178000,
+          "compass_angle": 79.970001220703,
+          "distance": 19.119200218188492
+        },
+        {
+          "id": "306591021195719",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8pNOyRdHMotWIdrjfF3j4lDFEo2nYnOqYt6WXvqnzhpISkHYDEpDYeN6UtJIpj8FAm4hFeWmqGtETtI0hwKwXoXm0Hcke91EAf1Z_yMvg7S24IpL95Cqutk3Bd_2Fu448bz6uPnGt-Au9MwoeLMQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=Adpsa2_Sh5AkMY6udp_AyfcKKBTuRyCdJcaEjfhOF4fsDq-13srq2y29sC_cKsU5Kh4&ccb=10-5&oh=00_AQK8zam1-DgJq09WiNjVEQ3NX9k2vXdETP8xw8Io9oPwjA&oe=6AD17A04&_nc_sid=201bca",
+          "lat": 1.359425039142,
+          "lon": 103.94888694536,
+          "captured_at": 1550118179000,
+          "compass_angle": 79.730003356934,
+          "distance": 19.229971104405323
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C009"
+    },
+    {
+      "checkpointIndex": 10,
+      "distanceFromStart": 800.0,
+      "lat": 1.3599458121929289,
+      "lon": 103.94824452154947,
+      "imageCandidates": [
+        {
+          "id": "813629712622706",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Nsfj2CMwI8spkCVfHRfrc5PAn7wrcPmvewua8n00ZCIDaqQjm13REzsrA2hplab3Ctc_-BYRtd8SNi-eW6yN0NbQWn4LVveqlab4RczMbpFlzMgkTiYc55gBqhLeFhAWDBQhwlULO4RRRV4NGnRM?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=Adpmtmm63AzV5RrbxKMtXDV_1waLTZ0tIKk4i1JhYpX-6fDl8VIp-fGVofC8HwtMOBg&ccb=10-5&oh=00_AQLOvdGN-KVDXkb9gMWGWuLEEM4Gu-yK2cTCUBX_R68tuQ&oe=6AD18EDC&_nc_sid=201bca",
+          "lat": 1.3601061954137,
+          "lon": 103.94829301746,
+          "captured_at": 1550468356000,
+          "compass_angle": 289.51998901367,
+          "distance": 18.651766860653023
+        },
+        {
+          "id": "292185099233217",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9Umkws4gGw2ABYVppwqpi-g25sGZ8tK3h8wuXuAY12bvdNrMneBqXc8v2RXWOAGBN69_n8b4PJo7drg-lztSfscv-CfzKxqSYSJAKz6iycf4auA8NyTsrhwzLoDiHXV-O_zzWb6_5upzyXqgamY94?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=Adqjtd8-qRHIs_Ob-FXDQ2z7d8BJQwRFpux_PfzYCBOVWG_n3Bmozv5yuJKuGTZ0VxA&ccb=10-5&oh=00_AQJZ45sDuVF3CbZLXGNbToI7L70pe1WuYRDJXp6FYZwUag&oe=6AD175CD&_nc_sid=201bca",
+          "lat": 1.36007139175,
+          "lon": 103.94841380267,
+          "captured_at": 1550468355000,
+          "compass_angle": 290.57998657227,
+          "distance": 23.459268893694
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C010"
+    },
+    {
+      "checkpointIndex": 11,
+      "distanceFromStart": 880.0,
+      "lat": 1.36029431724548,
+      "lon": 103.94761492962634,
+      "imageCandidates": [
+        {
+          "id": "2623629387783663",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9clsjaVXPnud6BTEAja1ysWufn66dXszzCx9sHjRW4zyXSxORknPSPY7_zuU3futF2KkebtcBAnJ8KS1NVCJQJkkjCIjjVn1vDefUia0lJhsPvM6ecfY6wjWsup7ggzGVwcDHTM_HeTwpQgY1XBQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=Adru2hYKdunZ_uOKTjkBj2RSzNitFfSGboqnBMTWndeVF_I0RvSg59H4Wxzgg8GsNMM&ccb=10-5&oh=00_AQIEd9VVzRHNWj4qoz01kLPWL4cPx3SdtSAirpBvHM4ApA&oe=6AD18396&_nc_sid=201bca",
+          "lat": 1.3602583589977,
+          "lon": 103.9476661524,
+          "captured_at": 1550468361000,
+          "compass_angle": 279.44000244141,
+          "distance": 6.965545544076576
+        },
+        {
+          "id": "1425187837829952",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-6Xx0fFqSD-nzmOlTQHbjB9ui11TuInDUJ-HSSeJW6o4D9E6eYqEqZ33RpOm9_ThmnWD6-0HK6x6p-H0nzMLh8lErqZTlTWh0wCsczKdVJfxdBRhzLdm0MjNTyoN7l2ZaXr_W7maW6ZpsAJ5HDbA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdoQCzyIM2q67M9eUCbMPDayYO9BUQui6iJWeJ39CTWqr1PJaKMIqgCCvoHAn8nPAkQ&ccb=10-5&oh=00_AQLBLpVKeHkeux2CMb6_1j1g8QQoslBH2bRyZ9sVWerzSg&oe=6AD18F20&_nc_sid=201bca",
+          "lat": 1.3602749964402,
+          "lon": 103.94753970167,
+          "captured_at": 1550468362000,
+          "compass_angle": 274.64001464844,
+          "distance": 8.643874075725746
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C011"
+    },
+    {
+      "checkpointIndex": 12,
+      "distanceFromStart": 960.0,
+      "lat": 1.360642822298031,
+      "lon": 103.94698533770321,
+      "imageCandidates": [
+        {
+          "id": "461609934919911",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8nf-jTjtixhXSKDnH60PoRCYCTBeBXcvHx-C77CU_oOpLw6ci_74MI2wG2ebH8bWmmUKBrqsGeBiNDlISUct5RYanPK-_-26VsJincBNdTw9E58EVQ3h0b0qrZewbnvJ4-SdNb_Y9pnnXdTyLHcw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=Ado2m88JsjWjGnawQKRnYQP28ybg-LfqJ8_Kq1KCxtHFwm-hie9lzF0ZsmVKps41izg&ccb=10-5&oh=00_AQKSe0ZRTwOwlyImvTL3uPGR0J6OH77jgeMf-LEYho6ljQ&oe=6AD180CC&_nc_sid=201bca",
+          "lat": 1.360450874138,
+          "lon": 103.94698120183,
+          "captured_at": 1484291550000,
+          "compass_angle": 2.7204103080218,
+          "distance": 21.372625940081505
+        },
+        {
+          "id": "291137796040376",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_7mWU2YX9Cp0nS4e1gqiRH0YEN_nSe-uw1WoqE3oj1NM3jBXU6CeHSGxc9wrqQh-1Ujl-7-6uCdnHM-xSUFSHjWPpaFLZFoMMvei0MJ0M9AeV0NXss6rzj2m6dxT2QBc7xrp81uMX855-UWNXkKw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=Adq06vI_TToWsRHRTjKhsMFmPdTYzBpu3WMUOmWaUbKIe8_H2QD8Mx36LI46oigbbC8&ccb=10-5&oh=00_AQIOCK-1kk2TB98yE7kZ0cl6Vn8xYN7zGL-zXsU6jnA51A&oe=6AD1822C&_nc_sid=201bca",
+          "lat": 1.3604472519428,
+          "lon": 103.94704965398,
+          "captured_at": 1484291551000,
+          "compass_angle": 355.9974638823,
+          "distance": 22.91732889975898
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C012"
+    },
+    {
+      "checkpointIndex": 13,
+      "distanceFromStart": 1040.0,
+      "lat": 1.360991327350582,
+      "lon": 103.94635574578008,
+      "imageCandidates": [
+        {
+          "id": "1129377364231049",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-tLKU8m7ycOLSoaplWIzwAwsJSayOgk0kqUFBc5SsikaQEExtoHV3DaQ-Heljyy05m-P7LtcvGccz-iyfYrOQMIMUQ8b4mD83HxKWu2GxRx56L7qHqFcs3Gc12WrHSnyJ9z1j7F24Cs6bZkYtnTw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdoKhmEvapo5g-0-HSSlNFtccOJXZ-HBR-Mt1R9tYB6nq4-XUsBOSYoZ0waUdEKkE5A&ccb=10-5&oh=00_AQL9mksrXru1V4eP1JVZkTNF58JiCeEg527xHjSQo6XX_g&oe=6AD18353&_nc_sid=201bca",
+          "lat": 1.3604525139463,
+          "lon": 103.94639617024,
+          "captured_at": 1484291544000,
+          "compass_angle": 1.9724908874261,
+          "distance": 60.149184415402274
+        },
+        {
+          "id": "927119891195272",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-XgOZt-1RI6jSPINQzUE67tYUMI3HxuLuIHAVYzh0KYpBLRq-wAwsS2Cysx-VN2tkE-B23tSCKnS21kxztkl1n_VZ_blI1VS7s_ZOk1cswA_8y251Nl8EYGU2m9i4zQ9Tzy0MDbRuiWeFk7VLLCOU?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdoThbNnY0aDgPGluD4KIDKJ62qiWZDVGH4IHP6WDAwNxitKC9vN6ZArNLNIjHr6U9U&ccb=10-5&oh=00_AQIv6H6SkAFRX-1MmfszkPsJnF7012P8zxBNgHA7yrUl9g&oe=6AD19022&_nc_sid=201bca",
+          "lat": 1.3604488688301,
+          "lon": 103.94628973228,
+          "captured_at": 1484291543000,
+          "compass_angle": 358.01358712234,
+          "distance": 60.83172742584085
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C013"
+    },
+    {
+      "checkpointIndex": 14,
+      "distanceFromStart": 1120.0,
+      "lat": 1.3613398324031332,
+      "lon": 103.94572615385695,
+      "imageCandidates": [
+        {
+          "id": "332170391658093",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An95bqWZ5rJvUdW32wfhcku7P3_-KzOPTiwIly3TX9UHyjljBugu8ywmJf9n7RrbZZDltnSBTsuNvVJ23RVkh_CiI6Ti38gwojOpCmEzbA-Da15XFZpmDGkIoIZQgfsk3_MhY3pKctajDJ3GphCwNg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdrEVGm2SWkIsY-ap7w9HPmu8RH8-N_1XW21_nXPYV2d2Zza16h3TqQ4KR5DudB-EL8&ccb=10-5&oh=00_AQKgynYew4MTiuDP35rX_3DuncrPB8CQlDNFgF0tD_Z_8Q&oe=6AD18F13&_nc_sid=201bca",
+          "lat": 1.3604480058606,
+          "lon": 103.94570856896,
+          "captured_at": 1484291538000,
+          "compass_angle": 1.5971009591183,
+          "distance": 99.29741728865682
+        },
+        {
+          "id": "3791901040931712",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8roE6X8CALWo-owsGLQOXCQPHAqkiQ3iCeHGPdbeDCVL7850fCl3GW1srGH9v70VKBfEdDs9kIPQpYXM70OvE-hCbPI4e7Onz0N-1Vqfh7G_V2F05kTlt_u4R_R5exBY1_ZqTlLwRogWb0Zvw7Jw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=Adr-V7kNo5C--EwduhbDcKGRV8T02ivd0wjs7Yt4Aq6rxZf3bZ93JXWYFlATw3YezHI&ccb=10-5&oh=00_AQJcIDJXM7l-fx9CIJ-_UGOdIc_O2uMdoZPdsc9GBLkBXA&oe=6AD170C1&_nc_sid=201bca",
+          "lat": 1.3604446835467,
+          "lon": 103.94582882995,
+          "captured_at": 1484291539000,
+          "compass_angle": 357.54968022427,
+          "distance": 100.30098205663577
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C014"
+    },
+    {
+      "checkpointIndex": 15,
+      "distanceFromStart": 1186.3101082184853,
+      "lat": 1.3616287,
+      "lon": 103.9452043,
+      "imageCandidates": [
+        {
+          "id": "780011149575096",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8AZKuIiQZJLmEvDQJJbCCBBsqBQwr1CoZigIYJDAu-QBegMD2FSvtHddXumxVfPO9GdGDFmOySDFgs32wVpTC-F7y3-abxStvOx9JxGW8aZ6j_qhv5dCBWNAmmL3le2lWgm9G1KNFcwfifWuRs0MY?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=AdoE5EfAngGpZf6IUnEWQ5WRa_N39mAjcMvfdSNluzeSOFbBGEhoZaUFp6aa3SZKYoU&ccb=10-5&oh=00_AQK7VxMUTS_y5_VVvrgX4koiaN9Oj6E2yYzBCx2bvJ-1Yg&oe=6AD17948&_nc_sid=201bca",
+          "lat": 1.3617245742175,
+          "lon": 103.94469595303,
+          "captured_at": 1484287873000,
+          "compass_angle": 108.99105498262,
+          "distance": 57.57112546505286
+        },
+        {
+          "id": "814792789150574",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Yvmn-TQbcm1xiXXDfUg6AM3JFJ07cMREQX6moOvCuWsChZZtHZQ31eJe869etslnbQerXSoTPZ-ZJS1E3_b1bwtdtorgLS_HF8oeGAZ6cDDatOp_eUMYNApn89uf6wPmKLRX6OwhwpL8dRNf6jhI?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=X8aJTuM5EAbZIpk7uia0Cg&_nc_oc=Adr4W2yjY8FVDkFFpJ_Sex4-F3OanN7KciTcd9jsicQe0MR2JdmFBUW-z8qeo_8iuBM&ccb=10-5&oh=00_AQKp4TTdLCMMTTP9-89_LJSN2zit0gU_4ub1peFqW2VMlg&oe=6AD19872&_nc_sid=201bca",
+          "lat": 1.3618421684164,
+          "lon": 103.94473214467,
+          "captured_at": 1484287872000,
+          "compass_angle": 107.10969118071,
+          "distance": 57.66908285492092
+        }
+      ],
+      "checkpointId": "TAMPINES_EAST__R01__C015"
+    }
+  ],
+  "mapillaryImageCount": 32,
+  "uniqueMapillaryImageCount": 32,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.95454044078075,1.356460761667418;103.9452043,1.3616287?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c2aad0>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531884.4490454
+}

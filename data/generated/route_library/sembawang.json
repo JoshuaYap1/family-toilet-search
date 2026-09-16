@@ -1,0 +1,108 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "SEMBAWANG MRT",
+  "routeId": "SEMBAWANG__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.448927331537594,
+    "lon": 103.82040156029227
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 14182965386,
+    "lat": 1.4490476,
+    "lon": 103.8202849,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "fee": "no",
+      "female": "yes",
+      "male": "yes",
+      "toilets:disposal": "flush",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 18.628195202568627,
+  "distance": 18.628195202568627,
+  "duration": 15.523496002140522,
+  "points": [
+    {
+      "lat": 1.448927331537594,
+      "lon": 103.82040156029227
+    },
+    {
+      "lat": 1.4490476,
+      "lon": 103.8202849
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.448927331537594,
+      "lon": 103.82040156029227,
+      "imageCandidates": [
+        {
+          "id": "221339159413826",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_njfww3hJnPOAbUVXLX1qksKew0zeDE5lywnwaBSorgytYhD5IrHOKoEj3Shdix5UNPgWvKOj60CBDA1t6QxfBesnnoqGypsJgUGjX20OCxK1-Qa5sHt9FXtP_UK49VISDUFgA4kgWxbJJ4SzvCw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=1vLiC945aYpsVu-_8LC2sw&_nc_oc=AdrftR7GfwKl9vrxFrmkQICwa2s2YeV-fXggbsEgbQmH6Ine-LdzuYMEtuU4u_2qM-U&ccb=10-5&oh=00_AQIk3TMnEc5mTqyvVWY586DoaD-lDYmpuTVJ8P52_WFyyw&oe=6AD18687&_nc_sid=201bca",
+          "lat": 1.4491684862801,
+          "lon": 103.82011549199,
+          "captured_at": 1484646121000,
+          "compass_angle": 258.32598166625,
+          "distance": 41.64295962094125
+        },
+        {
+          "id": "499662444551482",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8PTwdpKN0zkd6TWmgbkOhkg0MV4xPamLKiFmOVWIozXLYpnyjpTTtae0CnjngD3ZxWeWj9Jo7tp03a7_cSOmP89DNxa6fspKTxN9_wsbqgfX8f6iURZ2Jmc6k7FJRuZ6Fkqth936gT6cHiasHACA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=1vLiC945aYpsVu-_8LC2sw&_nc_oc=AdqU9sEUo3cBHI50A19cS7yYGtmIazdq2LVp84_fixtM3MpDSssa6ugtI6ISZLO20UU&ccb=10-5&oh=00_AQKoMb6rZ10EAIdwvnn8Oe8UC5UXXVmoq0lGmvIH1GL0uw&oe=6AD18AE9&_nc_sid=201bca",
+          "lat": 1.4494180045104,
+          "lon": 103.82028895146,
+          "captured_at": 1484646122000,
+          "compass_angle": 168.31030910875,
+          "distance": 56.040815145419224
+        }
+      ],
+      "checkpointId": "SEMBAWANG__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 18.628195202568627,
+      "lat": 1.4490476,
+      "lon": 103.8202849,
+      "imageCandidates": [
+        {
+          "id": "221339159413826",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_njfww3hJnPOAbUVXLX1qksKew0zeDE5lywnwaBSorgytYhD5IrHOKoEj3Shdix5UNPgWvKOj60CBDA1t6QxfBesnnoqGypsJgUGjX20OCxK1-Qa5sHt9FXtP_UK49VISDUFgA4kgWxbJJ4SzvCw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=1vLiC945aYpsVu-_8LC2sw&_nc_oc=AdrftR7GfwKl9vrxFrmkQICwa2s2YeV-fXggbsEgbQmH6Ine-LdzuYMEtuU4u_2qM-U&ccb=10-5&oh=00_AQIk3TMnEc5mTqyvVWY586DoaD-lDYmpuTVJ8P52_WFyyw&oe=6AD18687&_nc_sid=201bca",
+          "lat": 1.4491684862801,
+          "lon": 103.82011549199,
+          "captured_at": 1484646121000,
+          "compass_angle": 258.32598166625,
+          "distance": 23.16264375723983
+        },
+        {
+          "id": "954016105419036",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_05rwNkxH1xnm-9ymHnkGV9qmhiK4xbr1ua4i1MRRlUhSBqfaXP17WcReFPX-L7jqOCrgR0Q8GNJHyxRYdpJvg2Wuxuiiv_tHpOBnjCBMeMwKSNj7Emj5UjdhZx1Q45k_DyR5Ap6Hy2sVLL9vPtA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=1vLiC945aYpsVu-_8LC2sw&_nc_oc=Adri522JQWJeW0tjHZQgPMh8f3oLtRR9HGYP8FGhus3vQND572zUjwdsvJaPEzabZio&ccb=10-5&oh=00_AQKnjeOqunGMj5vOs3kV5wq5rlCOdcEb_LmZBslN7mgx4w&oe=6AD19688&_nc_sid=201bca",
+          "lat": 1.4492414730631,
+          "lon": 103.81999445583,
+          "captured_at": 1484646130000,
+          "compass_angle": 258.23817266731,
+          "distance": 38.86497278715926
+        }
+      ],
+      "checkpointId": "SEMBAWANG__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 3,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.82040156029227,1.448927331537594;103.8202849,1.4490476?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c29950>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531846.2277193
+}

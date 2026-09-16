@@ -1,0 +1,108 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "BOON LAY MRT",
+  "routeId": "BOON_LAY__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3386295077959716,
+    "lon": 103.70565003803485
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 11031942161,
+    "lat": 1.3390285,
+    "lon": 103.7053914,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "addr:floor": "1",
+      "addr:housenumber": "1",
+      "addr:street": "Jurong West Central 2",
+      "amenity": "toilets",
+      "check_date": "2025-06-05",
+      "fee": "no",
+      "fixme": "exact loc",
+      "level": "0",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 52.86753328747574,
+  "distance": 55.0,
+  "duration": 43.9,
+  "points": [
+    {
+      "lat": 1.338599,
+      "lon": 103.705662
+    },
+    {
+      "lat": 1.338632,
+      "lon": 103.70575
+    },
+    {
+      "lat": 1.338822,
+      "lon": 103.705674
+    },
+    {
+      "lat": 1.338756,
+      "lon": 103.705488
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.338599,
+      "lon": 103.705662,
+      "imageCandidates": [
+        {
+          "id": "266677648533094",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-vRk9lNYPMZBG2tLfap2X6HqgsreUww4u8yKJqSKqDiEtukJQ40AIsiA9CXSJULR5tsKw8FF0PXNI4ifsh9lJ7D8tKnyEM9FVwHSzsw8O_7gUHs2bHdmdRUDbQTol7j6KMXanX2ULnx4C4jmYCtO4?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oM3-Bp2enW4Jf8Ch_Wbtvg&_nc_oc=AdqV50E2pkkec8X0oyZkdzc3cC6MDg8UmQpi0cHk6C1JfKPNlIwJhHgImLpuY2GsiAk&ccb=10-5&oh=00_AQJ--CnACwgA0RW-7aguGTQQ-x4Vbg7W74j5Kja3mD186Q&oe=6AD1745D&_nc_sid=201bca",
+          "lat": 1.3378051076906,
+          "lon": 103.70662509314,
+          "captured_at": 1484541025000,
+          "compass_angle": 16.439504369791,
+          "distance": 138.91858281685958
+        }
+      ],
+      "checkpointId": "BOON_LAY__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 55.14210611789061,
+      "lat": 1.338756,
+      "lon": 103.705488,
+      "imageCandidates": [
+        {
+          "id": "209667910742512",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Ynt6PHpgwwf7eo13IJquGPCGRThztYtmq5notFkNx5px7B5KTcMUFtKWubN22eXFNlpvBq-RjCEJ21nnmGx_snDUD3XE3c5-NII0e8xKaaDctt26r1Umun_hMShV5JLP9Asl1FgJ8p1_D314phKY?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oM3-Bp2enW4Jf8Ch_Wbtvg&_nc_oc=AdrJFCdhSEZZ3VHZAh1az3RtxmMWzxVMZ2URDwceCXf5WM1PsFDP2M_JzAJigtAcpRU&ccb=10-5&oh=00_AQKbZWi8h8fP4kmQmcyrPwf3zu0fMsaqRwRaxu_6p4hAEQ&oe=6AD175E5&_nc_sid=201bca",
+          "lat": 1.3387167961507,
+          "lon": 103.70434710407,
+          "captured_at": 1484543910000,
+          "compass_angle": 248.8505136429,
+          "distance": 127.04484698045037
+        },
+        {
+          "id": "923379235062268",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8jQvE_yj5R91PWfLTVY43YM_8cNjS0hnR-TCY0rMiv9X3Vhw6c4n6t50dl6ykGLoHq7n_rN3WOZt_Ph0qj7-sicaWgajnAmkK2Be0lUAdSk2VyFRYa68Ev7pfxuMlnLdxUWNu71ZmMPBQjrsBzhxw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oM3-Bp2enW4Jf8Ch_Wbtvg&_nc_oc=AdqhqT56aNKglaTp1Lv-ASGHIfkOkrcv_RYKQ6ATQWxw8qOGeglRIIn6MH5OAgnJ3ZE&ccb=10-5&oh=00_AQISjXbHuzVL3w8FklOFgTelIFa-48fkXblJzjgcHoDJrg&oe=6AD17DE4&_nc_sid=201bca",
+          "lat": 1.3386540141144,
+          "lon": 103.70435084554,
+          "captured_at": 1484543909000,
+          "compass_angle": 250.67583199398,
+          "distance": 127.06169977806455
+        }
+      ],
+      "checkpointId": "BOON_LAY__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 3,
+  "uniqueMapillaryImageCount": 3,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531585.2755506
+}

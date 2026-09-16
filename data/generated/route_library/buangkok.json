@@ -1,0 +1,218 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "BUANGKOK MRT",
+  "routeId": "BUANGKOK__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.382649722820209,
+    "lon": 103.89346315223678
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 12206907466,
+    "lat": 1.3820984,
+    "lon": 103.8926546,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "designated",
+    "baby": null,
+    "tags": {
+      "access": "permissive",
+      "amenity": "toilets",
+      "toilets:handwashing": "yes",
+      "toilets:wheelchair": "designated"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 108.79689652239202,
+  "distance": 219.3,
+  "duration": 175.4,
+  "points": [
+    {
+      "lat": 1.3827,
+      "lon": 103.893235
+    },
+    {
+      "lat": 1.3827,
+      "lon": 103.893235
+    },
+    {
+      "lat": 1.382604,
+      "lon": 103.893197
+    },
+    {
+      "lat": 1.38231,
+      "lon": 103.893168
+    },
+    {
+      "lat": 1.381732,
+      "lon": 103.893125
+    },
+    {
+      "lat": 1.381645,
+      "lon": 103.89314
+    },
+    {
+      "lat": 1.381602,
+      "lon": 103.893156
+    },
+    {
+      "lat": 1.38157,
+      "lon": 103.893112
+    },
+    {
+      "lat": 1.381534,
+      "lon": 103.893067
+    },
+    {
+      "lat": 1.381537,
+      "lon": 103.893027
+    },
+    {
+      "lat": 1.38155,
+      "lon": 103.892928
+    },
+    {
+      "lat": 1.381558,
+      "lon": 103.892857
+    },
+    {
+      "lat": 1.381628,
+      "lon": 103.892826
+    },
+    {
+      "lat": 1.381742,
+      "lon": 103.892822
+    },
+    {
+      "lat": 1.38179,
+      "lon": 103.892871
+    },
+    {
+      "lat": 1.381962,
+      "lon": 103.89288
+    },
+    {
+      "lat": 1.382075,
+      "lon": 103.892891
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3827,
+      "lon": 103.893235,
+      "imageCandidates": [
+        {
+          "id": "321150739522142",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9oW_3NRpYEFQYkMeJAymTlQtaWw6uvKpyxoZFST4uwxhj5p5EOge2C2q-6y6Z3zYgZgN5yV-9e8HsZoOEn2rku5Q2CQ7HOlxw0-Z4ZPeyMX4NGCeE-E55xBcrij29Vi13oDeHCHpBxb6MPU9vmQQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=p_4P-ZbC_eGLK6zHIFWM5w&_nc_oc=AdpX-Y1dSGXgiOD1qMeinLOBxHvgjISJ_tiDr9h7t-ygyyfIm5r2H2CVz_BKaZDf884&ccb=10-5&oh=00_AQLTZKtDMUnGYONKaPell2VY_VG2Ees4jouxvahrmDhJnQ&oe=6AD18ADA&_nc_sid=201bca",
+          "lat": 1.3827542225518,
+          "lon": 103.89296891912,
+          "captured_at": 1451618546978,
+          "compass_angle": 191.887,
+          "distance": 30.22043705060245
+        },
+        {
+          "id": "468048547591148",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-6wGPvxfuCnSiUcgqfNE1GakShIREHyFQp9My15_Zy6GKQoS1HdQQm7rJPrOTuFO7HBplJ3JT7ZRI_9KgD8IqxFjkiyXBNOMd4jYgNys6jfysuNH_W-f67fTc4piB9R8nuKtAuAsX9mJdxahsIFg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=p_4P-ZbC_eGLK6zHIFWM5w&_nc_oc=AdpchgPQyY35cVQzR01swDzMurjH0BC4-DYMTe6Tin0WL-zLye4kvzUIwSDZRZQFvgI&ccb=10-5&oh=00_AQIObnyEMY9FZy3kwGzpTo76IfNsj21RqzMqt3rDTqvD1g&oe=6AD1795B&_nc_sid=201bca",
+          "lat": 1.3827663411477,
+          "lon": 103.89294330879,
+          "captured_at": 1451618544976,
+          "compass_angle": 185.5769,
+          "distance": 33.291077107947395
+        }
+      ],
+      "checkpointId": "BUANGKOK__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3819900954277473,
+      "lon": 103.89314420087092,
+      "imageCandidates": [
+        {
+          "id": "474649133815373",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Oy-fkSNZ-4Ghwjp7QeIjRd2cbDax5dN3gR5L-144w9ADI2pk1NJB-6jesg5kk_qTOa8uMq5Sy3cs3xKs2mmOLpUikyYYcVxlVmCkG8jTP_G0lPm1ac5jVHAnH82hj6G3qSPh_S5hoDN48K81Icw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=p_4P-ZbC_eGLK6zHIFWM5w&_nc_oc=AdotprRESZaAEjvDK41k2ficTqHl8VD-87nXvkDzNe-TK4oGxqOw-V-cXmpzcWYf7NY&ccb=10-5&oh=00_AQKSN7OuGkqK1xuUlWP9PoLcA9J9PiLQPH-ZWw3Ullp_kA&oe=6AD18E6D&_nc_sid=201bca",
+          "lat": 1.3820455246809,
+          "lon": 103.89288970456,
+          "captured_at": 1524734449000,
+          "compass_angle": 0,
+          "distance": 28.98664646460281
+        },
+        {
+          "id": "515637062940963",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Y5lLbhYYhMhhh0egyfky8uZUsAGYb350rVXeBmbrqK5HuOow6mWQ_psNllRiY0Dqe7hYjbuY6DvBrEjIU5z0UoDdXX_R6cwTJ0o8dfK_Q3-ENZZhCzid1e8585QQBTAkkmtGvKEee1rIRIeKPCw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=p_4P-ZbC_eGLK6zHIFWM5w&_nc_oc=AdougivfNv-VDmJaznbdZBXwT1sAqFz8Af5lwuPQhdnLyWqlj18Sv_JesO8NqAna5Ck&ccb=10-5&oh=00_AQLTHjZhh8e3kGkagFMCJE1wHT3m9yu3FZVHhplja_zlAw&oe=6AD18349&_nc_sid=201bca",
+          "lat": 1.3820624832537,
+          "lon": 103.89289085586,
+          "captured_at": 1524734437000,
+          "compass_angle": 0,
+          "distance": 29.323124443993475
+        }
+      ],
+      "checkpointId": "BUANGKOK__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3815608558061665,
+      "lon": 103.89285573528585,
+      "imageCandidates": [
+        {
+          "id": "153489003392037",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8pbNfZ5KVnVFnhmDeiW91rr81P8ex6q547mUDZKiHSbrjsc3yvZUlNqz2OUSRV0quf2czBC2tFJD9oM8_npys4QIeItBpTR7pFDcWfmaZqcjZvqjo_Y9HvIwqABL72yRlbHWklT6U6eSaL733AcQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=p_4P-ZbC_eGLK6zHIFWM5w&_nc_oc=AdoCtrz_cPeg6jGGirCYEMhPwNJePOKfOrSYnqbk7KrBJoieslci6XVNIZgW99_lZSs&ccb=10-5&oh=00_AQJFOH7N_6n1HaLI3_HMh57PApjhMZd6Ojl3iapsIc6ueg&oe=6AD182AB&_nc_sid=201bca",
+          "lat": 1.381562,
+          "lon": 103.892876,
+          "captured_at": 1451618588975,
+          "compass_angle": 176.094,
+          "distance": 2.2588062352974183
+        },
+        {
+          "id": "907804050052464",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9rTpufHXgCwYBVcuyM2RmYzEqwUHZnSliYyP8_xliqx2G7TPd6o62VWeu44J7U4gfxtsRkJ8goR4sAg8ZLKn__y2I8hPN77ZzfFpstqAEe2VF7cjMFfKFzh4KQih_b5bIh7jYgeqnsV-i-zxOdhg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=p_4P-ZbC_eGLK6zHIFWM5w&_nc_oc=AdrVgWXfldtXeoSgOe_R3pmYwmIb9mK8M_4vrdtC1ElPQMT7EPH8eTVhG4xmQnLNuec&ccb=10-5&oh=00_AQKwRTH7EnIJsv59myrehqS9q6FPM9pRZmeQOt7Vy9nfzg&oe=6AD182C6&_nc_sid=201bca",
+          "lat": 1.3815945650072,
+          "lon": 103.89289207468,
+          "captured_at": 1451618626973,
+          "compass_angle": 90.84607,
+          "distance": 5.51690750511409
+        }
+      ],
+      "checkpointId": "BUANGKOK__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 220.25122440301348,
+      "lat": 1.382075,
+      "lon": 103.892891,
+      "imageCandidates": [
+        {
+          "id": "253725729775649",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9QKhLwI1UdvXz0X5eJV1RlRx_x2GubGYfwZYjkU4j7DsNHB8RjYIRzWnp_jkGDczL3vygf28_ys1Ruve029H1xdtBG4u4zW5WtB9D6d77f9_lY04Fi2QwlsALQsbHY1GtL5486OP-JIwDL1IaZtQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=p_4P-ZbC_eGLK6zHIFWM5w&_nc_oc=AdoVbZTtUct-l36qa1L3M7BQw_iUdYyAYTRl_E1RqbJ7hk90xBFmQAn1DJRZi_TbrAA&ccb=10-5&oh=00_AQLoFzjRkBptUpg-qLeBDgSRKB_oRDdMtwpxUFOHHY4MSQ&oe=6AD17A39&_nc_sid=201bca",
+          "lat": 1.382075322965,
+          "lon": 103.89288272766,
+          "captured_at": 1451618570977,
+          "compass_angle": 184.0035,
+          "distance": 0.9213107494343303
+        },
+        {
+          "id": "515637062940963",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Y5lLbhYYhMhhh0egyfky8uZUsAGYb350rVXeBmbrqK5HuOow6mWQ_psNllRiY0Dqe7hYjbuY6DvBrEjIU5z0UoDdXX_R6cwTJ0o8dfK_Q3-ENZZhCzid1e8585QQBTAkkmtGvKEee1rIRIeKPCw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=p_4P-ZbC_eGLK6zHIFWM5w&_nc_oc=AdougivfNv-VDmJaznbdZBXwT1sAqFz8Af5lwuPQhdnLyWqlj18Sv_JesO8NqAna5Ck&ccb=10-5&oh=00_AQLTHjZhh8e3kGkagFMCJE1wHT3m9yu3FZVHhplja_zlAw&oe=6AD18349&_nc_sid=201bca",
+          "lat": 1.3820624832537,
+          "lon": 103.89289085586,
+          "captured_at": 1524734437000,
+          "compass_angle": 0,
+          "distance": 1.3934565304104267
+        }
+      ],
+      "checkpointId": "BUANGKOK__R01__C003"
+    }
+  ],
+  "mapillaryImageCount": 8,
+  "uniqueMapillaryImageCount": 7,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531606.0068507
+}

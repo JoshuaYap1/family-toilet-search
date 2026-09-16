@@ -1,0 +1,143 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "CASHEW MRT",
+  "routeId": "CASHEW__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3698333185962925,
+    "lon": 103.76423448071098
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 12135862492,
+    "lat": 1.3694486,
+    "lon": 103.7646629,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "fee": "no",
+      "layer": "-1",
+      "level": "-1",
+      "toilets:disposal": "flush",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 64.01647719927834,
+  "distance": 71.4,
+  "duration": 57.2,
+  "points": [
+    {
+      "lat": 1.369855,
+      "lon": 103.764267
+    },
+    {
+      "lat": 1.369647,
+      "lon": 103.76441
+    },
+    {
+      "lat": 1.369615,
+      "lon": 103.764429
+    },
+    {
+      "lat": 1.369603,
+      "lon": 103.764445
+    },
+    {
+      "lat": 1.369591,
+      "lon": 103.764444
+    },
+    {
+      "lat": 1.369564,
+      "lon": 103.764465
+    },
+    {
+      "lat": 1.369534,
+      "lon": 103.764487
+    },
+    {
+      "lat": 1.369468,
+      "lon": 103.764535
+    },
+    {
+      "lat": 1.369438,
+      "lon": 103.764556
+    },
+    {
+      "lat": 1.369405,
+      "lon": 103.764629
+    },
+    {
+      "lat": 1.369455,
+      "lon": 103.764646
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.369855,
+      "lon": 103.764267,
+      "imageCandidates": [
+        {
+          "id": "371722998087466",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9apnesaVdQ9J-LI3pUNTUbzVlCBzyDrOu18ppQ2cgeLNrOq0gQ5QTj4n_R5zYWs9fP_Ubd9Ue2SblhZp22_ubOMNfWdT7pGxvBmOmfPtCDFsLnMtSgHMMm0FVxIIPRqlykPMOlf6ylnNE9lhPH054?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=im7SVerJcpF36KSoW3aBNA&_nc_oc=Adpg--Mli31pi7i24Asl6ImCr8v_F91kczzyIQ88i9DRm37L3AuQ8XGmZk5w1IgyaJM&ccb=10-5&oh=00_AQJ7G8Z2GGK9p-jZpxFkEmDqkVbN_xum0EtjA7Sx-cwJIw&oe=6AD18E65&_nc_sid=201bca",
+          "lat": 1.3698290791667,
+          "lon": 103.7642884094,
+          "captured_at": 1640413377547,
+          "compass_angle": 235.31625366211,
+          "distance": 3.7420579376163814
+        },
+        {
+          "id": "291401376373099",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-5jivAgRl-TCgmAbh04g30S4V1iNkvmlU6ST4__80Ouy7iZF93zUw5fyyXbDDlnAo2CfhAUuMUas6gReEzCyz45tmJyK2VPEdj5siRMYx1SJiCqQQUi9Ve5qEoJV4YFoYGXc8MDF_hEgp08Eq0VB0?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=im7SVerJcpF36KSoW3aBNA&_nc_oc=Adr58OK0BRdDM8w2an86pWlS-FDDNuAFHxGju_9WCkOJOCLDZyrilrISX3n36RO-7u0&ccb=10-5&oh=00_AQJVouQWjKM4MR_FsparmP8V7jkyje5-wnxmaz6gZQt4Mg&oe=6AD1976B&_nc_sid=201bca",
+          "lat": 1.369885004806,
+          "lon": 103.76424865884,
+          "captured_at": 1640413376568,
+          "compass_angle": 235.31625366211,
+          "distance": 3.914436509733789
+        }
+      ],
+      "checkpointId": "CASHEW__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 71.62752080745896,
+      "lat": 1.369455,
+      "lon": 103.764646,
+      "imageCandidates": [
+        {
+          "id": "136730642110125",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8HNaNZ8TNuvGIiL_bt0-qNQ8xygTaNuca3SwYuakVJpstATQz0dot1ezwKDIZx2mf1yNJVWHCufgLAt29jkBd_EmQHm2t6HGSqcXX8PrFGY3ebjt7zSCec7bOjQ9NX0rJ7TBMHF407BPA-CtSzbrA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=im7SVerJcpF36KSoW3aBNA&_nc_oc=AdpkCmsLiNJjU8GDiLJu1oGQwxRxhZ3RWecngjBL2f0KEHqzDzIqDdd5iX0_K5P0X1k&ccb=10-5&oh=00_AQLmsc0Uy53rwauKove3dNAdfIbQKDEvaGmo2xNUJrXWNQ&oe=6AD19D04&_nc_sid=201bca",
+          "lat": 1.3694088667193,
+          "lon": 103.76458773717,
+          "captured_at": 1640413442534,
+          "compass_angle": 143.67064572187,
+          "distance": 8.27138168847941
+        },
+        {
+          "id": "4709482579144370",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9qGXpNp3WBkNEZel0iS6ZG5EgZIYI8GezB5ZgYonFT4qc0ydkytXH06qE8gXKjp63it2WHcjx8iVymgp0Gdt7wrtx82wkLHRbxJq2aZpZTH3A33wL40y4hNBvTtC0Ktu5VaJcjTCVTzUp-DiHvTdw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=im7SVerJcpF36KSoW3aBNA&_nc_oc=Adr5qf6RdNUa4Ltdkv1m5xo_he1YT0omuoLev_eG45a-0uOLdewumYT9AYmbar6k_7A&ccb=10-5&oh=00_AQJUujvuFOWHzRMEIRq04G9L9UaGABnac7orSwvDpu-S8w&oe=6AD19CF7&_nc_sid=201bca",
+          "lat": 1.3694520603838,
+          "lon": 103.7645565903,
+          "captured_at": 1640413441569,
+          "compass_angle": 143.63466750127,
+          "distance": 9.955624487642863
+        }
+      ],
+      "checkpointId": "CASHEW__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531645.2345974
+}

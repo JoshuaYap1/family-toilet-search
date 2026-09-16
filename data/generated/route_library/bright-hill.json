@@ -1,0 +1,303 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "BRIGHT HILL MRT",
+  "routeId": "BRIGHT_HILL__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3621838048498118,
+    "lon": 103.83237571105509
+  },
+  "toilet": {
+    "osmType": "way",
+    "osmId": 491742498,
+    "lat": 1.3604197,
+    "lon": 103.8270349,
+    "name": "Public toilet",
+    "changingTable": "yes",
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "building": "yes",
+      "changing_table": "yes",
+      "check_date": "2023-07-02",
+      "fee": "no",
+      "female": "yes",
+      "male": "yes",
+      "survey:date": "2020-08-30",
+      "toilets:disposal": "flush",
+      "toilets:handwashing": "yes",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "changing_table",
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 625.2698432958937,
+  "distance": 625.2698432958937,
+  "duration": 521.0582027465781,
+  "points": [
+    {
+      "lat": 1.3621838048498118,
+      "lon": 103.83237571105509
+    },
+    {
+      "lat": 1.3604197,
+      "lon": 103.8270349
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3621838048498118,
+      "lon": 103.83237571105509,
+      "imageCandidates": [
+        {
+          "id": "600727210885353",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_t-a6Bufe53v7ur0YJbgPvOUn0_npteAo2JJM-Wawhho_EPKESjmpJxAkqzFjV_oi_IqI2cjuh_DwgwYeo4t72_QXFg5aZlkZw1urPn8riINJRlhIt9WROe8VTgerpbRAIAuQZk43sOxzoMO-oUBA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=Adrvmsj-g5E_9Pd-8Zu5oNxvciFcs3VwZWEypuGMfbxok5Ifw_FAYH3ApVD2GdoVvAw&ccb=10-5&oh=00_AQKjil-TGamWUJSA9vs1ih_z_os8VmNuDyngYbwMyfa83Q&oe=6AD18B8A&_nc_sid=201bca",
+          "lat": 1.3621869098682,
+          "lon": 103.83235662721,
+          "captured_at": 1484707089000,
+          "compass_angle": 182.48647631845,
+          "distance": 2.1517567660675376
+        },
+        {
+          "id": "314685956916347",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An91WRdD67QcJkWalNtRoSGjt-rCap0EzpcBTZ1H4IQYYZVAc2_xZTRu1nFUV8hQtLiuxeWUg6mm6rPrxnpIzAs8KIo9qxb4BVkIqJ_XqzHDzo_Z4KCQU-q6K6aHAGyvxIw2HX1Le8ARPPwxMvX9lw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=Ado4XnozHUYvREouwGv6RvyklLQPGl0EsUnPLCqEs7Han-jeTbpwZ2TRBlA_m8X4Qbc&ccb=10-5&oh=00_AQLF0QrMwTjtz-OAXUvtQiNkKDQurwZvvNjLfieIyesiCQ&oe=6AD19E22&_nc_sid=201bca",
+          "lat": 1.3621602700271,
+          "lon": 103.83236830085,
+          "captured_at": 1484707090000,
+          "compass_angle": 261.584086666,
+          "distance": 2.746623307619986
+        }
+      ],
+      "checkpointId": "BRIGHT_HILL__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3619580968782887,
+      "lon": 103.83169238226675,
+      "imageCandidates": [
+        {
+          "id": "766295710917456",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8s4zX_dhWx_Rhk4ykLjztOeFKokQKITPnfnsQbyMoqmos-XJ0GirRU-O8BcPkwncA7-33sw-gDTW3RH1hSTVvKrw93PpT5vWxAIcoD77GehOlzxFEujMMte79HV4va1nBFGJAN1u-hiP1WMnH85A?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=AdoJL1oLce8ZNUjXs_jyf6JHYLTTtU-F072TCdFkoHE9bFMDgBMuNsPeAV6iyEVMiMw&ccb=10-5&oh=00_AQII0oU2Pq6qv_sXzPW1bous-iEI1TQFbToUd-VXXBk40Q&oe=6AD16D89&_nc_sid=201bca",
+          "lat": 1.3616340323979,
+          "lon": 103.83155459256,
+          "captured_at": 1484707275000,
+          "compass_angle": 84.020671612974,
+          "distance": 39.19872084655586
+        },
+        {
+          "id": "289673702837533",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_NMuNqeVncEEDdrnMJcQaoQcQ4ow7r9k8uqotJ616wwNXbJa6qZre2k7DjjcnNOqZAjU09QUt9UzZZ_06oqrqXP76MSzPFPJt1BlH-dOAWKay_l2x_MxDGL79i__6xJ98MKC2PX7P_fWSfi99ktgo?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=AdoPJQ7IP0AlE3-szCkDSQUxNHna_uSWtWVc1QCQ7hsWm9elNCXV49yxXgNguIrQNHA&ccb=10-5&oh=00_AQI7VRV06DcbeUFN-x_0K-nvQqN92bSRRzd4TE3o0pq7pg&oe=6AD16FCC&_nc_sid=201bca",
+          "lat": 1.361633728671,
+          "lon": 103.83155499144,
+          "captured_at": 1484707275000,
+          "compass_angle": 259.70018834729,
+          "distance": 39.21250899421263
+        }
+      ],
+      "checkpointId": "BRIGHT_HILL__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3617323889067654,
+      "lon": 103.83100905347841,
+      "imageCandidates": [
+        {
+          "id": "297078068588647",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-NW2Hl0wOm9J-Y_2f8GN5ic2K6PO8GbUm4P3dKr-_prwz1p06AIcMtNxFczslaZMv_O4D-C10ecLdk8nS4Hx5NUC182fhbFgyKay21KmLIL-ns6FVpRgSCn4YhUHXg_0F0hx4Ef029IQArO9S3FBQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=Adr2ftHyUmniEcaZ7zifpm6BfftGE6QCjfZhq_Lzsg8lL2cf3lL3dLJIKp-bzJnpzw0&ccb=10-5&oh=00_AQJD5CM5R9gR7lPme5eLPgZ2v_u7_UghDi-ohW6-E6dHrQ&oe=6AD19568&_nc_sid=201bca",
+          "lat": 1.3614901900139,
+          "lon": 103.83099346509,
+          "captured_at": 1484707248000,
+          "compass_angle": 180,
+          "distance": 27.01733517815805
+        },
+        {
+          "id": "811855293089608",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8ZlVm4y5CmXRKutNWEtBLNpT7xXcyTdtEpUkLtIupxHWsDEupO3c_50qwKjU1uPsyNlpL6cnNX2KSBImXk9SVxxgCwK4VfBuKglMUJAc4re_nyxEibJJoVPsut0lp_V6Vk3MB8TWQuCDK5oLCZFg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=AdoBGEjSweK1aIax9V5nNN3Np25PaxMpjr5JjLlLqXjWsRJW3R2ioI509NWvxaLkS70&ccb=10-5&oh=00_AQJ-Klp3cO3V87-wkgftnAeirGUqIiXu_1TtFMh7qJdy7A&oe=6AD17092&_nc_sid=201bca",
+          "lat": 1.3614901682054,
+          "lon": 103.83099346636,
+          "captured_at": 1484707247000,
+          "compass_angle": 90,
+          "distance": 27.019748816723393
+        }
+      ],
+      "checkpointId": "BRIGHT_HILL__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.3615066809352423,
+      "lon": 103.83032572469006,
+      "imageCandidates": [
+        {
+          "id": "297078068588647",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-NW2Hl0wOm9J-Y_2f8GN5ic2K6PO8GbUm4P3dKr-_prwz1p06AIcMtNxFczslaZMv_O4D-C10ecLdk8nS4Hx5NUC182fhbFgyKay21KmLIL-ns6FVpRgSCn4YhUHXg_0F0hx4Ef029IQArO9S3FBQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=Adr2ftHyUmniEcaZ7zifpm6BfftGE6QCjfZhq_Lzsg8lL2cf3lL3dLJIKp-bzJnpzw0&ccb=10-5&oh=00_AQJD5CM5R9gR7lPme5eLPgZ2v_u7_UghDi-ohW6-E6dHrQ&oe=6AD19568&_nc_sid=201bca",
+          "lat": 1.3614901900139,
+          "lon": 103.83099346509,
+          "captured_at": 1484707248000,
+          "compass_angle": 180,
+          "distance": 74.33454714116863
+        },
+        {
+          "id": "811855293089608",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8ZlVm4y5CmXRKutNWEtBLNpT7xXcyTdtEpUkLtIupxHWsDEupO3c_50qwKjU1uPsyNlpL6cnNX2KSBImXk9SVxxgCwK4VfBuKglMUJAc4re_nyxEibJJoVPsut0lp_V6Vk3MB8TWQuCDK5oLCZFg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=AdoBGEjSweK1aIax9V5nNN3Np25PaxMpjr5JjLlLqXjWsRJW3R2ioI509NWvxaLkS70&ccb=10-5&oh=00_AQJ-Klp3cO3V87-wkgftnAeirGUqIiXu_1TtFMh7qJdy7A&oe=6AD17092&_nc_sid=201bca",
+          "lat": 1.3614901682054,
+          "lon": 103.83099346636,
+          "captured_at": 1484707247000,
+          "compass_angle": 90,
+          "distance": 74.33474842871063
+        }
+      ],
+      "checkpointId": "BRIGHT_HILL__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.361280972963719,
+      "lon": 103.82964239590171,
+      "imageCandidates": [
+        {
+          "id": "768911913992594",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_CuaSn2WEZcB1XtCtMKfO4HvbF8MhyEAevM5uL0rmJXG8glrLFK30ekE_NxdBu-5KyNU02tpeoSfRY1Oz8PETmyO8AZ6yk7QAcZiV8R-jGVxXuZXDB-omF5CU3_d04oxDjlCzIqhslb38p91AJrQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=AdpekB1lWLaNPVu1MGSKfClyHwoQFYLKPQ32ZhCAEgvzCO42a2tRliFbH1keOZYY5Do&ccb=10-5&oh=00_AQJiZJlnuJUMXGUbSqvcPL_PLfRm01skgytUa9f02er-rA&oe=6AD18C6D&_nc_sid=201bca",
+          "lat": 1.360619631739,
+          "lon": 103.82886075726,
+          "captured_at": 1484707427000,
+          "compass_angle": 340.38186336195,
+          "distance": 113.95962593965366
+        },
+        {
+          "id": "2782008022048516",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-KIlcvhG2gb15RifXJJDccJMRSdQbHmQp8frgJtTs8CUDuiHV4HXtKTNCMKSc4e9GKDZ5I79Uu8WxOyRNw0w57BIRqRvuVdwplTp01rDFRWhIltBYsEFBupYkXHmk3nJq_wNZxMjiVCjx1iIMc3Q?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=AdqVJbY_Z6oi4g0KGYxJR12yYfkrtVgoNQRX2os_CyuwmyaH5v7FKqeJ-vKFVdU1KZQ&ccb=10-5&oh=00_AQJRandvDVz2BKv6SIhErtXioB2UAID9lWnFt7HHITslyg&oe=6AD19BD1&_nc_sid=201bca",
+          "lat": 1.3606424572758,
+          "lon": 103.8288126435,
+          "captured_at": 1484707428000,
+          "compass_angle": 348.49542055055,
+          "distance": 116.5304419799093
+        }
+      ],
+      "checkpointId": "BRIGHT_HILL__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 400.0,
+      "lat": 1.3610552649921959,
+      "lon": 103.82895906711337,
+      "imageCandidates": [
+        {
+          "id": "170266108338342",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8cz6AkOLJtgmzithyZ_cgn7quepiyZDuYt1tkQl0i-wbqnJ_EbGKoPSDZyRClaLy3DDkTBcF3Vka4fwQy1FvoFWTco6ia1A5r7HfBAN_YoBNYfCJFp3jY_gwnwIR6sPQihTmXLa_lKjoE38Yz2nnA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UqD3KJgczNO4soiw0ZGxTw&_nc_oc=AdqWm3m_e_0nVdm3_xYWCQ8HNih4Ox0sVnF7CVE7FjN28AcLERRaGYjP8x9gZXjCM-M&ccb=10-5&oh=00_AQL4hPwmYm8l139ijCccFqnIrbENdMOCEyrMGvNVzcI6XQ&oe=6AD18563&_nc_sid=201bca",
+          "lat": 1.3608323192046,
+          "lon": 103.82860017693,
+          "captured_at": 1484470090000,
+          "compass_angle": 340.00674017579,
+          "distance": 47.02322290402763
+        },
+        {
+          "id": "2782008022048516",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-KIlcvhG2gb15RifXJJDccJMRSdQbHmQp8frgJtTs8CUDuiHV4HXtKTNCMKSc4e9GKDZ5I79Uu8WxOyRNw0w57BIRqRvuVdwplTp01rDFRWhIltBYsEFBupYkXHmk3nJq_wNZxMjiVCjx1iIMc3Q?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=S6TC9Wikh8rmT3p0fUwa2Q&_nc_oc=AdqVJbY_Z6oi4g0KGYxJR12yYfkrtVgoNQRX2os_CyuwmyaH5v7FKqeJ-vKFVdU1KZQ&ccb=10-5&oh=00_AQJRandvDVz2BKv6SIhErtXioB2UAID9lWnFt7HHITslyg&oe=6AD19BD1&_nc_sid=201bca",
+          "lat": 1.3606424572758,
+          "lon": 103.8288126435,
+          "captured_at": 1484707428000,
+          "compass_angle": 348.49542055055,
+          "distance": 48.75739614682041
+        }
+      ],
+      "checkpointId": "BRIGHT_HILL__R01__C005"
+    },
+    {
+      "checkpointIndex": 6,
+      "distanceFromStart": 480.0,
+      "lat": 1.3608295570206725,
+      "lon": 103.82827573832503,
+      "imageCandidates": [
+        {
+          "id": "307929510903775",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8_8r-w2xcLRe_UmKkYHO5GaV7kpZ-QbjXHBd4jCksw1XpYlXVkkpHU0AyiPSZWtHeQc43fefdf9PAlndCVJYWBw5tkcybCwob9EVYx23M0BuZde4HOvOg96dj9xElCe39Tvw7iOmhpcT9pbhahDpI?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UqD3KJgczNO4soiw0ZGxTw&_nc_oc=Adrt0TQ7U9QGZgJWIRsWnAfvqnJX2UTQ23BVcQahGmPsA8R-pS-hd9bCvIPcxmSCz5Q&ccb=10-5&oh=00_AQI3oD5U73080VqsjrNvuUWO56gFY77S2iDh6m-fEK98qg&oe=6AD18916&_nc_sid=201bca",
+          "lat": 1.3608780615185,
+          "lon": 103.82833919559,
+          "captured_at": 1484470091000,
+          "compass_angle": 245.37394248601,
+          "distance": 8.889750382890183
+        },
+        {
+          "id": "1222928864889095",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8jS8MtoMA1zj416Fj7SD7VtBY2J5nhSVWfl3H0Xe0swyboEnMEX1WwPGa2EReqJ7vAdsOuQ3CNWHkyx-BuUAXpDF89Uvj68MyNFmbzKZMmXeo1-ErhyHmsmF-ssd2MGiEdDelBxJBN5eHi-OuGPQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UqD3KJgczNO4soiw0ZGxTw&_nc_oc=Adqet6XbjlSy-P7IFOPRTMneer93A-HAp_UEc4xZGB7l8GF_WZh-ilsuRRy9o79xpp0&ccb=10-5&oh=00_AQIprsO01BZGwq7HZIiVBb2ZNTFvMr3-5sLt7BrrPbtalg&oe=6AD18F00&_nc_sid=201bca",
+          "lat": 1.3608625709156,
+          "lon": 103.82837434494,
+          "captured_at": 1484708072000,
+          "compass_angle": 247.66588455071,
+          "distance": 11.572835892020473
+        }
+      ],
+      "checkpointId": "BRIGHT_HILL__R01__C006"
+    },
+    {
+      "checkpointIndex": 7,
+      "distanceFromStart": 560.0,
+      "lat": 1.3606038490491494,
+      "lon": 103.82759240953669,
+      "imageCandidates": [
+        {
+          "id": "575010080142016",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-iqvSrvJYGjlWQp1RTUOuECTF-1OFuys01yhH9OoBIHJo2EdUJatDrnGRObKbBmQAjwoqlOGtkAWVMOi7PyeBKW-4LriWlDNWeogzSfrKpJDoiGOYbH4Po7vj-5R5K3DoeEuVI2pTJ05xEfURIqA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UqD3KJgczNO4soiw0ZGxTw&_nc_oc=Adoephr9boEOpwhbzfSuKEA1tANDRrHocleODhvA71JmQDeIwt337khiNnnqO7FSocc&ccb=10-5&oh=00_AQKGpr-vZkgQlEpjmsGbuspSaEm3q0QVPVmUOcQYW4CenQ&oe=6AD16BFA&_nc_sid=201bca",
+          "lat": 1.3603037888597,
+          "lon": 103.82749771261,
+          "captured_at": 1572328074129,
+          "compass_angle": 76.198486328125,
+          "distance": 35.025767186057486
+        },
+        {
+          "id": "798873037692176",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8lEhGitKC2gIgut8hYZ54oFIOcdXNlBc0GrGpujSiH2F5RntL-4T2U2ZS42ooW1V9_BQj4ZwnQaqTnzPz0IyjuC9EAWWCuufDALRqzHvDA7brSbE8j5XJbJXDUqXRLm_XLEc2iil5JCaEF-u5lkA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UqD3KJgczNO4soiw0ZGxTw&_nc_oc=AdpP72l0-SkaOTauLzll5LSwINw2xnC0pYbGhtREKq2xhRjdtfAin5fB4PZyMsunZpw&ccb=10-5&oh=00_AQJ25-ZmAlaCx_krznWGl1aWQa-PF78MTuUycqZV6BLyQw&oe=6AD174D8&_nc_sid=201bca",
+          "lat": 1.3602923866742,
+          "lon": 103.82714584686,
+          "captured_at": 1572327891676,
+          "compass_angle": 253.76315307617,
+          "distance": 60.596804550356765
+        }
+      ],
+      "checkpointId": "BRIGHT_HILL__R01__C007"
+    },
+    {
+      "checkpointIndex": 8,
+      "distanceFromStart": 625.2698432958937,
+      "lat": 1.3604197,
+      "lon": 103.8270349,
+      "imageCandidates": [
+        {
+          "id": "266385941891745",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9BkC3KMXYr7yDT6NBJZnjyGrxNB1qNXtXTlyPtA5GsJu0v3BMhZf77CFb-2ukh7SnZnXLjmptF8byQDE2pBuZgqFmvGtZ_lwmBCQDaqCIRcz7ZKlnp2Ej6gvDOYDxh13ubyxgH7c-MQ_-2PAYa_D8?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UqD3KJgczNO4soiw0ZGxTw&_nc_oc=AdppgALSIQSUj_Hoq1DrvCFFuIjFr0u5nr3WYA_xQLVGBfq-UQfchtbGRvwc0trjios&ccb=10-5&oh=00_AQKkp08ym8MRL4O5XVPnZCx86uCSRoiY4tccc1xPOGRiCw&oe=6AD18A12&_nc_sid=201bca",
+          "lat": 1.360343400002,
+          "lon": 103.8270621,
+          "captured_at": 1572328007396,
+          "compass_angle": 0,
+          "distance": 9.016997425616774
+        },
+        {
+          "id": "807195576886222",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_bDtEShcS_na0LoWWzkae8ypdI9nRt1xotTTJeiWDAAGRmcIepdTgnbyYpaP2Bznyf6O3czQEu5ZBgh1io-aSvbtaOMGH6VFTwbhIU_5q7iHpG5wX_S-yzB5auEDqiwxCYW4rAA-R88wRMsgsuvg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UqD3KJgczNO4soiw0ZGxTw&_nc_oc=AdpS3DQ2bYcwsQOjXVXA8y9cEsxkx9obOunUvYBncx3_FhfeGfFrQFPolRPMwiigSXg&ccb=10-5&oh=00_AQLWQrAsbeeqx5clSqMCiIdg26ilW5W8Z_bMZYI2JONcmA&oe=6AD1920D&_nc_sid=201bca",
+          "lat": 1.3602681998262,
+          "lon": 103.82707795168,
+          "captured_at": 1572328049575,
+          "compass_angle": 225.18423461914,
+          "distance": 17.53235402649748
+        }
+      ],
+      "checkpointId": "BRIGHT_HILL__R01__C008"
+    }
+  ],
+  "mapillaryImageCount": 18,
+  "uniqueMapillaryImageCount": 15,
+  "routingError": "429 Client Error: Too Many Requests for url: https://routing.openstreetmap.de/routed-foot/route/v1/driving/103.83237571105509,1.3621838048498118;103.8270349,1.3604197?overview=full&geometries=geojson&steps=false",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531602.4307113
+}

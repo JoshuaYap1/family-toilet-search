@@ -1,0 +1,76 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "BUKIT GOMBAK MRT",
+  "routeId": "BUKIT_GOMBAK__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3586952612690937,
+    "lon": 103.75209299569798
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 9754440110,
+    "lat": 1.3587279,
+    "lon": 103.7519464,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "fee": "no",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 16.69535541878642,
+  "distance": 0.0,
+  "duration": 0.0,
+  "points": [
+    {
+      "lat": 1.358651,
+      "lon": 103.752032
+    },
+    {
+      "lat": 1.358651,
+      "lon": 103.752032
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.358651,
+      "lon": 103.752032,
+      "imageCandidates": [
+        {
+          "id": "616660803061177",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9h2swAcdePxPkQtEwwzMMk3jni-Dt9hTcFeyjb-J_ncVkTOhF5u-SNegbYGyK8LQD_92qNONbAJkjPti4HuDZTAJjG2LcXGKKxrq3brARLq3HMvaG1ff_kOb04uoGGraLgb18vaDQAJ5pIedLVQQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=jHSM1TthpTxCUG6LVU7XQg&_nc_oc=AdqC6_vk1IpjgwJV0v970rLgu6jTtnhWZxHKDRMymM3Z6QxAlc2jrZesCHDmj6KaEVg&ccb=10-5&oh=00_AQIAMDJ2Vtf8wMJG9fjnzyI8wQPt9uoU4I67-6zbC3gkQw&oe=6AD1936D&_nc_sid=201bca",
+          "lat": 1.3587855591623,
+          "lon": 103.75155576679,
+          "captured_at": 1484629753000,
+          "compass_angle": 271.91273522455,
+          "distance": 55.07547668907709
+        },
+        {
+          "id": "376963660412786",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9jHAZZsB2lH7qTiUG9hDxn2HEYUyE2gaQFxNPN83UFLDfb16XBxGpdokNaqqtSBSmkzIFtPthl-ZHmXXOrv6kZS_QC-k1K2Jr7a1UodJHUvKMXCQa7uDjm6OTBLVooUxJBKv_AlsUUvhuosKBiQQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=jHSM1TthpTxCUG6LVU7XQg&_nc_oc=Adp20YE_E56LHra2vR6Kb-Q34-I7LAoWvDyJwEz-IT_d0YN8SDqFZSlWRxnFwgNcAcU&ccb=10-5&oh=00_AQLqXD66NMyznxeK2vxNziiEeiogjDPWlLv9nmSzf0kp6g&oe=6AD19E22&_nc_sid=201bca",
+          "lat": 1.3587572280228,
+          "lon": 103.75153935224,
+          "captured_at": 1529442815166,
+          "compass_angle": 14.034118652344,
+          "distance": 56.08691823207581
+        }
+      ],
+      "checkpointId": "BUKIT_GOMBAK__R01__C000"
+    }
+  ],
+  "mapillaryImageCount": 2,
+  "uniqueMapillaryImageCount": 2,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531634.0115187
+}

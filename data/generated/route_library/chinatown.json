@@ -1,0 +1,168 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "CHINATOWN MRT",
+  "routeId": "CHINATOWN__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.2837127704301896,
+    "lon": 103.84379788809954
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 1867211717,
+    "lat": 1.2841663,
+    "lon": 103.8435245,
+    "name": "Toilets @ MRT Station",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "check_date": "2023-08-02",
+      "fee": "no",
+      "name": "Toilets @ MRT Station",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 58.88006013139278,
+  "distance": 110.2,
+  "duration": 88.0,
+  "points": [
+    {
+      "lat": 1.283719,
+      "lon": 103.843802
+    },
+    {
+      "lat": 1.283864,
+      "lon": 103.843566
+    },
+    {
+      "lat": 1.283892,
+      "lon": 103.843424
+    },
+    {
+      "lat": 1.283896,
+      "lon": 103.843399
+    },
+    {
+      "lat": 1.283861,
+      "lon": 103.843356
+    },
+    {
+      "lat": 1.283911,
+      "lon": 103.843293
+    },
+    {
+      "lat": 1.283948,
+      "lon": 103.843263
+    },
+    {
+      "lat": 1.284013,
+      "lon": 103.843317
+    },
+    {
+      "lat": 1.284007,
+      "lon": 103.843378
+    },
+    {
+      "lat": 1.284093,
+      "lon": 103.843448
+    },
+    {
+      "lat": 1.284172,
+      "lon": 103.843518
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.283719,
+      "lon": 103.843802,
+      "imageCandidates": [
+        {
+          "id": "850937625460484",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-fzGbj179Rf6G6wf76l6IS1pdpk5VwIhl3G8jn-zoEl8Ci5IYYnRWfjR413ViPY_HVSySvHC7vmsNcisDv1UGMAxlnQfnr4EsuQUe1_Zg2X4mJLWqenR13Kgs74JNRZ-2LF_lLQizuBzQAE0ORHg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=Ldz7Vm_5BKJ5uUpvXonkrw&_nc_oc=AdqMst9fv5KDy1v5lM4RYc4Jp6cjIEmzRQFcU-NaTiqlKSF_SatuFNFizjb5ItgrF5A&ccb=10-5&oh=00_AQKpod9ui7Fg5ALCqfOj62pPP6uijsdIsQMVFDJab0cphw&oe=6AD18AC4&_nc_sid=201bca",
+          "lat": 1.283831273917,
+          "lon": 103.84377660789,
+          "captured_at": 1529135078292,
+          "compass_angle": 111.55548095703,
+          "distance": 12.81383049787461
+        },
+        {
+          "id": "311958856955938",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9SrEeqKFlGFA9XhIVUWEcX_KhPz4Feycox9SqjIstbicOdCpnICaOvx0hijV4y0N9G6Lqo54zB6opwYgrSV6-5FFzDxwOmnuQo7BK311H6hyiUzEUHJnGFQJQFn5oX30ksZIPwvEs_6at19dCT7lY?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=Ldz7Vm_5BKJ5uUpvXonkrw&_nc_oc=AdoKCkjVxHu6DYQvdnIrpMmAvvYh5T6Es2h39HoLRa_jpCZh3F_hGcvE9FmjoGWFiKg&ccb=10-5&oh=00_AQL0fERPN3cPwvqE8lbJeeRqViJX73W3y21BcvPlVTE6bQ&oe=6AD1A0EC&_nc_sid=201bca",
+          "lat": 1.2838358388438,
+          "lon": 103.84376208752,
+          "captured_at": 1529135076037,
+          "compass_angle": 108.96102905273,
+          "distance": 13.744085803360544
+        }
+      ],
+      "checkpointId": "CHINATOWN__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.2840125561521911,
+      "lon": 103.84332151245272,
+      "imageCandidates": [
+        {
+          "id": "216667886623397",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8JBpYefXq59xX6AqJe3hq_aaOe79DY5LfGvZ066wrFr2kqQ15zL2-mOcq_49idqEgTP5C2SnAzKoUorJW75e--29PrdfZRSN_nvnawT4Y0EEcplXKa3R0UmEckRH9M1x1woeQnN3BNVGMdldjACLM?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=Ldz7Vm_5BKJ5uUpvXonkrw&_nc_oc=AdoKC_IYSgvPdRAganl6UIevjO7TkX3SwgNzvbi4cJhiLmaW96XESAKBaUwpp0UDYuw&ccb=10-5&oh=00_AQIBN05C0lTL0vz7cKHmG0jN9fdMl94CthfkmfsJ4jF2XA&oe=6AD1A0BF&_nc_sid=201bca",
+          "lat": 1.2839812523235,
+          "lon": 103.84333602906,
+          "captured_at": 1484455526000,
+          "compass_angle": 221.70594545223,
+          "distance": 3.8410332639784763
+        },
+        {
+          "id": "490200972185178",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-jrrHZbyB8JN1T8NUp_-PzJiq0-w-82P6y8KaxUjkKd_py8LN92Suxp1hLGOpT9RPxNCISOEVY3op6ZYC9FjgTKjvAj61aQFrvwN99tx82se2k0XhPXjm5z9sbFx4bt67u-9NqpBGMPtW0ckPSqA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=Ldz7Vm_5BKJ5uUpvXonkrw&_nc_oc=Adr4PBwhy6DYma11Xmy9acS21aFktXga0p_2K627TZMscd8pdOXxzeW_zVplwGQ7iXY&ccb=10-5&oh=00_AQJwVJSQLBov4DgSrI45thzY5e055rk4XdVQjmQQk58guQ&oe=6AD17336&_nc_sid=201bca",
+          "lat": 1.2840232350383,
+          "lon": 103.84336103896,
+          "captured_at": 1546037461388,
+          "compass_angle": 220.94842529297,
+          "distance": 4.556781748446517
+        }
+      ],
+      "checkpointId": "CHINATOWN__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 110.37417730775374,
+      "lat": 1.284172,
+      "lon": 103.843518,
+      "imageCandidates": [
+        {
+          "id": "196000565678623",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An94vaUKBF3dWRccK6ExtorzW0RaKGsArPl7iWw_WFRq5dLEZE0Ugl5TC1ZVrgyvgo-Gy2k1--MbjNQXvbKPVlxfxlMKRIUTEozYOJhwNExLMOE2fh23Dj5LPANkrAAAGOBLy6c-8oXIkF61bZkoCg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=Ldz7Vm_5BKJ5uUpvXonkrw&_nc_oc=AdqaS2dpoFzlwnVJ4ERykTJP5ie1TqK3a41KTaKZqtKsCSOGEhAdb-4JpNb4cB3GgL0&ccb=10-5&oh=00_AQJvppMdVQET46tx-WYf_kWEIwmZgFnlN2trGO59TEeEMw&oe=6AD19CFA&_nc_sid=201bca",
+          "lat": 1.2841715470416,
+          "lon": 103.8435422723,
+          "captured_at": 1529135024733,
+          "compass_angle": 188.99978637695,
+          "distance": 2.7017843648264583
+        },
+        {
+          "id": "1133040357214971",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9-RYLmRNaC-fgur_kyi35UB4pCu_VO9brZXkTuJ2rwQO2d4Ajcf2-2mLDgML65qTzth-c9tumMj3msdiFGEHWY1UxUV7gLZSZDcsvRnSkqM_7IewVCjJ5WTfGA0TYpj9N9Y4c9VZ3nPFauD32vaU8?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=Ldz7Vm_5BKJ5uUpvXonkrw&_nc_oc=AdrDruA04XT4vDc42ZAg79P5KUS6yL_5846Q4jFNor5Lyg0qTTBgkxioocehAqfWNuI&ccb=10-5&oh=00_AQKjF0kpDhPd2qv7my0Oa7BIXX9NZ6qH0XD_n5ypJVVssg&oe=6AD1912E&_nc_sid=201bca",
+          "lat": 1.2841470648881,
+          "lon": 103.84352652847,
+          "captured_at": 1484455522000,
+          "compass_angle": 124.78508582306,
+          "distance": 2.933568363777115
+        }
+      ],
+      "checkpointId": "CHINATOWN__R01__C002"
+    }
+  ],
+  "mapillaryImageCount": 6,
+  "uniqueMapillaryImageCount": 6,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531652.9034424
+}

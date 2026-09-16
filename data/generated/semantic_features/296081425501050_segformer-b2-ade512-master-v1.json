@@ -1,0 +1,56 @@
+{
+  "mapillaryId": "296081425501050",
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512",
+  "modelVersion": "segformer-b2-ade512-master-v1",
+  "groups": {
+    "greenery": 0.0024617513020833335,
+    "sky": 0.0,
+    "road": 0.0,
+    "pedestrian_space": 0.26358668009440106,
+    "built_frontage": 0.25439198811848956,
+    "vehicle": 0.0,
+    "human": 0.0
+  },
+  "topLabels": [
+    {
+      "label": "floor",
+      "proportion": 0.26358668009440106
+    },
+    {
+      "label": "wall",
+      "proportion": 0.25439198811848956
+    },
+    {
+      "label": "bulletin board",
+      "proportion": 0.24114863077799478
+    },
+    {
+      "label": "poster",
+      "proportion": 0.1072998046875
+    },
+    {
+      "label": "signboard",
+      "proportion": 0.049746195475260414
+    },
+    {
+      "label": "booth",
+      "proportion": 0.035189310709635414
+    },
+    {
+      "label": "ceiling",
+      "proportion": 0.01924896240234375
+    },
+    {
+      "label": "door",
+      "proportion": 0.009549458821614584
+    },
+    {
+      "label": "table",
+      "proportion": 0.006701151529947917
+    },
+    {
+      "label": "stool",
+      "proportion": 0.0051422119140625
+    }
+  ]
+}

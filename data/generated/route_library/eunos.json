@@ -1,0 +1,124 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "EUNOS MRT",
+  "routeId": "EUNOS__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3195172748993538,
+    "lon": 103.9028941378417
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 9893218544,
+    "lat": 1.3197872,
+    "lon": 103.9030311,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "fee": "no",
+      "level": "0",
+      "toilets:access": "yes",
+      "toilets:disposal": "flush",
+      "toilets:position": "seated;urinal",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 33.65520577874872,
+  "distance": 44.4,
+  "duration": 35.6,
+  "points": [
+    {
+      "lat": 1.319518,
+      "lon": 103.902897
+    },
+    {
+      "lat": 1.319518,
+      "lon": 103.902897
+    },
+    {
+      "lat": 1.319575,
+      "lon": 103.902887
+    },
+    {
+      "lat": 1.319606,
+      "lon": 103.903134
+    },
+    {
+      "lat": 1.319698,
+      "lon": 103.903122
+    },
+    {
+      "lat": 1.319698,
+      "lon": 103.903122
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.319518,
+      "lon": 103.902897,
+      "imageCandidates": [
+        {
+          "id": "1374432056269699",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9Pn9Kf0-LQIKMxrovVsIlJemJRtLdOWXygkKjS3OwCoDGk-921RCkiCsoWjcqdBvyn1KZ6L7ntEIRUQm7d7KJO4sVnEp75igqJgLGT2c2Hsgd4s0vL-qqLdw03PIUVwqkJsY6pL2LZGZxtm3zt6nk?stp=s1024x764&edm=AOnQwmMEAAAA&_nc_gid=tB3ZjR43za-ir6WAxV5gNA&_nc_oc=Adr6G0EglamlvVPNzO5O6c2wPHxth3eWUa07xqYCRagvwdBb1h1mxC_VoGoXP-zTEz4&ccb=10-5&oh=00_AQL79WrM6hN7VNjOFcqAn81POKcJS2-flRA-vYa0N3naQw&oe=6AD19A7F&_nc_sid=201bca",
+          "lat": 1.319648056635,
+          "lon": 103.90291115335,
+          "captured_at": 1433755268370,
+          "compass_angle": 232.2531,
+          "distance": 14.56333636906369
+        },
+        {
+          "id": "1462933344052523",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An93U19dGd2Do8unYmojI7Fy0dyRNSAwXLjUiLwaRSuiSMXR6SeRMCc3CENs6X3KfOh1S18-aV8cczbTqlRSy8_ft_h8xSRdyRORVZ8va90MllAM5HTaTZl-2NIM7qbrMoB5fkfgEGQvueFb3OQA9A?stp=s1024x764&edm=AOnQwmMEAAAA&_nc_gid=tB3ZjR43za-ir6WAxV5gNA&_nc_oc=AdrKlRBJBASdrfaycLew23UnHBJUrmZVzW8JUk6YHg29rVwsfYq6rJL_Uro-isBDBwQ&ccb=10-5&oh=00_AQIznqs8l_gmNnCk8T4ooz1UQjEJ5YpVlcfqCUEJCbsw_g&oe=6AD19707&_nc_sid=201bca",
+          "lat": 1.3196480691609,
+          "lon": 103.90291113427,
+          "captured_at": 1433755276739,
+          "compass_angle": 5.810913,
+          "distance": 14.564493084140853
+        }
+      ],
+      "checkpointId": "EUNOS__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 44.42478954014675,
+      "lat": 1.319698,
+      "lon": 103.903122,
+      "imageCandidates": [
+        {
+          "id": "1312197767376452",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9zJz2ymSULvowGEs0Q4MlKxR6_n7ZmxFpl14QcBuQbr0S5Y10zDOfbr5r_GiFDY7b4LLp-A4lnH0lYBN86wlXbPbbFjFy1WDUPzMN7xkjy7Jxv-bbFIBPaw3f4MZvwOKbOinDJ3tRMS168h0My4w?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=tB3ZjR43za-ir6WAxV5gNA&_nc_oc=AdrjoeNZTGjYnfaEjysKyha0EbhK90UOoMseZbHsd6r46rLyTzeQgaAFg20Npxs8j8c&ccb=10-5&oh=00_AQI71b6gWcf1yzR7qRyFs1pS0ng47EI9yjB8tA9Mx3IPAA&oe=6AD17B2A&_nc_sid=201bca",
+          "lat": 1.3196888437276,
+          "lon": 103.90313169,
+          "captured_at": 1766729496103,
+          "compass_angle": 194,
+          "distance": 1.4838735490030204
+        },
+        {
+          "id": "1224041859785646",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-3lTsPE2cZtPmqd5abxgKqSCGlGRM6ALQmuPcXhlWXzWCVZbKrDcV8F5pJ8rxx_vY6ncTM5vX6bghBw4aF1KyFz5ErGm8EMOoSamG9J-j6rmj8s4R2dPLqucfEETDrBPHTDSxYdbrOS9lrraBymGw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=tB3ZjR43za-ir6WAxV5gNA&_nc_oc=AdqiDZ481DcmK6LJrW7K52lPxuxwynSy5ya2Q-CJ-lkF9t9wlRkEnz2aLz6I-8wq67k&ccb=10-5&oh=00_AQKIVmMd5YLwWoA19SwxKciI2xMXNV79rnl1VP-Ak2THYQ&oe=6AD19B4A&_nc_sid=201bca",
+          "lat": 1.3196894707444,
+          "lon": 103.9030583087,
+          "captured_at": 1766729497004,
+          "compass_angle": 195,
+          "distance": 7.1515438600735015
+        }
+      ],
+      "checkpointId": "EUNOS__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531675.4113805
+}

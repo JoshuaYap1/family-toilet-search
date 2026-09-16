@@ -1,0 +1,242 @@
+{
+  "mode": "static-image-grids",
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512",
+  "modelVersion": "segformer-b2-ade512-grid-v1",
+  "device": "cpu",
+  "gridSize": 5,
+  "rows": 5,
+  "columns": 5,
+  "imageCount": 25,
+  "clusterCount": 0,
+  "originalGrid": "./data/generated/street_image_grid.png",
+  "segmentationGrid": "./data/generated/street_segmentation_grid.png",
+  "generatedAt": 1789523413.4770243,
+  "cells": [
+    {
+      "slot": 0,
+      "imageId": "751385475551437",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-1",
+      "originalImage": "./data/generated/street_images/751385475551437.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/751385475551437.png"
+    },
+    {
+      "slot": 1,
+      "imageId": "509827907126771",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-1",
+      "originalImage": "./data/generated/street_images/509827907126771.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/509827907126771.png"
+    },
+    {
+      "slot": 2,
+      "imageId": "573351820723606",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-1",
+      "originalImage": "./data/generated/street_images/573351820723606.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/573351820723606.png"
+    },
+    {
+      "slot": 3,
+      "imageId": "321836546019779",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-1",
+      "originalImage": "./data/generated/street_images/321836546019779.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/321836546019779.png"
+    },
+    {
+      "slot": 4,
+      "imageId": "2471222979687722",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-1",
+      "originalImage": "./data/generated/street_images/2471222979687722.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/2471222979687722.png"
+    },
+    {
+      "slot": 5,
+      "imageId": "2798641933709386",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-1",
+      "originalImage": "./data/generated/street_images/2798641933709386.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/2798641933709386.png"
+    },
+    {
+      "slot": 6,
+      "imageId": "1243432326071196",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-2",
+      "originalImage": "./data/generated/street_images/1243432326071196.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/1243432326071196.png"
+    },
+    {
+      "slot": 7,
+      "imageId": "788689632085841",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-2",
+      "originalImage": "./data/generated/street_images/788689632085841.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/788689632085841.png"
+    },
+    {
+      "slot": 8,
+      "imageId": "1381222535570058",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-3",
+      "originalImage": "./data/generated/street_images/1381222535570058.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/1381222535570058.png"
+    },
+    {
+      "slot": 9,
+      "imageId": "235772441639655",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-2",
+      "originalImage": "./data/generated/street_images/235772441639655.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/235772441639655.png"
+    },
+    {
+      "slot": 10,
+      "imageId": "500882371108779",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-3",
+      "originalImage": "./data/generated/street_images/500882371108779.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/500882371108779.png"
+    },
+    {
+      "slot": 11,
+      "imageId": "537198457282430",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-2",
+      "originalImage": "./data/generated/street_images/537198457282430.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/537198457282430.png"
+    },
+    {
+      "slot": 12,
+      "imageId": "143707304334309",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-5",
+      "originalImage": "./data/generated/street_images/143707304334309.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/143707304334309.png"
+    },
+    {
+      "slot": 13,
+      "imageId": "207176951021112",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-3",
+      "originalImage": "./data/generated/street_images/207176951021112.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/207176951021112.png"
+    },
+    {
+      "slot": 14,
+      "imageId": "496701401524001",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-5",
+      "originalImage": "./data/generated/street_images/496701401524001.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/496701401524001.png"
+    },
+    {
+      "slot": 15,
+      "imageId": "259108162625668",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-3",
+      "originalImage": "./data/generated/street_images/259108162625668.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/259108162625668.png"
+    },
+    {
+      "slot": 16,
+      "imageId": "136307361825236",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-5",
+      "originalImage": "./data/generated/street_images/136307361825236.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/136307361825236.png"
+    },
+    {
+      "slot": 17,
+      "imageId": "152044463550934",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-3",
+      "originalImage": "./data/generated/street_images/152044463550934.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/152044463550934.png"
+    },
+    {
+      "slot": 18,
+      "imageId": "330741388483430",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-6",
+      "originalImage": "./data/generated/street_images/330741388483430.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/330741388483430.png"
+    },
+    {
+      "slot": 19,
+      "imageId": "872444210152326",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-4",
+      "originalImage": "./data/generated/street_images/872444210152326.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/872444210152326.png"
+    },
+    {
+      "slot": 20,
+      "imageId": "2883127685287904",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-6",
+      "originalImage": "./data/generated/street_images/2883127685287904.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/2883127685287904.png"
+    },
+    {
+      "slot": 21,
+      "imageId": "2884267588557036",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-4",
+      "originalImage": "./data/generated/street_images/2884267588557036.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/2884267588557036.png"
+    },
+    {
+      "slot": 22,
+      "imageId": "1165344493937543",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-6",
+      "originalImage": "./data/generated/street_images/1165344493937543.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/1165344493937543.png"
+    },
+    {
+      "slot": 23,
+      "imageId": "136066368560275",
+      "station": "SERANGOON MRT",
+      "routeId": "serangoon-mrt-public-toilet",
+      "checkpointId": "serangoon-mrt-public-toilet-cp-4",
+      "originalImage": "./data/generated/street_images/136066368560275.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/136066368560275.png"
+    },
+    {
+      "slot": 24,
+      "imageId": "891941091586648",
+      "station": "HOUGANG MRT",
+      "routeId": "hougang-mrt-public-toilet",
+      "checkpointId": "hougang-mrt-public-toilet-cp-7",
+      "originalImage": "./data/generated/street_images/891941091586648.jpg",
+      "segmentationImage": "./data/generated/segmentation_images/891941091586648.png"
+    }
+  ],
+  "failedImages": 0
+}

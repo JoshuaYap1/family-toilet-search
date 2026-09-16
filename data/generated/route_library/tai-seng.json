@@ -1,0 +1,132 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "TAI SENG MRT",
+  "routeId": "TAI_SENG__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3357723930680265,
+    "lon": 103.88826122803613
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 11754949219,
+    "lat": 1.3365617,
+    "lon": 103.8889902,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "check_date": "2024-03-16",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 119.45650885904341,
+  "distance": 119.45650885904341,
+  "duration": 99.54709071586952,
+  "points": [
+    {
+      "lat": 1.3357723930680265,
+      "lon": 103.88826122803613
+    },
+    {
+      "lat": 1.3365617,
+      "lon": 103.8889902
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3357723930680265,
+      "lon": 103.88826122803613,
+      "imageCandidates": [
+        {
+          "id": "323638182467187",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_XFsciTF3quiK7qITssZzZcjDubJ289vYWmntcd6NQ0ZDe3M-1StKxOEQEtiaBzRDQy5cX1dwgZPkHHbLT624QXYREscg41pymNRzAWMctiL6PkN1w8T11Hs6u6SQ1VveknWz_NCD2hD3au2FI1g?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pXoI_xLWyeTkQ56ANK7j-w&_nc_oc=AdqJWWdD6AAs4mAMtDU0hmGAAT096OfT5zk2cTfOCerPXorSUjdKNbD7Ow60vhpRJrI&ccb=10-5&oh=00_AQJ7rDDXIqgisI_rHJvytI1cVHiE1ESV9TuSIQEAX59twg&oe=6AD170BE&_nc_sid=201bca",
+          "lat": 1.3357059018038,
+          "lon": 103.88826247785,
+          "captured_at": 1553058147000,
+          "compass_angle": 153.27000427246,
+          "distance": 7.403114290863987
+        },
+        {
+          "id": "283641480174561",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_gCYEoMnLfDDljD1EMixb_yo4uPjjmwg_qmASXuZ6lxUI0yVL7fNeWvMihh0zyJT4lyOJm36qB2LJjLgYYn-Od93GWdZmzar6KF9HhiGiqNKoevpy8AuR5AM3GMhu_bl4D-XbToxWAib9q7iBqLA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pXoI_xLWyeTkQ56ANK7j-w&_nc_oc=AdqnVkS18J9ANSpMqZFuO_pMfu5iq9lLM-HtivxFzDq-NY2KuqG_20lUuQBwdRo718w&ccb=10-5&oh=00_AQI_3_t4cyABxY-5tcl1m3_uBEzABAyL-_ZJUOwUPDfMkg&oe=6AD1A0EA&_nc_sid=201bca",
+          "lat": 1.3357057504074,
+          "lon": 103.88826210027,
+          "captured_at": 1553058147000,
+          "compass_angle": 153.27000427246,
+          "distance": 7.419296022456523
+        }
+      ],
+      "checkpointId": "TAI_SENG__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3363009917619026,
+      "lon": 103.88874942041397,
+      "imageCandidates": [
+        {
+          "id": "896515454238210",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An839uPP1kp4NsHou_Gnk6O-P0NSEhN_DU-qkg8GrYtGKjsMyjz4OlIgKUbRrG2ptiDhWjstci5CaKEa41Yl1Pnc85qvwL-8rF8bDmgCipm1BYLGqb6oALh4XG-HayeuL6IwR-C0Y2dDmcbGlWrrKQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=pXoI_xLWyeTkQ56ANK7j-w&_nc_oc=Ado45j0uwBA8ax-2kM8CdZeWXlEuJKFkdcqPo0ov4qM30Wr-A7cdc7tYFvxPDOJwslE&ccb=10-5&oh=00_AQIV74syfNOgDLraUwnOK6p6O93lMhKnBEDZNiH3hWzfMw&oe=6AD193B7&_nc_sid=201bca",
+          "lat": 1.3359454428265,
+          "lon": 103.88815793582,
+          "captured_at": 1435285649007,
+          "compass_angle": 158.0945,
+          "distance": 76.80908983751856
+        },
+        {
+          "id": "521379485907147",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9Z1eiU8nv-BHQJQeCq2mqF3ncCmckK4vIlDBCCgliJotSPlkMf2LPUJZperoJPqMWN-gCmFBRZZwIxJ6rAKFQenEiz5qNhtmzSE4wDAm_G2ZTM54GOHM04pobCCrPEeSWoOQzDXlpprB63FfZRNQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pXoI_xLWyeTkQ56ANK7j-w&_nc_oc=Adoc_hbwf4NPuNJVdh6voiE1fn9LkrINt6YmzYzvTyfw07wkfuIBabSKnCPjOo13yqM&ccb=10-5&oh=00_AQIwA1-B93Gz8ileTvKNrSoMXz_vE3nqUqwdS4KUxrvBQA&oe=6AD19AEE&_nc_sid=201bca",
+          "lat": 1.33607654221,
+          "lon": 103.88809675544,
+          "captured_at": 1553058144000,
+          "compass_angle": 154.86000061035,
+          "distance": 76.8122118197616
+        }
+      ],
+      "checkpointId": "TAI_SENG__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 119.45650885904341,
+      "lat": 1.3365617,
+      "lon": 103.8889902,
+      "imageCandidates": [
+        {
+          "id": "4216594168392925",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8gfGYltuk3elJz7gG42dYIXgLmzOd5oa3RMjhYMByb2gzd7mfZqHcH--vYYMcxImPAsoXrzDtGt0Pjr5jSRsVMVtdl3OskqurNwMul85hxIdnusepAZb_DfmI9FJHFBNlTYdvgFzd2l4ToTNXQpg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pXoI_xLWyeTkQ56ANK7j-w&_nc_oc=AdoGBE6Hb7q5dTlyQsIyKe6Vb_0WjUwgM8BJOYF70JBQH2IqEINc-93wyPw4PadVHLA&ccb=10-5&oh=00_AQIY65ZIUNOfo_eHPDryHOn2ijrUb28wla5aD-Gy8aNuXw&oe=6AD18CB4&_nc_sid=201bca",
+          "lat": 1.3367158819615,
+          "lon": 103.88951487403,
+          "captured_at": 1553058404000,
+          "compass_angle": 0.50999999046326,
+          "distance": 60.861113082703284
+        },
+        {
+          "id": "522185335462217",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_cS5eYtDrMKGyP0BxjYAsR8AvShlMPu075yuaqKJjFx8JDSEFf24nlBy9XqpnutKTdU9fFvtNdKtphl1Ju-Byi9GGDVGvuN1rJYdIpMFkmei7yTCWPe7rJc3NX9S4MsFISWwZcVbYy3eSeYJR-gg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pXoI_xLWyeTkQ56ANK7j-w&_nc_oc=Adri6rKxC8HnEk9VzKWBJ6c2H_C3TKv8iaIQAR8uD6ePiAMCQA4t_mqeAiRFLbECn50&ccb=10-5&oh=00_AQJhdNuiCB0c_mI2Hl9450G7dLt2DjzHi1axC0yHrTNXjA&oe=6AD17C17&_nc_sid=201bca",
+          "lat": 1.3367424687653,
+          "lon": 103.88950639562,
+          "captured_at": 1553058404000,
+          "compass_angle": 0.50999999046326,
+          "distance": 60.86978140830612
+        }
+      ],
+      "checkpointId": "TAI_SENG__R01__C002"
+    }
+  ],
+  "mapillaryImageCount": 6,
+  "uniqueMapillaryImageCount": 6,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.88826122803613,1.3357723930680265;103.8889902,1.3365617?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c2a0d0>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531873.4070535
+}

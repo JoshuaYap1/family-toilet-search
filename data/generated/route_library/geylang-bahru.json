@@ -1,0 +1,271 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "GEYLANG BAHRU MRT",
+  "routeId": "GEYLANG_BAHRU__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3215616987402512,
+    "lon": 103.87155560756929
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 5724697768,
+    "lat": 1.3215884,
+    "lon": 103.869785,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 196.8525988098615,
+  "distance": 327.2,
+  "duration": 261.6,
+  "points": [
+    {
+      "lat": 1.321551,
+      "lon": 103.871562
+    },
+    {
+      "lat": 1.321498,
+      "lon": 103.871473
+    },
+    {
+      "lat": 1.321515,
+      "lon": 103.871462
+    },
+    {
+      "lat": 1.321389,
+      "lon": 103.871225
+    },
+    {
+      "lat": 1.321221,
+      "lon": 103.871325
+    },
+    {
+      "lat": 1.321197,
+      "lon": 103.871264
+    },
+    {
+      "lat": 1.321133,
+      "lon": 103.871155
+    },
+    {
+      "lat": 1.321083,
+      "lon": 103.871069
+    },
+    {
+      "lat": 1.320816,
+      "lon": 103.870702
+    },
+    {
+      "lat": 1.320875,
+      "lon": 103.870666
+    },
+    {
+      "lat": 1.320885,
+      "lon": 103.870659
+    },
+    {
+      "lat": 1.320892,
+      "lon": 103.870649
+    },
+    {
+      "lat": 1.320896,
+      "lon": 103.870638
+    },
+    {
+      "lat": 1.320896,
+      "lon": 103.870628
+    },
+    {
+      "lat": 1.320892,
+      "lon": 103.870618
+    },
+    {
+      "lat": 1.320651,
+      "lon": 103.870228
+    },
+    {
+      "lat": 1.3214,
+      "lon": 103.869772
+    },
+    {
+      "lat": 1.321533,
+      "lon": 103.869693
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.321551,
+      "lon": 103.871562,
+      "imageCandidates": [
+        {
+          "id": "1482660978742399",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8zXmZfY5Z2UAAF9kJa5TnSOYMsjl1oQXkUKl022RB6XxVv2kt31diZ4qdNqglVlJW9nB0wqNO-0sEoP76sTshFsTyrhcpWKukMHR3u5wdGMYstD5cTKHZ-z6149wC2ncUawH8oP4KUojTUGJiSYFs?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=AdpxePR8KOu2iBx3nu1VdUulCLvmTZNFiVJodaIc-IfddzhE1N1of7kR4naPjDiWAMc&ccb=10-5&oh=00_AQJfI5vHPQQYLKjUC-9OgZohvU8OQ-v2G5S7pmW0hE7hWg&oe=6AD199A7&_nc_sid=201bca",
+          "lat": 1.3217016837592,
+          "lon": 103.87176745656,
+          "captured_at": 1530094256013,
+          "compass_angle": 299.41549682617,
+          "distance": 28.358328048953613
+        },
+        {
+          "id": "801956770726965",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8S95Q9mmQ95Ty2VMWsE8uZYz-VqnBEqk-0SgQ9VAcJbTyQw1a3yGM3hghZRvIqZZNwwuv6RZ0rtRThfWjRAi_KoQVkHck1jgVZRU2RkLJo74KRIuIG2sqIkuho425lW5HJGuZirBkGXPwi9aa7YA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=Adpg3jT2WBbeY1S-32y4kSeDHlyll9QEBh7h8cnNIqVyI-ybJapYkIgbiMk11yD6d3s&ccb=10-5&oh=00_AQKwhpBL7H2_F_cGWKN1IyUDNNIvGtf3JvHaRbEDTidCMg&oe=6AD17F88&_nc_sid=201bca",
+          "lat": 1.3215776156107,
+          "lon": 103.87189955098,
+          "captured_at": 1530094244475,
+          "compass_angle": 283.45202636719,
+          "distance": 37.68283906945157
+        }
+      ],
+      "checkpointId": "GEYLANG_BAHRU__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3211634459194967,
+      "lon": 103.87120685320664,
+      "imageCandidates": [
+        {
+          "id": "298444498594592",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_-Eja2aG3E1uhoFhP5xg_d5j6VdfnCv9NfIz3hi4qg_b6fnE6n7_p1O78EKhKNCvqINgHDU_N7czLzZc5mtNTlZwJMoKVwwDwKtmb2_kCPY1HevWwx0ZX2UIcRqISu_5DjDcoks3AylXBXm2rxDQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=AdrVJWiedLYpPzZyeVHJeaaY24HP4Ugs1CJTS3cnE0_HCxaSn-lWx_LZo61VEeSy6z8&ccb=10-5&oh=00_AQK2vD1YL9oFrQz3F1_sciFSFhLUGrUhYSQNYsfWJyjsNQ&oe=6AD188EA&_nc_sid=201bca",
+          "lat": 1.3211386540489,
+          "lon": 103.87116825523,
+          "captured_at": 1548036866000,
+          "compass_angle": 329.89999389648,
+          "distance": 5.105753003176129
+        },
+        {
+          "id": "303624518053960",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_D_V8kQRLtUbpu-gUsUJkD5Zb5vzkKzesFFtNSuKVuZuU8y5V5n-y9CFnRxLRLCF0xCw7SwdubIXK7z9jILz8-XZzfCcd-enrLsDKvxpV2mJXMFggNOgXEyJBfjd4U7cphXO3kZekLLHCwkfZD1Q?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=AdqA6QSCtexXkxWNmOXhi9bYonN11eaiRp4QiJUVlLzWrdYx6pjdacTUA4WvV2eSZD0&ccb=10-5&oh=00_AQJIu-kF9sXHYWjGx4Kbgf2vRoFz079oCutW_s0G-JotYQ&oe=6AD1A0B6&_nc_sid=201bca",
+          "lat": 1.3211860503454,
+          "lon": 103.87125157022,
+          "captured_at": 1484702518000,
+          "compass_angle": 150.10088499509,
+          "distance": 5.576574645377551
+        }
+      ],
+      "checkpointId": "GEYLANG_BAHRU__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.320896,
+      "lon": 103.87063711204931,
+      "imageCandidates": [
+        {
+          "id": "508597687244877",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8DCjPqWz6-VgdVF3QCwFYEDp0C5Vh31KNH1Vb0LmmVK912Wt8Qhpb9F8X4OWaIS5FgUaUk-AVpMWRed04LIAzw_gPEa7SWcBE1gS_bG12U5cnmiVD0aUi4DfIP4DZf6_hsDcekkrMfkc7GtkcX4w?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=AdonAvxiNq3ZYxRMPqE0k6imLYwfnktx19p67j487Xyp370JJVEluGT5Q1FkqJWfRg0&ccb=10-5&oh=00_AQIq_aBGpVmWXt3mW243thVFLUybmidTZJ33ehQue8mjgQ&oe=6AD19D33&_nc_sid=201bca",
+          "lat": 1.3208763697387,
+          "lon": 103.87063926564,
+          "captured_at": 1537769022000,
+          "compass_angle": 175.13999938965,
+          "distance": 2.198344944465762
+        },
+        {
+          "id": "381671813200889",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-905x8O0vp02kY4mWQWh3iICNPxs0cIloCZNW8TLBHc9PpCZZHM2Vc7YNA7I--lDNbAuzQ5YzAsbmAXhgQDKiFObC9QZNNpUL6lZIdtfs6GlEU7eRwPNRIqMtBeTh_tQT-Gse818UjMa-AiE70KQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=Adrg1ScaEYhd5ikDIYv4bFFwLxPvtTiw6HXP_W2gDSkdhOQNeVEQ1aD-1ZOf3NXqRAM&ccb=10-5&oh=00_AQJvEp_w2f_9x_XVQe18DvEn0BWHKNcUxfClFwo5cZoUjg&oe=6AD192B8&_nc_sid=201bca",
+          "lat": 1.3208779733441,
+          "lon": 103.87065234164,
+          "captured_at": 1537769021000,
+          "compass_angle": 212.10000610352,
+          "distance": 2.626721552886784
+        }
+      ],
+      "checkpointId": "GEYLANG_BAHRU__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.3208570479122623,
+      "lon": 103.87010255561016,
+      "imageCandidates": [
+        {
+          "id": "244335474153919",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_RLY9cTpkeiNi2Bmcyj5RbBLMGcdLm7PhHimnjvZbSaWymFIWYjUYLmFDQi1cHWb1Qq5coV03SOdBJYmyvzzRQBYXkKRDzIfLwW0qmFKKx2OOx99tm1V9GVJ_CpjIN_HkAfXGav1Oc-6dlmTn6zA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=Adr6xL5BCMtZhQXE2O2K3Qd7ZeGizutK7XKipMTnyAVFJh3zwSigO1ItM9nDp3SgCNI&ccb=10-5&oh=00_AQKP77fCq9I8dDIGunLwXYGym9onM8YW-6GlLoUr-7OMlQ&oe=6AD178FD&_nc_sid=201bca",
+          "lat": 1.3206922280055,
+          "lon": 103.87009113847,
+          "captured_at": 1553052203000,
+          "compass_angle": 351.30999755859,
+          "distance": 18.391695820537674
+        },
+        {
+          "id": "486857199097481",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9Vl9hR9BtIDok1dOfVAamKk64Nf9ShuS_h7bwcE83gayhNcOBkcTo-y17GzoLc9_WA__kjuqK1O8NcrQSCtWpK6k3Q88BOVhTlOTMZaXOS4l_wZabCrNMUaKbJ7lLwaD4SKdYk48kKMZSO4y0Yiw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=Adq09RKhu7ZEoENQ10-Yslsu23WSXMInDAZj791VCcsHuOAKCbB_KLfU-FSpj4tfrFU&ccb=10-5&oh=00_AQJ9NO6R6o6qePyXsG2SyfNasCbNAzE8Xb6lc0VB2GwDdA&oe=6AD18781&_nc_sid=201bca",
+          "lat": 1.3206964314924,
+          "lon": 103.87000516007,
+          "captured_at": 1553052203000,
+          "compass_angle": 351.30999755859,
+          "distance": 20.90875442389435
+        }
+      ],
+      "checkpointId": "GEYLANG_BAHRU__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.3214720901030437,
+      "lon": 103.86972917956285,
+      "imageCandidates": [
+        {
+          "id": "910684582811387",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Hkb4I_Xb4CO6QE90a82N8TJuWbeJDr0GhlXdFfLzzVgSvg-NoO-oIcgRSQdKU0bHXkaomNcUQrL_JYdVMZ2ZvyMPs7QY6bvwDOJALzvzE7SZxF7KT3Axx5CoXRxVC1I4WJBjmYLiY4gks7DnraQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=AdpGeVW-rHFmugiTQXriKHRu6iM6qB7BQzBsjfkvlxkrXGi17UcaybzMQ61--5kY6Is&ccb=10-5&oh=00_AQI0cJhHU9j-_4bEcMNXL_lrXOTqx585KsqRYLjPWvW61g&oe=6AD17B55&_nc_sid=201bca",
+          "lat": 1.3217336692787,
+          "lon": 103.86960167869,
+          "captured_at": 1548038161000,
+          "compass_angle": 168.55999755859,
+          "distance": 32.39230126685486
+        },
+        {
+          "id": "309136657456932",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8uK2WaKy7dQ0bHnCp4lJLcvi7VDPYkS9BxcCkguu15RwSH81lFusgGPH1PSe1lSxUx-9aaiv2u-tQvbqrCPnId8k7Gvcaykq8oY4H_khRoyYehrnwLeD48iWkYg9GKQMO0DtlItbM5mkebBbYZbao?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=AdoaPDcnTsHwq2GIa9pl_ebMdGhWHx-al10q6cU7NfS1YxyouKg4rGm0gUotvZTZ9SE&ccb=10-5&oh=00_AQKIBC-2Wq0BFSjAa-beYuT2jW0ZIsWxCt4VsjgVheFaDg&oe=6AD184FA&_nc_sid=201bca",
+          "lat": 1.3217336713648,
+          "lon": 103.8696016698,
+          "captured_at": 1548038160000,
+          "compass_angle": 166.55999755859,
+          "distance": 32.39294343377708
+        }
+      ],
+      "checkpointId": "GEYLANG_BAHRU__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 327.8770286244583,
+      "lat": 1.321533,
+      "lon": 103.869693,
+      "imageCandidates": [
+        {
+          "id": "910684582811387",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Hkb4I_Xb4CO6QE90a82N8TJuWbeJDr0GhlXdFfLzzVgSvg-NoO-oIcgRSQdKU0bHXkaomNcUQrL_JYdVMZ2ZvyMPs7QY6bvwDOJALzvzE7SZxF7KT3Axx5CoXRxVC1I4WJBjmYLiY4gks7DnraQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=AdpGeVW-rHFmugiTQXriKHRu6iM6qB7BQzBsjfkvlxkrXGi17UcaybzMQ61--5kY6Is&ccb=10-5&oh=00_AQI0cJhHU9j-_4bEcMNXL_lrXOTqx585KsqRYLjPWvW61g&oe=6AD17B55&_nc_sid=201bca",
+          "lat": 1.3217336692787,
+          "lon": 103.86960167869,
+          "captured_at": 1548038161000,
+          "compass_angle": 168.55999755859,
+          "distance": 24.541782316888792
+        },
+        {
+          "id": "309136657456932",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8uK2WaKy7dQ0bHnCp4lJLcvi7VDPYkS9BxcCkguu15RwSH81lFusgGPH1PSe1lSxUx-9aaiv2u-tQvbqrCPnId8k7Gvcaykq8oY4H_khRoyYehrnwLeD48iWkYg9GKQMO0DtlItbM5mkebBbYZbao?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=nk9Dwf-EDAJojoz0gyG01A&_nc_oc=AdoaPDcnTsHwq2GIa9pl_ebMdGhWHx-al10q6cU7NfS1YxyouKg4rGm0gUotvZTZ9SE&ccb=10-5&oh=00_AQKIBC-2Wq0BFSjAa-beYuT2jW0ZIsWxCt4VsjgVheFaDg&oe=6AD184FA&_nc_sid=201bca",
+          "lat": 1.3217336713648,
+          "lon": 103.8696016698,
+          "captured_at": 1548038160000,
+          "compass_angle": 166.55999755859,
+          "distance": 24.542403422475065
+        }
+      ],
+      "checkpointId": "GEYLANG_BAHRU__R01__C005"
+    }
+  ],
+  "mapillaryImageCount": 12,
+  "uniqueMapillaryImageCount": 10,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531689.6702607
+}

@@ -1,0 +1,107 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "REDHILL MRT",
+  "routeId": "REDHILL__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.2894858753609895,
+    "lon": 103.81724937307973
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 5070719372,
+    "lat": 1.2894254,
+    "lon": 103.8172516,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "level": "0",
+      "toilets:disposal": "flush",
+      "toilets:wheelchair": "yes",
+      "unisex": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 6.7291086479883635,
+  "distance": 6.7291086479883635,
+  "duration": 5.607590539990303,
+  "points": [
+    {
+      "lat": 1.2894858753609895,
+      "lon": 103.81724937307973
+    },
+    {
+      "lat": 1.2894254,
+      "lon": 103.8172516
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.2894858753609895,
+      "lon": 103.81724937307973,
+      "imageCandidates": [
+        {
+          "id": "995989984322045",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-gB6NL5o6NBOmK98kVxmUvOzvufbcULwQCODEH-wvDQSz8xAKGX_2h_7HhQkeap0izjBGnbhGTG-RDNJ6DrVScO7PxfW_qx_whXGlNfg52n1H-acwlGVVW8yjceKqjPtfv8jgngOlVgTrva6LjmQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=kjpL9Lae8ch95WTEEqrMFA&_nc_oc=AdqaF9RIjTgr8RBUOYA-pIRPas0O6QqFGpogMSRr7ob8IIu109B278TcFo5seMi61Dk&ccb=10-5&oh=00_AQLLmz60162Ven6yVzJ76IiHkMl32Hh1YylV6niZIxYj-w&oe=6AD17B31&_nc_sid=201bca",
+          "lat": 1.2896213416524,
+          "lon": 103.81743745088,
+          "captured_at": 1643365224639,
+          "compass_angle": 122.19918823242,
+          "distance": 25.798025405034497
+        },
+        {
+          "id": "695422408312681",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9ep2tKFCWTR6Au9Swx1uLeZsPa714CikwwUPq7HMAc1Ea-rr1RPSMAFeJc6TxpVrRJFPDkk9nMHNJn6jP0wNPD94_cmYjuKAl98_1M2l_sJnBIVNSaG_OUz7_M6NJYevD7K4yHHboB7RPRqr2kkg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=kjpL9Lae8ch95WTEEqrMFA&_nc_oc=AdrnpwFYSU16jRyKpSGiiAvHG9aZ6LODpXnvomE19FbTmlqqvGDmKS9odvNbvUjA-Bo&ccb=10-5&oh=00_AQJ1HIsc6pgxhXQFHY305EaEGdeKqhmviMrpe1-CeAbqgA&oe=6AD18194&_nc_sid=201bca",
+          "lat": 1.2895871400494,
+          "lon": 103.81749232479,
+          "captured_at": 1643365225587,
+          "compass_angle": 122.12727274711,
+          "distance": 29.294335208515598
+        }
+      ],
+      "checkpointId": "REDHILL__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 6.7291086479883635,
+      "lat": 1.2894254,
+      "lon": 103.8172516,
+      "imageCandidates": [
+        {
+          "id": "995989984322045",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-gB6NL5o6NBOmK98kVxmUvOzvufbcULwQCODEH-wvDQSz8xAKGX_2h_7HhQkeap0izjBGnbhGTG-RDNJ6DrVScO7PxfW_qx_whXGlNfg52n1H-acwlGVVW8yjceKqjPtfv8jgngOlVgTrva6LjmQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=kjpL9Lae8ch95WTEEqrMFA&_nc_oc=AdqaF9RIjTgr8RBUOYA-pIRPas0O6QqFGpogMSRr7ob8IIu109B278TcFo5seMi61Dk&ccb=10-5&oh=00_AQLLmz60162Ven6yVzJ76IiHkMl32Hh1YylV6niZIxYj-w&oe=6AD17B31&_nc_sid=201bca",
+          "lat": 1.2896213416524,
+          "lon": 103.81743745088,
+          "captured_at": 1643365224639,
+          "compass_angle": 122.19918823242,
+          "distance": 30.05973739593569
+        },
+        {
+          "id": "695422408312681",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9ep2tKFCWTR6Au9Swx1uLeZsPa714CikwwUPq7HMAc1Ea-rr1RPSMAFeJc6TxpVrRJFPDkk9nMHNJn6jP0wNPD94_cmYjuKAl98_1M2l_sJnBIVNSaG_OUz7_M6NJYevD7K4yHHboB7RPRqr2kkg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=kjpL9Lae8ch95WTEEqrMFA&_nc_oc=AdrnpwFYSU16jRyKpSGiiAvHG9aZ6LODpXnvomE19FbTmlqqvGDmKS9odvNbvUjA-Bo&ccb=10-5&oh=00_AQJ1HIsc6pgxhXQFHY305EaEGdeKqhmviMrpe1-CeAbqgA&oe=6AD18194&_nc_sid=201bca",
+          "lat": 1.2895871400494,
+          "lon": 103.81749232479,
+          "captured_at": 1643365225587,
+          "compass_angle": 122.12727274711,
+          "distance": 32.278754675946885
+        }
+      ],
+      "checkpointId": "REDHILL__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 2,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.81724937307973,1.2894858753609895;103.8172516,1.2894254?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c2a990>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531842.8806174
+}

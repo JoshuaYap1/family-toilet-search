@@ -1,0 +1,221 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "WOODLANDS SOUTH MRT",
+  "routeId": "WOODLANDS_SOUTH__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.4258433869092755,
+    "lon": 103.79436521102042
+  },
+  "toilet": {
+    "osmType": "way",
+    "osmId": 1436400620,
+    "lat": 1.4252646,
+    "lon": 103.7924232,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "building": "yes",
+      "building:levels": "1",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 225.26420589427156,
+  "distance": 269.0,
+  "duration": 215.1,
+  "points": [
+    {
+      "lat": 1.425886,
+      "lon": 103.794363
+    },
+    {
+      "lat": 1.425838,
+      "lon": 103.793528
+    },
+    {
+      "lat": 1.425832,
+      "lon": 103.793426
+    },
+    {
+      "lat": 1.425787,
+      "lon": 103.793377
+    },
+    {
+      "lat": 1.425752,
+      "lon": 103.793357
+    },
+    {
+      "lat": 1.425716,
+      "lon": 103.793356
+    },
+    {
+      "lat": 1.425712,
+      "lon": 103.793273
+    },
+    {
+      "lat": 1.425698,
+      "lon": 103.792998
+    },
+    {
+      "lat": 1.425605,
+      "lon": 103.792982
+    },
+    {
+      "lat": 1.425543,
+      "lon": 103.792895
+    },
+    {
+      "lat": 1.425545,
+      "lon": 103.79277
+    },
+    {
+      "lat": 1.425501,
+      "lon": 103.792805
+    },
+    {
+      "lat": 1.425472,
+      "lon": 103.792812
+    },
+    {
+      "lat": 1.425447,
+      "lon": 103.792808
+    },
+    {
+      "lat": 1.425401,
+      "lon": 103.792782
+    },
+    {
+      "lat": 1.425395,
+      "lon": 103.792731
+    },
+    {
+      "lat": 1.425382,
+      "lon": 103.792656
+    },
+    {
+      "lat": 1.425372,
+      "lon": 103.792604
+    },
+    {
+      "lat": 1.425371,
+      "lon": 103.792559
+    },
+    {
+      "lat": 1.425335,
+      "lon": 103.792542
+    },
+    {
+      "lat": 1.425305,
+      "lon": 103.79253
+    },
+    {
+      "lat": 1.425273,
+      "lon": 103.792531
+    },
+    {
+      "lat": 1.425221,
+      "lon": 103.792556
+    },
+    {
+      "lat": 1.425226,
+      "lon": 103.79251
+    },
+    {
+      "lat": 1.425212,
+      "lon": 103.792455
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.425886,
+      "lon": 103.794363,
+      "imageCandidates": [],
+      "checkpointId": "WOODLANDS_SOUTH__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.4258446973951218,
+      "lon": 103.7936445067693,
+      "imageCandidates": [],
+      "checkpointId": "WOODLANDS_SOUTH__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.4256980270308741,
+      "lon": 103.7929985309636,
+      "imageCandidates": [],
+      "checkpointId": "WOODLANDS_SOUTH__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.4253681008222105,
+      "lon": 103.79255763094382,
+      "imageCandidates": [
+        {
+          "id": "251853846723459",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9Gu3h26SgL8AvEkNjr27aJs1EMaXI1YXGNZor8TlQkVLif6JThrksCW5BaU85etTup4UwVS-mNxhu_Rxj60JlrWHNRHbF4cA30rEpGsmpMWB7Vbx-coitm29ruqHGtSiZPJLbXeZUdnSIhHn7mdw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=LEoNd99ACh0lX2b_8Avu4A&_nc_oc=AdoRc0wlrWLRo7bASOjlO72cuhHYtNlSG10zVLD1ZNZujAzB2nVuEnA0qfeWzIeCzCc&ccb=10-5&oh=00_AQLtqZinP9rAi30N9gDOxmFir7M08xOL7Yk2A5F8zrGO4Q&oe=6AD19D4C&_nc_sid=201bca",
+          "lat": 1.4243188693577,
+          "lon": 103.79202519958,
+          "captured_at": 1484644156000,
+          "compass_angle": 29.609399616852,
+          "distance": 130.96997487337254
+        },
+        {
+          "id": "776687636239814",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9hFERmnQpaVw2OHO7j6u_0PZ3uE1sngR8e8cL-V0HLQX-uzFwzz9JsBBeuaKlHshHlk7sOtk-8DuADYjIjBc1lL1SUp2w0fNGREUEMK56tCMIR58iZeAZJLzJZ9thH8FX8hFbCOj2J7gOt6n6ctg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=LEoNd99ACh0lX2b_8Avu4A&_nc_oc=AdrqfgDeCVaJUtHWWkG9Z4fleQZznZBioxKavP6KtsSHDRKbrns5tq3cwI_UcT4NJfg&ccb=10-5&oh=00_AQIEqj00trWiCi_n1LIL_LA9nLrOmO-LH8qfskSczWSrFw&oe=6AD1945D&_nc_sid=201bca",
+          "lat": 1.4244059578548,
+          "lon": 103.79186544842,
+          "captured_at": 1484644155000,
+          "compass_angle": 28.603144873794,
+          "distance": 131.9289610452838
+        }
+      ],
+      "checkpointId": "WOODLANDS_SOUTH__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 269.0905206560058,
+      "lat": 1.425212,
+      "lon": 103.792455,
+      "imageCandidates": [
+        {
+          "id": "251853846723459",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9Gu3h26SgL8AvEkNjr27aJs1EMaXI1YXGNZor8TlQkVLif6JThrksCW5BaU85etTup4UwVS-mNxhu_Rxj60JlrWHNRHbF4cA30rEpGsmpMWB7Vbx-coitm29ruqHGtSiZPJLbXeZUdnSIhHn7mdw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=LEoNd99ACh0lX2b_8Avu4A&_nc_oc=AdoRc0wlrWLRo7bASOjlO72cuhHYtNlSG10zVLD1ZNZujAzB2nVuEnA0qfeWzIeCzCc&ccb=10-5&oh=00_AQLtqZinP9rAi30N9gDOxmFir7M08xOL7Yk2A5F8zrGO4Q&oe=6AD19D4C&_nc_sid=201bca",
+          "lat": 1.4243188693577,
+          "lon": 103.79202519958,
+          "captured_at": 1484644156000,
+          "compass_angle": 29.609399616852,
+          "distance": 110.33022123187241
+        },
+        {
+          "id": "776687636239814",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9hFERmnQpaVw2OHO7j6u_0PZ3uE1sngR8e8cL-V0HLQX-uzFwzz9JsBBeuaKlHshHlk7sOtk-8DuADYjIjBc1lL1SUp2w0fNGREUEMK56tCMIR58iZeAZJLzJZ9thH8FX8hFbCOj2J7gOt6n6ctg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=LEoNd99ACh0lX2b_8Avu4A&_nc_oc=AdrqfgDeCVaJUtHWWkG9Z4fleQZznZBioxKavP6KtsSHDRKbrns5tq3cwI_UcT4NJfg&ccb=10-5&oh=00_AQIEqj00trWiCi_n1LIL_LA9nLrOmO-LH8qfskSczWSrFw&oe=6AD1945D&_nc_sid=201bca",
+          "lat": 1.4244059578548,
+          "lon": 103.79186544842,
+          "captured_at": 1484644155000,
+          "compass_angle": 28.603144873794,
+          "distance": 111.15623863670253
+        }
+      ],
+      "checkpointId": "WOODLANDS_SOUTH__R01__C004"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 2,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531956.7944968
+}

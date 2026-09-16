@@ -1,0 +1,100 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "TAMPINES MRT",
+  "routeId": "TAMPINES__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3541939276064219,
+    "lon": 103.94265368187834
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 13196855933,
+    "lat": 1.3539424,
+    "lon": 103.9427907,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 31.847131377268312,
+  "distance": 31.847131377268312,
+  "duration": 26.539276147723594,
+  "points": [
+    {
+      "lat": 1.3541939276064219,
+      "lon": 103.94265368187834
+    },
+    {
+      "lat": 1.3539424,
+      "lon": 103.9427907
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3541939276064219,
+      "lon": 103.94265368187834,
+      "imageCandidates": [
+        {
+          "id": "307963640911794",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_M5MDHxkneA95lWaD5mG07qCq-1xHf2DMpHk-Wj1Gr08QTtkZ6P4-sJYUtmbqj9YrLSGFSU3DNNbQ_RfDHYAxhiHFPSDPgzWK6JGGOykjfR5iMdm4RNLDO8CDGm_ThzddEI-34F6OCspqUafPFmQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=aXOk3dBlZ4faz8MCf3kEpQ&_nc_oc=AdqGJ_tzRSRgmvoNkR726P91y1xZg7WE8QKuYp8XnjNLKFC8n4_ZhlFpOwcTBX1T0os&ccb=10-5&oh=00_AQLtUOdCC0Y0FVTCRQCrwnrNVOe8ZnC7OxI9w0XvtFxxXQ&oe=6AD1888D&_nc_sid=201bca",
+          "lat": 1.3542463719938,
+          "lon": 103.94138263483,
+          "captured_at": 1484286739000,
+          "compass_angle": 8.3746121287408,
+          "distance": 141.57386370933642
+        },
+        {
+          "id": "132183215527748",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9ePlN2bkIimM3-OMP_kcQ3lMM80XiPSBtbTnnDUa1vApt8ddcAYVKNkKt6Ua08XLE2zt-4h7dvRY9BCoy125X1Wf8nt3MwG1fX0kVN1EG2HEr9AhsJqRggtUtybcLhpu0c403v3c7x3YdTp1eROw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=aXOk3dBlZ4faz8MCf3kEpQ&_nc_oc=Adr1ormgTulBqnSn2Wyc_YA9LWU5w3U246NQUlXV1nP85gsqv3EoQMmKdllEY01YJz0&ccb=10-5&oh=00_AQIR2FuyMd0FSRaksp08bUhCSMSwlUNgoz3ilSghS4-OSg&oe=6AD18028&_nc_sid=201bca",
+          "lat": 1.3541836356291,
+          "lon": 103.94137974982,
+          "captured_at": 1484286738000,
+          "compass_angle": 355.77326239487,
+          "distance": 141.77913770964034
+        }
+      ],
+      "checkpointId": "TAMPINES__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 31.847131377268312,
+      "lat": 1.3539424,
+      "lon": 103.9427907,
+      "imageCandidates": [
+        {
+          "id": "309101984056784",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9jLZ_5JDsMFuBdAZSlCf6gLAZohBaaL9qaI3Gu5lx9-HJ5OQABe0V-sZ8peqAwW6gF7J5lIInpRTmeatEDcB2q7403vRgxhLWaQsiH3I0R1NF3LFIFhmMHlYHajecHiYiZmpdT2b3IDd2lKVwvJQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=aXOk3dBlZ4faz8MCf3kEpQ&_nc_oc=Adph9CqJGq6CyuoET0QhMOtmBDjDcHSFO_RevctUlbWsCvZSb-KK-aAwbf0ieiwC_0s&ccb=10-5&oh=00_AQJQyQMIx9ECLOdhWkt2vgZJiBmm3C64CVvCJEGHCE9PUQ&oe=6AD173EE&_nc_sid=201bca",
+          "lat": 1.3539248324291,
+          "lon": 103.94137454238,
+          "captured_at": 1484286733000,
+          "compass_angle": 359.57884421028,
+          "distance": 157.61478513349908
+        },
+        {
+          "id": "458755298545539",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8nNXPQsYZABV4Mw84PaJk0_lv-fMAsa3BQSspk7jBaSdbDbRUZWHyAT08PP_nfLg6VlhACXm6esQeMBbsy3-Eko3H64u5iXj1PJonrfKvNLIAX1o51IKZsb0FBrOInxL9QEeO5vpIH66JnLnFSig8?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=aXOk3dBlZ4faz8MCf3kEpQ&_nc_oc=AdpeDyPSGomObP6pi6CYu0GxZsnUPC4Z3Rvbyq8Tu3lt8HuPMPxoDFCzH42d72Hm7JE&ccb=10-5&oh=00_AQJumyj1CQ9kdpRtd82P6n7R6xif6Tbq21ngUuHYAJUNNw&oe=6AD18BCE&_nc_sid=201bca",
+          "lat": 1.353971490093,
+          "lon": 103.94137466971,
+          "captured_at": 1484286734000,
+          "compass_angle": 354.49833178815,
+          "distance": 157.62175069253055
+        }
+      ],
+      "checkpointId": "TAMPINES__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.94265368187834,1.3541939276064219;103.9427907,1.3539424?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c2cbc910>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "expanded-route",
+  "mapillaryCrawledAt": 1789531890.9513724
+}

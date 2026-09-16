@@ -1,0 +1,322 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "BRADDELL MRT",
+  "routeId": "BRADDELL__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3406721639431691,
+    "lon": 103.84744083059097
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 11878351805,
+    "lat": 1.3420759,
+    "lon": 103.8499916,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "no",
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "fee": "no",
+      "wheelchair": "no"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 323.6772204516178,
+  "distance": 489.2,
+  "duration": 391.4,
+  "points": [
+    {
+      "lat": 1.340745,
+      "lon": 103.847444
+    },
+    {
+      "lat": 1.340732,
+      "lon": 103.847744
+    },
+    {
+      "lat": 1.340689,
+      "lon": 103.847872
+    },
+    {
+      "lat": 1.340682,
+      "lon": 103.84809
+    },
+    {
+      "lat": 1.340707,
+      "lon": 103.848284
+    },
+    {
+      "lat": 1.340702,
+      "lon": 103.848384
+    },
+    {
+      "lat": 1.340773,
+      "lon": 103.848392
+    },
+    {
+      "lat": 1.340889,
+      "lon": 103.848395
+    },
+    {
+      "lat": 1.340952,
+      "lon": 103.848394
+    },
+    {
+      "lat": 1.340951,
+      "lon": 103.848431
+    },
+    {
+      "lat": 1.34095,
+      "lon": 103.848511
+    },
+    {
+      "lat": 1.341734,
+      "lon": 103.848522
+    },
+    {
+      "lat": 1.341926,
+      "lon": 103.848526
+    },
+    {
+      "lat": 1.342323,
+      "lon": 103.848532
+    },
+    {
+      "lat": 1.342315,
+      "lon": 103.848761
+    },
+    {
+      "lat": 1.342294,
+      "lon": 103.849122
+    },
+    {
+      "lat": 1.342268,
+      "lon": 103.849479
+    },
+    {
+      "lat": 1.342223,
+      "lon": 103.8501
+    },
+    {
+      "lat": 1.342077,
+      "lon": 103.850101
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.340745,
+      "lon": 103.847444,
+      "imageCandidates": [
+        {
+          "id": "184511836856949",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-gxopoAIBZDP-bk5HCqAatpjDjqxUtlIuceJcpyYbggU86_SNUAp6gEx60O__5BoOrVLC_bUzv8ZQdBLNbR7-f54zF6aB7QG5yQ4Fxi39s-_l-NyhM3Mmxd1cHiqy1dNDLk4_36xpe3jsDXqRapg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=AdqQKhiJC9NO73nZYJNpaf8xKK8mOJtedXmJE8EFEsobmzxzHQOHBcjg3vwSCK1kxHw&ccb=10-5&oh=00_AQJvhqMucoWgOu0TdxJYPtfyFs1L98moanE-JgLc499iFA&oe=6AD19F1F&_nc_sid=201bca",
+          "lat": 1.3407347048161,
+          "lon": 103.84746853146,
+          "captured_at": 1484559539000,
+          "compass_angle": 180.61467824054,
+          "distance": 2.9608899212104802
+        },
+        {
+          "id": "5444493228925722",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_gCXUk_UpW6006JPJ6b2lP3A1gbuIS3hmPns6BD6wPkJag1xOJEnwAXIuba1qMjIEj1pHusYOmAFBhzOLAx8zPQoFFLG91igzQ_Hlo4CLAFOhVA9hS_g5kLIW8uPD2TgWwAq6v98WM0E39fhRlHA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=Ado0hkMko22k9_1JbQn4H2_o5VXGyPVgrp4Jv4_zzgzqbdIPD7YG9vZkud79kLK9wOg&ccb=10-5&oh=00_AQKqd9600t6koH1u-X0QrIu_Utd1SMOf3X7XCR3zfW9ppQ&oe=6AD18F51&_nc_sid=201bca",
+          "lat": 1.3407876370862,
+          "lon": 103.84739271892,
+          "captured_at": 1484559540000,
+          "compass_angle": 273.53692581014,
+          "distance": 7.422824403847687
+        }
+      ],
+      "checkpointId": "BRADDELL__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3406904643534618,
+      "lon": 103.84815568338287,
+      "imageCandidates": [
+        {
+          "id": "282019186926403",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9Sn79GW4GgG7NgvLu-F-mYtBTRjZd5Zx-AWXLjZk9-hoiwvYN6fbRNJDJKEH1CojwRQamSj_eWFn1YG6uJe50Zv5xmkHfCElAwRqP0xs9S2Weghs2Q6TCmBb3eY5ktURmsdI6UntWKA_YMzfSqjQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=AdpKAt4QrMf6QUzQUwtNpVxbxr4T9kR7P5K5YqveYlrwEVLVkqPBp_2zMFWqrzVKdUc&ccb=10-5&oh=00_AQL-Mtjnp98roVvHobuPiZo4Hak4tq05Y3TQZrD9ABXDhw&oe=6AD17AC7&_nc_sid=201bca",
+          "lat": 1.3407513771419,
+          "lon": 103.84819352028,
+          "captured_at": 1484559533000,
+          "compass_angle": 180.42366267068,
+          "distance": 7.9818961780734625
+        },
+        {
+          "id": "2879638842366288",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Cevom7xJcBECBIP2OrwLEshxH8UvBA7sB8kkkLYzi8HtEeR3RDM1Bb4zcH9fjtOOdwA_dhoT0XZ61bB00ganGwsC2tdmgMuJpSnR9MdU0c4FtZOfLyha-VG7TWPTPfq1ufVhfyqD0vApLE7qG1Q?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=Adqm3Dvogi0E5PyIpnN9tRtrAgenK1qI63FHpwEdNHYK5ljLtgbdS5YfMtYgaJuQkxA&ccb=10-5&oh=00_AQKYMWIfsvLq39J_6Z85MFg5ThCFSA81p5P5Rudg0Sbaqw&oe=6AD19F24&_nc_sid=201bca",
+          "lat": 1.3407792820982,
+          "lon": 103.84819232267,
+          "captured_at": 1484559533000,
+          "compass_angle": 274.91132657338,
+          "distance": 10.695004472886964
+        }
+      ],
+      "checkpointId": "BRADDELL__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3410725213612136,
+      "lon": 103.84851271904971,
+      "imageCandidates": [
+        {
+          "id": "1584354928433074",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8vi0dumtn7aLlk8ZjQPs1V59bSlMwolY0msRmQaIyqZ7tstmaBFZiOeICND0aeL0lu98XV_ARFau3dy4U4gCw8Lfk3jxmRRPRRRerHeeBXn3SB0GNl8R3zi5Q9onSoTBregTctc5ZsKRHB-zXwDg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=Ado9xmLPn3RkzODhf7LCXklT_-nUbFuS4eDl893ggaj2hWEujF18R3a6K0LQiY93KkI&ccb=10-5&oh=00_AQLheoGViTKBBu7lV0l2PYV8y1RzY5A7GBSZdtdxNh6iYA&oe=6AD179C6&_nc_sid=201bca",
+          "lat": 1.3407926966895,
+          "lon": 103.84850623546,
+          "captured_at": 1484559530000,
+          "compass_angle": 260.1676838272,
+          "distance": 31.158438332461728
+        },
+        {
+          "id": "753146895348683",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9jjmVQTe4ljKonptASb2QxM7TN_yOarGaJEoEwD2j779q91W5DkKLyaa0bx5qFOmJeDB-M71RZwX4_npWrVFBnowkI7X1PCCZbgS1BX-TccK9_gAyxyyaJF8uxeefakyydSE9-rU8o3C_O8Yfa5tQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=AdrvD4W6QZYnrVDv6VBORKAosDHIZem2vk5lBK_xYyfVB8BSs98M8hZy-HRt7jlLDzc&ccb=10-5&oh=00_AQKiVpdOqQ--A3Q0TdGmcS7fYOO7WdwHoSy9IUA062nGaA&oe=6AD18C1B&_nc_sid=201bca",
+          "lat": 1.3407983512026,
+          "lon": 103.84860386693,
+          "captured_at": 1484559529000,
+          "compass_angle": 263.69826241993,
+          "distance": 32.16216885512879
+        }
+      ],
+      "checkpointId": "BRADDELL__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.3417919010190458,
+      "lon": 103.84852320627124,
+      "imageCandidates": [
+        {
+          "id": "857179121677832",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8HOhXTNRMd1fTJhZLZONkrqJ8-FkHJQcKpZH9ITQDCdsOHZYMID-1E-kz0RhOZRMmX3N702l7UMUxgZ5j4pIDyiI_U9JikPrAEGwVgehEBpsg5X3WNo7meYEr7c5Kzpba6Oovl8Iedqz6GHdHFeg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=Adoa5X0ofCK2g2DS_oNYOboiRhofEY5w_Kr5cBs2G73EplMJANDQzyGpLQy5tnGfPec&ccb=10-5&oh=00_AQJJEPZJ38cSX3EiQ8dSWJGzwOPSLAMxULnYrr0VWMPHNw&oe=6AD16C1C&_nc_sid=201bca",
+          "lat": 1.3409702195152,
+          "lon": 103.84819035887,
+          "captured_at": 1484559534000,
+          "compass_angle": 271.61499926106,
+          "distance": 98.68548688047038
+        },
+        {
+          "id": "828938058032812",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9dTYqq5DMERwzr4hp4WkivWh9wMNZkDy2-5Hg5Od7Iwm06jTZiwSSLYVHX5YtAyF36MGDuSXnZA_rNOvBZsPdWYNgC3Gzy5w8PEXn8pyffMyp5JAfvvmcKkIpBOZgPP85zynzUyAMVQU3UWsSgTls?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=AdqnFIcd3T3DHA2PZVAC4WxiIWe1W1RVXGKEdL-FTHAbgEnWEJW5L5Ygg50PP_EeYjw&ccb=10-5&oh=00_AQJEStz0yy6l8pBH_B0iITvbKwxb81EqHFZnbGNWW_5uYg&oe=6AD194F9&_nc_sid=201bca",
+          "lat": 1.3409372336637,
+          "lon": 103.84806497492,
+          "captured_at": 1484559535000,
+          "compass_angle": 273.34122683729,
+          "distance": 107.94694846336228
+        }
+      ],
+      "checkpointId": "BRADDELL__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.342316424604017,
+      "lon": 103.84872022071,
+      "imageCandidates": [
+        {
+          "id": "2892718147712717",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8FKyCfTNsZ2pceymHoxHBuSCA5U9K1xec7RGqBCv0XshDDjPhXPewf5T0A9A6_BR-S4X27VSn_v7JPnvSYFpjjexXpNNEDFWRO7FAmIYuPLHJIU-T49Nc_5Sk0_stxRvGvmaUtUBAaNRHnQB1CSQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=Adqn3uj07kHTjIfrn9b_iItS31JsxUUsRb4LXv786Ld8uXf6wvnztYBXAE2NsjTv3sY&ccb=10-5&oh=00_AQKunEBAR0AzFyVIU6x6FBFqPrqw4k_OzFgsfUuhHLw0rA&oe=6AD18E9C&_nc_sid=201bca",
+          "lat": 1.343289561543,
+          "lon": 103.84942412736,
+          "captured_at": 1548661700000,
+          "compass_angle": 273.63000488281,
+          "distance": 133.68638305710732
+        }
+      ],
+      "checkpointId": "BRADDELL__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 400.0,
+      "lat": 1.3422709567532256,
+      "lon": 103.84943840150379,
+      "imageCandidates": [
+        {
+          "id": "2892718147712717",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8FKyCfTNsZ2pceymHoxHBuSCA5U9K1xec7RGqBCv0XshDDjPhXPewf5T0A9A6_BR-S4X27VSn_v7JPnvSYFpjjexXpNNEDFWRO7FAmIYuPLHJIU-T49Nc_5Sk0_stxRvGvmaUtUBAaNRHnQB1CSQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=Adqn3uj07kHTjIfrn9b_iItS31JsxUUsRb4LXv786Ld8uXf6wvnztYBXAE2NsjTv3sY&ccb=10-5&oh=00_AQKunEBAR0AzFyVIU6x6FBFqPrqw4k_OzFgsfUuhHLw0rA&oe=6AD18E9C&_nc_sid=201bca",
+          "lat": 1.343289561543,
+          "lon": 103.84942412736,
+          "captured_at": 1548661700000,
+          "compass_angle": 273.63000488281,
+          "distance": 113.40221219391493
+        },
+        {
+          "id": "539039227505179",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8NlKyUYyLIP7BZvlWtJlUZ2eqGoMu9oyf5r92g3pTjt1CjR-DmjZ80lCvPAj3kkLz4Kco0iLFFE5DGOXNhqq8MqmKvHYFqC2iSoEWdo50dH4_ha2ipdz5B8q1To_gB-1bVBm8DjGMoQe1HdT7Xfg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=AdqUvW0KsSiMAs4-eWNymBcfc4kxe14hXnLcgFHVKPYbsT-VjOwYVeRFCyrEHuSwMM8&ccb=10-5&oh=00_AQI_2Mt2Bi3BGTgce-dymAWz0QSEFDnJjOxEYTUnxxmCPw&oe=6AD19DD2&_nc_sid=201bca",
+          "lat": 1.3433667195145,
+          "lon": 103.8495607105,
+          "captured_at": 1548661699000,
+          "compass_angle": 274.10998535156,
+          "distance": 122.73742128901328
+        }
+      ],
+      "checkpointId": "BRADDELL__R01__C005"
+    },
+    {
+      "checkpointIndex": 6,
+      "distanceFromStart": 480.0,
+      "lat": 1.3421666972962945,
+      "lon": 103.85010038563496,
+      "imageCandidates": [
+        {
+          "id": "297107251964849",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9FwRPi5XVjUuYvG95EAZjO47R4HpaGipl5O-bUWFXQXfXirtXOQi92KHVC9ILx-MCbPjg8rhaVpffK0w1yDQlkhQARmU3Bp0tbfNh19KOHrRg5a8KNHks5-N6eoiaR3GEaRwyrh8TniWb046RhRg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=AdpM6y8J4AqAMRSvJ_6lPRouMurDpQOSFGo__zSoUGh1P6AfehT2TftWDNvaa73-BSM&ccb=10-5&oh=00_AQK-wIBZOUuZJnZeO7NqwyhfO2q6zrPsXr97aj7k7IqIIA&oe=6AD17D7E&_nc_sid=201bca",
+          "lat": 1.3430541323449,
+          "lon": 103.85037995446,
+          "captured_at": 1484703988000,
+          "compass_angle": 273.26410323724,
+          "distance": 103.57288490786269
+        },
+        {
+          "id": "852000462190387",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9znVi3_LqDL5TLf5ZnOZNIcw4sW_VPNegKmS_i2PNHNrHm_Ylh-auxb1MqvWYNoAPg0hrEofziP2T6K4veKIqHvpC70C7Ffqu7NiBIQni9SyQFuTlWDFCQhZPTuib632ewGYfmxnIB8jZwhNIcnR4?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=AdpfD3QsOMjZhal5n8zTgMjQIlbalePJd0daDBWI7adNgx380resrlyIQedk--1hkyw&ccb=10-5&oh=00_AQIIhtkAPIilOcfWm04FlFwZicb7mFEsb03IeXlV8ZEf4A&oe=6AD18D4A&_nc_sid=201bca",
+          "lat": 1.3431303543119,
+          "lon": 103.850349882,
+          "captured_at": 1484703989000,
+          "compass_angle": 273.72069702767,
+          "distance": 110.80949187364614
+        }
+      ],
+      "checkpointId": "BRADDELL__R01__C006"
+    },
+    {
+      "checkpointIndex": 7,
+      "distanceFromStart": 489.97411810357966,
+      "lat": 1.342077,
+      "lon": 103.850101,
+      "imageCandidates": [
+        {
+          "id": "297107251964849",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9FwRPi5XVjUuYvG95EAZjO47R4HpaGipl5O-bUWFXQXfXirtXOQi92KHVC9ILx-MCbPjg8rhaVpffK0w1yDQlkhQARmU3Bp0tbfNh19KOHrRg5a8KNHks5-N6eoiaR3GEaRwyrh8TniWb046RhRg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=AdpM6y8J4AqAMRSvJ_6lPRouMurDpQOSFGo__zSoUGh1P6AfehT2TftWDNvaa73-BSM&ccb=10-5&oh=00_AQK-wIBZOUuZJnZeO7NqwyhfO2q6zrPsXr97aj7k7IqIIA&oe=6AD17D7E&_nc_sid=201bca",
+          "lat": 1.3430541323449,
+          "lon": 103.85037995446,
+          "captured_at": 1484703988000,
+          "compass_angle": 273.26410323724,
+          "distance": 113.11780159970557
+        },
+        {
+          "id": "852000462190387",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9znVi3_LqDL5TLf5ZnOZNIcw4sW_VPNegKmS_i2PNHNrHm_Ylh-auxb1MqvWYNoAPg0hrEofziP2T6K4veKIqHvpC70C7Ffqu7NiBIQni9SyQFuTlWDFCQhZPTuib632ewGYfmxnIB8jZwhNIcnR4?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=xU5DtCAW1ODOaiAVsRXw7g&_nc_oc=AdpfD3QsOMjZhal5n8zTgMjQIlbalePJd0daDBWI7adNgx380resrlyIQedk--1hkyw&ccb=10-5&oh=00_AQIIhtkAPIilOcfWm04FlFwZicb7mFEsb03IeXlV8ZEf4A&oe=6AD18D4A&_nc_sid=201bca",
+          "lat": 1.3431303543119,
+          "lon": 103.850349882,
+          "captured_at": 1484703989000,
+          "compass_angle": 273.72069702767,
+          "distance": 120.4862791370284
+        }
+      ],
+      "checkpointId": "BRADDELL__R01__C007"
+    }
+  ],
+  "mapillaryImageCount": 15,
+  "uniqueMapillaryImageCount": 12,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531593.6683877
+}

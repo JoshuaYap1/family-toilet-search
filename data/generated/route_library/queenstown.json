@@ -1,0 +1,105 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "QUEENSTOWN MRT",
+  "routeId": "QUEENSTOWN__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.2943299089060527,
+    "lon": 103.80631147275847
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 13016448030,
+    "lat": 1.2941602,
+    "lon": 103.8063897,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "fee": "no",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 20.778131698969762,
+  "distance": 20.778131698969762,
+  "duration": 17.31510974914147,
+  "points": [
+    {
+      "lat": 1.2943299089060527,
+      "lon": 103.80631147275847
+    },
+    {
+      "lat": 1.2941602,
+      "lon": 103.8063897
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.2943299089060527,
+      "lon": 103.80631147275847,
+      "imageCandidates": [
+        {
+          "id": "803523082631993",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8kqgRYGjjIIhJzqjSIB9SALm06WiTHN5AzWOp_aDOJokww3RrmRDoXSbEYiEXQ8G9ujdAUByx0Y47L4sMagAEfu7FhgxSZapiWi3n6sVPLLwpoPgYZpJapXa6s3N1Uerc2B5V3uCjk5sxDylQitg?stp=s1024x512&edm=AOnQwmMEAAAA&_nc_gid=rdF67YFDJ8KXxJiBT9VnUA&_nc_oc=AdqiYOVKYT9lque60HhDKLEcNw-wDLmPO-bpGMroobJZJz9H4j7D27btBMD-T_PcWnU&ccb=10-5&oh=00_AQIZuzeu3uoW9bM0Wj39yTHKRMu0fBkOo-Dtg603Jdwv9A&oe=6AD16FF6&_nc_sid=201bca",
+          "lat": 1.2943996245257,
+          "lon": 103.80633060192,
+          "captured_at": 1756715941170,
+          "compass_angle": 113.76771668501,
+          "distance": 8.047447251155804
+        },
+        {
+          "id": "285055607025128",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9nWQnlheo_oSmc4UxGCDjaY9TJdLtBnAIRH-fZ4JBm9jdbwXz7t6qMxBBLUQJ0XQK4uwM8pGh9xPYUMhuhJRiNKb7JID_BLjRqR1GrVHzofDl0LjpJN-UDimMLEK63mXtNRk0WA5Ft72r5gweuzcE?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=rdF67YFDJ8KXxJiBT9VnUA&_nc_oc=Adp7lxUr-En2zI4gpYC3NKVGOcj9Ln10AexVtBuEh9yhtQsXziqZN6g1CcLrp2ShOfw&ccb=10-5&oh=00_AQImD1jRKyWAE-krN6KlvpdTZwpkH6gLTzE8bgll57VYYQ&oe=6AD1A22A&_nc_sid=201bca",
+          "lat": 1.2943853752102,
+          "lon": 103.80636106001,
+          "captured_at": 1643365070831,
+          "compass_angle": 150.08207797607,
+          "distance": 8.28130407017963
+        }
+      ],
+      "checkpointId": "QUEENSTOWN__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 20.778131698969762,
+      "lat": 1.2941602,
+      "lon": 103.8063897,
+      "imageCandidates": [
+        {
+          "id": "787251080501370",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8jdzLVdvcrhURUOWG6aFj9MWrvMP7hO0Ne9topph8IcbWmaus9Ihr0n_whtGuI5UHlFJGeyTbi26NV8NCjrUUuyq151-l_etn1v5kM2IiD9q9O__r3pvpHJcUMbmP-H60Dwv6okkk6WkMahwtilL4?stp=s1024x512&edm=AOnQwmMEAAAA&_nc_gid=rdF67YFDJ8KXxJiBT9VnUA&_nc_oc=AdrBzrRlAcOXDQSR-Dt2XF6AH-kliZeUyrHVQy9zBvq41IwOT-fCOBK0Vz3uqA4hnkM&ccb=10-5&oh=00_AQINeD3UC2-Pe2JRjfeT6WEPklyyjE3pa6Ohb80b3M47Ng&oe=6AD18D59&_nc_sid=201bca",
+          "lat": 1.2941812594007,
+          "lon": 103.80634870142,
+          "captured_at": 1756715895090,
+          "compass_angle": 143.8354822647,
+          "distance": 5.129816561887017
+        },
+        {
+          "id": "487967659185093",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8Spm6lxpz9cjybiBAp1Sj3U65xy1ppytZSl0HMBYju9qzWo0JQhhjpDQWpMt1OwNv5UsVXXl0CZCYmZklTrldDgjhhmtni4fms3J2I8vyhj3xy6v0Bq4zFY75uxz1J4M6l4r7UAXG0nCWZD-wg4wY?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=rdF67YFDJ8KXxJiBT9VnUA&_nc_oc=AdonRoF2Ophcpk4vP1gatAfdbJSA5pQA1vaGqqf80G9vBGLiZrBh4q6264nnI8Dcwlc&ccb=10-5&oh=00_AQJ7duV9nqlquArMwfZRkq-eE5SnToB9oendEp2UgHwiTA&oe=6AD1756E&_nc_sid=201bca",
+          "lat": 1.2941779919031,
+          "lon": 103.80647653388,
+          "captured_at": 1484461424000,
+          "compass_angle": 157.36528313694,
+          "distance": 9.86475375035889
+        }
+      ],
+      "checkpointId": "QUEENSTOWN__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.80631147275847,1.2943299089060527;103.8063897,1.2941602?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c2b750>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531838.5727735
+}

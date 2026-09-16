@@ -1,0 +1,221 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "MARINE TERRACE MRT",
+  "routeId": "MARINE_TERRACE__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3057892098989736,
+    "lon": 103.91325299089799
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 4271006031,
+    "lat": 1.3015881,
+    "lon": 103.9142144,
+    "name": "Showers",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "fee": "no",
+      "name": "Showers",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 479.21212206155224,
+  "distance": 479.21212206155224,
+  "duration": 399.34343505129357,
+  "points": [
+    {
+      "lat": 1.3057892098989736,
+      "lon": 103.91325299089799
+    },
+    {
+      "lat": 1.3015881,
+      "lon": 103.9142144
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3057892098989736,
+      "lon": 103.91325299089799,
+      "imageCandidates": [
+        {
+          "id": "222731956023207",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8VdCrb9U-Xd1OBYjUCh9rZ6T26gPvPF3uJykSmZweVfyvAkykctjxuacEC41V7hHh8C3E5G48wl8ahmbAGnbND21zqVpoKqUOW4W8hZDrWQsx-HpLIV5_uHNlZeLLuBF46SS6Ir6triEqwY-F4Fg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=AdpGKia3LvFv1MMuXOrOQZROwvk8aswslv3P4jhDRKbBYccF5qWfzKwAJ5QGezGOmtI&ccb=10-5&oh=00_AQLw44bIivOqeveC2QcY-4fHPFeT1IzYSbfL9xllMxQuBg&oe=6AD18A5C&_nc_sid=201bca",
+          "lat": 1.3061424590636,
+          "lon": 103.91326803115,
+          "captured_at": 1548912124000,
+          "compass_angle": 264.16000366211,
+          "distance": 39.35930521334779
+        },
+        {
+          "id": "318912803086724",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9PDwKjPI6ZJ33Nn4hN6BIzyT5BlQVxXK8HeZ-W5HczDf40fbi3syfhoNbLgVDno75xCFBtks2Ufoy3dbfABOkRn7hWD5i-wDJbkv0gZdoD5eWrdhRKEbQzcvZ6qu25pQTgSatutT4AVs5MC3elrw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=AdoeonjzWaFw78O2AxlnyBNf3qg8zfjmrnWTO3INfCup8XlMNRdTlLBt06-_E1HMggY&ccb=10-5&oh=00_AQKwgr5L_TBhAiHIZOPtfMkBmQNm60J9QE-w7MMkd9jprQ&oe=6AD193FF&_nc_sid=201bca",
+          "lat": 1.3061279242339,
+          "lon": 103.91312627276,
+          "captured_at": 1548912125000,
+          "compass_angle": 269.5299987793,
+          "distance": 40.25669646386524
+        }
+      ],
+      "checkpointId": "MARINE_TERRACE__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3050878737339533,
+      "lon": 103.91341348919221,
+      "imageCandidates": [
+        {
+          "id": "222731956023207",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8VdCrb9U-Xd1OBYjUCh9rZ6T26gPvPF3uJykSmZweVfyvAkykctjxuacEC41V7hHh8C3E5G48wl8ahmbAGnbND21zqVpoKqUOW4W8hZDrWQsx-HpLIV5_uHNlZeLLuBF46SS6Ir6triEqwY-F4Fg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=AdpGKia3LvFv1MMuXOrOQZROwvk8aswslv3P4jhDRKbBYccF5qWfzKwAJ5QGezGOmtI&ccb=10-5&oh=00_AQLw44bIivOqeveC2QcY-4fHPFeT1IzYSbfL9xllMxQuBg&oe=6AD18A5C&_nc_sid=201bca",
+          "lat": 1.3061424590636,
+          "lon": 103.91326803115,
+          "captured_at": 1548912124000,
+          "compass_angle": 264.16000366211,
+          "distance": 118.50730493204868
+        },
+        {
+          "id": "1145095282649785",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-9P_wlf_qdMy7BvUvuoOvD3J1l9wG1lz_hOS1VyPewhMnvN7t_aDmiKTmD4rT27icfwFhbhwm3v8-QQged5AtOzwNYC_xKRwfia4B1Eq4ajupgr0sK3bXyUNEY2wPnb1kJmQIoiXAOKRv-pf-t7A?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=AdpWjMq4J1VoK_CZOvrajzx8i96ETk74iHZwhB3cCFlPzcvaABjQnJaYj_d7FbQKPEA&ccb=10-5&oh=00_AQKlFIBYYF_DRYrkZlfGHeHTdvD0yRs61K6Bk6JcOGQUfg&oe=6AD17499&_nc_sid=201bca",
+          "lat": 1.3061619737026,
+          "lon": 103.91340063474,
+          "captured_at": 1548912123000,
+          "compass_angle": 261.76998901367,
+          "distance": 119.5773663614313
+        }
+      ],
+      "checkpointId": "MARINE_TERRACE__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.304386537568933,
+      "lon": 103.91357398748643,
+      "imageCandidates": [],
+      "checkpointId": "MARINE_TERRACE__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.3036852014039126,
+      "lon": 103.91373448578065,
+      "imageCandidates": [
+        {
+          "id": "1420026152472643",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8NHsM6OWuyA7xP6s2C-ukyccHIR5i75PpjamX9XwJ051CFR_c3f-Hl77UTl2rFMFm04SxU2-OaMY_0uMPhW78e3O1s3wHcCrVEj8T91WS3mSV7IejyvH533oNe1i-NhYklsaIy3QA5NeXws5I6jnA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=Adrq_-jAnzg7hJIUu_DQ4XZzNShd_O1PthDNKQYOuGGoiaiz9rdRQH1GMkSNqrn6cXg&ccb=10-5&oh=00_AQK1sPbWiQJRguJIOmnG58TNf-g_my5Z3ITJSoCggqrg_Q&oe=6AD16F57&_nc_sid=201bca",
+          "lat": 1.3026266874951,
+          "lon": 103.91393909594,
+          "captured_at": 1748331780097,
+          "compass_angle": 77.474531143579,
+          "distance": 120.01387162222657
+        },
+        {
+          "id": "579896031819250",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8uAMgsi_ua2Z8PWobaoybL9gkFBOL2z2oHkx7Xko1n3zNTFobVtb0C5E2MhaUvv6eA2OTxMCDr6eFm4v5lXITKrPxU3aBJVQQXqUJoYtpc6SoyILOxJZXkEFAHjcqPo3GB3F5972bFMxF-CBdOSA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=AdqREoCRdS-vD6SdvAsCxOHOtKDrcZPc_aniGWLDereurZptarygzmUN9Am1nX8hnxE&ccb=10-5&oh=00_AQKqXSH5s99dfp8CgRzyIG3RHScLPyzJvtjmtmRj4i6lFg&oe=6AD191A9&_nc_sid=201bca",
+          "lat": 1.3026090931987,
+          "lon": 103.91384985704,
+          "captured_at": 1748331779095,
+          "compass_angle": 77.474531143579,
+          "distance": 120.47851002999853
+        }
+      ],
+      "checkpointId": "MARINE_TERRACE__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.3029838652388925,
+      "lon": 103.91389498407487,
+      "imageCandidates": [
+        {
+          "id": "1420026152472643",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8NHsM6OWuyA7xP6s2C-ukyccHIR5i75PpjamX9XwJ051CFR_c3f-Hl77UTl2rFMFm04SxU2-OaMY_0uMPhW78e3O1s3wHcCrVEj8T91WS3mSV7IejyvH533oNe1i-NhYklsaIy3QA5NeXws5I6jnA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=Adrq_-jAnzg7hJIUu_DQ4XZzNShd_O1PthDNKQYOuGGoiaiz9rdRQH1GMkSNqrn6cXg&ccb=10-5&oh=00_AQK1sPbWiQJRguJIOmnG58TNf-g_my5Z3ITJSoCggqrg_Q&oe=6AD16F57&_nc_sid=201bca",
+          "lat": 1.3026266874951,
+          "lon": 103.91393909594,
+          "captured_at": 1748331780097,
+          "compass_angle": 77.474531143579,
+          "distance": 40.0629515585568
+        },
+        {
+          "id": "1010957501021662",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An83VyeGaj38KA4h8L6M67HSDsN3Npzf8Xe_CTaUVmj2QLqyS_1YTOKpTH7_dH-2g-s4lkYl8LWcz-7mZy3egArRRj-BbWNjwZ7PJ0G9FI6bR0D46vYgegXehrCBdaVzmIV0y_RfrKKwSbbOZCkTurg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=AdrRNBLBjKsnX8zfLN_mtEPoiygyBPPhnf9PAjnZNO3Rdy7ZUBefvkcS2_m4fNtphZM&ccb=10-5&oh=00_AQIGGZ72QHcCBynieGXkJt0RHKwgiB9oahByLRYLjXsuJg&oe=6AD19DC1&_nc_sid=201bca",
+          "lat": 1.3026346498484,
+          "lon": 103.91402117441,
+          "captured_at": 1748331781102,
+          "compass_angle": 76.732282722487,
+          "distance": 41.3336355174476
+        }
+      ],
+      "checkpointId": "MARINE_TERRACE__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 400.0,
+      "lat": 1.3022825290738722,
+      "lon": 103.9140554823691,
+      "imageCandidates": [
+        {
+          "id": "1359678832195025",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_2QC13KrgUJDZ_HmFQk5acBCGBRbNbEXvupMC1ONR-pgbTr5Na5F8noYhAubfIFK17zx5uzHG3__HDgr3VFsT5gEexEYea-vC03ph3oj2JNU_J1rxrAeA8rThDKP9jsljVyZ2FaMX3-T6MDCffW3g?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=AdohBYRTUSwSO7EZ4RftbUaLMXLCwZVxuELrZLI2Vs_TXhPrNmx4R3fPcCZeZdVhatU&ccb=10-5&oh=00_AQK8qJfQwj7e3_O_2qallpnwqjZTqHIs7dQIJqfxe1CovA&oe=6AD17894&_nc_sid=201bca",
+          "lat": 1.3023377728346,
+          "lon": 103.91404676517,
+          "captured_at": 1763533843033,
+          "compass_angle": 343.24100696397,
+          "distance": 6.225787748230661
+        },
+        {
+          "id": "1169328200250921",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_RDvBcxcJI9xXVYsoZz2ccYKUgSumbJSvJo_ikjeJ_yOj696i4vnInFng5esCf_xUA4wR8T4UDQb3ClIGrEQfmeWzOODUzmUnTaIxvhc2tRgp4hK60-7boERw7OJkp5UasKzWWJkvXtV0d4ry1xQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=AdrvzDjPEiwp_R_vOYvmjPnKhBuUXtzMQxrZLlZrpjdC-EeVTjJvxlryg8F7wvPxmTU&ccb=10-5&oh=00_AQJ5fUcn79Ee1e4ucsjP2ffAbqWRCxsTDCfdXyLqsfy4HA&oe=6AD181A3&_nc_sid=201bca",
+          "lat": 1.3022266914645,
+          "lon": 103.9141157081,
+          "captured_at": 1548912391000,
+          "compass_angle": 75.610000610352,
+          "distance": 9.141198075659574
+        }
+      ],
+      "checkpointId": "MARINE_TERRACE__R01__C005"
+    },
+    {
+      "checkpointIndex": 6,
+      "distanceFromStart": 479.21212206155224,
+      "lat": 1.3015881,
+      "lon": 103.9142144,
+      "imageCandidates": [
+        {
+          "id": "1563986833776443",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9I7T_MrKceGoFjRRYwXYt2D5Ig01t-1OxbHvJvc7-K-PrtZiPoaJZ387MxyW4--nMIZP06PipantFN_VqxP2tT7Mul1uC9Swh18pFOWlpcIWnPQuAaB3kZVIjMPG4JwUJk4TFGmMMpGqbbuoLNdww?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=Adob4kqE9G3goCk9g4JR_4nL2poeKQqNBhR-0g_YNpZ7S_sGn7eajbBhKDbi7pj002w&ccb=10-5&oh=00_AQKnDjXMuxFEO67raC91SQd0URkaDekxAXUuSviGIWgs4A&oe=6AD16F2A&_nc_sid=201bca",
+          "lat": 1.3021440401508,
+          "lon": 103.91408332078,
+          "captured_at": 1548912887000,
+          "compass_angle": 255.03999328613,
+          "distance": 63.5833439794309
+        },
+        {
+          "id": "308151237459915",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9vrkgAZEvnUQP7HQWtfDl0YT2cY64v0KhbJOhfs9oFloIvlZ5SlWNwJGhzpe_6_XLaK_Laen16LVmdZDpTiXsY2QH4RhfdwRpV-mo3Q7E9fJqgTBuPeDmTcijZCCGjVs2LywcRmCN6pMlpmlslcg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=NBbhAW-mg3mN4KD-gFZi5w&_nc_oc=AdoFUKJviFzgKzhcaeHZ6LvpIUitYomv30GqjJ_jVDrnqm3wFVwLlxS599J7Z3-WrN8&ccb=10-5&oh=00_AQL4fEABpjbCtV6IMwDhFJ8X4P8XTpYj_OGfavHm7EdTVg&oe=6AD19BBE&_nc_sid=201bca",
+          "lat": 1.3021074391719,
+          "lon": 103.91394598472,
+          "captured_at": 1548912888000,
+          "compass_angle": 254.92999267578,
+          "distance": 65.07439704250962
+        }
+      ],
+      "checkpointId": "MARINE_TERRACE__R01__C006"
+    }
+  ],
+  "mapillaryImageCount": 12,
+  "uniqueMapillaryImageCount": 10,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.91325299089799,1.3057892098989736;103.9142144,1.3015881?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c197a710>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531758.0093412
+}

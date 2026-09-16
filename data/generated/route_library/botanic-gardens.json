@@ -1,0 +1,123 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "BOTANIC GARDENS MRT",
+  "routeId": "BOTANIC_GARDENS__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3225346329493606,
+    "lon": 103.81497690573431
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 8266886774,
+    "lat": 1.3222696,
+    "lon": 103.8149982,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "fee": "no",
+      "layer": "-1",
+      "level": "-1",
+      "toilets:disposal": "flush",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 29.56523772731637,
+  "distance": 42.6,
+  "duration": 34.0,
+  "points": [
+    {
+      "lat": 1.322538,
+      "lon": 103.814978
+    },
+    {
+      "lat": 1.322504,
+      "lon": 103.815052
+    },
+    {
+      "lat": 1.322454,
+      "lon": 103.815011
+    },
+    {
+      "lat": 1.322506,
+      "lon": 103.814942
+    },
+    {
+      "lat": 1.322449,
+      "lon": 103.814918
+    },
+    {
+      "lat": 1.322366,
+      "lon": 103.814884
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.322538,
+      "lon": 103.814978,
+      "imageCandidates": [
+        {
+          "id": "825999276234398",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8dyEsJDukUhnGBUnZqwdDQPpTH89G5uEHORHngleTggZWC1CrTjrJjVpn4eoHDAGirKXH1TDEVc0d2q4bHXziPI6lkvOR8fb0tVOXkl9US3hafjU6-Nq-HgvCR1_wUiPNMgMMuJuxsiypsgXzmxuo?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=LCA1cqIFDK5FXzM7azVwUg&_nc_oc=AdqCN9qmfnss08Jlhwy3HMnxzzFIzyY6MycQJ55LFqJRU_2ZRuPlFci9B7DFTdf5_tI&ccb=10-5&oh=00_AQIl_ND3pn9YlQsvHt5wZSbF2mW6lWrvtJLImtzWrXICtQ&oe=6AD1932B&_nc_sid=201bca",
+          "lat": 1.3224992693575,
+          "lon": 103.81496916987,
+          "captured_at": 1710561373699,
+          "compass_angle": 120.01547789521,
+          "distance": 4.422070288227698
+        },
+        {
+          "id": "950881569767531",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8e0R8q4iU2hUeMGQdmVaAqXwvC2FURRvbZuxEmM41OOpoXmvzcnBpE0ivhQL311FAPuD5EndBAx9DwigNCtfDv-AwdBF9p4L4aTSPpyeqDFK3I8ZmFRkzt9vqG0mCCOwmicI-d276qaa9CLPcaadI?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=LCA1cqIFDK5FXzM7azVwUg&_nc_oc=Adqiw6Ge7pzCsPA1F69PvWwjWnAYqv6gTeoaoO8NGmK_e-i80KXjmd8amOCWrSN1rug&ccb=10-5&oh=00_AQJNupNpX2h-Um_4iK5fi4RT_ijUKUqvSBnfaSgChn6SnQ&oe=6AD19F07&_nc_sid=201bca",
+          "lat": 1.3225187118732,
+          "lon": 103.81494230833,
+          "captured_at": 1710561371726,
+          "compass_angle": 126.84778253259,
+          "distance": 4.515324346342102
+        }
+      ],
+      "checkpointId": "BOTANIC_GARDENS__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 42.698079971891595,
+      "lat": 1.322366,
+      "lon": 103.814884,
+      "imageCandidates": [
+        {
+          "id": "474698007441668",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-_KfsgKLw0PyTuACGykk5EWJMALdF3qe0D-bhIAb3fcJP4eYCYzc0Q4ySQnvMDeEb2BYuxqJO12VzQ4oo0qXC9VY_fw3Ed7QdMN3BIvZqvOS82ExbvRAxl_aIrnjayexii4mR1gWy-zcpmelWhKQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=LCA1cqIFDK5FXzM7azVwUg&_nc_oc=AdqyDA2CjaIIEcqqdXPiF74OeUPILe44ND1zQtsXF3owMBxtOJv8xsZ6wMLLQfPbgWw&ccb=10-5&oh=00_AQLbOrK23MBfQ4fmsEnZ2QdvbuPHuOTmEi0UlCcWau1vbg&oe=6AD199E6&_nc_sid=201bca",
+          "lat": 1.3224571339393,
+          "lon": 103.81492257739,
+          "captured_at": 1643425367745,
+          "compass_angle": 3.1789855957031,
+          "distance": 11.016078557752689
+        },
+        {
+          "id": "475035577335717",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9MG4qNgSrH1A_epcE4j5wtTkTIlKu4rOWy2_ZfG04dDj-b1DCf9a6t6al0cpiBpyp6e6rJ90qnYAw3IsI-u-LxwCYRMGPutvosVa5Lvwrrlm06D0jvqOfnsShJlgfxOgENKDUkS6wHn_nSuscfmyE?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=LCA1cqIFDK5FXzM7azVwUg&_nc_oc=AdoBADa1t5OmqfzMB5Pr8KmOghzjpQ9puiEEUEROw1doiyTAHcWvDN1wqsJuVbF7nYk&ccb=10-5&oh=00_AQIXGPeMFsmcLCbrv37XESqUZAfYP1tOITDhXb5aCMQyjQ&oe=6AD173F3&_nc_sid=201bca",
+          "lat": 1.3224629971714,
+          "lon": 103.81492594399,
+          "captured_at": 1643425368599,
+          "compass_angle": 39.641937255859,
+          "distance": 11.763533987163916
+        }
+      ],
+      "checkpointId": "BOTANIC_GARDENS__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531589.9446106
+}

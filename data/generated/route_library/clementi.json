@@ -1,0 +1,184 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "CLEMENTI MRT",
+  "routeId": "CLEMENTI__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3153735578744434,
+    "lon": 103.76498210259511
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 10964913816,
+    "lat": 1.3155267,
+    "lon": 103.7644389,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "fee": "no",
+      "level": "0;2;3;4",
+      "toilets:wheelchair": "yes",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 62.74055495919021,
+  "distance": 152.5,
+  "duration": 122.1,
+  "points": [
+    {
+      "lat": 1.315364,
+      "lon": 103.764986
+    },
+    {
+      "lat": 1.315355,
+      "lon": 103.764964
+    },
+    {
+      "lat": 1.315308,
+      "lon": 103.764853
+    },
+    {
+      "lat": 1.315171,
+      "lon": 103.764908
+    },
+    {
+      "lat": 1.315132,
+      "lon": 103.764924
+    },
+    {
+      "lat": 1.315151,
+      "lon": 103.764967
+    },
+    {
+      "lat": 1.31519,
+      "lon": 103.76495
+    },
+    {
+      "lat": 1.315672,
+      "lon": 103.764736
+    },
+    {
+      "lat": 1.315703,
+      "lon": 103.764715
+    },
+    {
+      "lat": 1.315723,
+      "lon": 103.764693
+    },
+    {
+      "lat": 1.315737,
+      "lon": 103.764657
+    },
+    {
+      "lat": 1.315743,
+      "lon": 103.764622
+    },
+    {
+      "lat": 1.315742,
+      "lon": 103.764584
+    },
+    {
+      "lat": 1.315721,
+      "lon": 103.76455
+    },
+    {
+      "lat": 1.315598,
+      "lon": 103.764386
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.315364,
+      "lon": 103.764986,
+      "imageCandidates": [
+        {
+          "id": "811028822861491",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_G3Q44V7hmhZLtDA5eveTUO4AKdjt6hnS10DUe4tBM4nXLaCuNelsW9tLxX4_H7MfFF7jXKlg9qCybGulK35BzdMOiSiC5z1FhgqwvFF3wVpoGIhDMHDSbZM6PU6a--t1U1Bpy9_9JR6LqmuiNvAE?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pOnjIue1TZzZM1iMMSqf1A&_nc_oc=AdrIXatiDvGFaZ-UPfHwuVOQtjFZphAAK-_huSugGWd3Yp-YKxdBKbNfHSjqHKWfKno&ccb=10-5&oh=00_AQI25C66b9h1L0HIlozt8I_N2TmDNerLMaUDp1lyMLdEnA&oe=6AD19BE7&_nc_sid=201bca",
+          "lat": 1.3153197252763,
+          "lon": 103.76489986034,
+          "captured_at": 1550042841000,
+          "compass_angle": 337.88000488281,
+          "distance": 10.779307177455125
+        },
+        {
+          "id": "208695634402502",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8x3_TixxZb1IL6usCUUXKU8qCpaFVCeWHGdYmUyxCW1U-MkaHpgXEpDFCSbtZryiEUJ8rVKocZQvFqDxDH4MUS_Fb_tIGUFnvZQ9kMg7srOwoeVbYPRmcoUiUR0gMNW45rk6OwFc8EdbmECSPlHw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pOnjIue1TZzZM1iMMSqf1A&_nc_oc=Adqc2DxGaZw0R32sNNYyLWKp5XkGXNQldMJNizsTPhh-0XMbCZl_whlCSC1DDC8MQLs&ccb=10-5&oh=00_AQKB4_kY5bAFR_x6qZbGc7W3S9Owh0BmYngEfg5TlfZGVw&oe=6AD18087&_nc_sid=201bca",
+          "lat": 1.315372186587,
+          "lon": 103.76487582647,
+          "captured_at": 1550042842000,
+          "compass_angle": 336.08999633789,
+          "distance": 12.29510662185684
+        }
+      ],
+      "checkpointId": "CLEMENTI__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.315460419575483,
+      "lon": 103.76482993819678,
+      "imageCandidates": [
+        {
+          "id": "857068091819676",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-au5mhz7hBK2M1euz8_UBm1vw7g2-v8f5MPEs5QgMZQpHIH6AhpFMg7PaB4lYufJOHBBTuTsenztU7xOxuglE5xC4aObIPUuLrkHkwqnRDsmGWOMTtBjiudf08Pj0MzafFzSf9ovH0AsV37NA2kuU?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pOnjIue1TZzZM1iMMSqf1A&_nc_oc=Adr4pigtZAhayLzX4c2Cc3qZ4Yft4-KTF17WCnj4yc5rYWLBCzVeeRk_Z-8-mM3vZS4&ccb=10-5&oh=00_AQJqSM5sCf0k0O-DlwkuXb-f1hjl4qhxZyx-1XYRjuhjvQ&oe=6AD193E1&_nc_sid=201bca",
+          "lat": 1.3154671896169,
+          "lon": 103.76483281913,
+          "captured_at": 1550042844000,
+          "compass_angle": 347.20999145508,
+          "distance": 0.8190070670293004
+        },
+        {
+          "id": "341725324247370",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_9U2-Ww_YhHLD7-SPfeN4CSMBal_7N0m17rnyMiKBjeiupokei6rccgtOfcZGhxnovWs0nNpaIMF2UxBI6cpRir-rxZgHxabxW7128jGhmbKM6arxwxN0-ENsxhP1gjHtCFGVHbsdjUov598LKkA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pOnjIue1TZzZM1iMMSqf1A&_nc_oc=AdqR6Fh2WgEh9rhEaOCw47-tEPac6mdLaK_eHgZhbbU8-o52MbG6OTyiV75Ymj56k0Q&ccb=10-5&oh=00_AQKfLgRkfd6HdUhngRa9js1i-ziMQUjpuB3r2Wy6J50KwQ&oe=6AD17B3E&_nc_sid=201bca",
+          "lat": 1.3154214601602,
+          "lon": 103.76485349008,
+          "captured_at": 1550042843000,
+          "compass_angle": 338.04998779297,
+          "distance": 5.067487545127628
+        }
+      ],
+      "checkpointId": "CLEMENTI__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 152.91017981559997,
+      "lat": 1.315598,
+      "lon": 103.764386,
+      "imageCandidates": [
+        {
+          "id": "815233046055445",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-r0RyhyL1iT7S1RGEEEHLeKBqL-lIdY_35ye4C55JuqYweKKkfXo9aDm7bP-_GUNJJvpqxRsoiATYwY6q9YA9mKAQE-GgA2i1ZJp6LowHQbF2ywIeOJYnR0Q1QJlN95hQ3ahlHxXr4c7qm_WL8_Q?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pOnjIue1TZzZM1iMMSqf1A&_nc_oc=Adpn_HBROMaF8t-4aiRXwWeBAtpy5Yo_BiTAp0KBq9kVYtXZ7OkgJwMHDC0T7wWPN3I&ccb=10-5&oh=00_AQKVHUTb6J3IAOrbQkD-WKM_Ig_18oin-rLlsKZTXkj6hw&oe=6AD1A1DD&_nc_sid=201bca",
+          "lat": 1.3156873517437,
+          "lon": 103.76437072145,
+          "captured_at": 1550042028000,
+          "compass_angle": 235.99000549316,
+          "distance": 10.090926294584278
+        },
+        {
+          "id": "519665015735472",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8nRMyTIUKobBCfbxaupDVyFGGLNsNjMvQyuQrgFTqu4Zrht1a_NIwGrh4HOW-jraQkaKJYJC37_9P2kvlDdXrv-7bYzbf3JY8fYfQpasbaa5ydTCYO1iqi6WwbvquL9nPPPQS-mhEWjhH9hoDLEuo?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pOnjIue1TZzZM1iMMSqf1A&_nc_oc=Adp6hYKWUHn3Oa-s0ssC16vLyd-MULk-0MBhe5epss9TKl-aWohKsF6mIXbjSGWw0C8&ccb=10-5&oh=00_AQIpHfzwqHHCeRPrlp8UHivFZvG_Rr13ipzvqSjvJdSKLA&oe=6AD19C2E&_nc_sid=201bca",
+          "lat": 1.3156264101758,
+          "lon": 103.76429245718,
+          "captured_at": 1550042029000,
+          "compass_angle": 234.41999816895,
+          "distance": 10.880232895241427
+        }
+      ],
+      "checkpointId": "CLEMENTI__R01__C002"
+    }
+  ],
+  "mapillaryImageCount": 6,
+  "uniqueMapillaryImageCount": 6,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531662.7682211
+}

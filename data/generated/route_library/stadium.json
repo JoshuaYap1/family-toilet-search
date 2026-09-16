@@ -1,0 +1,154 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "STADIUM MRT",
+  "routeId": "STADIUM__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3025110877234043,
+    "lon": 103.87439998828935
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 7099150486,
+    "lat": 1.3010008,
+    "lon": 103.8728958,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 236.98828617595902,
+  "distance": 236.98828617595902,
+  "duration": 197.49023847996585,
+  "points": [
+    {
+      "lat": 1.3025110877234043,
+      "lon": 103.87439998828935
+    },
+    {
+      "lat": 1.3010008,
+      "lon": 103.8728958
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3025110877234043,
+      "lon": 103.87439998828935,
+      "imageCandidates": [
+        {
+          "id": "183727190175156",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9o27Nyy82c5PZCVH8lq1igYnEfjRfDabjG1lxw_9S4CfUXuyQyz1yOhCz8Pq2e3hGGvAmk2T_KFQSR43554OcSZRLIFo050qgbEdmsiqsFmpFunSweJlqsR1E99jF-qbNx6pIiYcGpwYfXkQv_RA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qCvNEHi49-OkXC8_9YMG2g&_nc_oc=Adquazhk0eBoedVHumXDBAhq5PDuL2VYv2afzx-8a7aY_R73ePqSwmK2BQG94G2CHwE&ccb=10-5&oh=00_AQL1Zd7OD_Vtp5YJupZrrmV9S4NtIHzsbXpuvok0NAoiMg&oe=6AD18156&_nc_sid=201bca",
+          "lat": 1.3025493167685,
+          "lon": 103.87440409084,
+          "captured_at": 1544836201144,
+          "compass_angle": 244.10205078125,
+          "distance": 4.280079726550489
+        },
+        {
+          "id": "879161469475583",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Qsc4_25E2Vm_wRU68Omlj276nx1iEO1rBpvyeQHtOXuClz77h5flN8UHot1Fu7jl0KRDedjgLai4fV4TMhughdTVj1St85k05xYFjMkkpK36cQOwGIiV0QiNI1qW8c5dkkI142wBOklvQUVWHQhw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qCvNEHi49-OkXC8_9YMG2g&_nc_oc=Adq4YvcMYvVscvKlMNP6pFp5R0hL0HaT-CvWmDFsOZccWGI1IWd2GBsGFpHe5E0TiLw&ccb=10-5&oh=00_AQL3WcWUxqzc5CRe3kUiL_4N-WB2KzTmfbsmYe-ng2JAWw&oe=6AD1983D&_nc_sid=201bca",
+          "lat": 1.3025212094214,
+          "lon": 103.87435450291,
+          "captured_at": 1544836203169,
+          "compass_angle": 222.06805419922,
+          "distance": 5.186006195624006
+        }
+      ],
+      "checkpointId": "STADIUM__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3020012607618192,
+      "lon": 103.87389222031022,
+      "imageCandidates": [
+        {
+          "id": "266878791850711",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9_evqGfDBLz1AhI9IldLA_xDi6h_PLohdQ_lftfLIi8bwHzwv6mpTnc9za0FpTdRxpo7xeLG5ykUA0rKTEgOWyBHtNLXn8N6xfajxqwk7YeEV7ypNHB-DmxKcR5pG_APqT2lL04NeIZhtZEolVRw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qCvNEHi49-OkXC8_9YMG2g&_nc_oc=Ado9ear0H-t5ckV2Gyle-ShDwr2CybL-bCwpulZoR8mTW_Hmfk6JUQ6NCN8T1IXjyg4&ccb=10-5&oh=00_AQIvhd1q5vtFQCgSoWUTq5BA9ruz0pj6i40mAFpQpr9bYg&oe=6AD18B97&_nc_sid=201bca",
+          "lat": 1.3022163030929,
+          "lon": 103.87382193489,
+          "captured_at": 1544836225136,
+          "compass_angle": 258.37762451172,
+          "distance": 25.18409114917305
+        },
+        {
+          "id": "777246792926025",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An90qtvkrOYXmLCQ4Tb3DRjbqu6aZzzcP1JHNbMM6Zdwr1BUxJLywoFL5errU07uVYoNTk9VpsFHZbzEJd0zNuFOHIo9EcT-stZpID1E2Dbn-4LOFD3B6QqKewyCBY7Q5NvQemZ10rpu0kzh4Z_Tuw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qCvNEHi49-OkXC8_9YMG2g&_nc_oc=AdrYxzy0mAHk-HTkByTW3JC_u3zkMmsXPITjRC3OgPf02SOAraNWkukkDGbeVl-zpn0&ccb=10-5&oh=00_AQL-3CTZ33yKdfwUHpuLRxDuk-do-hPYymYqDFctzFxePQ&oe=6AD17CCD&_nc_sid=201bca",
+          "lat": 1.3021765695339,
+          "lon": 103.87374521637,
+          "captured_at": 1544836227829,
+          "compass_angle": 230.58642578125,
+          "distance": 25.465813583402397
+        }
+      ],
+      "checkpointId": "STADIUM__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3014914338002341,
+      "lon": 103.8733844523311,
+      "imageCandidates": [
+        {
+          "id": "192857249352858",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9FhkTUR9OAgl4gJ733Rjrf4SaihzDeuuV5qqqaYEZNmGsZWVvXnqmZ5jBlDcxl3kdiRswC03QfQpyqJ6mAFDHMUQIakSHCJsG9medEgYpxWOJxJFqzD2qreLorxqV1MZk78n34HnC9P4MEUNxPxBA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qCvNEHi49-OkXC8_9YMG2g&_nc_oc=AdqWuMIfXp6EdTAGYIwkchgdDE-TnG4LDH628LFTLhElSsfhWyu0Ns8daLODEgoxWOE&ccb=10-5&oh=00_AQLcv16TmEtUekWn-_-Yscy7vdczJ7WjmyQ4-83Hdqi-Ug&oe=6AD1A31F&_nc_sid=201bca",
+          "lat": 1.3013707955567,
+          "lon": 103.87312795466,
+          "captured_at": 1544836267129,
+          "compass_angle": 140.57537841797,
+          "distance": 31.547133417574447
+        },
+        {
+          "id": "515679629452121",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_N_wy40RsR0Kn3anifYdUOlvJ89Z0pfhqDWmzwKHhkso0m79EPIHX60P_RqwoYbH312cdVk6MCMLaTaQItYCiZH6qAQ_HOvsHujX1ZlWlnQi--5lV15Wa0Oc4CSs3pSqTcmHR0LiDDL7QVVQyRnm0?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qCvNEHi49-OkXC8_9YMG2g&_nc_oc=Adop5tSp6VWSjq9zf2Hf-ywg84rLc8ZDZOI0fEm3BLxgyG9PEPnAzcdWNsjSBqroJGE&ccb=10-5&oh=00_AQLrUHTHA7vhvBX7nXkOoXWqWCknMbAwdGFKv0a70GDSdA&oe=6AD18F92&_nc_sid=201bca",
+          "lat": 1.3014107057968,
+          "lon": 103.87310708091,
+          "captured_at": 1544836265133,
+          "compass_angle": 149.63745117188,
+          "distance": 32.15052369833881
+        }
+      ],
+      "checkpointId": "STADIUM__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 236.98828617595902,
+      "lat": 1.3010008,
+      "lon": 103.8728958,
+      "imageCandidates": [
+        {
+          "id": "468506434215963",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_rUpWk6n1ZZzsVZwlW-RQ8wT0_UlXVxXepC624d0cO1fZCy2Llyg-aY-w7KFUW4-FIAk7_pY-_zSSBaHeMw2rQJReGhD8amr1tfAP_sR726Ng9ApTUUZZFrmHtyXstkTKUD23YuGDvoM-6cY3_BQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qCvNEHi49-OkXC8_9YMG2g&_nc_oc=Adrq9zHDRSxndNWeMPm_wcCzlPq6w5gHBr0bCZAVNb-Kme8kB1EY1kVnzLq3wKdd4PE&ccb=10-5&oh=00_AQLnX17c8W5Fiyp_wXi-0b16ogEfiqELngq6WLDM8b60GA&oe=6AD1705B&_nc_sid=201bca",
+          "lat": 1.3008785805628,
+          "lon": 103.87282163347,
+          "captured_at": 1555583427537,
+          "compass_angle": -1,
+          "distance": 15.913477013165714
+        },
+        {
+          "id": "207246134357371",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9O4kJhJ3JgTelvBwL9UZH_pAWl1mR8dMqPnr2xYnrdoHNSCJqCTvNMuXsAd-cZmZZ0j-Y6ieFRETK-wnEt6FbX33chY0IriY4EpG336j-mWzEdvbI8o2nuB14bxiz5pFmu0fcX7ui8Z8akl4dk1w?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qCvNEHi49-OkXC8_9YMG2g&_nc_oc=AdpCA3bIrhCg2BeCMAC3OiG0jLS-dbga9WgnjGTE15i4eWTF2VsRFBnonuXengiohZI&ccb=10-5&oh=00_AQJy8QEPWkAH-ttCISoYZy4cW79bzCwAgK3qOH16aYyr_g&oe=6AD16DA7&_nc_sid=201bca",
+          "lat": 1.300909,
+          "lon": 103.872681,
+          "captured_at": 1555444361086,
+          "compass_angle": -1,
+          "distance": 25.998045396593696
+        }
+      ],
+      "checkpointId": "STADIUM__R01__C003"
+    }
+  ],
+  "mapillaryImageCount": 8,
+  "uniqueMapillaryImageCount": 8,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.87439998828935,1.3025110877234043;103.8728958,1.3010008?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c2bed0>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531869.3197887
+}

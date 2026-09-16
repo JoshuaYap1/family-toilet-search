@@ -1,0 +1,127 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "MATTAR MRT",
+  "routeId": "MATTAR__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3264635221670715,
+    "lon": 103.88374838731283
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 6829879772,
+    "lat": 1.326136,
+    "lon": 103.8849735,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 140.97516106512685,
+  "distance": 140.97516106512685,
+  "duration": 117.47930088760572,
+  "points": [
+    {
+      "lat": 1.3264635221670715,
+      "lon": 103.88374838731283
+    },
+    {
+      "lat": 1.326136,
+      "lon": 103.8849735
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3264635221670715,
+      "lon": 103.88374838731283,
+      "imageCandidates": [
+        {
+          "id": "2370789649721051",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_8F3mdv56tyyZG06VACQLd3yqJlZiB8Wy-_D1F4e4wIxy9ab1QaRdpaUum9RRJrhBe21XFJaKE60fD7ISPuUFyDV68yTJ8EYbh2vYWKQsPKNF5divs-ae_PFHvWuWMxYhaSUHWFnwnY4J61vthJQ?stp=s1024x614&edm=AOnQwmMEAAAA&_nc_gid=zqlr1XcqehpNlEnrRJwJRA&_nc_oc=Ado8GHBAmxJ302marzwVOKlm4E-d7LplvOB-U0GwzZnzDWFqmneeLbnPT86EbVv9Wqc&ccb=10-5&oh=00_AQLKOdYC03Xj_75r_xQdTt4gpH6---MMPpo6jIsOIJNuQA&oe=6AD1780C&_nc_sid=201bca",
+          "lat": 1.3265272024483,
+          "lon": 103.88368114947,
+          "captured_at": 1559458164413,
+          "compass_angle": 7.4468994140625,
+          "distance": 10.307584647569392
+        },
+        {
+          "id": "822910761649816",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9GXhFvtoY5QhzkLDPCFuqaFxoCz-UCrP7TvMGJWWnzqKpKfZema5XBNK41I8h2IrUDuu3E8mnLlliUzkUoiFM176Y7GDe5d_3mf8_XXW4Kac03vT22YWusD_AIXQODca7popJAZ1RR-7BeKxozOQ?stp=s1024x614&edm=AOnQwmMEAAAA&_nc_gid=zqlr1XcqehpNlEnrRJwJRA&_nc_oc=AdpF-jN2KkXP16lKZmuOosTZI6IuNmQ1iO55UoDW4D5TTR4wLCSMKa1SyoQkph-kZmo&ccb=10-5&oh=00_AQIXKsotK9iwH-1a8H7ISTe6BzAy3hUmkjLrCaRZsQ-yhQ&oe=6AD17888&_nc_sid=201bca",
+          "lat": 1.3265412341114,
+          "lon": 103.8836940863,
+          "captured_at": 1559458165506,
+          "compass_angle": 54.282531738281,
+          "distance": 10.552622946770278
+        }
+      ],
+      "checkpointId": "MATTAR__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3262776612454186,
+      "lon": 103.88444360918194,
+      "imageCandidates": [
+        {
+          "id": "217704326513379",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9asyLujDNUAOIvuFA0zmkJjCt0p_hF3-SrVwQ1wUdTmDwn9tXSVbr8PMe_XMQBpwMeCj2865ha0qoHe6b4GHtNfPgbcbAWVCuf18Zs6C0m0Um1vgdjI4SocLNvOqQnW9hTv1kvcDGIHsho33XYVA?stp=s1024x614&edm=AOnQwmMEAAAA&_nc_gid=zqlr1XcqehpNlEnrRJwJRA&_nc_oc=AdrGIb5AXARh5XIeOxzVzHbAjNeRm1pnoorKwa1H5M9VHX1Vr2UAgr3wyhaMMr-waG8&ccb=10-5&oh=00_AQLLnxOeuwqlxD0XE-feqjOrgfvF9BKGUkrYrnp4DuMnCQ&oe=6AD1A09B&_nc_sid=201bca",
+          "lat": 1.3261447208354,
+          "lon": 103.88442703177,
+          "captured_at": 1559458271618,
+          "compass_angle": 97.142822265625,
+          "distance": 14.913480189795584
+        },
+        {
+          "id": "1068218433588022",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8IXctaaO5yZNl5HOdnyE1jsvSrdPiyfJYP2B7EanbU7HGzSlwt25S0D09fiLKQejleaE495w9otqIuB1dY5mAelhhq-qmjVLwNUaDDX0WzZgcsrMtelgkH_7v0zbqeJlU6NOhYQ41fOhbmNTSHZK0?stp=s1024x614&edm=AOnQwmMEAAAA&_nc_gid=zqlr1XcqehpNlEnrRJwJRA&_nc_oc=Adp-_n1OrH2vpPhAp1ArDnwkhuC_0Ue_CIXSG10kfdFq0IUafSydUZ68QvlIHN4bPrE&ccb=10-5&oh=00_AQKWsGTql1svI1zsX4bS8GMrXX-tgzyiGmg_stM2E6wx4Q&oe=6AD17547&_nc_sid=201bca",
+          "lat": 1.3261470023124,
+          "lon": 103.88441335436,
+          "captured_at": 1559458270514,
+          "compass_angle": 100.64587402344,
+          "distance": 14.92959357547943
+        }
+      ],
+      "checkpointId": "MATTAR__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 140.97516106512685,
+      "lat": 1.326136,
+      "lon": 103.8849735,
+      "imageCandidates": [
+        {
+          "id": "296081425501050",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-cFjHUW5T1KxtvR1E4_rEoluQz4ww7Kz-vkHNVXVSLhCpLUq60FX5P872jmM7GBWMXAWbXRFyuu5YKf87UctnT8_2meY4bxsmRcmhlOo-NSWkQxgVAlMbL0v4v6QPxTznBbZ2pMl09nQ2o5ErGOw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=zqlr1XcqehpNlEnrRJwJRA&_nc_oc=AdpPhptusgjsIqtLRibHTbvAwNgrT3LGQam_bbSrICXoNcPL5Z8KthDjfMRwzmmg30M&ccb=10-5&oh=00_AQLqyJpOrzcVzDJ6IVXfPJvqDgli0eo8XHj6u2Vr0QDrEQ&oe=6AD17C88&_nc_sid=201bca",
+          "lat": 1.3261946887814,
+          "lon": 103.88512482437,
+          "captured_at": 1559175868987,
+          "compass_angle": 272.84405517578,
+          "distance": 18.06376606225581
+        },
+        {
+          "id": "928235081348326",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9B6SN9MUQc7ERn9BGYYqB6PjtcWBKTVaGCdjPU86GExwEttu50qIJ0ovUDDxJr2myWPCx7m3O1Mx9fSR1rzQsT42WsCta1-gzobUZ6kqDGgPCKIw020odFdVF2PbxmqDTr9bnRRVRp_xcDzZjnxw?stp=s1024x614&edm=AOnQwmMEAAAA&_nc_gid=zqlr1XcqehpNlEnrRJwJRA&_nc_oc=AdrnJeCbvsvSTWJoEWaQiKEfJ2HgtEJPmuDTCLRusC78wYPqSzgV58nen4Q6MsFSeto&ccb=10-5&oh=00_AQIsLS7c9bvJ2xyR3zO_D28C5o8xZHrm5T6NSAMwtLagVw&oe=6AD16B52&_nc_sid=201bca",
+          "lat": 1.3259603122768,
+          "lon": 103.88495785427,
+          "captured_at": 1559458332509,
+          "compass_angle": 86.518920898438,
+          "distance": 19.634914899227436
+        }
+      ],
+      "checkpointId": "MATTAR__R01__C002"
+    }
+  ],
+  "mapillaryImageCount": 6,
+  "uniqueMapillaryImageCount": 6,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.88374838731283,1.3264635221670715;103.8849735,1.326136?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c197a5d0>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531785.7877078
+}

@@ -1,0 +1,211 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "MOUNTBATTEN MRT",
+  "routeId": "MOUNTBATTEN__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3060459256607546,
+    "lon": 103.88324829270354
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 6378309985,
+    "lat": 1.3082511,
+    "lon": 103.8854488,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "drinking_water": "yes",
+      "fee": "no",
+      "indoor": "yes"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 346.35937005206256,
+  "distance": 346.35937005206256,
+  "duration": 288.6328083767188,
+  "points": [
+    {
+      "lat": 1.3060459256607546,
+      "lon": 103.88324829270354
+    },
+    {
+      "lat": 1.3082511,
+      "lon": 103.8854488
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3060459256607546,
+      "lon": 103.88324829270354,
+      "imageCandidates": [
+        {
+          "id": "1039924271061237",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-eS46fjmp0XzKEFxfMF6iKQO3uiYMk3DE9OpS7DAaTkesD_voXjLZtH2x97d4vsaIn2t961M_GAWZF6qJa_CrQfT5IBxSM9dmP_WI0cJMdzoXZQsJN7EEO3KmNh2sjbEG6SvChegpgMfGnGYanQw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=AdorxU-3ZbyiibEofoXkUiiSTRugbjZyVSNeyaMkaLQl3xkzD9HE0RJugYrLtWKiqV4&ccb=10-5&oh=00_AQIpsnKCKcbXHrsm-Idlm6GGsPDW2NXdbWFuEOSr6CbfaQ&oe=6AD1884D&_nc_sid=201bca",
+          "lat": 1.3060935392158,
+          "lon": 103.88328832796,
+          "captured_at": 1715211857992,
+          "compass_angle": 336.4576374364,
+          "distance": 6.924282697828309
+        },
+        {
+          "id": "1457456064869451",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8RsNVAQHVIzg1XLpvEOrxMDchN9t4cTDNwznhbWMOsQoZ4bz7djAye1Yn3hStcCiCE-XvXQQ1zzgO-hgU-bLKP3o7P31jJ5nrTZAKYx-RzcC-amqIl7wwacu3y_bcLdqmCz4Qj49zkXwqPOkFiwDs?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=AdrrCuCbAE5P9mclNmnrWbzWNQ6jdPztQwz7G6uoVETiLpGBA6JB15m1_fEaexxcCRU&ccb=10-5&oh=00_AQJiVWKTwEoKq-Sf8HGnBuFr1IVXKoHzKJN-aXhADDa8fw&oe=6AD17C16&_nc_sid=201bca",
+          "lat": 1.3060456078413,
+          "lon": 103.88331417036,
+          "captured_at": 1715211853945,
+          "compass_angle": 346.54158460572,
+          "distance": 7.331680908797997
+        }
+      ],
+      "checkpointId": "MOUNTBATTEN__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3065552635404059,
+      "lon": 103.88375655261778,
+      "imageCandidates": [
+        {
+          "id": "536562177749931",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8dI1uPmZwdQIS9jhcbYIy7oi0XpBQev1Iwqgco9rz-ByJSRIhnDuSFh97wuoXC5CByGocHo-MNXbhBXsjB0JxKyQq6wHECsyXz2Ylw0Zlp4mc-ClvXC1n2ovExKL-QsKT8ToG1xjy6qZiAmkpYKQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=AdpKEoE3imKQRKK0BEeghU-4LJzIjiHqLvQFCWOZ9rSZoFpdSfy1Jwr-lrRu9xI-iIQ&ccb=10-5&oh=00_AQLhJZY3LwXRHqwjWeCYaIwCOg1-tPfSNRV8X5R6bg9DDA&oe=6AD1707C&_nc_sid=201bca",
+          "lat": 1.3066833077978,
+          "lon": 103.88380757764,
+          "captured_at": 1544835708172,
+          "compass_angle": 232.47808837891,
+          "distance": 15.343406100151288
+        },
+        {
+          "id": "470219184050120",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An91brgVk---KXR_ua8J78HwBePiuByk4vmPq8eV-1A7p1UOiyfFl1biZBXjA7yYliXPr6-FCyQ0bCqiNHKP4WWAxG3JKjSmpiy1ztXcGpCqmsBti_8XCb3TPPK4B1B9UmJ1haZqpuOKRuJham37rw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=AdpAY-3jFo4PutCD9FNu0zGfpfEKy_C0CqtaXRPAaD4ZA6RJX_yw0Cco4ZzmZpzO3j8&ccb=10-5&oh=00_AQLDmKSPj9SuoGVKALoJsTCf_ctjRWS3lA-AIAKHJ4AEWA&oe=6AD1754B&_nc_sid=201bca",
+          "lat": 1.3067405833163,
+          "lon": 103.88380314558,
+          "captured_at": 1548382268000,
+          "compass_angle": 244.19000244141,
+          "distance": 21.271499926207206
+        }
+      ],
+      "checkpointId": "MOUNTBATTEN__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3070646014200569,
+      "lon": 103.88426481253201,
+      "imageCandidates": [
+        {
+          "id": "205079314785061",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9lVHb7bly_uWuSjPe5ke86fGNOKchNXU2xG0T_pyvbke1-NhbnsMRwkBrt0Oj074oKV12s1YVMzvscMK_GWrwI0HF8gFwElX160SVK2rt6GyxdwaI01xIkYCLOfqNq9TR1uJBWNx3MFucPFFxWyfg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=AdoNz0lgplfjXO0mJdmhrymyoiq2XcmSUuNhGXdT9pk-UYGgJQaoaLXf_9KLemypCmQ&ccb=10-5&oh=00_AQJ66ffwmAAUioLKn6sajSqVQtksfvMag1LK_C7oPdd4ew&oe=6AD188E4&_nc_sid=201bca",
+          "lat": 1.3070551038634,
+          "lon": 103.88428312911,
+          "captured_at": 1548382693000,
+          "compass_angle": 65.080001831055,
+          "distance": 2.296340423852079
+        },
+        {
+          "id": "1624122764453959",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An85Inqs4KH02FCun43MTlBonSUEXDP_WgglE2hAZrfLwLeGPebVErX2KIvPBP34ih3r3J1YgUuzZKTeNhPkcGsWNlqYkDAfQMKtYtFMguX_8ymLiJmJaFbZoUgPmw-M2-xg56j2XQppo5MYJZneig?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=Adqq7ExHIl9Jv9LjfDD5DD7J_3i3ylaKwewIiyzcc9MQR5Gytz0jXq83ODdvN8AZH8g&ccb=10-5&oh=00_AQKvnO2MG_xnRn5Z9Z58kHMS2qZgRkXFIMZunY6xp-IFxA&oe=6AD16C20&_nc_sid=201bca",
+          "lat": 1.3070730907475,
+          "lon": 103.88431961451,
+          "captured_at": 1548382348000,
+          "compass_angle": 64.550003051758,
+          "distance": 6.1717506764783945
+        }
+      ],
+      "checkpointId": "MOUNTBATTEN__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.307573939299708,
+      "lon": 103.88477307244625,
+      "imageCandidates": [
+        {
+          "id": "498698938002247",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_fPV_5jvaZOOQ-MbKP9v9bEqZxaOoQc0hMzqUVgjdJrtbXpA-EdZhw5lVL9pV0wii_M4M6wRYe6ujgpFhAy2RVldlza12Cmyyr8kklu5jc6G61RayjIXVvYCTlKa692sOYjiv4vrcIGPcamjMarA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=AdrY_zAjEv35BNgQ8893ywseg20TgGJ6hvF2BmhzUKuNix9K3t5CiQKmW-c8X-TLW-I&ccb=10-5&oh=00_AQJX2Ga92N7H2stqJBGSJl7Me7nzz80DmU7x_FVFrycEdA&oe=6AD1A32A&_nc_sid=201bca",
+          "lat": 1.3075446892458,
+          "lon": 103.88471010571,
+          "captured_at": 1484391071000,
+          "compass_angle": 137.43279902555,
+          "distance": 7.727172525934781
+        },
+        {
+          "id": "2925170767810558",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9ZFAdnIXDcVqFW8yHaDt0LzFxSytnk5fHHlgGUAE_r7GNyaue_oD2u9ZX7XSiCbunE19Wni_HIkjfRe4uph_hsRid0ITmhy6B-BezCHtmXLtaqujlqsKFP_zS2TQg2GBufeTsNGk0Rbtnh6HT0Dg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=AdqsUtFFbKkvbNJ-sUrIwapRZnhqTyfyKRe49xGbBzIxs7W0o_XFyIlEZQty_j4cjpY&ccb=10-5&oh=00_AQLHygIaKlJrsh8Znb5L3cgAdKnZaQEM0NDQLtKxhsZ1-A&oe=6AD17AF7&_nc_sid=201bca",
+          "lat": 1.3075195150659,
+          "lon": 103.88472491172,
+          "captured_at": 1484391072000,
+          "compass_angle": 149.37821258381,
+          "distance": 8.08910054228968
+        }
+      ],
+      "checkpointId": "MOUNTBATTEN__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.3080832771793591,
+      "lon": 103.88528133236048,
+      "imageCandidates": [
+        {
+          "id": "571134700534504",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_y_GnIG6gpSPgacEimbL6cGzWGlQL2-iPOWooUl4aMOS1WvFQDTC5PolFE_TnHWepIULvgPQIKFXJQffgKlCvy-S40dktHMS_nqVVNBAbIrH3KhUthKG7G-tNAjLv2hbE3jxZR2_pyK_UEWgHqJWI?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=AdqFIz8wl0oyFTsiJsrjzuwgCppwPXGvdvMFCd8DRzJaKrD2izhH0uwtU8QvZX1632E&ccb=10-5&oh=00_AQKYU5Wg23XtE5EM8ciSoWZV2VeIRbbhyP0KNX-5FOrebQ&oe=6AD17ABA&_nc_sid=201bca",
+          "lat": 1.30775492404,
+          "lon": 103.88532021893,
+          "captured_at": 1484391113000,
+          "compass_angle": 326.61978318804,
+          "distance": 36.80757737128171
+        },
+        {
+          "id": "197294075424437",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_UxTetcIHSporQlWOycS02GL-aZCyddcD9wwxGRDYiwVNx6aXGQMxoWyUVRP5Wkcbw1xq3yAgF1Yv7WHfacaXVFLreBi_YGFMGrtmqJKnIYcGDbVqKzhiH1lTW2j9g07ZIxQD7uTRD-s4ZSLffmQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=Ado4BwKXRk-CZaGiyqUr2k7nFTvhWZvXhb_EXibJb_ma-fO-9tgPfZ7J5kgGjdcJtkI&ccb=10-5&oh=00_AQLw1ack2w__4vvicBn6uI8osQY1eOXsVgWRApSlxc7ihg&oe=6AD174EF&_nc_sid=201bca",
+          "lat": 1.3077675733145,
+          "lon": 103.88538290769,
+          "captured_at": 1484391114000,
+          "compass_angle": 330.54901681033,
+          "distance": 36.91749538052659
+        }
+      ],
+      "checkpointId": "MOUNTBATTEN__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 346.35937005206256,
+      "lat": 1.3082511,
+      "lon": 103.8854488,
+      "imageCandidates": [
+        {
+          "id": "532437501100957",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An--P_QGBwXHZWG-OJKaxFT_uT25baGAmmNWy-h_zfbQfxXVqUmvMpl2r8NGXCtYz8_5yLVBeiggtVlO0NlcJOkdGElBSnnsVwqZtFBaVANp5ehdA7yIuxHh2ZWRHW2v58jYhRvav5VybxCVZ0U1XxM?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=Adpzq1K4zVo1aDA-NRLmZSPVmkUczdpJMyGrGfPPt68vrU13Ty7Dkp_UZCscSQpqB6E&ccb=10-5&oh=00_AQKDyxGslnUDI7AL_hnmZfWLHATGU0pqfTDahNQwRGtgsg&oe=6AD1798E&_nc_sid=201bca",
+          "lat": 1.3078484300377,
+          "lon": 103.88564492961,
+          "captured_at": 1548383807000,
+          "compass_angle": 65.019996643066,
+          "distance": 49.85717846319888
+        },
+        {
+          "id": "2837139836545532",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Auz2qEo1xVuNsoE9wP_6venlTa3P6v246RTDaOLhtk9J5003d9A4IsPFNdQDYb0f4kuDInAtS0TDiwe2gsRd6layFTJhu-IsHziog-qmxoXjwhl3FX8MQVfEJbvxuHg0nXoEI91trYbqR_plAOA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=mtCJPE3FVRqlfp6WdRl6sA&_nc_oc=AdpP0g64909rZsT3GUSy7X0rnP1vvmTuNhL8HF27xSb4plSWDfnGcO_4rQiTAzFhdpo&ccb=10-5&oh=00_AQK6B4OiCoeL8RVnNNefB8xN-8ydote6T3aIC9UCvUDZrA&oe=6AD17315&_nc_sid=201bca",
+          "lat": 1.3078146681459,
+          "lon": 103.8855834611,
+          "captured_at": 1484391117000,
+          "compass_angle": 333.39703643805,
+          "distance": 50.84252914244529
+        }
+      ],
+      "checkpointId": "MOUNTBATTEN__R01__C005"
+    }
+  ],
+  "mapillaryImageCount": 12,
+  "uniqueMapillaryImageCount": 12,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.88324829270354,1.3060459256607546;103.8854488,1.3082511?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c29a90>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531805.091585
+}

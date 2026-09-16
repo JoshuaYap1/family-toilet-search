@@ -1,0 +1,104 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "MARINE PARADE MRT",
+  "routeId": "MARINE_PARADE__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.302531699392386,
+    "lon": 103.90459124473303
+  },
+  "toilet": {
+    "osmType": "way",
+    "osmId": 746110665,
+    "lat": 1.3020155,
+    "lon": 103.9049973,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "building": "yes",
+      "indoor": "room",
+      "level": "-1",
+      "room": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 73.02193173276201,
+  "distance": 73.02193173276201,
+  "duration": 60.85160977730168,
+  "points": [
+    {
+      "lat": 1.302531699392386,
+      "lon": 103.90459124473303
+    },
+    {
+      "lat": 1.3020155,
+      "lon": 103.9049973
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.302531699392386,
+      "lon": 103.90459124473303,
+      "imageCandidates": [
+        {
+          "id": "249295113645291",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_d56mkWefSaT4-WV4DFK9sx6AmSZyZkmvinh3QcnTtRqp_iAdvjmx0ojA8Uqlo9bM7nrqel8EO_VVEufR6pNs9zDb5OV5FD8ZBnnWjawhhjUii397rocwRjch9DRuVS9AoWcQHbDOk_cuiXnTUcCY?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=VhIGxqKbkQwVvCNFq1uhjw&_nc_oc=AdqHGukomMycn9l-ZH9DxijjPim8xaAEr0guHXiNtEizI2o80Vb10hKywCIKB9i6FXA&ccb=10-5&oh=00_AQK7h7mAiM8dyq5GY3_HSo59UzY_1F-RlOaijB-ompoB2g&oe=6AD16B70&_nc_sid=201bca",
+          "lat": 1.302607603076,
+          "lon": 103.90452671244,
+          "captured_at": 1484353396000,
+          "compass_angle": 63.984993718227,
+          "distance": 11.089413327650758
+        },
+        {
+          "id": "311148813859169",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8rZKOepbo5j4_my860zfW8dkQEJHfPm5N80E1x5qVFwJm8OIZTBSUcn-PwYZou3CS8WLCInKoFnr2wW7zCH7oGb8LbGNZdlyxdyfcX6s7zl-cooTEvx6kpAMQ40heJmLZOSMKw9zB0UMTerzEefg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=VhIGxqKbkQwVvCNFq1uhjw&_nc_oc=AdoLx6RLRQhJyj6rMXx6zy5NnqwCGLcCSzVwlZdlTTZBbCQNElu0ksOxJvQ0H3-kKfY&ccb=10-5&oh=00_AQKXQV0lJiz_uOVajn3iueOUB7obG8NqtzFYao71K5w4rA&oe=6AD196B1&_nc_sid=201bca",
+          "lat": 1.302636162156,
+          "lon": 103.90456760627,
+          "captured_at": 1484353397000,
+          "compass_angle": 65.743098290944,
+          "distance": 11.92265636867536
+        }
+      ],
+      "checkpointId": "MARINE_PARADE__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 73.02193173276201,
+      "lat": 1.3020155,
+      "lon": 103.9049973,
+      "imageCandidates": [
+        {
+          "id": "460649266353132",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8qe0Wzn1EkmewqtpjAVmYkqxmlcXhLHlyXn9qXlHXF-4hqZ7sl48Worqy059WyAI3UvP-egXwL6pwHPY8vdcbeYwU2tk7BGPqHTly0XyvzbiuNeB_pYYpAJXGwaiDsrOFfi8GzyQ4ojUwyBgfhoQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=VhIGxqKbkQwVvCNFq1uhjw&_nc_oc=Adoe58FkSWchoZK9WpsNXIwDT0yLlxA7AdaRYKffJLr-HVDgF3qBDf4f5ytWeh_pgLI&ccb=10-5&oh=00_AQJOCUsYVa20-baYuuAbTrRuYOfDTNMFnfPSdpwytow4Ww&oe=6AD16FF7&_nc_sid=201bca",
+          "lat": 1.3023039274588,
+          "lon": 103.9047164042,
+          "captured_at": 1715490463590,
+          "compass_angle": 235.35609880372,
+          "distance": 44.81264149463569
+        },
+        {
+          "id": "7530217770398150",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_v5lS9pqV0-RhRUktxumhzXRAMvKy3M1YHCSdLQHYfgHA7urTywnFHXVov-4e10mtzCsr3JwZCGL2VdhElcJWQ-896aSAibWyCHpbqKnJ3UTfOTs_qJX6_aiZIGtnUKIxiSJoIJPUbFtFbHDFvuSA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=VhIGxqKbkQwVvCNFq1uhjw&_nc_oc=AdoA4jc7d_GYvFUcyhIKM7OPyJVx2LVLTywWFFZnAxEUx2mA0l0Km5seulq9My7EYe0&ccb=10-5&oh=00_AQIG7LuwGJPpy3HnEeWqz7mbUQjmVuhEBMEWTnDPlX4OdA&oe=6AD17E14&_nc_sid=201bca",
+          "lat": 1.3023805831392,
+          "lon": 103.90481101863,
+          "captured_at": 1715490462505,
+          "compass_angle": 238.97468581432,
+          "distance": 45.62334878023385
+        }
+      ],
+      "checkpointId": "MARINE_PARADE__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.90459124473303,1.302531699392386;103.9049973,1.3020155?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1979590>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531753.4663694
+}

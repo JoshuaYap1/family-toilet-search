@@ -1,0 +1,105 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "SENGKANG MRT",
+  "routeId": "SENGKANG__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3918291197182173,
+    "lon": 103.89540572075428
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 7690211879,
+    "lat": 1.3920696,
+    "lon": 103.8953889,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "limited",
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "indoor": "yes",
+      "level": "0",
+      "wheelchair": "limited"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 26.80548233005187,
+  "distance": 26.80548233005187,
+  "duration": 22.33790194170989,
+  "points": [
+    {
+      "lat": 1.3918291197182173,
+      "lon": 103.89540572075428
+    },
+    {
+      "lat": 1.3920696,
+      "lon": 103.8953889
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3918291197182173,
+      "lon": 103.89540572075428,
+      "imageCandidates": [
+        {
+          "id": "906781737366445",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-1RGjlXu6UlIET51H_iyPr1Izb2HiNWhXocagQl5N0HvsIK8D_ZU3ZknaxDwuHR7qfkaUVn_cy8CphpQV3Uz7Wrn4iVZLfXfWAmUwFQeSXBEeVacLx6jUwhabyFc_Du1JqyDK-_7tZ0jMDBGVlOqo?stp=s1024x771&edm=AOnQwmMEAAAA&_nc_gid=snI8_wQqHYak_pvXNRq0_g&_nc_oc=Adp5agqIxD1_bXYl2d7dav3oCLqEYVvhXuJdc1zjozkELNGZPOmM5VzBebl9F1S9BfI&ccb=10-5&oh=00_AQJUVTFmvwBWEdTIHY-lRv03rk1phFswoN7EbT6tIbP_Ig&oe=6AD18EAD&_nc_sid=201bca",
+          "lat": 1.3916714000001,
+          "lon": 103.8956352,
+          "captured_at": 1672897015971,
+          "compass_angle": 305.56195800751,
+          "distance": 30.99120902865558
+        },
+        {
+          "id": "1854258021617836",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9tuDHf8juwARLXSPH23wa5S86OfMbXc-XQB15fxabRe3NKW6fli8g1LjM5skA8F1dLMhqq8EL38y1Z5s79MSKSfi38QOlRI2Dv2Wx8SyBjEGwIDsgeBpIFgbtkTWvIcytHY89pn1xWZ2Q28oqF3g?stp=s1024x771&edm=AOnQwmMEAAAA&_nc_gid=snI8_wQqHYak_pvXNRq0_g&_nc_oc=AdrwN3TIBz990_Hzi7gRPJBwhJjs9ytK8SB7OZnAgmsfAtG_av9X2li6Lv04AXfD5IQ&ccb=10-5&oh=00_AQLUqdi-NqS69xPF93IdkawZY3La8q76mr7m_usC1IMHDw&oe=6AD19C18&_nc_sid=201bca",
+          "lat": 1.391694,
+          "lon": 103.8956527,
+          "captured_at": 1672897017096,
+          "compass_angle": 34.139069072902,
+          "distance": 31.33219959885444
+        }
+      ],
+      "checkpointId": "SENGKANG__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 26.80548233005187,
+      "lat": 1.3920696,
+      "lon": 103.8953889,
+      "imageCandidates": [
+        {
+          "id": "260997985770702",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9w8hgKX2tUIB0baAWAe24kAoiMkzYadx1c3Xu5Bfssu2wqx8-iUke_pM5DaGDxQDXxlRMl7VuLTWHNfQRbi9OPKp3O73tLzAN7TZ_sNclQs_RL8hcUnNy1TspU15dnuLYMc4RX8itb1luq6o9mbg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=snI8_wQqHYak_pvXNRq0_g&_nc_oc=AdpvV5E-sEZ1z99fMFGXqZSG1Dz4cZanonOPz-o6unPu5J79bD4abxcVVgvivAo9Gls&ccb=10-5&oh=00_AQKeuaHrJsSa3paltovCNKLGxuKjB2jFSzzqORos1i4XaQ&oe=6AD19971&_nc_sid=201bca",
+          "lat": 1.392474053986,
+          "lon": 103.89553382919,
+          "captured_at": 1544804695173,
+          "compass_angle": 287.61663818359,
+          "distance": 47.82552588699911
+        },
+        {
+          "id": "314929746927082",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8StxV3_liQVDw4H1boAG04YZ6kUdGs6Ir4Nxj9POLYbh6m3bnjnWEOwvIlZqTCA_oDMDhvwTJxSM85E7Rs3cajJ6TyBaYigxgE9rhprntCF0bSaXOF-adDsyr_E5c3_7K-8dbvM8zjvJPbLtST3w?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=snI8_wQqHYak_pvXNRq0_g&_nc_oc=AdpHRyoaGG-dnVxmlHOrTuNZgz03QDvcaSt2zWkZyX2cz4MickDkuSXXXo_KMBuSGDw&ccb=10-5&oh=00_AQLMd-Cep1vVG21rPG9dXIppYeNxkyzrbktF2lJ5qAzdjw&oe=6AD19C96&_nc_sid=201bca",
+          "lat": 1.392495801654,
+          "lon": 103.89546010785,
+          "captured_at": 1544804696188,
+          "compass_angle": 288.32116699219,
+          "distance": 48.102016727575354
+        }
+      ],
+      "checkpointId": "SENGKANG__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.89540572075428,1.3918291197182173;103.8953889,1.3920696?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c2a5d0>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531850.0864813
+}

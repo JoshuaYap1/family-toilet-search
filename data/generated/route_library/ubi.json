@@ -1,0 +1,72 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "UBI MRT",
+  "routeId": "UBI__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3299508282897736,
+    "lon": 103.89987669085686
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 9984696620,
+    "lat": 1.3299542,
+    "lon": 103.8998712,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 0.7163378541574936,
+  "distance": 0.5,
+  "duration": 0.4,
+  "points": [
+    {
+      "lat": 1.330026,
+      "lon": 103.899846
+    },
+    {
+      "lat": 1.330024,
+      "lon": 103.899842
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.330026,
+      "lon": 103.899846,
+      "imageCandidates": [
+        {
+          "id": "2984666995138027",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-HamK6K5cBNo0J8INhoPH49aZq46FpsXkmYKkdc1ZalP8W0lw2BgBu-TyUpPp_ZFRL1KdQUE6a2KMM7MX6_ajRIFjLgolGw-M6nD-dNfGnmqF0ZizTIXKOjt0O6wazHHQl5bwDEwov6vq6gya-kQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=fWsDdOWf4QVZtLStp_YDQg&_nc_oc=AdqI6q0RHzCrHxGXwpNwINvKjF8neem1BxQG8uFcJaOgnCmnpNGv1siQkzSp5gyzInI&ccb=10-5&oh=00_AQKPvPlsXVW5bbC0A_0OdW2QGszQWv5QDodPEa8bFnhuqg&oe=6AD16D7B&_nc_sid=201bca",
+          "lat": 1.3300957691788,
+          "lon": 103.89980656694,
+          "captured_at": 1484369373000,
+          "compass_angle": 247.61177125911,
+          "distance": 8.9208008351899
+        },
+        {
+          "id": "805259910111181",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-BVIYwb97N1x-hdcgkJwWVHmo38zhelYz7nnhQcvpkM8TD5AnUqUfREcXA6GCMmamRCp876YUFWw6daQYdc46WBLxKIQHQu_9cnaXfuFcgANd1UK0fXrRfxAPXt7Zrypkc68AQ4tr3vTRKuDkPUQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=fWsDdOWf4QVZtLStp_YDQg&_nc_oc=AdqJB1OKqG-Ao4uLwsYfqxLXPMFKg0mJfsn1ot1g3aaJHwovqSB2mSpOMxovs-Mq66A&ccb=10-5&oh=00_AQJ-Q89MjizM35BbNq4dxnw8CCMm6lOTATw4FvWTwEG-cA&oe=6AD199FE&_nc_sid=201bca",
+          "lat": 1.3300825580356,
+          "lon": 103.89977699737,
+          "captured_at": 1484369373000,
+          "compass_angle": 155.78635107816,
+          "distance": 9.930348688882077
+        }
+      ],
+      "checkpointId": "UBI__R01__C000"
+    }
+  ],
+  "mapillaryImageCount": 2,
+  "uniqueMapillaryImageCount": 2,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531944.1136663
+}

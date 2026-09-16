@@ -1,0 +1,343 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "MARYMOUNT MRT",
+  "routeId": "MARYMOUNT__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3478660721730777,
+    "lon": 103.84005891807723
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 11779680659,
+    "lat": 1.3413592,
+    "lon": 103.8409185,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 729.8137332094055,
+  "distance": 729.8137332094055,
+  "duration": 608.178111007838,
+  "points": [
+    {
+      "lat": 1.3478660721730777,
+      "lon": 103.84005891807723
+    },
+    {
+      "lat": 1.3413592,
+      "lon": 103.8409185
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3478660721730777,
+      "lon": 103.84005891807723,
+      "imageCandidates": [
+        {
+          "id": "277502377411027",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-UD4nvS2y6q7zixKfuZ_CVY6PzeaCeY229DTc1utQEGM-UjKniDeqfcUxwz1y4NIOFfXBNOtkYIrC9nqTURmSzaFZzGMg4skprbeyGS-15n7Btp8EGId3h1YyvvzysU4SxxugSALX_LEemeQnptF4?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=Adqk6Md-zxGcGeCyq27KjShZwFRCKsKP4OuU8ZP8mCAJIl6WYv-daxtGrF76XlhzLLw&ccb=10-5&oh=00_AQLo1btxw_y-GEE1FW3uk90j4jgq4Cegy4EwddZ8G-SNSQ&oe=6AD197B3&_nc_sid=201bca",
+          "lat": 1.3479754901678,
+          "lon": 103.84008218301,
+          "captured_at": 1484558720000,
+          "compass_angle": 200.6247393562,
+          "distance": 12.452551550346495
+        },
+        {
+          "id": "459291395169795",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An98GOHAuaOvLeHhLzuCraRIJ84RTyYQQoCMSsZ2nbaLOsGkSHiXA7CG4bvqWO9bClY9IcxVRAoh0MMMH0n2z8jovhLw5cTWV5nDiYbBgZvSaerI8nOuIBlsGTsjF6wnrXK5EMamK_JSZzu2zhCtFA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=AdpSqqakRj1I-BBvHwa2NRQxL0JaQMUqEOj19JCi3aDG6X-8ANM4jS_imMHgRekGdl4&ccb=10-5&oh=00_AQJCJ4wbVVz0KnTwcir_KumL_S3hPoiqscvAVsW-RwOHXg&oe=6AD188E1&_nc_sid=201bca",
+          "lat": 1.3479368082341,
+          "lon": 103.84017988388,
+          "captured_at": 1484558719000,
+          "compass_angle": 201.62021318952,
+          "distance": 15.596015168736066
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3471528082946946,
+      "lon": 103.8401531428783,
+      "imageCandidates": [
+        {
+          "id": "809316636358892",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9xEa61FC7pZKuGMvVYGM8KNaimOIjoGXr7JLfHcTQC8kt2WQuapHoM9NZ4qJWLVmzFXZTlfsT-T2Mc3imEu397ykrxrzUnlExrpTNA8NaGAuObPDYD5-BcksnrG4XCwiU3xhGZRLc6toRTvSLVNQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=Adr4DFsGIfqguJVMYUxko--raVYSuZ-Rx7NN79oQscLEYBw1b6d4wm_GsGVx79bL1Sg&ccb=10-5&oh=00_AQISRIW53DZS91wUjyXWATSExqLhDrQ64NhUY6f6F94CxQ&oe=6AD184CA&_nc_sid=201bca",
+          "lat": 1.347742931634,
+          "lon": 103.84056627179,
+          "captured_at": 1484558713000,
+          "compass_angle": 219.97974962863,
+          "distance": 80.18338079459095
+        },
+        {
+          "id": "222748215916406",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9QQMHACpeOrZKkhcxd1j9IgFW-IAl4Vg5vzxgu0NjMQXOAfKnFbjavfaJkK-hKGqLlya9csw9EFsKrNbZu0xmfNZbWCodZpyN6IfqHcM9sAycl_6LdRRLqYf6eFW3NwWYsCtFpqyYuKMRJ2sXptQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=Adp0Fysah1ZokQ8PMTR4z4JHX6fWmo1ZBbLcJhhVrOxMzXYCB8c4Tl0EavI1H2-8XKw&ccb=10-5&oh=00_AQJsS3TThWvZ15nxR0axu-ss-RWqZKe1FshkGajMSucREA&oe=6AD19A6F&_nc_sid=201bca",
+          "lat": 1.347706429279,
+          "lon": 103.84061510047,
+          "captured_at": 1484558712000,
+          "compass_angle": 216.95681480031,
+          "distance": 80.25724675754194
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3464395444163115,
+      "lon": 103.84024736767935,
+      "imageCandidates": [
+        {
+          "id": "303689794733075",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9hjZ6GmBeJW03S-wNZpTnDynlTelLpl35gkFIqe8YUqLDmiFS06CUJM-Ft30W89uTBLb3j1-X0wylJHIhG1QPL1F2MaCXPfqPShc6wyXJ2GTMVoP-Pzs9bEy1lwctdcUiSquY8HIgXx8lW0bVF_A?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=Adpk1nnU9CuUbC2DnS--hUpRYhvVsrc1scog0GXjUaigK6F3gs5WysKpXmHeCVM2vTo&ccb=10-5&oh=00_AQLkjVxj_ZHRaTmTyrchFGBnN1yDeQUJstyotempSkSdLw&oe=6AD16E5F&_nc_sid=201bca",
+          "lat": 1.3466184582071,
+          "lon": 103.83932807362,
+          "captured_at": 1484558172000,
+          "compass_angle": 98.219054301153,
+          "distance": 104.22816747248605
+        },
+        {
+          "id": "175632584470188",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-I6dpF_x6HfDgifWPKsdBW59PkaBhBeDdQNoEt3ri1Z5OaNQmd5iFlCV28Kl5rLXKSfIfny5XtJ_njJeXrrO0WKxRJUZKA54KyjIJeUf_SyfgWrU8JXGy0_9eKSYeiueSQ51VT2Hum76OelcsuHQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=Adp16HvsGnEGFYmQ1G8eLTCXhqNc_HdXK50xOeltASDvG7F2tWW1Xag_f7IjaWfdX7k&ccb=10-5&oh=00_AQJN-rTcKynj_57iiyXgFerZGmHVyZ6Q7cdx_BLY6Labbw&oe=6AD184DB&_nc_sid=201bca",
+          "lat": 1.3464931552691,
+          "lon": 103.83930993233,
+          "captured_at": 1484558173000,
+          "compass_angle": 100.4413636688,
+          "distance": 104.49704790202743
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.3457262805379284,
+      "lon": 103.84034159248041,
+      "imageCandidates": [
+        {
+          "id": "802723822056100",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9ZEQT14Ysy12t9Ng-0U3xrvuDgqw8ndCIRERWZr19L2C0XO4SoZSIjkk4bXMR47jCkZl1yRIe2jkDsH4yALxN9Dj6xnzGzhsGX9p25WI3NZum2-PKDnDTR2dh1OgL32fmAHtfoo6HmzhKi57BFPw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=AdpyF0Ks6J-4KU4txtXdojkUh_ZHYgzdyUHRVj35Hi0HdvbAhrsA5FnRb4vlr6L2zrA&ccb=10-5&oh=00_AQIVemz8c7XnL23syqgskOyg68J2oBUifAaxLXRy5fgFgg&oe=6AD1A167&_nc_sid=201bca",
+          "lat": 1.3450811532041,
+          "lon": 103.84030509187,
+          "captured_at": 1722158098775,
+          "compass_angle": 242.66450528399,
+          "distance": 71.9303667575435
+        },
+        {
+          "id": "778173583062194",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-j7u1K7iJQSCyr2xGqPAxOADGkiUy63Aw2YNnUK2liu2lO_nNwvfZ_PuJ_z-cyB561FQGm-KXOQFgV53yBs60tKbMuawOys9ejxDKiCDdSaFGkkYZag3Bj6A6Ck8_Uwp5SY9J9SEmXA09k8Fy22g?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=AdoTxozvi16x58gl-M8LR3QhWf6i0w1pHtger1zbvsZTeVRVEMfKnrvFZ7-3PAIyl70&ccb=10-5&oh=00_AQIUff6S27G-qHEiwtESWTHJaPkmjQyDZhNptYBKVd5S9w&oe=6AD19336&_nc_sid=201bca",
+          "lat": 1.3451209466706,
+          "lon": 103.84057169399,
+          "captured_at": 1484558213000,
+          "compass_angle": 335.6947506417,
+          "distance": 72.0874655624621
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.3450130166595453,
+      "lon": 103.84043581728147,
+      "imageCandidates": [
+        {
+          "id": "1408248569529581",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8izFe2VcdMe6InReywZQrYh5tvmxzjVNzsYIfP71TjPk27Gjqygm7JP73_JY9WSPkn5T1xdRuhsLoIQeziiF_gAwI3UBcJbxlQ1r8p4rJneOpL8YMmwEJFaoRlTcQTZlK6nJJ18NJhwm3R1tsLMg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=AdrSkNs9hMw3B00WlccoFHHK9GyIycQ9H-CbRMTccesvf6m66GfC6ziK0Zj85aok4fQ&ccb=10-5&oh=00_AQLRoC8sfW3iEBqAZyhLiNe_tL-oMGTONalun_9Q5mkKzg&oe=6AD17BCD&_nc_sid=201bca",
+          "lat": 1.3450180905103,
+          "lon": 103.84046432519,
+          "captured_at": 1484558212000,
+          "compass_angle": 62.589940557299,
+          "distance": 3.2225112261730096
+        },
+        {
+          "id": "1433296593689152",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8oH_XW-Q2cAz4Eev55CehUI6YE5eItrzBwzRVfHemWX8N07bYLXkJR1HioE07u_pLNBYV5ouU7lPW_USLp_73jUIoCs4BjTd024koq6uDmUyrkR6RjZwaCWp9s1kpNPzz1-KFl90D9V87RlAtNKA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=Adpu-MPDBk9MCL6fLgZs299H8uEXk747RbSXpeJoNqZEySXumY38zn2x5G1UcmrNDg0&ccb=10-5&oh=00_AQLGghK_yvMKy9nGllJhGe_9L1J7QOTmW7h2q72PN3UyxA&oe=6AD18D92&_nc_sid=201bca",
+          "lat": 1.3450586742382,
+          "lon": 103.84046516096,
+          "captured_at": 1484558212000,
+          "compass_angle": 329.68347480506,
+          "distance": 6.041293984803353
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 400.0,
+      "lat": 1.344299752781162,
+      "lon": 103.84053004208252,
+      "imageCandidates": [
+        {
+          "id": "1890511451114746",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An80uJTHeCzkC8hNH2MVpbxR6Smf8UKQM2PXlB6lEBfsuZlLnmWE07jNOCN233LZwCHpDHgMmImb2XPU2H5ptJwPCYOHRclIvtGcdkIBUC7x4LYnNz3Lrv6Ul7Otkla1PJHuX8Vweu1wW1IsWpjI_c8?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=AdpXQP7CMI-TikrAl3mLOlI8sUKe0OpXxE3sqkG78uQvW-Xmr1nIXrckEXk5WHxnLdE&ccb=10-5&oh=00_AQIQntl2u5k16fNh_lfgv0GHXNZhAIoLQjT561ikWqRzrQ&oe=6AD18D14&_nc_sid=201bca",
+          "lat": 1.344435306088,
+          "lon": 103.84052290111,
+          "captured_at": 1548661792000,
+          "compass_angle": 239.38000488281,
+          "distance": 15.110706709855387
+        },
+        {
+          "id": "303455188167526",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-Wd9dw0GcBE7WwySV1wfwQCpbJ26LkPByGJhAHFQBddVBjkidtew8n1TBHmqv6aOaxl3pRpkVftTdWcvSJ8Wcod1LyphGBOZ7P1esVqwRi7dZ57pClxW7g2WOU6cg2TysMecEuPhFUPHldZ_TyUN8?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=AdpSNY-vWAhKKOzzbAnPom6ta8h5b46fOEAiiSvx7RzM95MfMq-g1WQ3uqTgDPQQA0I&ccb=10-5&oh=00_AQKT07pk3iXtA3eBGSBcSqXwRZJIN_chNk48MiWzJLObsA&oe=6AD18227&_nc_sid=201bca",
+          "lat": 1.344369253583,
+          "lon": 103.8403965735,
+          "captured_at": 1548661793000,
+          "compass_angle": 239.4700012207,
+          "distance": 16.747804312931844
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C005"
+    },
+    {
+      "checkpointIndex": 6,
+      "distanceFromStart": 480.0,
+      "lat": 1.3435864889027789,
+      "lon": 103.84062426688358,
+      "imageCandidates": [
+        {
+          "id": "584631009168556",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9vXXZGS0GvLeD_uMbBI6eKNXALNn2ghR8T7Nz-BFsbD9n8gZG38GVrs4lljxJ4oU3g5P1_VmTemdN3IyFKTQYI0U6pSabEhzbZRpk6mTFzqfnNN0s1UPHYoIzVq-w1_X6_0x8kj2tp1EBlMCWJfOI?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=AdocmoYb3aczRsDBoyrQu251LpBmURbEe82BTs0rSG-QTnu0tLYQmWVmJSjSCA1z3_M&ccb=10-5&oh=00_AQJgDC51YkJoWXdp1-MgZDLyR7FfZVBdRSCnODRBElj2XQ&oe=6AD19335&_nc_sid=201bca",
+          "lat": 1.3443058975645,
+          "lon": 103.8402756972,
+          "captured_at": 1548661794000,
+          "compass_angle": 240.22999572754,
+          "distance": 88.98520333264428
+        },
+        {
+          "id": "958448974926531",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_cf_1ROyD6JzBoF9s-SWXeI7I9MDnfnfpMKEdIYGBhgpT8gwETnAmyXJSGOth2y-fNsrMjspK1BQ0D_1S-Vlmeas4dlyxpv4BFGT07xOFSAn8tMMQVMB79QbNzdyEegr-TUsGEEIyQrYAyNWpNLg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=Adp22XWMLnxMLLrqULIpjSOmlcXNWPtnuUY-9Z7oCtGS_7cK9cN_EI3rmTw1fUobGVU&ccb=10-5&oh=00_AQJTc7J5j8I3NP-5XpbYBokfGTAbRwi9bNXiw0zNxPsDhA&oe=6AD17DE8&_nc_sid=201bca",
+          "lat": 1.3442420853783,
+          "lon": 103.84015466348,
+          "captured_at": 1548661795000,
+          "compass_angle": 240.24000549316,
+          "distance": 89.76374666118193
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C006"
+    },
+    {
+      "checkpointIndex": 7,
+      "distanceFromStart": 560.0,
+      "lat": 1.3428732250243958,
+      "lon": 103.84071849168464,
+      "imageCandidates": [
+        {
+          "id": "425073588577994",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8DKbRkksnS5T4MdWipZUFbci5RoN8Lf_EaD3F40OVGXFh_NKMFi-Fcbyqbc9aFfrx4sWNKYD9j--El3jf_Y_Tc-QY5w8wcb6WjBdb82AtP9QjVaeE5YEsgq7fT2AjwsohGPl7JTsnrtss7nFIALQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=iHnX2IIZ3bWDVgwHCGqxlg&_nc_oc=Adq4_aSBFB_tPE-weszUoVGngH3obRz8pe6Wos3M7UPj1nhFasz07biOTvw14w-aEnw&ccb=10-5&oh=00_AQJ0goWLRNh0WtmNsnS3Y7PlgpJxRABkmmbMpuRd7-9yBA&oe=6AD19C39&_nc_sid=201bca",
+          "lat": 1.3416871659367,
+          "lon": 103.84088511159,
+          "captured_at": 1484711457000,
+          "compass_angle": 44.992144807798,
+          "distance": 133.32786245097728
+        },
+        {
+          "id": "1549981019270112",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-RVl0397OripxRIROGzFMYd6Q8Kn4J10qauYpcbGwB3tXN3tPApxp8w4nq56XDGPMbfDCvrViNjuJL6FtYDtEzl11uSPjiO94P_dPQiNNFKEqP9ibbvCoY1JH-wJQ-0W_woDq5rcOjqNNFV50k3g?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=vNZUDbM28Jmj7rE_GUOBKw&_nc_oc=AdpfPUOu-VBWsIJ7SQvusqurGOi71_2UN5yOzZf30XSowmvdHLw4NTyAf_u1gHsOjfQ&ccb=10-5&oh=00_AQKKN4MBzwTe_53RJagovVGRqwWetl8NZ4BFKApQKDAopA&oe=6AD17427&_nc_sid=201bca",
+          "lat": 1.3433250932438,
+          "lon": 103.83958658205,
+          "captured_at": 1722158110868,
+          "compass_angle": 234.62018563297,
+          "distance": 135.64151923983437
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C007"
+    },
+    {
+      "checkpointIndex": 8,
+      "distanceFromStart": 640.0,
+      "lat": 1.3421599611460127,
+      "lon": 103.8408127164857,
+      "imageCandidates": [
+        {
+          "id": "425073588577994",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8DKbRkksnS5T4MdWipZUFbci5RoN8Lf_EaD3F40OVGXFh_NKMFi-Fcbyqbc9aFfrx4sWNKYD9j--El3jf_Y_Tc-QY5w8wcb6WjBdb82AtP9QjVaeE5YEsgq7fT2AjwsohGPl7JTsnrtss7nFIALQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=iHnX2IIZ3bWDVgwHCGqxlg&_nc_oc=Adq4_aSBFB_tPE-weszUoVGngH3obRz8pe6Wos3M7UPj1nhFasz07biOTvw14w-aEnw&ccb=10-5&oh=00_AQJ0goWLRNh0WtmNsnS3Y7PlgpJxRABkmmbMpuRd7-9yBA&oe=6AD19C39&_nc_sid=201bca",
+          "lat": 1.3416871659367,
+          "lon": 103.84088511159,
+          "captured_at": 1484711457000,
+          "compass_angle": 44.992144807798,
+          "distance": 53.244658056039164
+        },
+        {
+          "id": "814524852822017",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9azonAIpH1QjcA5c8aanGlJtzycYYuxURpCjSJDNDiu8DIyPUCRyNOYR9Yd67Wdb_WBVJGVIyAFHahmEp-s-petRGzTou8lTEUeEdq9_OS2yffIfuCFXbw_EcmNqiNM05bf_cBV_1109RZ2y4LR6Q?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=iHnX2IIZ3bWDVgwHCGqxlg&_nc_oc=AdpH4Bfrk7Vvgj2aT3wS2G704TMgRRys6pOoqPxMgFjRxhUbQQkoKAHPJNnM4eECbp0&ccb=10-5&oh=00_AQLM6Ik6wPpAHj2tHNyx15EOPCgVdWHBW6koxUCjt8T7vg&oe=6AD18582&_nc_sid=201bca",
+          "lat": 1.341662437439,
+          "lon": 103.84109690399,
+          "captured_at": 1484711437000,
+          "compass_angle": 217.32454974684,
+          "distance": 63.77849790020562
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C008"
+    },
+    {
+      "checkpointIndex": 9,
+      "distanceFromStart": 720.0,
+      "lat": 1.3414466972676296,
+      "lon": 103.84090694128676,
+      "imageCandidates": [
+        {
+          "id": "459832601948936",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-F4WhYhFQimR7Mjjogy98oHgDBwXh5-m7p3CD4ezVQ48PmR8IdaZHbL7t5xpDPpNTb3jLwCf1jRQq4Y8srhiSISquUdsKGWDE1K2ExjK0WYBYmdSATfb1nr70vBzlFrGq6vw_6370dNo6VyBBUk8g?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=iHnX2IIZ3bWDVgwHCGqxlg&_nc_oc=Adr1bobPjtUG5EMc6OYdV1XHuMmiZBwiUI1UBk8Un-RuY4ZKeEyA7BkPJO2wvXbsgb8&ccb=10-5&oh=00_AQL3jRC64EvvQhsy9jVDkNsm8fQ6sFYJKIKDoSWRCdhURw&oe=6AD17127&_nc_sid=201bca",
+          "lat": 1.3415835539899,
+          "lon": 103.84109011239,
+          "captured_at": 1484711443000,
+          "compass_angle": 188.00589940798,
+          "distance": 25.4489857971509
+        },
+        {
+          "id": "464443544820280",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-qsyuwTgzkjSlKKL91kWAb6Uk5pW2iOtOOeBAF4OGXnXuFij-vQsRWfNSOVt04nQNUmozhY_YLXoVdQFwtPAwS2vF7DUG6w_Vn2KVI9gjC-1RM6GDaOFHtppCF2tzSRp3l9-OgojH-m8uevIUIqYM?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=iHnX2IIZ3bWDVgwHCGqxlg&_nc_oc=AdoNBLfPQjwxu_RsfzFQsYsxWJu2VEMngmGvLROzfAKZcN8CbmcMdQFENTNHjbeAgc0&ccb=10-5&oh=00_AQLl3TiWusaA70Is-XSM2scL1HsGgO6HsaJglaXrSa3krg&oe=6AD189B1&_nc_sid=201bca",
+          "lat": 1.3415598964151,
+          "lon": 103.84110623892,
+          "captured_at": 1484711444000,
+          "compass_angle": 158.20440802181,
+          "distance": 25.50948873706816
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C009"
+    },
+    {
+      "checkpointIndex": 10,
+      "distanceFromStart": 729.8137332094055,
+      "lat": 1.3413592,
+      "lon": 103.8409185,
+      "imageCandidates": [
+        {
+          "id": "472079020517760",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9ciVQBkT9bKbydHM3a_WrpX_-XTIcVDmblEhG5m9c9twYF77PpTW_Sn767p9wJJeIw6-U_a4E0FJ5QRki9K0iVLnpVMWIH1Uxd78FD9PkvF3sh4Zl7BWXkgqSiQUPpdJ6eUKbpKHRAqRn5xiYVrhc?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=iHnX2IIZ3bWDVgwHCGqxlg&_nc_oc=Adq6wQnMu0JoM1yhpMuUItycH-ADuhySYWHuT45BokDQD4wh_Q0A1qug4PBu6w697zE&ccb=10-5&oh=00_AQLDDQW7WWXFr5-dt5G0CJAhcvMC92RANStKpZVjZ6-dmA&oe=6AD17CC0&_nc_sid=201bca",
+          "lat": 1.3415458747289,
+          "lon": 103.84112018912,
+          "captured_at": 1484711448000,
+          "compass_angle": 0,
+          "distance": 30.588431833976138
+        },
+        {
+          "id": "464443544820280",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-qsyuwTgzkjSlKKL91kWAb6Uk5pW2iOtOOeBAF4OGXnXuFij-vQsRWfNSOVt04nQNUmozhY_YLXoVdQFwtPAwS2vF7DUG6w_Vn2KVI9gjC-1RM6GDaOFHtppCF2tzSRp3l9-OgojH-m8uevIUIqYM?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=iHnX2IIZ3bWDVgwHCGqxlg&_nc_oc=AdoNBLfPQjwxu_RsfzFQsYsxWJu2VEMngmGvLROzfAKZcN8CbmcMdQFENTNHjbeAgc0&ccb=10-5&oh=00_AQLl3TiWusaA70Is-XSM2scL1HsGgO6HsaJglaXrSa3krg&oe=6AD189B1&_nc_sid=201bca",
+          "lat": 1.3415598964151,
+          "lon": 103.84110623892,
+          "captured_at": 1484711444000,
+          "compass_angle": 158.20440802181,
+          "distance": 30.588831799680747
+        }
+      ],
+      "checkpointId": "MARYMOUNT__R01__C010"
+    }
+  ],
+  "mapillaryImageCount": 22,
+  "uniqueMapillaryImageCount": 20,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.84005891807723,1.3478660721730777;103.8409185,1.3413592?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c291d0>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531780.9918668
+}

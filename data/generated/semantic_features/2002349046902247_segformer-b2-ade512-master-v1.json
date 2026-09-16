@@ -1,0 +1,56 @@
+{
+  "mapillaryId": "2002349046902247",
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512",
+  "modelVersion": "segformer-b2-ade512-master-v1",
+  "groups": {
+    "greenery": 0.23444557189941406,
+    "sky": 0.1048583984375,
+    "road": 0.0001926422119140625,
+    "pedestrian_space": 0.003223419189453125,
+    "built_frontage": 0.3713569641113281,
+    "vehicle": 0.0,
+    "human": 0.037853240966796875
+  },
+  "topLabels": [
+    {
+      "label": "wall",
+      "proportion": 0.3411293029785156
+    },
+    {
+      "label": "tree",
+      "proportion": 0.23444557189941406
+    },
+    {
+      "label": "sky",
+      "proportion": 0.1048583984375
+    },
+    {
+      "label": "ceiling",
+      "proportion": 0.09235000610351562
+    },
+    {
+      "label": "bag",
+      "proportion": 0.05915069580078125
+    },
+    {
+      "label": "airplane",
+      "proportion": 0.04036712646484375
+    },
+    {
+      "label": "person",
+      "proportion": 0.037853240966796875
+    },
+    {
+      "label": "building",
+      "proportion": 0.0302276611328125
+    },
+    {
+      "label": "runway",
+      "proportion": 0.0172576904296875
+    },
+    {
+      "label": "seat",
+      "proportion": 0.01395416259765625
+    }
+  ]
+}

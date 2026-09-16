@@ -1,0 +1,100 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "PUNGGOL MRT",
+  "routeId": "PUNGGOL__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.4051862417636451,
+    "lon": 103.90259819698754
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 10061553751,
+    "lat": 1.4047672,
+    "lon": 103.9026968,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 47.86715047637963,
+  "distance": 47.86715047637963,
+  "duration": 39.88929206364969,
+  "points": [
+    {
+      "lat": 1.4051862417636451,
+      "lon": 103.90259819698754
+    },
+    {
+      "lat": 1.4047672,
+      "lon": 103.9026968
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.4051862417636451,
+      "lon": 103.90259819698754,
+      "imageCandidates": [
+        {
+          "id": "395979611405058",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_GojjtxZ-4yxigldwasZCWh3cpCizk7dy-LgBmk4W3U1_VtUyQh7xVPYO9i8wPuNPjN0KyUUt7NjouWQX0FV3vCbZr4eytNJ0kQ2PL83WT5nXh0obPAru6peXzrFp2BWtVTk6UGCn7W769aecr-dQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UoAX4iTf2rD7oB_3c8ta0A&_nc_oc=AdoZAiNfgrU2LsYt6gODJj5FUprW-f4xJmIDCZW4E2qgiqiX7j9g_nra_bNgz29lzYg&ccb=10-5&oh=00_AQJVR2uJyNDk6tSXPTEDDrDRBnuPL_nyjZZBXeHYyX835Q&oe=6AD18FDA&_nc_sid=201bca",
+          "lat": 1.4051651481009,
+          "lon": 103.90262508987,
+          "captured_at": 1484384521000,
+          "compass_angle": 342.95596806833,
+          "distance": 3.804042074336753
+        },
+        {
+          "id": "951656122075892",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_AqNikL0epz6KUiQvCMGKMMh_Y0BevFNP7kmpD4qgXeLbskhwITEWfHxPvpZ_THHTrG4KLIZzE_FAjgN0P0hGTeHQ3laTVi0K5roltsSwgGLA85K23r8qrdkk8BTR2nEGbv2Xs9OneYFnf53dNSFc?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UoAX4iTf2rD7oB_3c8ta0A&_nc_oc=AdqwJwM9V5-gh_N7ftQSC74BWup9eHO-Irse00OFnnLsjw-y7zdlccp0Ts5ZPIPC0mo&ccb=10-5&oh=00_AQIni4EAPQiC0phjz09qzyZXF0YLtBrBYd2wQJrUlm5qRQ&oe=6AD17177&_nc_sid=201bca",
+          "lat": 1.4052441986656,
+          "lon": 103.90264367269,
+          "captured_at": 1484384521000,
+          "compass_angle": 104.75702298242,
+          "distance": 8.199833285534911
+        }
+      ],
+      "checkpointId": "PUNGGOL__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 47.86715047637963,
+      "lat": 1.4047672,
+      "lon": 103.9026968,
+      "imageCandidates": [
+        {
+          "id": "780669365971607",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-eZ8RBwOtc4QFWikWm5xM52Sovfd8fnEEjtqhHaZ3wmZSJCsmKfvPoCjGnBnNPWtR-Ri7X86NOl9QmlrJsoYia9UBcKcZ_m7_4Lz_zQF9i8pX7EROhBDQOoNgqwshTYufA2MTb_Llf2TEZBqYucQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UoAX4iTf2rD7oB_3c8ta0A&_nc_oc=Adol0LVvFNopEyOCmjTsSw2-19jr2T1h8fAWh5WfjNTefusNiIQVSFTFZv5NWrTn9SY&ccb=10-5&oh=00_AQLGUU1GCM-JLNBVyissHpbacFRL1B8cBPmaW_0oZpcFhA&oe=6AD18AEF&_nc_sid=201bca",
+          "lat": 1.4050463797929,
+          "lon": 103.90292704985,
+          "captured_at": 1484384525000,
+          "compass_angle": 34.91154177922,
+          "distance": 40.2794600187111
+        },
+        {
+          "id": "520552005794959",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9ZB7jGS1Iv10q0yCAR6-HSm33lKr8n7JzGP7dm6tSThDymy5DmVHJtg55CVKjfFPlHNxSFfHY8j1MA86hsoFkDYGrSJiD-HCf0pjj-L_jM-VN6Bk2RuLQzmpXpL68mR4gx-F5kegti2vsud2Ripw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UoAX4iTf2rD7oB_3c8ta0A&_nc_oc=AdqNzTlRWNZSpxDpoVtMFv8D0KGHXXaREgrdiP7iiokwnNx6PlAipg0regFro7zPKDM&ccb=10-5&oh=00_AQIohxvxZvGqI0br62WHEmpRf-kDt8ewQbBs97WVkg4lXg&oe=6AD18F8D&_nc_sid=201bca",
+          "lat": 1.4049867651312,
+          "lon": 103.90298922671,
+          "captured_at": 1484384526000,
+          "compass_angle": 33.005558817276,
+          "distance": 40.69972981538082
+        }
+      ],
+      "checkpointId": "PUNGGOL__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.90259819698754,1.4051862417636451;103.9026968,1.4047672?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c2afd0>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531834.6040037
+}

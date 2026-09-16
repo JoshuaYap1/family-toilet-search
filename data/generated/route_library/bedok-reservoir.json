@@ -1,0 +1,287 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "BEDOK RESERVOIR MRT",
+  "routeId": "BEDOK_RESERVOIR__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3365549033286315,
+    "lon": 103.93348718985506
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 602417809,
+    "lat": 1.3386007,
+    "lon": 103.9336203,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 227.9629609714515,
+  "distance": 310.7,
+  "duration": 252.8,
+  "points": [
+    {
+      "lat": 1.336586,
+      "lon": 103.933492
+    },
+    {
+      "lat": 1.336587,
+      "lon": 103.933486
+    },
+    {
+      "lat": 1.336588,
+      "lon": 103.933481
+    },
+    {
+      "lat": 1.336607,
+      "lon": 103.93339
+    },
+    {
+      "lat": 1.336652,
+      "lon": 103.933363
+    },
+    {
+      "lat": 1.336741,
+      "lon": 103.933339
+    },
+    {
+      "lat": 1.336789,
+      "lon": 103.933329
+    },
+    {
+      "lat": 1.336907,
+      "lon": 103.933322
+    },
+    {
+      "lat": 1.337713,
+      "lon": 103.933153
+    },
+    {
+      "lat": 1.337754,
+      "lon": 103.93316
+    },
+    {
+      "lat": 1.337788,
+      "lon": 103.933171
+    },
+    {
+      "lat": 1.33783,
+      "lon": 103.933191
+    },
+    {
+      "lat": 1.337842,
+      "lon": 103.933176
+    },
+    {
+      "lat": 1.337856,
+      "lon": 103.933157
+    },
+    {
+      "lat": 1.337884,
+      "lon": 103.93312
+    },
+    {
+      "lat": 1.337938,
+      "lon": 103.933108
+    },
+    {
+      "lat": 1.338036,
+      "lon": 103.933087
+    },
+    {
+      "lat": 1.338084,
+      "lon": 103.933077
+    },
+    {
+      "lat": 1.338059,
+      "lon": 103.932961
+    },
+    {
+      "lat": 1.338153,
+      "lon": 103.932967
+    },
+    {
+      "lat": 1.338254,
+      "lon": 103.933012
+    },
+    {
+      "lat": 1.338297,
+      "lon": 103.933043
+    },
+    {
+      "lat": 1.338325,
+      "lon": 103.933191
+    },
+    {
+      "lat": 1.33835,
+      "lon": 103.933283
+    },
+    {
+      "lat": 1.338404,
+      "lon": 103.933363
+    },
+    {
+      "lat": 1.338479,
+      "lon": 103.933423
+    },
+    {
+      "lat": 1.338712,
+      "lon": 103.933532
+    },
+    {
+      "lat": 1.33872,
+      "lon": 103.933607
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.336586,
+      "lon": 103.933492,
+      "imageCandidates": [
+        {
+          "id": "828878117982500",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-pTjXk_sILVKtJvhjsuQ_AmpAKzDTxzO87Vh9bEmkm6pfhu9s3CJt_gRXzZBRQazbgqsY0E1if9a4nE4nbppe8sGv9eKVtXAz3NYbBN4N7Rn65mKo_u7g5N4izKRGdB_jJ86K_c4BSTjSNAgo7nI0?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=AdouYP50OpWs-AHHUOCnHM5BrC33Js3CpdZbp8Ii7MmIhFrwQty-Y60VXekaDL3hbAk&ccb=10-5&oh=00_AQJOkyioi5kwfTN3cgvwMO-f8AF0JvN9AIjiURromp7Y-g&oe=6AD19B37&_nc_sid=201bca",
+          "lat": 1.3365915169535,
+          "lon": 103.93338874196,
+          "captured_at": 1552532411000,
+          "compass_angle": 165.9700012207,
+          "distance": 11.507956862911799
+        },
+        {
+          "id": "749069739102373",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_riHMc3tmeKLnqXGUgDM5meOsPJLpH5YFE1Ndha0wDgWvj4cExkxZ1W-nT-Wdf0jvWplBiM6k9U_ZLCf-fmyS2Ar1nAUJ6msXDjTl9C318IpCa3U_9pGC0S-LmJX6ZVbnRgqV5y0AvUVGywz-37FQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=AdpBqX_yLeukx3Hvzb55SJqpG1X0nssLpgs2BPFEp5241V_a11gASL6gmzsOiauUE8g&ccb=10-5&oh=00_AQL62KlmNZ_bp8IXB-wTyk-DUzKzmYAOYXV1E-CagWC57Q&oe=6AD19A6C&_nc_sid=201bca",
+          "lat": 1.336592517373,
+          "lon": 103.93338843936,
+          "captured_at": 1552532411000,
+          "compass_angle": 165.9700012207,
+          "distance": 11.548046779122517
+        }
+      ],
+      "checkpointId": "BEDOK_RESERVOIR__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3372039957357142,
+      "lon": 103.93325972670058,
+      "imageCandidates": [
+        {
+          "id": "2837654729819602",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9UbwO9lEG6vBFbT9jUqUnmjI4VlDnnJ6D0EoNSaXzIjdN5QsxaZ3m0bV4Xct5zMTRDWX409Wats_7m2sm-ZVVcWQs-cNSMdWWKZ6ohs3NzuGldEduKCPi2By4hs4i1UGytFcLI5SVozG8M9d5D7g?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=AdpSnxAQgVDY8fuWsb2Am8ucdCC059Gflz38tMwDYOz61VqVFApJ8LU6lzCvi4FQflE&ccb=10-5&oh=00_AQJaK4Ix174BJNCrqaJqVIxfDczTAf-ZCDd6LyiEqRP0Rw&oe=6AD16AF7&_nc_sid=201bca",
+          "lat": 1.3371695926272,
+          "lon": 103.93325830042,
+          "captured_at": 1552532406000,
+          "compass_angle": 168.08000183105,
+          "distance": 3.833042044983993
+        },
+        {
+          "id": "316650896539399",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_chslFrW4G7x9nGcasnuFpmDeiE0a8P8u7uGA0LhV3cp7pzPcZmy72F-MK5rGxM0d-yLBJIN3tWzvg5I2tzvHdLADCzeBV8igEH9xLzdxPJOQGccwPEMMzJLxenxAIVz2ECIioj_Hm1HJhgaappjg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=AdrBkHN9aULdv8O6aN20ajyVMR2rrElpHARn6aPi_uTobV8fqFHzXw8HvIcmFJVjqm8&ccb=10-5&oh=00_AQKH4bHVbYggjd0FxGwy5ANaaG0Uj632ilff92NwMM83ZQ&oe=6AD19E2D&_nc_sid=201bca",
+          "lat": 1.3371694294218,
+          "lon": 103.93325819293,
+          "captured_at": 1552532406000,
+          "compass_angle": 168.08000183105,
+          "distance": 3.8517061498420855
+        }
+      ],
+      "checkpointId": "BEDOK_RESERVOIR__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3378757624048667,
+      "lon": 103.93313088539357,
+      "imageCandidates": [
+        {
+          "id": "929265527912902",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9IVNbvWkzNkkTCu_8bkK3E-luLWlFsOuC-MKXuXE4XiFV8mWuvXwHtHKKPMAq1AHHiubuEmQfJU4kB8Okcs42MRPEa3x9ZdQNMQ066O9rXqt58JbaP08Xxk5rqVQqYtK4TabGte2HaY7upqslEvg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=AdqZbhbNQ2go3QDanX62BWgV_keXAdxy2foLYGp527QU5UB3r-Mt60U6Wb_15zRWvHU&ccb=10-5&oh=00_AQLOsDNGOq9BvA3SdNV2gO_zXeLjj8v8I8M1JtFdhSk2wQ&oe=6AD188E2&_nc_sid=201bca",
+          "lat": 1.3378348695716,
+          "lon": 103.93315046541,
+          "captured_at": 1552532399000,
+          "compass_angle": 169.44999694824,
+          "distance": 5.046851359249649
+        },
+        {
+          "id": "176028121104842",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-kmg9cXO9VMMXx2FEi3g4IMOw3ZeqyeezyvmDftFTnt0uRt4SWkFyfBVh_PF5taT4HggbvTikb-fKSrz9NqI5rhQwMF8n-ThK_F0_urWfjVVlEud3061aLqa8alo_suUG5x8oJvPFike5-KkfmeA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=Adr8BbF1RAjnQqwNsFwYd3HeUGdT4w_-VNMnvLEyA8sOb6VXegBlgK-OMTo38hxgkyE&ccb=10-5&oh=00_AQJiX-QNZIEMhDtrtIOnU4DStKCloRsCtty874q0sqdi5Q&oe=6AD17EC4&_nc_sid=201bca",
+          "lat": 1.3378347151322,
+          "lon": 103.93315042049,
+          "captured_at": 1552532399000,
+          "compass_angle": 169.44999694824,
+          "distance": 5.060214099517922
+        }
+      ],
+      "checkpointId": "BEDOK_RESERVOIR__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.3383202135921564,
+      "lon": 103.93316570041567,
+      "imageCandidates": [
+        {
+          "id": "1158747637881702",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8rjcmHNc0lJqALzO7dFActYZ8wBtOAey0sCozpBhZLFImKplMl22mCawH_zaMCfHCqBTq-aoAzJ9yRXwI9JsZGAW_BJCpiniIgxJUsPKIAFq2TbB82nzURqev2KKu9S7OfqesJzk2eWeJMJ0Ww-Q?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=AdoA_kFmgqOM8XaRNUpKHSEZgMcveXYIK5eD5Z8paBThWfhrJilzwEZ_4217M8KMx4Q&ccb=10-5&oh=00_AQKSlCjndcaYtm3hGkF7eHzuZ3e9fHXTulxbY-Mm8DXw0w&oe=6AD170A2&_nc_sid=201bca",
+          "lat": 1.3383168144541,
+          "lon": 103.93298708789,
+          "captured_at": 1456922682064,
+          "compass_angle": 30.017921196669,
+          "distance": 19.881323683260497
+        },
+        {
+          "id": "256102625941097",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_OvMAYg21fJ8X0PuzWtzMWUYGEyxFBJxfEyiO-XuLRG4YZzKi4D9jkdFmvRimXGRDlTkuDyvnrZ2qXlIo3Ak2QQm29f3cer7be3WM45H_Fa3Owj-WqNdYZbzTp66tjAS99DWh7BFL89J9HnH6GNA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=AdqdkISztHQ-B0HbexL6HXMjctYTf_9YoDfEkavCu4RZQVGfpihu3BmlpGq5ojj3tf0&ccb=10-5&oh=00_AQJkp4HlZmrVu_LQrqIk6Z_6Xs75fxJ1P0yEcycQUVqEPw&oe=6AD1837A&_nc_sid=201bca",
+          "lat": 1.3383167516909,
+          "lon": 103.93298690166,
+          "captured_at": 1456922682064,
+          "compass_angle": 30.017921196669,
+          "distance": 19.90217946510993
+        }
+      ],
+      "checkpointId": "BEDOK_RESERVOIR__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 311.85631864633353,
+      "lat": 1.33872,
+      "lon": 103.933607,
+      "imageCandidates": [
+        {
+          "id": "2963761130614389",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8p89ijeb7qfsTGqH2gbSgYIruYznI37fzQNad80VFbrLbAzLj1phEty6pxxIT3Zgmkfv40D_P3OdIC13mBJNMomc9pTCUCQeHOibXrGM5RsW65xplbueB9aQvRSROItyGMnT0IqKaKXz8M2nMA4A?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=Adog622_JjjVXsv0j3ItdlA0Rii9WKKDYOAqW-f6GKYhJ_8TcJCyc7aO8NxuBO6_2Js&ccb=10-5&oh=00_AQLob7FfkMs6ddEfFEmbqDyBZE_kiwx7GprATmWFQskFDg&oe=6AD184CE&_nc_sid=201bca",
+          "lat": 1.3387169531115,
+          "lon": 103.93350609754,
+          "captured_at": 1456922803051,
+          "compass_angle": 120.12810967077,
+          "distance": 11.234517163907572
+        },
+        {
+          "id": "213788633508268",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9KmUO8_H-5TGWRfFZRtqFaIS7-eoyZ9wr3F-5Hd3XHn0vu6GDHHQlfhb087_dH6vXPIcGd82BBcy-v-Mgp7rC_NeIfsUF5f6572UDBc5IV1Qc0fp_6dYWYbgQYxbRboY_UXgBbmzMeALHU96R8gg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=uvcIOQaqjPjaA2kG7EXSjA&_nc_oc=AdpnVg9Khx0UuihC_tXCqrhBO1fxNG3Ui6YlZ05uyZk4_2ExZmoL_PILUf7l9CuFL-Y&ccb=10-5&oh=00_AQKp6aDC5VHpD1QPolDdUDMT6a3gKR7r0jN423P9lzQ5Xg&oe=6AD19F47&_nc_sid=201bca",
+          "lat": 1.3387208436787,
+          "lon": 103.9334984742,
+          "captured_at": 1456922801047,
+          "compass_angle": 66.386251871443,
+          "distance": 12.07815966584952
+        }
+      ],
+      "checkpointId": "BEDOK_RESERVOIR__R01__C004"
+    }
+  ],
+  "mapillaryImageCount": 10,
+  "uniqueMapillaryImageCount": 10,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531565.5803828
+}

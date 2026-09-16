@@ -1,0 +1,130 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "LAKESIDE MRT",
+  "routeId": "LAKESIDE__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3443041699686624,
+    "lon": 103.72171282700319
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 10313011679,
+    "lat": 1.3435118,
+    "lon": 103.722028,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 94.81801700469829,
+  "distance": 94.81801700469829,
+  "duration": 79.0150141705819,
+  "points": [
+    {
+      "lat": 1.3443041699686624,
+      "lon": 103.72171282700319
+    },
+    {
+      "lat": 1.3435118,
+      "lon": 103.722028
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3443041699686624,
+      "lon": 103.72171282700319,
+      "imageCandidates": [
+        {
+          "id": "641741655083778",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-PAwDTLSXk3ivKwB1md_yNPevP5j6Iq8g6uj4MPDTQeD9NVpYvHB_pEf5yXoso0nQZsdGlS7EDpu8DrPIK6_hyLIEneDbFbT3UvJV0mbmRcNTBfrdq0nBEM-UqrnkCLDVZKC5JNbK6L29faQHoLIo?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=dzD1KQ2_WZCahtrGZkpYIw&_nc_oc=AdpqZLv9ts33mswY5ZKIkZfnOSNJxfDpB3oKS9pHPWjyZe3bCGg9tH3zffrEeVbvUhs&ccb=10-5&oh=00_AQK_tC5gYkgvok21mNIHvrWGjB9zA61CrMDFIg4vHe0N7w&oe=6AD18637&_nc_sid=201bca",
+          "lat": 1.3443722337929,
+          "lon": 103.72169245617,
+          "captured_at": 1737269226128,
+          "compass_angle": 86.933822010849,
+          "distance": 7.908756502415418
+        },
+        {
+          "id": "1676530613291642",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_ZY2gRZESzlIcMkUY1GaAvipIpR4XQouBplUlulXLypQ2UeFKgrUt7bjMHN6_Ndznz6Flr3qgULlnPs4vZLu16F80CIxPiCMkql0YchwZrMrI-Y2yxLQPqAMOW2_vYxb7YprUjfNgTrhUB_PB9nA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=dzD1KQ2_WZCahtrGZkpYIw&_nc_oc=AdpvDJDeXCum2ShZ266hSRip5-j6NdJOg7bs4p4ZqqgY84p15vKB7c_-7AMdI_l4KQo&ccb=10-5&oh=00_AQJJxqMa5rq9Lv22ByYGzOHd79OaaUirzH_OdZqcW0zHxg&oe=6AD17D7B&_nc_sid=201bca",
+          "lat": 1.344366073625,
+          "lon": 103.72166695075,
+          "captured_at": 1737269224097,
+          "compass_angle": 97.632271430042,
+          "distance": 8.576362503589081
+        }
+      ],
+      "checkpointId": "LAKESIDE__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3436356303862553,
+      "lon": 103.72197874523836,
+      "imageCandidates": [
+        {
+          "id": "566113776300006",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-9L39pTqla6bX8rOBVYp0h2aOR9jY7Z5auQVq5GExtfUWH8exgmbdBFE3lZLnRuuctKsanqy-VDuhHIrhm9iOOG4by9X2nvvifKmCTF8uyrxkBVrWh0nqNz25uF8MexQ2Uby2FxsYJiWD1WGABi0M?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=dzD1KQ2_WZCahtrGZkpYIw&_nc_oc=AdokW7iEOWh5_E9EAxI1Kj7Nd3O-fEahS039NQ8BZvDQ-fuCMuHLUxWxgL9eqLM4BVw&ccb=10-5&oh=00_AQKLK0Sz1l2nThmCI4I_Gcb-87_Hif_wGZav12jjrz7oRw&oe=6AD17173&_nc_sid=201bca",
+          "lat": 1.3436316860386,
+          "lon": 103.72199079306,
+          "captured_at": 1737269446096,
+          "compass_angle": 191.47929960572,
+          "distance": 1.410860014445305
+        },
+        {
+          "id": "519311917206819",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9fMfnoRyPp81CtLkbZbrR5hQY34Op1Bt-vECy6mrFvwworGHh_flXgm-a5ncp1zeeKPkBnleWqgh7Wlpz-5tCRt3QncCu0mNn86bjW_p87jnDa8T7VLQUd4HqGuv74Zcev0-d_yNNr5yDcMQGr25k?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=dzD1KQ2_WZCahtrGZkpYIw&_nc_oc=AdpHoeXtmrDtNUJLGd4nj6wYx0uxLfMN4Cu7Qe8ZwR5fnWbmVzQgkqw_PahJ9f-y9Dk&ccb=10-5&oh=00_AQIA9pAdhGbCeHihWwDqp5xi8ao33NnzbYKF_IkXXJ-Sqg&oe=6AD19F9C&_nc_sid=201bca",
+          "lat": 1.3436211215995,
+          "lon": 103.72198529803,
+          "captured_at": 1737269447683,
+          "compass_angle": 180.58579015913,
+          "distance": 1.7721233619177503
+        }
+      ],
+      "checkpointId": "LAKESIDE__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 94.81801700469829,
+      "lat": 1.3435118,
+      "lon": 103.722028,
+      "imageCandidates": [
+        {
+          "id": "1275900900293958",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_qDLKC04D2AasF7z8GTTysxLOCDAC7CET8743GN63EP7mH10vMkRcx2Dop7_sPgecTrd0rvwZqZKiD0T2stsztvirCxOWRJ_MeovHfISwAesIiPFx1XfUNN8AoIUBztNpCBSCOdUbh6ds8lrCEcUg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=dzD1KQ2_WZCahtrGZkpYIw&_nc_oc=AdoMAVpvwaOTGl5SHEB8fWidPcNILM-mSEAxLaL4tqsz2T2XKwXOdQvc7IoZBeN4Y3I&ccb=10-5&oh=00_AQKplL8V1bayg6KUhzx_tJVJI01wdlmEOZfDLl8SR3VzeA&oe=6AD19523&_nc_sid=201bca",
+          "lat": 1.3435721675084,
+          "lon": 103.72195173625,
+          "captured_at": 1737269455492,
+          "compass_angle": 123.15628435874,
+          "distance": 10.825661524304843
+        },
+        {
+          "id": "818491083756518",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-WXTY28xL2pr-IPqzMFiZq1Jg3ovE48q4AmvNwvlRlJGSW148Em89ELmBL6e9lJmK6OcQk6dfi98hYyP0tqEslh1GI9VJBSwlReIDJN2NTWaoNnuXKDNkbpmtTX1LVxifofDN5D_W_F5AqJQXktsg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=dzD1KQ2_WZCahtrGZkpYIw&_nc_oc=AdrDKRhw-6vxQcXZQK8syMdjyMJMq-qL75PIaunwLLVt7B1yZpUV2KiVdAvBdtpDhZs&ccb=10-5&oh=00_AQLHKYbqof7p04OGW_mpF98jHvJzb-95iAqTwFeoLZBCIg&oe=6AD175F4&_nc_sid=201bca",
+          "lat": 1.3435733376559,
+          "lon": 103.7219522296,
+          "captured_at": 1737269455213,
+          "compass_angle": 136.57042281526,
+          "distance": 10.864330398703252
+        }
+      ],
+      "checkpointId": "LAKESIDE__R01__C002"
+    }
+  ],
+  "mapillaryImageCount": 6,
+  "uniqueMapillaryImageCount": 6,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.72171282700319,1.3443041699686624;103.722028,1.3435118?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1979d10>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531737.2324502
+}

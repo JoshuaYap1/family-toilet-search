@@ -1,0 +1,110 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "HOUGANG MRT",
+  "routeId": "HOUGANG__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3719461165527262,
+    "lon": 103.89297240097162
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 10984335776,
+    "lat": 1.3717921,
+    "lon": 103.8928518,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "fee": "no",
+      "female": "yes",
+      "gender_segregated": "yes",
+      "indoor": "yes",
+      "male": "yes",
+      "toilets:disposal": "flush",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 21.74915804890673,
+  "distance": 21.74915804890673,
+  "duration": 18.12429837408894,
+  "points": [
+    {
+      "lat": 1.3719461165527262,
+      "lon": 103.89297240097162
+    },
+    {
+      "lat": 1.3717921,
+      "lon": 103.8928518
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3719461165527262,
+      "lon": 103.89297240097162,
+      "imageCandidates": [
+        {
+          "id": "573351820723606",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9YDn-vSNOUqH78KVVgJ1qQ3bM22_4g-b0txExm_p5wBf0egAhsUoUM9naIqJ6fLj0az1MfR8wmmkeWX_Jj6s0E3nQD8jD9OBoeQMHO0qv5X69lPg7zD6BJcJkTWpMzLiXiK7utUHdnVcym2AcAjQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=aSpFAiMhjMkxOvT_6U59uw&_nc_oc=Adodue2sFi65b2r5omAQSV_MRPAIbRjBTI0W3UsR6EYi-1TD66LWsYTH2vkaHPLL3w0&ccb=10-5&oh=00_AQLr3qXhKUyhPjfOVDPFjjhsL97g7DBl3ULnlkIxqIGGDw&oe=6AD18ABE&_nc_sid=201bca",
+          "lat": 1.372887037674,
+          "lon": 103.89286506895,
+          "captured_at": 1484387794000,
+          "compass_angle": 179.7584160512,
+          "distance": 105.42222143580317
+        },
+        {
+          "id": "763507644315206",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9-JUIvJ0_WxIhjDtL3v2mr2nWI8eea-DPyaneq5PuhR34QvBdVzfjCpeSyuRCL08D_CusNOxdaHBDCE4H3ymyxEqqmG8IMmI3vwpFhK0eu7fuQYBIJK2-WovwgYYksvPNAF3sSk_JskXXEEQGbq3U?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=aSpFAiMhjMkxOvT_6U59uw&_nc_oc=AdodcAsXGs9rqWdyFE2PRU73lsMHXMT_eluY4WlxWsCDFLJbDWbW6KxNL-W4mvNm-CU&ccb=10-5&oh=00_AQILNb2lvZ308CjPcf6y1GqwVdyh693yCe7Z_ORHVxk5aQ&oe=6AD198AA&_nc_sid=201bca",
+          "lat": 1.3728786840832,
+          "lon": 103.89280662066,
+          "captured_at": 1484387795000,
+          "compass_angle": 183.45935106961,
+          "distance": 105.4400542975173
+        }
+      ],
+      "checkpointId": "HOUGANG__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 21.74915804890673,
+      "lat": 1.3717921,
+      "lon": 103.8928518,
+      "imageCandidates": [
+        {
+          "id": "763507644315206",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9-JUIvJ0_WxIhjDtL3v2mr2nWI8eea-DPyaneq5PuhR34QvBdVzfjCpeSyuRCL08D_CusNOxdaHBDCE4H3ymyxEqqmG8IMmI3vwpFhK0eu7fuQYBIJK2-WovwgYYksvPNAF3sSk_JskXXEEQGbq3U?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=aSpFAiMhjMkxOvT_6U59uw&_nc_oc=AdodcAsXGs9rqWdyFE2PRU73lsMHXMT_eluY4WlxWsCDFLJbDWbW6KxNL-W4mvNm-CU&ccb=10-5&oh=00_AQILNb2lvZ308CjPcf6y1GqwVdyh693yCe7Z_ORHVxk5aQ&oe=6AD198AA&_nc_sid=201bca",
+          "lat": 1.3728786840832,
+          "lon": 103.89280662066,
+          "captured_at": 1484387795000,
+          "compass_angle": 183.45935106961,
+          "distance": 121.06299368472592
+        },
+        {
+          "id": "573351820723606",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9YDn-vSNOUqH78KVVgJ1qQ3bM22_4g-b0txExm_p5wBf0egAhsUoUM9naIqJ6fLj0az1MfR8wmmkeWX_Jj6s0E3nQD8jD9OBoeQMHO0qv5X69lPg7zD6BJcJkTWpMzLiXiK7utUHdnVcym2AcAjQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=aSpFAiMhjMkxOvT_6U59uw&_nc_oc=Adodue2sFi65b2r5omAQSV_MRPAIbRjBTI0W3UsR6EYi-1TD66LWsYTH2vkaHPLL3w0&ccb=10-5&oh=00_AQLr3qXhKUyhPjfOVDPFjjhsL97g7DBl3ULnlkIxqIGGDw&oe=6AD18ABE&_nc_sid=201bca",
+          "lat": 1.372887037674,
+          "lon": 103.89286506895,
+          "captured_at": 1484387794000,
+          "compass_angle": 179.7584160512,
+          "distance": 121.89740649201752
+        }
+      ],
+      "checkpointId": "HOUGANG__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 2,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.89297240097162,1.3719461165527262;103.8928518,1.3717921?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c197a710>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531706.0478995
+}

@@ -1,0 +1,194 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "BEAUTY WORLD MRT",
+  "routeId": "BEAUTY_WORLD__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3416961499328006,
+    "lon": 103.7759842962261
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 12498391790,
+    "lat": 1.3426757,
+    "lon": 103.776522,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "addr:floor": "4",
+      "addr:housenumber": "144",
+      "addr:street": "Upper Bukit Timah Road",
+      "amenity": "toilets",
+      "check_date": "2025-01-11",
+      "level": "3",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 124.244349371292,
+  "distance": 177.0,
+  "duration": 141.8,
+  "points": [
+    {
+      "lat": 1.341712,
+      "lon": 103.776053
+    },
+    {
+      "lat": 1.341895,
+      "lon": 103.77601
+    },
+    {
+      "lat": 1.341963,
+      "lon": 103.776002
+    },
+    {
+      "lat": 1.341958,
+      "lon": 103.775976
+    },
+    {
+      "lat": 1.342184,
+      "lon": 103.775926
+    },
+    {
+      "lat": 1.34222,
+      "lon": 103.775844
+    },
+    {
+      "lat": 1.342406,
+      "lon": 103.775862
+    },
+    {
+      "lat": 1.342523,
+      "lon": 103.775851
+    },
+    {
+      "lat": 1.342628,
+      "lon": 103.77632
+    },
+    {
+      "lat": 1.342663,
+      "lon": 103.776524
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.341712,
+      "lon": 103.776053,
+      "imageCandidates": [
+        {
+          "id": "1378471907025279",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-iCxhjh5mRJ4-ZddLmuogj231sRExVLTyOONeT7CfxvgB5vqzGkyMZjqnxarD3-XkO8UnJ7TXTAEBYJ6bdSgIvGiuCKuui9_o6VTykhpT54JsNVIUoJqgcFQPVL6xxD5rKiLWTm_9lC4L58UN_rdk?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=BYEr8QQMqN2u5Ix_TEwEDg&_nc_oc=AdrKnk8_KBRiGenBqBa_jh1n2Ylf5JVNOY3Hkr9BlshvJfJ55M4mmm5oKe4ePss4Gvo&ccb=10-5&oh=00_AQJJsgS8odH328iWzYj85aC3tKnawlYAzGM2IigZfLywiw&oe=6AD18852&_nc_sid=201bca",
+          "lat": 1.3415603575622,
+          "lon": 103.77594590821,
+          "captured_at": 1760775383096,
+          "compass_angle": 55.093174192199,
+          "distance": 20.66412039415353
+        },
+        {
+          "id": "2112574632605477",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-9bV_TgA3jGHqcPYSqIdVMIp_nXA96M6Y4Fq_LztWHyjEWhk2d0qiZKkSvohIXbwaeppCCuC5_DrLwwCDD002_BGiHVtmkUB6qi8GO3Jqqnxlub4rOPAKdKnZXpexah_dB2Ot_BrlXWJ1oodrHIfA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=BYEr8QQMqN2u5Ix_TEwEDg&_nc_oc=AdppmvGuor6_U8tvhAdRFwY94Dgtpr5R-ssKU-A8BcM1kg3QKmnuEwTvdgWL1Nx_PHk&ccb=10-5&oh=00_AQLBlqtVdiuxv8WpG8nexsru9f7DfIY6_wkzHjh8tNWC7w&oe=6AD17EFE&_nc_sid=201bca",
+          "lat": 1.3415286478004,
+          "lon": 103.77594915422,
+          "captured_at": 1760775384094,
+          "compass_angle": 61.537373912342,
+          "distance": 23.455539429607974
+        }
+      ],
+      "checkpointId": "BEAUTY_WORLD__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3423350050567557,
+      "lon": 103.77585512952163,
+      "imageCandidates": [
+        {
+          "id": "1634700604891617",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_VJlhxag6uV5gI7zt2vPH4F6UabEI53znjgl2G94IR3E7BIbwAMp3__TiCWD5U9HJHwEu-K3mXM3VvFNIM6Ah1LP8PnDImtHoZnEnszwKWO_zuJc_LCHbhSUmyasn3vAfiIs-rQOyzZhY3kJ6Iq0A?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=BYEr8QQMqN2u5Ix_TEwEDg&_nc_oc=Adp0Px6hkNTRUcUgEZDActzEH2haAxDuM0uHtympWHGc5izM64L43s27VB6ZFCiCX-s&ccb=10-5&oh=00_AQJGFajOyZ8YsVd-f7x2u1RYHsfNFHsLEIErHw4V0J_JWQ&oe=6AD181FC&_nc_sid=201bca",
+          "lat": 1.3423193026918,
+          "lon": 103.77573617634,
+          "captured_at": 1788076238102,
+          "compass_angle": 169.52055358887,
+          "distance": 13.353138419063121
+        },
+        {
+          "id": "1545198296700997",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8duffCKRL_70MsuIAjw_c70IndtenlGnQLLCqvtkSL-7ae4M3QLDjv7tVRfFTLDDAftwJK8BVORI_9rMNND3rXubSrySuDHcqnkxZlE5tJlF6t1NtHdMuX-dHgdvnPXWjlc-_OGc5Ug_hLka01QFg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=BYEr8QQMqN2u5Ix_TEwEDg&_nc_oc=AdqP4E7hQ22YoblTkYST4q4SQd2wBYUfaqePNolxrNdY5VeY_Ay925DzQaIsTiqUTzE&ccb=10-5&oh=00_AQJZiLaTI_RvCJhv3yWq0TIdAK8rQSlklaVtsfewFg-rrQ&oe=6AD170A6&_nc_sid=201bca",
+          "lat": 1.3422280706689,
+          "lon": 103.7757614466,
+          "captured_at": 1788076239107,
+          "compass_angle": 169.52055358887,
+          "distance": 15.824143584439291
+        }
+      ],
+      "checkpointId": "BEAUTY_WORLD__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3426364792739838,
+      "lon": 103.77636942205407,
+      "imageCandidates": [
+        {
+          "id": "1209318619815594",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_lPq2PBCgFyMLJb6c7BrOpMV7kc1BT4foNv5std2tu3lb2gRYo9qi6xpFPsZRYQOHdnSThzvJBBz8FmHMmocqv_eHaSVlL2mo-ZrjuUiKbTnJMEPAeYyap2c5q1lDWNI7Adz-zF0We1seX2kzYvA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=BYEr8QQMqN2u5Ix_TEwEDg&_nc_oc=AdrAgI3SHa35YSnAc_J4n62O844z-TjAqL35VFe5D24EWynX2flP8FEYNIVVJMzJ2qg&ccb=10-5&oh=00_AQItd2fVNNpW5tZSg5Vf13uhrgB2AvdgcMnMc1u4OT7VDw&oe=6AD19820&_nc_sid=201bca",
+          "lat": 1.3431174300189,
+          "lon": 103.77652315694,
+          "captured_at": 1656156233888,
+          "compass_angle": 148.75923919678,
+          "distance": 56.20668594771843
+        },
+        {
+          "id": "327888466196566",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8aCJ23kF0HUpS2VrGjwWXXQrpiCLtMoswbhq8b-m91QCovB6DlqDhrzrq_9H3XONwbUzg9bG6hkfLlFW9gfVRHt7GjDsjhMSwn51zq2pHSbKtx4WIrhkXrzYpymruiW4lkBzQo1_8gW2fV3REEUw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=BYEr8QQMqN2u5Ix_TEwEDg&_nc_oc=Adqa1r2w9_Wmxw0n-TowPIb0-boe9F1OKJkXZg8oWuIXVfQN52mwQM6SyIGAJpJy_dE&ccb=10-5&oh=00_AQLq5uSWghZvjP14izKE0u1FGaIN8ljnn2EIASoGN-kx9A&oe=6AD19E42&_nc_sid=201bca",
+          "lat": 1.3431393295894,
+          "lon": 103.77650183809,
+          "captured_at": 1656156231711,
+          "compass_angle": 133.12966156006,
+          "distance": 57.884561015361434
+        }
+      ],
+      "checkpointId": "BEAUTY_WORLD__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 177.4347728801274,
+      "lat": 1.342663,
+      "lon": 103.776524,
+      "imageCandidates": [
+        {
+          "id": "1209318619815594",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_lPq2PBCgFyMLJb6c7BrOpMV7kc1BT4foNv5std2tu3lb2gRYo9qi6xpFPsZRYQOHdnSThzvJBBz8FmHMmocqv_eHaSVlL2mo-ZrjuUiKbTnJMEPAeYyap2c5q1lDWNI7Adz-zF0We1seX2kzYvA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=BYEr8QQMqN2u5Ix_TEwEDg&_nc_oc=AdrAgI3SHa35YSnAc_J4n62O844z-TjAqL35VFe5D24EWynX2flP8FEYNIVVJMzJ2qg&ccb=10-5&oh=00_AQItd2fVNNpW5tZSg5Vf13uhrgB2AvdgcMnMc1u4OT7VDw&oe=6AD19820&_nc_sid=201bca",
+          "lat": 1.3431174300189,
+          "lon": 103.77652315694,
+          "captured_at": 1656156233888,
+          "compass_angle": 148.75923919678,
+          "distance": 50.587236710961776
+        },
+        {
+          "id": "327888466196566",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8aCJ23kF0HUpS2VrGjwWXXQrpiCLtMoswbhq8b-m91QCovB6DlqDhrzrq_9H3XONwbUzg9bG6hkfLlFW9gfVRHt7GjDsjhMSwn51zq2pHSbKtx4WIrhkXrzYpymruiW4lkBzQo1_8gW2fV3REEUw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=BYEr8QQMqN2u5Ix_TEwEDg&_nc_oc=Adqa1r2w9_Wmxw0n-TowPIb0-boe9F1OKJkXZg8oWuIXVfQN52mwQM6SyIGAJpJy_dE&ccb=10-5&oh=00_AQLq5uSWghZvjP14izKE0u1FGaIN8ljnn2EIASoGN-kx9A&oe=6AD19E42&_nc_sid=201bca",
+          "lat": 1.3431393295894,
+          "lon": 103.77650183809,
+          "captured_at": 1656156231711,
+          "compass_angle": 133.12966156006,
+          "distance": 53.08233921206701
+        }
+      ],
+      "checkpointId": "BEAUTY_WORLD__R01__C003"
+    }
+  ],
+  "mapillaryImageCount": 8,
+  "uniqueMapillaryImageCount": 6,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531541.2879145
+}

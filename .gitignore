@@ -5,3 +5,78 @@
 *.db
 .env
 __pycache__/
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local databases / caches
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+
+# Environment / secrets
+.env
+.env.*
+*.key
+*.pem
+*.token
+secrets.*
+credentials.*
+
+# Vercel local metadata
+.vercel/
+
+# OS junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code local-only settings if desired
+# .vscode/
+
+# Runtime cache outside project, just in case copied in
+.young_family_access/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Notebook autosave / temp
+*.nbconvert.ipynb
+
+.vercel
+
+# ============================================================
+# Heavy generated intermediates
+# Final query previews remain committed for the live website.
+# ============================================================
+
+data/generated/street_images/
+data/generated/segmentation_images/
+data/generated/image_batches/
+
+# Old/debug generated grids
+data/generated/street_analysis_grid.png
+data/generated/street_image_grid_*.png
+
+# ============================================================
+# Large raw demographic GIS source files
+# These are preprocessing inputs only.
+# Final SOM outputs remain committed.
+# ============================================================
+
+data/raw_demographics/*.geojson

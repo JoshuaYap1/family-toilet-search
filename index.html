@@ -1,750 +1,753 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+    <meta charset="UTF-8" />
 
-  <title>Young Family Urban Access</title>
-
-
-  <!-- =====================================================
-       LEAFLET CSS
-  ====================================================== -->
-
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    crossorigin=""
-  />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
 
 
-  <!-- =====================================================
-       PROJECT CSS
-  ====================================================== -->
-
-  <link
-    rel="stylesheet"
-    href="./style.css"
-  />
+    <title>
+        Family Journey Search
+    </title>
 
 
-  <!--
-    CRITICAL FALLBACKS.
-    These make sure Leaflet is visible even if style.css
-    contains an accidental conflicting rule.
-  -->
+    <!-- =====================================================
+         LEAFLET
+         ===================================================== -->
 
-  <style>
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
 
-    #map {
-      position: relative;
-      width: 100%;
-      height: 600px;
-      min-height: 600px;
-      background: #eeeae2;
-      z-index: 1;
-    }
 
-    .map-wrapper {
-      width: 100%;
-      min-height: 600px;
-    }
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
 
-    .leaflet-container {
-      width: 100%;
-      height: 100%;
-      min-height: 600px;
-    }
 
-    .leaflet-tile {
-      visibility: inherit !important;
-      opacity: 1 !important;
-    }
+    <!-- =====================================================
+         PROJECT CSS
+         ===================================================== -->
 
-    .search-status {
-      margin-top: 12px;
-    }
-
-    .search-progress {
-      margin-top: 6px;
-      font-size: 0.85rem;
-      opacity: 0.7;
-    }
-
-    .search-progress.is-running {
-      opacity: 1;
-      font-weight: 600;
-    }
-
-    button:disabled {
-      opacity: 0.6;
-      cursor: wait;
-    }
-
-  </style>
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    />
 
 </head>
+
 
 
 <body>
 
 
-  <!-- =====================================================
-       HERO
-  ====================================================== -->
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
 
-  <header class="hero">
+    <header class="site-header">
 
-    <div class="hero-inner">
+        <div class="site-header-inner">
 
-      <p class="eyebrow">
-        SEARCH + DESIGN
-      </p>
 
-      <h1>
-        Young Family Urban Access
-      </h1>
+            <div class="brand-block">
 
-      <p class="hero-text">
-        Explore how toilets, family-care facilities,
-        demographics and the surrounding urban environment
-        shape the everyday journeys of young families
-        across Singapore.
-      </p>
+                <span class="brand-kicker">
+                    COMPUTATIONAL DESIGN SEARCH
+                </span>
 
-    </div>
 
-  </header>
+                <h1>
+                    Family Journey Search
+                </h1>
 
 
+                <p>
+                    Compare family-access journeys across
+                    demographically similar MRT contexts and
+                    inspect recurring street-level conditions.
+                </p>
 
-  <!-- =====================================================
-       APPLICATION
-  ====================================================== -->
-
-  <main class="app-shell">
-
-
-    <!-- ===================================================
-         SIDEBAR
-    ==================================================== -->
-
-    <aside class="sidebar">
-
-
-      <!-- SEARCH -->
-
-      <section class="panel search-panel">
-
-        <p class="eyebrow">
-          SEARCH
-        </p>
-
-        <h2>
-          Journey origin
-        </h2>
-
-
-        <div class="form-group">
-
-          <label for="locationSelect">
-            Starting location
-          </label>
-
-          <select id="locationSelect">
-
-            <option value="">
-              Loading MRT exits...
-            </option>
-
-          </select>
-
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="contextSelect">
-            Urban context
-          </label>
-
-          <select id="contextSelect">
-
-            <option value="auto" selected>
-              Auto-detect context
-            </option>
-
-            <option value="mall">
-              Shopping mall / retail
-            </option>
-
-            <option value="hawker">
-              Hawker centre / food
-            </option>
-
-            <option value="hdb">
-              Residential / HDB
-            </option>
-
-            <option value="park">
-              Park / recreation
-            </option>
-
-            <option value="tourist">
-              Tourist / attraction
-            </option>
-
-            <option value="hospital">
-              Hospital / healthcare
-            </option>
-
-            <option value="school">
-              School / childcare
-            </option>
-
-            <option value="mixed">
-              Mixed urban area
-            </option>
-
-          </select>
-
-        </div>
-
-
-        <div class="form-group">
-
-          <label for="radiusSelect">
-            Search radius
-          </label>
-
-          <select id="radiusSelect">
-
-            <option value="300">
-              300 m
-            </option>
-
-            <option value="500" selected>
-              500 m
-            </option>
-
-            <option value="750">
-              750 m
-            </option>
-
-            <option value="1000">
-              1 km
-            </option>
-
-          </select>
-
-        </div>
-
-
-        <fieldset class="priority-group">
-
-          <legend>
-            Young-family priorities
-          </legend>
-
-
-          <label class="checkbox-row">
-
-            <input
-              id="changingTableCheck"
-              type="checkbox"
-              checked
-            />
-
-            <span>
-              Changing table
-            </span>
-
-          </label>
-
-
-          <label class="checkbox-row">
-
-            <input
-              id="accessibleCheck"
-              type="checkbox"
-              checked
-            />
-
-            <span>
-              Accessible / stroller-friendly
-            </span>
-
-          </label>
-
-        </fieldset>
-
-
-        <button
-          id="searchButton"
-          class="primary-button"
-          type="button"
-        >
-          Search family journey
-        </button>
-
-
-        <p
-          id="searchStatus"
-          class="search-status"
-          aria-live="polite"
-        >
-          Starting application...
-        </p>
-
-
-        <p
-          id="searchProgress"
-          class="search-progress"
-          aria-live="polite"
-        ></p>
-
-      </section>
-
-
-
-      <!-- MAP LAYERS -->
-
-      <section class="panel layer-panel">
-
-        <p class="eyebrow">
-          MAP LAYERS
-        </p>
-
-        <h2>
-          Spatial data
-        </h2>
-
-
-        <label class="checkbox-row">
-
-          <input
-            id="toiletLayerToggle"
-            type="checkbox"
-            checked
-          />
-
-          <span>
-            Toilet access
-          </span>
-
-        </label>
-
-
-        <label class="checkbox-row">
-
-          <input
-            id="populationLayerToggle"
-            type="checkbox"
-          />
-
-          <span>
-            Young-family population
-          </span>
-
-        </label>
-
-      </section>
-
-
-
-      <!-- RESULTS -->
-
-      <section class="panel results-panel">
-
-        <div class="panel-heading-row">
-
-          <h2>
-            Results
-          </h2>
-
-          <span id="resultCount">
-            0 found
-          </span>
-
-        </div>
-
-
-        <div id="resultsList">
-
-          <div class="empty-state">
-            Run a search to compare nearby facilities.
-          </div>
-
-        </div>
-
-      </section>
-
-
-    </aside>
-
-
-
-    <!-- ===================================================
-         MAIN CONTENT
-    ==================================================== -->
-
-    <section class="main-content">
-
-
-      <!-- MAP -->
-
-      <section class="panel map-panel">
-
-        <p class="eyebrow">
-          SPATIAL SEARCH
-        </p>
-
-        <h2>
-          Journey map
-        </h2>
-
-        <p class="panel-note">
-          MRT origin + toilets + demographic layers
-        </p>
-
-
-        <div class="map-wrapper">
-
-          <div id="map"></div>
-
-        </div>
-
-      </section>
-
-
-
-      <!-- JOURNEY PROFILE -->
-
-      <section class="panel journey-panel">
-
-        <div class="panel-heading-row">
-
-          <div>
-
-            <p class="eyebrow">
-              JOURNEY PROFILE
-            </p>
-
-            <h2>
-              Young-family journey
-            </h2>
-
-          </div>
-
-        </div>
-
-
-        <div class="journey-context-card">
-
-          <span class="metric-label">
-            Detected context
-          </span>
-
-          <strong id="journeyContext">
-            —
-          </strong>
-
-
-          <p
-            id="journeyNarrative"
-            class="journey-narrative"
-          >
-            Search a location to generate a journey profile.
-          </p>
-
-        </div>
-
-
-        <div class="journey-metrics">
-
-
-          <article class="metric-card">
-
-            <span class="metric-label">
-              Accessibility
-            </span>
-
-            <div
-              id="accessibilityScore"
-              class="metric-score"
-            >
-              —
             </div>
 
-            <p>
-              Distance and ease of reaching facilities.
-            </p>
-
-          </article>
 
 
-          <article class="metric-card">
+            <div class="header-status">
 
-            <span class="metric-label">
-              Family support
-            </span>
+                <span
+                    class="status-dot is-online"
+                ></span>
 
-            <div
-              id="familySupportScore"
-              class="metric-score"
-            >
-              —
+
+                <span id="globalSystemStatus">
+
+                    Loading static analysis library…
+
+                </span>
+
             </div>
 
-            <p>
-              Changing tables and accessible facilities.
-            </p>
+        </div>
 
-          </article>
+    </header>
 
 
-          <article class="metric-card">
 
-            <span class="metric-label">
-              Journey comfort
-            </span>
+    <!-- =====================================================
+         APP
+         ===================================================== -->
 
-            <div
-              id="journeyComfortScore"
-              class="metric-score"
+    <main class="app-shell">
+
+
+        <!-- =================================================
+             SEARCH SIDEBAR
+             ================================================= -->
+
+        <aside class="search-column">
+
+
+            <section class="panel search-panel">
+
+                <span class="panel-kicker">
+                    SEARCH
+                </span>
+
+
+                <h2>
+                    Search context
+                </h2>
+
+
+                <p class="panel-intro">
+
+                    Select a seed MRT and compare it with
+                    precomputed demographically similar MRT
+                    environments.
+
+                    All journey and street-image analysis has
+                    already been processed offline.
+
+                </p>
+
+
+
+                <!-- =========================================
+                     SEED
+                     ========================================= -->
+
+                <label
+                    class="field-label"
+                    for="locationSelect"
+                >
+                    Seed MRT
+                </label>
+
+
+                <select
+                    id="locationSelect"
+                    class="input-control"
+                ></select>
+
+
+
+                <!-- =========================================
+                     SEED CONTEXT
+                     ========================================= -->
+
+                <div
+                    id="seedContextPreview"
+                    class="seed-context-preview"
+                >
+
+                    Click
+                    <b>Match MRT contexts</b>
+                    to begin.
+
+                </div>
+
+
+
+                <!-- =========================================
+                     SIMILARITY COUNT
+                     ========================================= -->
+
+                <label
+                    class="field-label"
+                    for="contextCountSelect"
+                >
+                    Similar MRTs
+                </label>
+
+
+                <select
+                    id="contextCountSelect"
+                    class="input-control"
+                >
+
+                    <option
+                        value="3"
+                        selected
+                    >
+                        3 similar MRTs
+                    </option>
+
+
+                    <option value="5">
+                        5 similar MRTs
+                    </option>
+
+
+                    <option value="8">
+                        8 similar MRTs
+                    </option>
+
+                </select>
+
+
+
+                <!-- =========================================
+                     MATCHED MRTS
+                     ========================================= -->
+
+                <div class="field-group">
+
+                    <span class="field-label">
+                        Matched contexts
+                    </span>
+
+
+                    <div
+                        id="comparableContextPreview"
+                        class="comparable-context-preview"
+                    >
+
+                        No contexts matched yet.
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================================
+                     STAGE 1
+                     ========================================= -->
+
+                <button
+                    id="matchContextsButton"
+                    class="primary-button"
+                    type="button"
+                >
+
+                    <span>
+                        1. Match MRT contexts
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- =========================================
+                     STAGE 2
+                     ========================================= -->
+
+                <button
+                    id="findJourneysButton"
+                    class="secondary-button"
+                    type="button"
+                    disabled
+                >
+
+                    <span>
+                        2. Load family-access journeys
+                    </span>
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+
+                <!-- =========================================
+                     ANALYSIS
+                     ========================================= -->
+
+                <details
+                    class="analysis-tools"
+                    open
+                >
+
+                    <summary>
+                        Analysis tools
+                    </summary>
+
+
+                    <div class="analysis-tool-list">
+
+
+                        <!-- =================================
+                             SOM
+                             ================================= -->
+
+                        <button
+                            id="showSomButton"
+                            class="analysis-tool-button"
+                            type="button"
+                            disabled
+                        >
+
+                            <span class="tool-badge">
+                                A
+                            </span>
+
+
+                            <span>
+
+                                <strong>
+                                    Show demographic SOM
+                                </strong>
+
+                                <small>
+                                    Static precomputed
+                                    component-plane analysis
+                                </small>
+
+                            </span>
+
+                        </button>
+
+
+
+                        <!-- =================================
+                             IMAGE EVIDENCE
+                             ================================= -->
+
+                        <button
+                            id="showImageAnalysisButton"
+                            class="analysis-tool-button"
+                            type="button"
+                            disabled
+                        >
+
+                            <span class="tool-badge">
+                                B
+                            </span>
+
+
+                            <span>
+
+                                <strong>
+                                    Show street-image analysis
+                                </strong>
+
+                                <small>
+                                    Stored Mapillary grid +
+                                    stored SegFormer grid
+                                </small>
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- =====================================
+                         STATIC IMAGE LOADING PROGRESS
+                         ===================================== -->
+
+                    <div
+                        id="imageAnalysisProgress"
+                        class="image-analysis-progress is-hidden"
+                    >
+
+                        <div class="progress-heading">
+
+                            <strong
+                                id="imageProgressTitle"
+                            >
+                                Loading stored imagery
+                            </strong>
+
+
+                            <span
+                                id="imageProgressPercent"
+                            >
+                                0%
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress-track">
+
+                            <div
+                                id="imageProgressBar"
+                                class="progress-bar"
+                            ></div>
+
+                        </div>
+
+
+                        <small
+                            id="imageProgressMessage"
+                        >
+                            Reading static image library…
+                        </small>
+
+                    </div>
+
+                </details>
+
+
+
+                <!-- =========================================
+                     STATUS
+                     ========================================= -->
+
+                <div class="search-feedback">
+
+                    <div id="searchStatus">
+
+                        Loading static project data…
+
+                    </div>
+
+
+                    <div
+                        id="searchProgress"
+                        class="search-progress"
+                    ></div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =============================================
+                 MAP LAYERS
+                 ============================================= -->
+
+            <section class="panel display-panel">
+
+                <span class="panel-kicker">
+                    MAP DISPLAY
+                </span>
+
+
+                <h3>
+                    Spatial layers
+                </h3>
+
+
+                <label class="check-row">
+
+                    <input
+                        id="contextLayerToggle"
+                        type="checkbox"
+                        checked
+                    />
+
+                    <span>
+                        Comparable MRT contexts
+                    </span>
+
+                </label>
+
+
+                <label class="check-row">
+
+                    <input
+                        id="journeyLayerToggle"
+                        type="checkbox"
+                        checked
+                    />
+
+                    <span>
+                        Precomputed walking routes
+                    </span>
+
+                </label>
+
+
+                <label class="check-row">
+
+                    <input
+                        id="destinationLayerToggle"
+                        type="checkbox"
+                        checked
+                    />
+
+                    <span>
+                        Family-support destinations
+                    </span>
+
+                </label>
+
+            </section>
+
+        </aside>
+
+
+
+        <!-- =================================================
+             WORKSPACE
+             ================================================= -->
+
+        <section class="workspace">
+
+
+            <!-- =============================================
+                 MAP
+                 ============================================= -->
+
+            <section class="panel map-panel">
+
+                <div class="map-heading">
+
+                    <div>
+
+                        <span class="panel-kicker">
+                            SPATIAL SEARCH
+                        </span>
+
+
+                        <h2>
+                            Comparable family-access journeys
+                        </h2>
+
+
+                        <p>
+
+                            Compare precomputed family-support
+                            journeys across demographically
+                            similar MRT environments.
+
+                        </p>
+
+                    </div>
+
+
+                    <div
+                        id="mapSearchSummary"
+                        class="map-summary"
+                    >
+
+                        Select a seed MRT
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="map"
+                    class="map-container"
+                ></div>
+
+            </section>
+
+
+
+            <!-- =============================================
+                 INITIAL STATE
+                 ============================================= -->
+
+            <section
+                id="preSearchState"
+                class="empty-state"
             >
-              —
-            </div>
 
-            <p>
-              Environmental comfort along the journey.
-            </p>
-
-          </article>
+                <span>
+                    01
+                </span>
 
 
-          <article class="metric-card">
+                <div>
 
-            <span class="metric-label">
-              Amenity support
-            </span>
+                    <h2>
+                        Begin with demographic context.
+                    </h2>
 
-            <div
-              id="amenitySupportScore"
-              class="metric-score"
+
+                    <p>
+
+                        The search compares an MRT with
+                        precomputed similar demographic
+                        contexts, their family-support journeys,
+                        and stored street-view evidence.
+
+                    </p>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =============================================
+                 RESULTS
+                 ============================================= -->
+
+            <section
+                id="searchResultsSection"
+                class="results-section is-hidden"
             >
-              —
-            </div>
 
-            <p>
-              Food, retail, parks and supporting services.
-            </p>
+                <div class="section-heading">
 
-          </article>
+                    <div>
 
+                        <span class="panel-kicker">
+                            SEARCH RESULTS
+                        </span>
 
-          <article class="metric-card">
 
-            <span class="metric-label">
-              Access gap
-            </span>
+                        <h2>
+                            Comparable journeys
+                        </h2>
 
-            <div
-              id="accessGapScore"
-              class="metric-score"
-            >
-              —
-            </div>
 
-            <p>
-              Potential mismatch between demand and provision.
-            </p>
+                        <p>
 
-          </article>
+                            These routes were precomputed by the
+                            all-MRT route preprocessing backend.
 
+                        </p>
 
-        </div>
+                    </div>
 
-      </section>
 
+                    <span
+                        id="resultCount"
+                        class="result-count"
+                    >
 
+                        0 journeys
 
-      <!-- DEMOGRAPHICS -->
+                    </span>
 
-      <section class="panel demographics-panel">
+                </div>
 
-        <p class="eyebrow">
-          DEMOGRAPHICS
-        </p>
 
-        <h2>
-          Young-family demand
-        </h2>
 
+                <div id="journeyResults"></div>
 
-        <div class="demographic-summary-grid">
 
 
-          <article class="demographic-card">
+                <!-- =========================================
+                     ANALYSIS WORKSPACE
+                     ========================================= -->
 
-            <span>
-              Local child population
-            </span>
+                <section
+                    id="analysisWorkspace"
+                    class="analysis-workspace is-hidden"
+                >
 
-            <strong id="localChildPopulation">
-              —
-            </strong>
+                    <div class="analysis-header">
 
-          </article>
+                        <div>
 
+                            <span class="panel-kicker">
+                                SELECTED ANALYSIS
+                            </span>
 
-          <article class="demographic-card">
 
-            <span>
-              Demand level
-            </span>
+                            <h2 id="selectedJourneyTitle">
+                                Analysis
+                            </h2>
 
-            <strong id="familyDemandLevel">
-              —
-            </strong>
+                        </div>
 
-          </article>
 
+                        <button
+                            id="closeAnalysisButton"
+                            class="ghost-button"
+                            type="button"
+                        >
+                            Close
+                        </button>
 
-          <article class="demographic-card">
+                    </div>
 
-            <span>
-              Supply-demand condition
-            </span>
 
-            <strong id="supplyDemandCondition">
-              —
-            </strong>
 
-          </article>
+                    <nav class="analysis-tabs">
 
 
-        </div>
+                        <button
+                            class="analysis-tab is-active"
+                            data-analysis-tab="overview"
+                            type="button"
+                        >
+                            Overview
+                        </button>
 
-      </section>
 
+                        <button
+                            class="analysis-tab"
+                            data-analysis-tab="context"
+                            type="button"
+                        >
+                            Demographic context
+                        </button>
 
 
-      <!-- JOURNEY STORIES -->
+                        <button
+                            class="analysis-tab"
+                            data-analysis-tab="images"
+                            type="button"
+                        >
+                            Image evidence
+                        </button>
 
-      <section class="panel journey-stories-panel">
 
-        <div class="panel-heading-row">
+                        <button
+                            class="analysis-tab"
+                            data-analysis-tab="opportunities"
+                            type="button"
+                        >
+                            Design opportunities
+                        </button>
 
-          <div>
+                    </nav>
 
-            <p class="eyebrow">
-              JOURNEY STORIES
-            </p>
 
-            <h2>
-              Street-level family journeys
-            </h2>
+                    <div
+                        id="analysisPanel"
+                        class="analysis-panel"
+                    ></div>
 
-            <p class="panel-note">
-              Actual walking routes and sampled street-level
-              moments for the highest-ranked toilet options.
-            </p>
+                </section>
 
-          </div>
+            </section>
 
-        </div>
+        </section>
 
+    </main>
 
-        <div
-          id="journeyStories"
-          class="journey-stories"
-        >
 
-          <div class="empty-state">
-            Run a search to generate journey stories.
-          </div>
 
-        </div>
-
-      </section>
-
-
-
-      <!-- NETWORK -->
-
-      <section class="panel graph-panel">
-
-        <div class="panel-heading-row">
-
-          <div>
-
-            <p class="eyebrow">
-              NETWORK ANALYSIS
-            </p>
-
-            <h2>
-              Young Family Access Network
-            </h2>
-
-          </div>
-
-
-          <button
-            id="exportGraphButton"
-            class="secondary-button"
-            type="button"
-          >
-            Export JPG
-          </button>
-
-        </div>
-
-
-        <div
-          id="graphContainer"
-          class="graph-container"
-        >
-
-          <div class="empty-state">
-            Run a search to generate the network.
-          </div>
-
-        </div>
-
-      </section>
-
-
-    </section>
-
-  </main>
-
-
-
-  <!-- =====================================================
-       LEAFLET JS
-  ====================================================== -->
-
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    crossorigin=""
-  ></script>
-
-
-  <!-- =====================================================
-       APPLICATION
-  ====================================================== -->
-
-  <script
-    type="module"
-    src="./script.js"
-  ></script>
-
+    <script
+        type="module"
+        src="./script.js"
+    ></script>
 
 </body>
 

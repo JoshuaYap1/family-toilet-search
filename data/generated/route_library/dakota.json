@@ -1,0 +1,243 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "DAKOTA MRT",
+  "routeId": "DAKOTA__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "walking",
+  "origin": {
+    "lat": 1.3080967504054488,
+    "lon": 103.88797933768159
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 6375722488,
+    "lat": 1.3085708,
+    "lon": 103.8861853,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "drinking_water": "yes",
+      "fee": "no",
+      "indoor": "yes"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 206.28430949649484,
+  "distance": 290.1,
+  "duration": 232.1,
+  "points": [
+    {
+      "lat": 1.308094,
+      "lon": 103.887962
+    },
+    {
+      "lat": 1.308122,
+      "lon": 103.887957
+    },
+    {
+      "lat": 1.308105,
+      "lon": 103.887873
+    },
+    {
+      "lat": 1.307892,
+      "lon": 103.886797
+    },
+    {
+      "lat": 1.307965,
+      "lon": 103.886779
+    },
+    {
+      "lat": 1.308061,
+      "lon": 103.886752
+    },
+    {
+      "lat": 1.308135,
+      "lon": 103.886735
+    },
+    {
+      "lat": 1.308145,
+      "lon": 103.886726
+    },
+    {
+      "lat": 1.308195,
+      "lon": 103.886705
+    },
+    {
+      "lat": 1.308239,
+      "lon": 103.886695
+    },
+    {
+      "lat": 1.308678,
+      "lon": 103.886589
+    },
+    {
+      "lat": 1.30872,
+      "lon": 103.886604
+    },
+    {
+      "lat": 1.308734,
+      "lon": 103.886585
+    },
+    {
+      "lat": 1.308725,
+      "lon": 103.886525
+    },
+    {
+      "lat": 1.308711,
+      "lon": 103.886455
+    },
+    {
+      "lat": 1.308779,
+      "lon": 103.886441
+    },
+    {
+      "lat": 1.308652,
+      "lon": 103.88615
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.308094,
+      "lon": 103.887962,
+      "imageCandidates": [
+        {
+          "id": "971532023684228",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8M5aKcbr8EgmJ-tH2l7iZ96-Gy0ymiOEc9vj3mOsMUZXjeDqrFt3tWDWdrY7P1bG4L9Tq2QE37hD9BOOEi-F1q35u88-2iWHZ7vemjHa3zsNHou2VHKAOeuo_w05uj4p3VeeyXbl8lGXl45fDnsQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=AdodJjCbwZOG0DreZWGTTqOPU7Im_Lr30V0-oPcQpqqTxp1vnLQ7dpcI2LnuY9o1PTk&ccb=10-5&oh=00_AQKs9F4kDRNzn93AucDSDUjcOdlTg85SEKY5mFa7wojf0w&oe=6AD1986C&_nc_sid=201bca",
+          "lat": 1.308056570449,
+          "lon": 103.88794732166,
+          "captured_at": 1544835581160,
+          "compass_angle": 250.9130859375,
+          "distance": 4.475441518426269
+        },
+        {
+          "id": "822016825379375",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9fGIQo0k0rQ7zEMTjkAqqbhPLEyJtoMf4EjrQEoGu5JjsNJ1Ei4Yc284rpZU0duJcS0jnozaYR9NaVjlRVhGFQGHfGt8ZAbrWFlFrfNr3wT_9ANFmrJ7I9edu8Ac9PMiG67v4Ve-J7FKJ6hXL2aw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=AdrHj1cCX8dqtPh4LTU630S7lLKcw08NvK1jX8LTAk5RGPgMgcwuaXGQ4dJaqsI_QWs&ccb=10-5&oh=00_AQJfvDAE6upJw4P5lZkdT18VM8xEYBEGdvMh2GtAij-oXw&oe=6AD19158&_nc_sid=201bca",
+          "lat": 1.3080617944626,
+          "lon": 103.88799846273,
+          "captured_at": 1544835579148,
+          "compass_angle": 248.62902832031,
+          "distance": 5.414816315113638
+        }
+      ],
+      "checkpointId": "DAKOTA__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3079874225797292,
+      "lon": 103.8872790408253,
+      "imageCandidates": [
+        {
+          "id": "456823332053667",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9PodQoqEoLvj9VnV_BGPhGQ9-NSRROAm02mnZshJH3qNv83jew2Zau07XyI-ynXkKecahoabC-TgnplxBG3s-Teehc-RFIJNb-TpvP8nGRSgGSsZ1fDxU8wyxbXPfxReJ4yeFO72PBnLNS11aSpA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=Adr8VpV69lY8uYFnr3i7_NX7vcs0AmqFwO9hiGxQu4cxlkV4Dt_o4jKqCsN7mcFruB8&ccb=10-5&oh=00_AQKA502kKtFPRzd9atp8J4CM93TnvD61h1X5vdwSh_cYEQ&oe=6AD18DAB&_nc_sid=201bca",
+          "lat": 1.3079390288007,
+          "lon": 103.88729295378,
+          "captured_at": 1544835598137,
+          "compass_angle": 251.13537597656,
+          "distance": 5.6052989299280025
+        },
+        {
+          "id": "805873033696432",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8nol3vSE1SXU0CZy6hKOJq1Cp3jZGGxub-nlCztrtUcfyaPU44Up9MT_440-XcJQTsL222hyRtTDdOf5aVjkBTwfUz_frbO0IA_an-NgnfQEcuTAYunn_kjS2DOToGYC4CPonbVkw7HUgnIbN7_g?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=Adq5TvjJxc6SAlNrNrXnrbwn28T8SfeF1gR5rroPGURUIUcgrwW-W73zL9Rh1tsvGtk&ccb=10-5&oh=00_AQL5ADCbKuDGAA-onxIEVRwdcjDT2U6ZT8Kl5ndjfCtZKw&oe=6AD1A224&_nc_sid=201bca",
+          "lat": 1.3079456227952,
+          "lon": 103.88734673601,
+          "captured_at": 1544835597166,
+          "compass_angle": 253.50610351562,
+          "distance": 8.854995001738672
+        }
+      ],
+      "checkpointId": "DAKOTA__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3081129257939577,
+      "lon": 103.88674007110139,
+      "imageCandidates": [
+        {
+          "id": "477090540187106",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9W0k8RENewLh8v-rhb0w-XTuNiPNSsdKs4PgJO3YmL_BocVMzExWPketkAEE7cZR9X1OX9WX4KC5Tw9XArtbi-sxvVFe4B3d8kT61yV2OZm2eGYi7vVurTHQflGKH0OP2X05HEYeeeyv4AHkjkFA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=AdrxVhJffsFwBF9GNwb12LEW_UQh4jabqCN1rutv5zsHJhjOnOl8EKaG1GdKFEK6OO8&ccb=10-5&oh=00_AQJwL2sW5UE8fNBXO1L62l5UT9yTk9kpY22RMUN1WIzTJg&oe=6AD1861E&_nc_sid=201bca",
+          "lat": 1.3081134445089,
+          "lon": 103.88671512064,
+          "captured_at": 1548381845000,
+          "compass_angle": 148.25,
+          "distance": 2.7773618393433246
+        },
+        {
+          "id": "1632325570292021",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_vrOJxXKO9HnTJpzVj1TPkq965eE8zpgkRVyB2DN5G8HrTFQ4Jhcj2hXOJGu6US9wLRLdEGIGtX10ACrKBo1MC6zsv4PSKpz7XfcIce1ibuOvPrIzkG3eKh5I9tCCt7V3JQnWYSlwpsESIROPENA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=Adr0kLTh1Jn8LED3bHRvnsdLSlQeYKAr43QmCKyk9lnlRVVUUAMG6Apyr8knKQKOhss&ccb=10-5&oh=00_AQJVsXpwW_VsNWuyqcdGTx9cWDkVz4Nwcr6HKTsavFcUqQ&oe=6AD175BF&_nc_sid=201bca",
+          "lat": 1.308087181259,
+          "lon": 103.88674344024,
+          "captured_at": 1548381846000,
+          "compass_angle": 130.0299987793,
+          "distance": 2.890305970414776
+        }
+      ],
+      "checkpointId": "DAKOTA__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.3087243042105285,
+      "lon": 103.88652152105264,
+      "imageCandidates": [
+        {
+          "id": "3995538620515581",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9e8nkyIYh6gz0cX6269B1A6hbjYcagunrp_OyIjmUNkNLywv4hcKtBN0ueJhQrRexJZGyMZMxhG5AsoBKWAvisR9dzHwr6g2OXIgZXThxiNo2f3f_lt6GMBJxSJWE23yGrIsPeadK7xnIRbmnYT5c?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=Adruw9W43MhgpDWjQZddehADdK0TQD-AKUGPKfpW0mdOc15wn3JzI-Wmq5zgZQoBobU&ccb=10-5&oh=00_AQJg22EZubmUMF5U6xqigGVL_Uq97k9UDFyYdaJwhVkj-Q&oe=6AD16AF8&_nc_sid=201bca",
+          "lat": 1.3087140852167,
+          "lon": 103.88651592135,
+          "captured_at": 1548382027000,
+          "compass_angle": 339.2799987793,
+          "distance": 1.2970960710503943
+        },
+        {
+          "id": "505737597136744",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_1dQ-2Dwve7_lh_6QUjQaai9gLUtaJ1K19zCXw-4uPzno_yN8ZfX06sSqSmnRB5ZTqGHPOmvUUP0Yape32QroH_7__hJ8o_gykDwH83oDzIbvYVO5pjaIQlG_qB5esLHjtAImiFe_3_m5luItM7g?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=AdrCe1MsJKEOqsXQQx-G7S_zgqrAvn25fK_eRYp7K6dM2rr0Nrk_OoOoEbK5bot4isA&ccb=10-5&oh=00_AQKrbT-fqPrUzUz1skr8EZnmYJRrkldktCMUYanP-BfBGg&oe=6AD19B7D&_nc_sid=201bca",
+          "lat": 1.3087231759452,
+          "lon": 103.8865083907,
+          "captured_at": 1548383871000,
+          "compass_angle": 341.98001098633,
+          "distance": 1.466677260853407
+        }
+      ],
+      "checkpointId": "DAKOTA__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 290.55846872569026,
+      "lat": 1.308652,
+      "lon": 103.88615,
+      "imageCandidates": [
+        {
+          "id": "318143116496521",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8BHfyE9cugL5FCU6TkqYgrO4HvJypEBo5NFxafVFT-FJY-cOanTK6rASEAL48Ddo5DM-sQrk6jWRtWxOS7Dqk7R84pjyJcuCo8q17F_bA9wTxzgSjCNeNMkjvAKbkolvhDy4ADPd8NiHK1mI3g4A?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=AdpuZSs-TJv1Q7tHgT808hJRYyD0vWsqqCfl8UC-nvlb99AD5edh_hOdWcOCl4bb3Ao&ccb=10-5&oh=00_AQIuJTX4N31eY1nOq-aJBZ0w9aP3rYkYoD78IOzlzhKS8Q&oe=6AD1A223&_nc_sid=201bca",
+          "lat": 1.3087425639636,
+          "lon": 103.88650141572,
+          "captured_at": 1548382207000,
+          "compass_angle": 158.2799987793,
+          "distance": 40.38790659723724
+        },
+        {
+          "id": "848456759081743",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9JrxOkXL-NekDFQ-x78_IUn4NI-w8KQ_2Kh4dKeLwx1X8RZ0t56ydA_rGizf7NbSz6duxLjx-t2J4QAo1ECI-P4GnB7mm1QYAmTZMtxpK3u0sJ2ZnAD_Cc4nhbAf_sqY9tkMAw9TdY0enxIC07e84?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=KeGfyARFGlWb3O3IV0F9Uw&_nc_oc=AdoECRxn6xB6vfdpGvMKltazhoJVZlkg0i5As1gsH7L5a1u-6wYw3sWz3J8CdcXvg0M&ccb=10-5&oh=00_AQIhe57Q-To2h2GC97SkBwRNwlwQ1iUno6Joo51Gf6cRCw&oe=6AD16DAF&_nc_sid=201bca",
+          "lat": 1.3087796755021,
+          "lon": 103.88649086984,
+          "captured_at": 1548382206000,
+          "compass_angle": 163.50999450684,
+          "distance": 40.510796018485856
+        }
+      ],
+      "checkpointId": "DAKOTA__R01__C004"
+    }
+  ],
+  "mapillaryImageCount": 10,
+  "uniqueMapillaryImageCount": 10,
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531671.7166715
+}

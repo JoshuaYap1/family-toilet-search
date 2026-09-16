@@ -1,0 +1,254 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "KEMBANGAN MRT",
+  "routeId": "KEMBANGAN__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3209237602820207,
+    "lon": 103.91294107940732
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 5634664800,
+    "lat": 1.3159077,
+    "lon": 103.9145526,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 585.824057779251,
+  "distance": 585.824057779251,
+  "duration": 488.1867148160425,
+  "points": [
+    {
+      "lat": 1.3209237602820207,
+      "lon": 103.91294107940732
+    },
+    {
+      "lat": 1.3159077,
+      "lon": 103.9145526
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3209237602820207,
+      "lon": 103.91294107940732,
+      "imageCandidates": [
+        {
+          "id": "25159139107088158",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8jOSgxrx3k4lweGP5d6R7z7eXjEgaTIU8EO2xtWsAm56egAxpn9bcEZwdcLhXhsW9SckmpiRqRUo2nhymNrtsqt81KM7t3MQi2VumVIgV5TB-2xXn1y9bNMH8zeugw1zUK6Uuxla0CbmL3jMydH-s?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=AdrLp2eBBaz8PUSrC-3i46EQE1v9y-AUwbAkerUwAx4Wg8dBI24Dyut2IMOzDYdhWOo&ccb=10-5&oh=00_AQL7axoxUakW9GoW9l5r79EHPr21M7ieieazccW-x3csjQ&oe=6AD17CFD&_nc_sid=201bca",
+          "lat": 1.320882527234,
+          "lon": 103.91296464634,
+          "captured_at": 1766729358055,
+          "compass_angle": 146,
+          "distance": 5.286550838817366
+        },
+        {
+          "id": "1616417633144105",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9Pw5iJ1J2o9GW-_01PT-JNWKFyIANtoxYh1pB8ik0piJVl5anrf7jM8e3-EmCjJyJZVzj8EIlW_XR5IevKcTFciDCFS7L5UUrc5kjgiMvE5n9yW6OXa6MOl1tmzVvmOAhntjONVW7Qpw5v0RnBgK4?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=Adr1SoAa3T0VwlHIva_dnsprU_SE9tC3vHgz2aiRUAXwZiegc4pLq3OJ8LXrt3Cxyck&ccb=10-5&oh=00_AQLSUxtwwXeCsKuyf3tb785B1n_bSZV9RJ9iZFupJRr1mQ&oe=6AD1766A&_nc_sid=201bca",
+          "lat": 1.3208693669659,
+          "lon": 103.91291248857,
+          "captured_at": 1766729359026,
+          "compass_angle": 145,
+          "distance": 6.840190010635726
+        }
+      ],
+      "checkpointId": "KEMBANGAN__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3202387682315357,
+      "lon": 103.91316114829269,
+      "imageCandidates": [
+        {
+          "id": "573315626997224",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9pX17A57InlhoOyzt-jRAQ0J0EYvoAvf9YiUCIkaZH88f61SYF5ojwb8-FKmvRhkhjYVRSK7ch6ai9F-d1MM91wewt7NZEEBOo_-0THqO-nHG6hnlvWAo0LOT6GRpCWLDUXU1Vk5M9zJJsMmDr8w?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=Adom84x9ymcYqJnxDB74r0RC7pF-Jf6VUCrk2Gb7A69rMiAuUajt53kw8nRuaxDB1rg&ccb=10-5&oh=00_AQIpLc9OWOLR5qWlany7L_nFFzxA0gkBq6HvvMek8y1Xog&oe=6AD18825&_nc_sid=201bca",
+          "lat": 1.319927,
+          "lon": 103.912919,
+          "captured_at": 1114346086000,
+          "compass_angle": 0,
+          "distance": 43.940261400454105
+        },
+        {
+          "id": "476429940079736",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_HYV3YIRYx1nw2bGWxeAMu9zpGbbKAgAh2mIKAhLWbp-FdEpcj-6RVktqR9o2TvB0kc54qKqfSYXinO-gxPK78WxQGPGtcx-TplDDRXfayML9VFTLPLgK9LdUgIzziJ66V7psL3HivC9IGj7YATZQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=AdpPBjMcAAIjhp2ks--sLG_a056HKeyUxJiLjN26Lb3dSiMtNUMfolmoLpIg9lr4vSc&ccb=10-5&oh=00_AQIr_HRogarD6RCPm1jSrJ6j3ILJA8cFKq1EnQ8aG31dfg&oe=6AD16DA8&_nc_sid=201bca",
+          "lat": 1.3208432190406,
+          "lon": 103.91308870395,
+          "captured_at": 1484294443000,
+          "compass_angle": 76.389074715712,
+          "distance": 67.76875772358558
+        }
+      ],
+      "checkpointId": "KEMBANGAN__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3195537761810507,
+      "lon": 103.91338121717804,
+      "imageCandidates": [
+        {
+          "id": "258901509364233",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_mz-q7zqN-bEpeI2qbC883IMmCW7QjcWHhKDS8aYJ2XXBk3h9skfqDT4C-7JEt0RaQ9fHS-0JeMw-h_Zn6vGmXEKfOjWQjbuIe2YxadzyMEhCLO5XqUalXVlOlKrtO_7Q0N7c9eRrAw-4cAOnatQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=AdpSGmnmdC2HC4hHygEYYDZlklP6g8jO2OVBqXgrqXrxQ-_Dyg9hc-TWZeYmpunpkq8&ccb=10-5&oh=00_AQKLFB_5jAceYJop4G19gTdYOqCO5Y59L7Fy0Mxg8pzBCA&oe=6AD1A251&_nc_sid=201bca",
+          "lat": 1.3194056616635,
+          "lon": 103.91328986536,
+          "captured_at": 1528300355517,
+          "compass_angle": 0,
+          "distance": 19.370524294655844
+        },
+        {
+          "id": "860877311452004",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_biUCFu4MTBlTYqYWX1hNOLV0eNHaog2mjHb043xC6_ErFK_52hXbrR7LYzVQoQ6OVD708Qsfv4BvLvuw5n6jqS-huoY7PHKIi6vgB009WcIoyeY5p7GogoDNPdVMsja87ssTFo4vvEqFZtXiVcA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=AdrqL6Xgi2jAgePxlk3zcQRutF-2g2c7JF91-HdDMyZjAAdJTlQyTVbhlwvL5k3aJl8&ccb=10-5&oh=00_AQKU1WXo211iocjtOg8vvhLqrCtNHZVq8ho0M8ySQKJrWA&oe=6AD189DE&_nc_sid=201bca",
+          "lat": 1.3193919269204,
+          "lon": 103.91344620201,
+          "captured_at": 1528300336416,
+          "compass_angle": 0,
+          "distance": 19.414403329480834
+        }
+      ],
+      "checkpointId": "KEMBANGAN__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.3188687841305657,
+      "lon": 103.91360128606341,
+      "imageCandidates": [
+        {
+          "id": "254835913055717",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9lv5qyucAdbRxjlpVx7ilr_09oHPcjcasM67Wtlk6a58Cx35LyKw48rQEZlKaS3Y1qqn5tU9JQQQos4gscsvnW9iuemwEQ6jhAZhVtp_L40HOWz5J0GBLaLcfKaqowu5fOgpqf4nXfUgqoEBRjrQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=AdoP6-MJ7jvmzegmQI1YAKpoRkWMTky3x9G43oPZMGddPZXsoeJCfu7WduhjbZmr5ig&ccb=10-5&oh=00_AQIf6UFxKgTGSaL8bDwEX6hSUV_aqU7j_K2a542ksezdoQ&oe=6AD176DA&_nc_sid=201bca",
+          "lat": 1.3188232294059,
+          "lon": 103.91376257822,
+          "captured_at": 1484358127000,
+          "compass_angle": 242.95554866605,
+          "distance": 18.652864656694074
+        },
+        {
+          "id": "512693826421186",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9x27p7zwnSPnDTUq54RsHJyLAVV2vgY85ZO8CyyYDmIpDExmQ5FeEmTw-mnI6EmZ8-QkYQAngbkJh2xTO1pn9G6jZmTNVnwuJJJNvAH5fpFZxuUqW5DMdUcINc2_gLccN98JW09z6C20YzO5ZWLg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=Adq-fIk4ihj_8DDRQ8r3FxPNpHZMuw5_ckAcm5ywUKgR0UHQz79DDs0XeDHKADQummE&ccb=10-5&oh=00_AQKkXYbqqevDfG3QgO1DSFbbQBQ2c4zd85B2WG6KeOjPsQ&oe=6AD17DBA&_nc_sid=201bca",
+          "lat": 1.3188349319654,
+          "lon": 103.91377760588,
+          "captured_at": 1484358128000,
+          "compass_angle": 237.55061934417,
+          "distance": 19.981297246255597
+        }
+      ],
+      "checkpointId": "KEMBANGAN__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.3181837920800807,
+      "lon": 103.91382135494877,
+      "imageCandidates": [
+        {
+          "id": "254835913055717",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9lv5qyucAdbRxjlpVx7ilr_09oHPcjcasM67Wtlk6a58Cx35LyKw48rQEZlKaS3Y1qqn5tU9JQQQos4gscsvnW9iuemwEQ6jhAZhVtp_L40HOWz5J0GBLaLcfKaqowu5fOgpqf4nXfUgqoEBRjrQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=AdoP6-MJ7jvmzegmQI1YAKpoRkWMTky3x9G43oPZMGddPZXsoeJCfu7WduhjbZmr5ig&ccb=10-5&oh=00_AQIf6UFxKgTGSaL8bDwEX6hSUV_aqU7j_K2a542ksezdoQ&oe=6AD176DA&_nc_sid=201bca",
+          "lat": 1.3188232294059,
+          "lon": 103.91376257822,
+          "captured_at": 1484358127000,
+          "compass_angle": 242.95554866605,
+          "distance": 71.48208776206029
+        },
+        {
+          "id": "512693826421186",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9x27p7zwnSPnDTUq54RsHJyLAVV2vgY85ZO8CyyYDmIpDExmQ5FeEmTw-mnI6EmZ8-QkYQAngbkJh2xTO1pn9G6jZmTNVnwuJJJNvAH5fpFZxuUqW5DMdUcINc2_gLccN98JW09z6C20YzO5ZWLg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=Adq-fIk4ihj_8DDRQ8r3FxPNpHZMuw5_ckAcm5ywUKgR0UHQz79DDs0XeDHKADQummE&ccb=10-5&oh=00_AQKkXYbqqevDfG3QgO1DSFbbQBQ2c4zd85B2WG6KeOjPsQ&oe=6AD17DBA&_nc_sid=201bca",
+          "lat": 1.3188349319654,
+          "lon": 103.91377760588,
+          "captured_at": 1484358128000,
+          "compass_angle": 237.55061934417,
+          "distance": 72.6482301672593
+        }
+      ],
+      "checkpointId": "KEMBANGAN__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 400.0,
+      "lat": 1.3174988000295955,
+      "lon": 103.91404142383414,
+      "imageCandidates": [
+        {
+          "id": "794503214513647",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-1h2b3jWuWnB9cSwbAOqUbpxNr1ghdH0-jN3kDv059ve3JL9Kf9nucQ8VHhS-dz4fiKH8vlANKW_A4QnujKXHi1AO1Xz6_lBvS4n7YvkHJ6HdSqSkdNdvRnmcczCX0gW-LixkWYBe86drhUzhDbw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=Adquxpd5ESm29mMD--vmO58fkAYesYAT-R4_vIMNxUXfC3rXvkrbeCanR-7qxqfLbjo&ccb=10-5&oh=00_AQJt5K-A7fBd9upEJxo46y3sflrNqdBZ3GBT_gHxXGHxGQ&oe=6AD16B48&_nc_sid=201bca",
+          "lat": 1.3180482166584,
+          "lon": 103.91473099884,
+          "captured_at": 1484358075000,
+          "compass_angle": 232.72915855298,
+          "distance": 98.13354819277413
+        },
+        {
+          "id": "339712670903473",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-H7D2V4PQigUYIzy-5QkOutwLRtq9WsPvnRmAm3GNzGRGjxMw7I2BN_2gKkU0EBxVAO8hSWyCFkcJKB7rfgpA59CvnGN6GfCWGdK3Q-OPClEntnOHuX1T-XHGTSJLGeOBubJxsqsCNAAfc4ni_tw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=AdpB1hx7sUgejJXxRGGTOZt-GrHGyIjo5t6Ff-uyrDTPXMd86zA7eDUxU3_-KGlylP8&ccb=10-5&oh=00_AQKEFfQBAaQJmIsOFJU1xB6ZpK4EWtXOggmSmutlVR1eag&oe=6AD1881F&_nc_sid=201bca",
+          "lat": 1.3180738243715,
+          "lon": 103.91471004241,
+          "captured_at": 1528300080716,
+          "compass_angle": 0,
+          "distance": 98.15542476070465
+        }
+      ],
+      "checkpointId": "KEMBANGAN__R01__C005"
+    },
+    {
+      "checkpointIndex": 6,
+      "distanceFromStart": 480.0,
+      "lat": 1.3168138079791105,
+      "lon": 103.91426149271949,
+      "imageCandidates": [
+        {
+          "id": "974980639997031",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An99_uBdhFyzVc2LVB3Oc5S5497amJ4xm-CzUDe24d0Y3Wk5ErNlx0iYlka30SRs8fNSy5mEByYXFf6vww5CbIpbKecklfsXDN30c_5bUJP4rHJ8tl98J2mIrQy0Lydk1FhIhOp63Vqa-L7LMK0hYA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=AdpFY05ij6Aw3dQOvWQO6BqhEbGPxLquMHyei0rKpR8pneaZX_Wyj6su3Y6pcDjI8kE&ccb=10-5&oh=00_AQKZeXXlt1XX17zIJQIyO-1DjqYHHx98KdnhkigqYauMbA&oe=6AD17075&_nc_sid=201bca",
+          "lat": 1.3177189359679,
+          "lon": 103.91502884982,
+          "captured_at": 1528300057172,
+          "compass_angle": 0,
+          "distance": 132.08119750991273
+        },
+        {
+          "id": "908142830040247",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8xtJ0RBeq2Pv93yamqCwY5SKeKexpMe-tj7mvacr3kZlAwPCXDmhaUzqtm0zqEMAMRE5-Pg8sbNOXM4UvJvo2xoA5F3smQQ5bEG1KRlUzLGddmCW9Lfn9v5n2kE1SxwqAgVZD_3WrR8RFry2Atdw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=oBPi44bbkkVXal4BqO3hmg&_nc_oc=AdpPvz28uvDdqmCLPm3V_SVbhEK6_DL42nR4mXf4vnRsPyRMv85yzkZo35c84ens3MU&ccb=10-5&oh=00_AQLVRzZJx1xf217KQCXkd8rk1klZxTsWftROLv4RTBaM1w&oe=6AD19913&_nc_sid=201bca",
+          "lat": 1.3177965210075,
+          "lon": 103.91494661337,
+          "captured_at": 1484358071000,
+          "compass_angle": 218.80917390028,
+          "distance": 133.34571623994427
+        }
+      ],
+      "checkpointId": "KEMBANGAN__R01__C006"
+    },
+    {
+      "checkpointIndex": 7,
+      "distanceFromStart": 560.0,
+      "lat": 1.3161288159286255,
+      "lon": 103.91448156160486,
+      "imageCandidates": [],
+      "checkpointId": "KEMBANGAN__R01__C007"
+    },
+    {
+      "checkpointIndex": 8,
+      "distanceFromStart": 585.824057779251,
+      "lat": 1.3159077,
+      "lon": 103.9145526,
+      "imageCandidates": [],
+      "checkpointId": "KEMBANGAN__R01__C008"
+    }
+  ],
+  "mapillaryImageCount": 14,
+  "uniqueMapillaryImageCount": 12,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.91294107940732,1.3209237602820207;103.9145526,1.3159077?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c197ae90>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531724.064346
+}

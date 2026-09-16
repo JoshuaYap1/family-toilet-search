@@ -1,0 +1,102 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "LAVENDER MRT",
+  "routeId": "LAVENDER__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3076185391316715,
+    "lon": 103.86265031662273
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 9621250815,
+    "lat": 1.3080049,
+    "lon": 103.8627243,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "charge": "0.10 SGD",
+      "fee": "yes"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 43.74151892625802,
+  "distance": 43.74151892625802,
+  "duration": 36.45126577188168,
+  "points": [
+    {
+      "lat": 1.3076185391316715,
+      "lon": 103.86265031662273
+    },
+    {
+      "lat": 1.3080049,
+      "lon": 103.8627243
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3076185391316715,
+      "lon": 103.86265031662273,
+      "imageCandidates": [
+        {
+          "id": "319890613056062",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-7nvaw7GzuZylww2X7AKkEUykm1x9ZCqfpKxQ99ACDC2FlvLbzKyekLLwwwdc1eHF_j8KtQZhjyIFTqBt-84yTe5A4kLpq6EAK_7oYCY9gf0r1jssLW3z-hfg7oVsGAJwqh87iJn-VfoxSHB-2Gg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UX9uy7th6DV2xHa833cnOA&_nc_oc=Adr3qO4E-XMqCbDUrC7mb5zQ3HtsPqcJMj4Ocb3JteyQiyLiiKGhADFvCQo67RM8aXI&ccb=10-5&oh=00_AQI3JIV-GzzzBqanyjlv1_ntzz7VgmpTuoGe52M8ScgPyw&oe=6AD16BCB&_nc_sid=201bca",
+          "lat": 1.3077301140381,
+          "lon": 103.86272037677,
+          "captured_at": 1551856416000,
+          "compass_angle": 63.479999542236,
+          "distance": 14.66504340232166
+        },
+        {
+          "id": "530284934652408",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An86YgYe8jUKH5uImrbhW4njsz0vUJcPtVa9_d1wr2fmJURTNhjxJ36ncHFFOnfrftUXlmS1hzTkjsh9O8tpHxULzsh6PsEd8wq7RyeGyo5T3c52DmBtrHvjHeVT94Ds5aHdtd8oSiPYtL3WSkNgMQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UX9uy7th6DV2xHa833cnOA&_nc_oc=Adr39Wfbuy1XzcT3r1XRN5rblAy412ZIMSk8EHXLmY3BTVoj92XgseUnMX7gPbjZ_as&ccb=10-5&oh=00_AQIKPyejrwoFAKGYyRdxQxpA4V7jepeTilgASb2bjRIrhA&oe=6AD170F2&_nc_sid=201bca",
+          "lat": 1.3077927541615,
+          "lon": 103.86272317099,
+          "captured_at": 1551856417000,
+          "compass_angle": 54.369998931885,
+          "distance": 21.020291035478124
+        }
+      ],
+      "checkpointId": "LAVENDER__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 43.74151892625802,
+      "lat": 1.3080049,
+      "lon": 103.8627243,
+      "imageCandidates": [
+        {
+          "id": "181972653838320",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9NF6DROoL5HBz-u4COocNptWsxwWrYzt0F5PcUL-uKt8N7r6Q6d5nNY7dxkAJCplT8iEPE4U0GCS565xnwH5rlPGbJPHREk5fWfNsM-le_9NoSR8e4RNi9Dg1rommHtoBfbmVfrIj0sIiWkvwkZQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UX9uy7th6DV2xHa833cnOA&_nc_oc=AdqSWRjIzrB4y6vEBKAZnhnpWeaALPprveVLRj-FK8stGKR60oLixstJPk2SFC12HHw&ccb=10-5&oh=00_AQLlqb-hoR_18SuM3pcVVaZeRB4VsVR_jZkP7elizvMcPQ&oe=6AD1792C&_nc_sid=201bca",
+          "lat": 1.307973613336,
+          "lon": 103.86273203706,
+          "captured_at": 1551856420000,
+          "compass_angle": 52.110000610352,
+          "distance": 3.5876939542795916
+        },
+        {
+          "id": "504011710805921",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An93FRBwqlFehA_rWkDxAWEMHqeJ1fGM33ILO14dKsjCcZY0uDMcn40VDYmabvN5HP1VBucG-dCbuv3FTDpd6O_lRS-zyPKnpos05_pzogvtxK7Ej1CKEtsJ0HF6An87C1qSfGV2o9hCpFMqmE9hgA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=UX9uy7th6DV2xHa833cnOA&_nc_oc=Adoxdg9vjoKFNwmlt0h4czWj9iOJuq9BPHCvZeEaopKR_bdDIYpt_JyN1AIlrw6MrOI&ccb=10-5&oh=00_AQJqwMeSHcKPD61krsaLja2irUFhAsz4JHiWW31jVplszA&oe=6AD180D2&_nc_sid=201bca",
+          "lat": 1.3080379482064,
+          "lon": 103.86273529951,
+          "captured_at": 1551856421000,
+          "compass_angle": 46.950000762939,
+          "distance": 3.87724559267718
+        }
+      ],
+      "checkpointId": "LAVENDER__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.86265031662273,1.3076185391316715;103.8627243,1.3080049?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c28190>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531742.5221734
+}

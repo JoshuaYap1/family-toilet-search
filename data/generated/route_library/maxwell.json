@@ -1,0 +1,102 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "MAXWELL MRT",
+  "routeId": "MAXWELL__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.2809194365909107,
+    "lon": 103.84489545926178
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 4310990890,
+    "lat": 1.2805388,
+    "lon": 103.8445197,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets",
+      "check_date": "2025-08-10",
+      "fee": "no"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 59.466803529550354,
+  "distance": 59.466803529550354,
+  "duration": 49.55566960795863,
+  "points": [
+    {
+      "lat": 1.2809194365909107,
+      "lon": 103.84489545926178
+    },
+    {
+      "lat": 1.2805388,
+      "lon": 103.8445197
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.2809194365909107,
+      "lon": 103.84489545926178,
+      "imageCandidates": [
+        {
+          "id": "748534205837433",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-VoDIhTiuqjawYgUPMwqGHtjYn-6FV8QR1cwllSbffz_iAVGBYrk9E_jK8lA31Qvp-1BKWXbt4hykZgFEF5jN4iSSTXClg2fN4UTb0xbcLDeAs_pPNEubJQcR18xE_I7aVmAe9hFWX6mft7B-Tzg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=feocFrwEW4SBR4lsWZPh3w&_nc_oc=Adqyfe6-y9xSMvrZ210p-SxcWfXn7iScTjIPRdmc8sD6U15vqYQvMYLymIgDmt4OyUw&ccb=10-5&oh=00_AQJwMfjI7TpIzxPWpHs3fF8i-KogqvvAkgDSDTrlXy6SeA&oe=6AD170A7&_nc_sid=201bca",
+          "lat": 1.2808040154496,
+          "lon": 103.84510291149,
+          "captured_at": 1545257352099,
+          "compass_angle": 226.14367675781,
+          "distance": 26.422256522427393
+        },
+        {
+          "id": "916996478871871",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An866xNv3UCoqoqdPFbKk9-iBHSfa6-4-Riyvm3428eTaP6PCviD1VjJGFsA6_4EnGlCseV9colyHlw6RQ37SSsAPN_uw-CKBV_7F9-qFtZol9I5I9XCWV2Czyb6aEnoblb6DuW0uXYGhsBDlufUUw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=feocFrwEW4SBR4lsWZPh3w&_nc_oc=AdqCK84J3RvJjVucycG3q6MgUTKHNldqHp79IDKCUpThWvgqBxk57-seMacLzZKDsnA&ccb=10-5&oh=00_AQLG22kiRu8XqWffv3yAd2f4BhICELYFQNR2reLo56X-ug&oe=6AD19611&_nc_sid=201bca",
+          "lat": 1.2808045500768,
+          "lon": 103.84510349727,
+          "captured_at": 1545257351877,
+          "compass_angle": 226.14367675781,
+          "distance": 26.450413533192147
+        }
+      ],
+      "checkpointId": "MAXWELL__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 59.466803529550354,
+      "lat": 1.2805388,
+      "lon": 103.8445197,
+      "imageCandidates": [
+        {
+          "id": "4508653925828660",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-a3i6ML_WKuzBPkTrengYghapWyG7EFxruWlG1aHPbuHJcunAeXIylGOsOKH21Lky5bXebMrtAQwtxuWWFXx8d5QmDR1rD5YpOaC7CxwSD0r2AlG9I0leJ6tjquFLcMPGxZl3ROwnTklXSBnnUVA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=feocFrwEW4SBR4lsWZPh3w&_nc_oc=AdpfbEuSW02djOjMxd1wL4pCoMBs_Tb7jMM-tCO4fEWO9liBWnVnVmDR3XpwPFgtF-c&ccb=10-5&oh=00_AQJXHOnZgPXStkUF2qgFRMts6ZYoUcJzxiudAW0nl69sPA&oe=6AD19C00&_nc_sid=201bca",
+          "lat": 1.280577857665,
+          "lon": 103.84442550472,
+          "captured_at": 1547068045458,
+          "compass_angle": 32.009704589844,
+          "distance": 11.349083948736144
+        },
+        {
+          "id": "726245310149331",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_JQTrl2v0DQiLa2TzFfksFq5bndqq541eTns4IeaEuL8AEt1yGmIcEk4l0GAqeRtA1p29RQjwJMPi8MRxbBU7I-nmh_3V58H4mW17c1l51FEttgkop7YGMGU121mFSkC62mPv1P6Qx1m8ypGlDPJk?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=feocFrwEW4SBR4lsWZPh3w&_nc_oc=AdrLdj0_MqZ5-Abzl-VvuwfeHXo0C456GbXzEptE-0iqDlXzTcN1UjWVzHGlVYcg-sQ&ccb=10-5&oh=00_AQLONf0f7yWH_EaT8e8fHXMDV4oJTUTOzcwMHWITqR8Yiw&oe=6AD1A383&_nc_sid=201bca",
+          "lat": 1.2805438889543,
+          "lon": 103.84441712849,
+          "captured_at": 1751692444235,
+          "compass_angle": 103.39571296311,
+          "distance": 11.429456884273458
+        }
+      ],
+      "checkpointId": "MAXWELL__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.84489545926178,1.2809194365909107;103.8445197,1.2805388?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c197a350>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531792.806005
+}

@@ -1,0 +1,159 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "FARRER ROAD MRT",
+  "routeId": "FARRER_ROAD__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3175520161722278,
+    "lon": 103.80738923455762
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 12167950496,
+    "lat": 1.3163716,
+    "lon": 103.8059305,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": "yes",
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "fee": "no",
+      "wheelchair": "yes"
+    },
+    "familyFeatures": [
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 208.62505871516132,
+  "distance": 208.62505871516132,
+  "duration": 173.85421559596776,
+  "points": [
+    {
+      "lat": 1.3175520161722278,
+      "lon": 103.80738923455762
+    },
+    {
+      "lat": 1.3163716,
+      "lon": 103.8059305
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3175520161722278,
+      "lon": 103.80738923455762,
+      "imageCandidates": [
+        {
+          "id": "765110050809079",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-nxeQuYfay8K30hyCZc-lUwQp-OK30skR6CCJy-B-3ZVfJ5OqfniK3NSpaOBA15wf6RoOt1uzQua3PWbMh90UUbuXVtUrdVZ7UmQq2BTvovZwImiC7giQMZvCWRRuRlkBLOpPSFM-5nXcNhHpOSg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=HikJ27f3RJijxGRczZ0G6A&_nc_oc=AdroMnKX8XJ9-F7WnJrZP15HeLxdD4zKssAqULj58XcBUd9SC-Oi1nAja2S3trkWBis&ccb=10-5&oh=00_AQJZuPp98ec7lvZYTUsrln1MR5uLDOi9PFDaccr_vHOF5w&oe=6AD196A1&_nc_sid=201bca",
+          "lat": 1.3175413345055,
+          "lon": 103.80734277528,
+          "captured_at": 1435201801943,
+          "compass_angle": 39.91785,
+          "distance": 5.305447771753699
+        },
+        {
+          "id": "1257904976504081",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_hOeggeL4q-YegeK9PDj6A4ssfsfL6-FFsQclvcwylcnUL4gNwOcb7xCoX1wqq1VIUSYONh8goHp_cMCOQK4al1VtYIlojyOfLgom7k6hv6bD0JhZlmKMh2OSvQhP82OwZWWhY6rY1lua0w3lZuA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=HikJ27f3RJijxGRczZ0G6A&_nc_oc=AdoHRE5ce61fHkFCmuDjJWrBqP8nsKQAQv9Pkb3EG-a9-91lqx02fp0sBUwlPTbzmy8&ccb=10-5&oh=00_AQI74F-D6vGZXcvGzfGRnYNLT1kSA7dA5eS211HbIKXGhw&oe=6AD16E91&_nc_sid=201bca",
+          "lat": 1.3175969468922,
+          "lon": 103.80741122976,
+          "captured_at": 1775280467094,
+          "compass_angle": 320.34357579253,
+          "distance": 5.568562824062121
+        }
+      ],
+      "checkpointId": "FARRER_ROAD__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.3170993701940323,
+      "lon": 103.80682986376425,
+      "imageCandidates": [
+        {
+          "id": "215296397067855",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9hEFAVHZHgnv8wa9TcK_83K1Y_1BB9syqDjoJEI6GXlZEX_Illfs1yL-0WcIXp2tcQLZfz2x4KsGe1ku-_H49QHVFA-2u75Sd-vrL_Egco53DZO0OH8BipMSmuR9ZXkaa2hmvPVK-F4UbeCfUeKg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=HikJ27f3RJijxGRczZ0G6A&_nc_oc=Adpirf3p1XUnb39yMYkukf9R8Gri2I40ZTDtFrE-KXRylx-5D0OpFAFuYAQmrRzWdx0&ccb=10-5&oh=00_AQJrUiq5BVLWxDkJaQHpPt0NUS_pSwDRjmTo0M-Bag7REQ&oe=6AD1755B&_nc_sid=201bca",
+          "lat": 1.316974477753,
+          "lon": 103.80690023193,
+          "captured_at": 1435201795948,
+          "compass_angle": 37.26318,
+          "distance": 15.956930624967827
+        },
+        {
+          "id": "1736753173517934",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_00F_53z7DDV0CDolltKkaXeiLCR8fGNstiUBnsjQIxXcZ2LRVhrO70zM1JZqT8llav9drGRAKryT8avFMf1USuaHKfzltfQMH43DS8xZ1NneUTrTZ1M372CUvY-f60Bb241zVSgdSUtdTFkkDoQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=HikJ27f3RJijxGRczZ0G6A&_nc_oc=AdplqW_U0miUfnhYSP9ci1f-ulyo_JZXpJX7j9FkTiPxBqS1GU3fNOCsXDqKBM3wsFY&ccb=10-5&oh=00_AQLBK51zuXLjnlbTBBLnJtw5YL12q-fp8pKz295BjqyeHw&oe=6AD181B1&_nc_sid=201bca",
+          "lat": 1.3170039660978,
+          "lon": 103.80693747679,
+          "captured_at": 1711160844742,
+          "compass_angle": 45.667343707095,
+          "distance": 16.007021098125797
+        }
+      ],
+      "checkpointId": "FARRER_ROAD__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.3166467242158368,
+      "lon": 103.8062704929709,
+      "imageCandidates": [
+        {
+          "id": "626280758768323",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_8rksmR8oW4yaajPgaQqTbPkkGzax7wg-NYI89m7I5g_zBZqfIY6mVjGnLPqYruLb8Gu3lBnqECNCl6M2cSWnPzxxd8hxz20VMC8MPlsjir8iJJ2m0LEOpD1U2BzdqQbcIwQPoORU38aqICbykig?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=HikJ27f3RJijxGRczZ0G6A&_nc_oc=AdrihKaWS5fTDGHHklpdvpNtVVKHTncmpsTBrwQR35X44WWJsbZZpyVT5rLR5DrvP3U&ccb=10-5&oh=00_AQI-UP19PfA5Y8LF3b_-pIkmwgDfjPBGRg2tGgBLYmGnXQ&oe=6AD19F43&_nc_sid=201bca",
+          "lat": 1.316548608278,
+          "lon": 103.80641900383,
+          "captured_at": 1484550924000,
+          "compass_angle": 311.64261033833,
+          "distance": 19.810759319074943
+        },
+        {
+          "id": "306010837828653",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_Kox7N4cMnMakUkVEmtB_pz8xaMuz7T3YfDSBH9XXpcS1e4FV7IcopjElFuwefgMRrqwafibBYKLwCO0HWQtogl4I9n5CQgTPmlfkJH8wwa6jFGJRz1hF_g1XPdcLtLdAMFyXAQbKxm15SdTKY8XM?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=HikJ27f3RJijxGRczZ0G6A&_nc_oc=AdrlKAEHAUaxx6y56_sNyKUdTjuxMv4NgK9wLvsCckz2E0l6d6aMDd9pdqrmPml8vm4&ccb=10-5&oh=00_AQJyq24GlMogeHsPXIY_rL9goRjzIVvzkDVPcfJxBz7P0g&oe=6AD17464&_nc_sid=201bca",
+          "lat": 1.3164862202174,
+          "lon": 103.806358474,
+          "captured_at": 1484550923000,
+          "compass_angle": 314.0942337077,
+          "distance": 20.374330064437107
+        }
+      ],
+      "checkpointId": "FARRER_ROAD__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 208.62505871516132,
+      "lat": 1.3163716,
+      "lon": 103.8059305,
+      "imageCandidates": [
+        {
+          "id": "881482929068898",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-aViP0ZURx3x-QSGSmuF-t_RFSv76YOOrtZ6-sO6OMsK8ep3Hsck94DGlmgOniUIS5WV5GeCPY9PJSTG8Asu7EWzsIfkwM4MYuftA8A3ZXzi0bPDz7Yc7ACLZ9Fyt1eGDUOk7pIzmrfvCQf_RU6w?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=HikJ27f3RJijxGRczZ0G6A&_nc_oc=AdrUe_WJGDxedno6IfGIkXBzu-ZYvnF7JNhPX8r2Irj21NanBDe0gv65lcExQSUqz3g&ccb=10-5&oh=00_AQJB85mNsYb1Fe9b0zhsLQueC7wuh9b77dW33Gy8CsLZBg&oe=6AD18679&_nc_sid=201bca",
+          "lat": 1.3162835353139,
+          "lon": 103.80606481497,
+          "captured_at": 1484550920000,
+          "compass_angle": 322.12427378282,
+          "distance": 17.875919036365616
+        },
+        {
+          "id": "747402692625009",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An940mUX48Nji0KtLW-S0CyticV8hHYIV9FwacR8ZS_Aq_St7St8xJbmiktsVpmnwK6JJDFtO74-qRUyhgXQC6cgbmWPlQl-sxwawIsgpfyizQk33DVz6emlXFEsmCSj0yIrLY2MfIT6Ud8JzbcLIg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=HikJ27f3RJijxGRczZ0G6A&_nc_oc=AdpFkPtUcu5SR5f92_ANGGGBG5mz8XmHyoV7LbWkqpkxkHgABQGRPLiucGxQIKEdkLE&ccb=10-5&oh=00_AQKudJJc0_WWETtxePN9f14jEElCl3ZcyxNimZUApx1DXA&oe=6AD17D71&_nc_sid=201bca",
+          "lat": 1.3162040835751,
+          "lon": 103.80599596085,
+          "captured_at": 1484799810000,
+          "compass_angle": 324.38513945733,
+          "distance": 20.020466087220395
+        }
+      ],
+      "checkpointId": "FARRER_ROAD__R01__C003"
+    }
+  ],
+  "mapillaryImageCount": 8,
+  "uniqueMapillaryImageCount": 8,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.80738923455762,1.3175520161722278;103.8059305,1.3163716?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c197a0d0>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531679.281601
+}

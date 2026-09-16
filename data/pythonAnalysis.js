@@ -1,263 +1,269 @@
-// =============================================================
-// PYTHON ROUTE ANALYSIS
-// =============================================================
+// ============================================================
+// PYTHON ANALYSIS BRIDGE
+// ============================================================
 
-const PYTHON_BACKEND =
-  "http://127.0.0.1:5000";
-
-
-// =============================================================
-// CHECK BACKEND
-// =============================================================
-
-export async function checkPythonBackend() {
-
-  try {
-
-    const response =
-      await fetch(
-        `${PYTHON_BACKEND}/health`,
-        {
-          method: "GET",
-          cache: "no-store"
-        }
-      );
+const ROUTE_BACKEND =
+    "http://127.0.0.1:5000";
 
 
-    if (!response.ok) {
-      return false;
-    }
-
-
-    const data =
-      await response.json();
-
-
-    console.log(
-      "Python backend health:",
-      data
-    );
-
-
-    return (
-      data.status === "ok"
-    );
-
-  }
-
-  catch (error) {
-
-    console.warn(
-      "Python backend unavailable:",
-      error
-    );
-
-
-    return false;
-
-  }
-
-}
+const IMAGE_BACKEND =
+    "http://127.0.0.1:5001";
 
 
 
-// =============================================================
-// ANALYSE WALKING ROUTE
-// =============================================================
-
-export async function analyseRouteWithPython(
-  routePoints,
-  spacing = 50
+async function jsonRequest(
+    url,
+    options = {},
+    timeoutMs = 10000
 ) {
 
-  if (
-    !Array.isArray(routePoints) ||
-    routePoints.length < 2
-  ) {
-
-    throw new Error(
-      "Python analysis requires at least two route points."
-    );
-
-  }
+    const controller =
+        new AbortController();
 
 
-  const cleanRoute =
-    routePoints
-
-      .map(
-        point => ({
-          lat:
-            Number(point.lat),
-
-          lon:
-            Number(point.lon)
-        })
-      )
-
-      .filter(
-        point =>
-          Number.isFinite(point.lat) &&
-          Number.isFinite(point.lon)
-      );
-
-
-  if (
-    cleanRoute.length < 2
-  ) {
-
-    throw new Error(
-      "Route does not contain enough valid coordinates."
-    );
-
-  }
-
-
-  console.log(
-    "Sending route to Python:",
-    cleanRoute.length,
-    "points"
-  );
-
-
-  const controller =
-    new AbortController();
-
-
-  const timeout =
-    setTimeout(
-      () => {
-
-        controller.abort();
-
-      },
-      30000
-    );
-
-
-  try {
-
-    const response =
-      await fetch(
-        `${PYTHON_BACKEND}/analyse-route`,
-        {
-
-          method:
-            "POST",
-
-          headers: {
-            "Content-Type":
-              "application/json"
-          },
-
-          body:
-            JSON.stringify({
-              route:
-                cleanRoute,
-
-              spacing:
-                Number(spacing)
-            }),
-
-          signal:
-            controller.signal
-
-        }
-      );
-
-
-    const text =
-      await response.text();
-
-
-    if (!response.ok) {
-
-      console.error(
-        "Python backend response:",
-        text
-      );
-
-
-      throw new Error(
-        `Python backend returned ${response.status}`
-      );
-
-    }
-
-
-    let data;
+    const timer =
+        setTimeout(
+            () =>
+                controller.abort(),
+            timeoutMs
+        );
 
 
     try {
 
-      data =
-        JSON.parse(text);
+        const response =
+            await fetch(
+                url,
+                {
+                    ...options,
+
+                    signal:
+                        controller.signal,
+
+                    cache:
+                        "no-store"
+                }
+            );
+
+
+        const payload =
+            await response.json();
+
+
+        if (!response.ok) {
+
+            throw new Error(
+
+                payload?.message
+
+                ||
+
+                `HTTP ${response.status}`
+
+            );
+        }
+
+
+        return payload;
+
+    }
+
+    finally {
+
+        clearTimeout(timer);
+    }
+}
+
+
+
+// ============================================================
+// HEALTH
+// ============================================================
+
+export async function checkPythonBackend() {
+
+    try {
+
+        await jsonRequest(
+            `${ROUTE_BACKEND}/health`,
+            {},
+            2500
+        );
+
+        return true;
 
     }
 
     catch {
 
-      throw new Error(
-        "Python backend returned invalid JSON."
-      );
+        return false;
+    }
+}
+
+
+export async function checkImageBackend() {
+
+    try {
+
+        await jsonRequest(
+            `${IMAGE_BACKEND}/health`,
+            {},
+            2500
+        );
+
+        return true;
 
     }
 
+    catch {
 
-    console.log(
-      "Python route result:",
-      data
+        return false;
+    }
+}
+
+
+
+// ============================================================
+// ROUTE IMAGERY
+// ============================================================
+
+export async function analyseRoutesWithPython(
+    routes,
+    checkpointSpacing = 80
+) {
+
+    return jsonRequest(
+
+        `${ROUTE_BACKEND}/analyse-routes`,
+
+        {
+
+            method:
+                "POST",
+
+            headers: {
+                "Content-Type":
+                    "application/json"
+            },
+
+            body:
+                JSON.stringify({
+
+                    routes,
+
+                    checkpointSpacing,
+
+                    // Do NOT deliberately invalidate cache.
+                    forceRefresh:
+                        false
+
+                })
+        },
+
+        240000
+
     );
+}
 
 
-    if (
-      !Array.isArray(
-        data.moments
-      )
-    ) {
 
-      console.warn(
-        "Python returned no moments array:",
-        data
-      );
+// ============================================================
+// IMAGE BATCH CACHE
+// ============================================================
 
+export async function lookupImageBatch(
+    seedStation,
+    stations,
+    gridSize = 5
+) {
 
-      return {
-        ...data,
-        moments: []
-      };
+    return jsonRequest(
 
-    }
+        `${IMAGE_BACKEND}/cache/lookup`,
 
+        {
 
-    return data;
+            method:
+                "POST",
 
-  }
+            headers: {
+                "Content-Type":
+                    "application/json"
+            },
 
-  catch (error) {
+            body:
+                JSON.stringify({
 
-    if (
-      error.name ===
-      "AbortError"
-    ) {
+                    seedStation,
+                    stations,
+                    gridSize
 
-      throw new Error(
-        "Python route analysis timed out."
-      );
+                })
+        },
 
-    }
+        5000
 
-
-    throw error;
-
-  }
-
-  finally {
-
-    clearTimeout(
-      timeout
     );
+}
 
-  }
 
+
+// ============================================================
+// START IMAGE JOB
+// ============================================================
+
+export async function startImageBatch(
+    seedStation,
+    stations,
+    gridSize = 5
+) {
+
+    return jsonRequest(
+
+        `${IMAGE_BACKEND}/compile/start`,
+
+        {
+
+            method:
+                "POST",
+
+            headers: {
+                "Content-Type":
+                    "application/json"
+            },
+
+            body:
+                JSON.stringify({
+
+                    seedStation,
+                    stations,
+                    gridSize
+
+                })
+        },
+
+        10000
+
+    );
+}
+
+
+
+// ============================================================
+// POLL IMAGE JOB
+// ============================================================
+
+export async function getImageBatchStatus(
+    jobId
+) {
+
+    return jsonRequest(
+
+        `${IMAGE_BACKEND}/compile/status/${encodeURIComponent(jobId)}`,
+
+        {},
+
+        5000
+
+    );
 }

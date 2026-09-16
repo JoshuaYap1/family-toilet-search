@@ -1,0 +1,100 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "PASIR RIS MRT",
+  "routeId": "PASIR_RIS__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3728419690805276,
+    "lon": 103.94933342664457
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 12678241799,
+    "lat": 1.3728833,
+    "lon": 103.9493499,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 4.947187839938811,
+  "distance": 4.947187839938811,
+  "duration": 4.122656533282343,
+  "points": [
+    {
+      "lat": 1.3728419690805276,
+      "lon": 103.94933342664457
+    },
+    {
+      "lat": 1.3728833,
+      "lon": 103.9493499
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3728419690805276,
+      "lon": 103.94933342664457,
+      "imageCandidates": [
+        {
+          "id": "1023700081530262",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9PYI3-SgRYxR1b2jAeJ4dJda2xxc1R4LbVV7tjpXEPLTQ8cAoZMT5Wf5kEPdx9PY45-UeHxrlU0jvY9gvZT7v7hGdUibyZpBjW71L0hXQwJSUT0OJvLWKEorh41ZN9tpzyL5a5nyhy1LaY-pql5LI?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=74I-Qt4KUwbI7H95KxnCZw&_nc_oc=AdrencXrJcgVWXKJXaQOUnCVfOChJorgq19ZhmdfYDyNQb5KEdN530V404Ll08WaaRg&ccb=10-5&oh=00_AQLWhiYQGxRvGA3OKFCczjNI0sus90mwUvloXUGzZBmMeA&oe=6AD1A042&_nc_sid=201bca",
+          "lat": 1.3727877051159,
+          "lon": 103.94940385812,
+          "captured_at": 1634375585072,
+          "compass_angle": 23.052825927734,
+          "distance": 9.895792762791034
+        },
+        {
+          "id": "3138888436342568",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9oG25YFfK0tMZWcTc6MNgpE9nWeDBhqb_VsW8VWXe7_rq2xlWtWlGorFUEYBTdHzSuUSOFsGI7UL3PIzI6b-ebIg1VxjLjPXwrlYhFKSyjepkm6B4F9J9cZArpU9oEGbDL0qdCZWxJxqOtV3sSiA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=74I-Qt4KUwbI7H95KxnCZw&_nc_oc=AdqUKgzjXI37nUHXj-G8AbyQ9nvDkPlPRSF0hZYLhRRhDqB60onhy-8ms2x3WVSKzlg&ccb=10-5&oh=00_AQKo8Q1lnr5WXgC8PRt3qhUvhICPDClP0I0Ya17gAgOzkw&oe=6AD19A5E&_nc_sid=201bca",
+          "lat": 1.3727760800083,
+          "lon": 103.94940085137,
+          "captured_at": 1634375584205,
+          "compass_angle": 17.917785644531,
+          "distance": 10.492967915159468
+        }
+      ],
+      "checkpointId": "PASIR_RIS__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 4.947187839938811,
+      "lat": 1.3728833,
+      "lon": 103.9493499,
+      "imageCandidates": [
+        {
+          "id": "1023700081530262",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9PYI3-SgRYxR1b2jAeJ4dJda2xxc1R4LbVV7tjpXEPLTQ8cAoZMT5Wf5kEPdx9PY45-UeHxrlU0jvY9gvZT7v7hGdUibyZpBjW71L0hXQwJSUT0OJvLWKEorh41ZN9tpzyL5a5nyhy1LaY-pql5LI?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=74I-Qt4KUwbI7H95KxnCZw&_nc_oc=AdrencXrJcgVWXKJXaQOUnCVfOChJorgq19ZhmdfYDyNQb5KEdN530V404Ll08WaaRg&ccb=10-5&oh=00_AQLWhiYQGxRvGA3OKFCczjNI0sus90mwUvloXUGzZBmMeA&oe=6AD1A042&_nc_sid=201bca",
+          "lat": 1.3727877051159,
+          "lon": 103.94940385812,
+          "captured_at": 1634375585072,
+          "compass_angle": 23.052825927734,
+          "distance": 12.218955655090365
+        },
+        {
+          "id": "1051354095652379",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9hlUm0fFXCVA8vx6a5Y76tmwNPngHVPaOS5MdXeCt3YdX1uXjwc1LokmzwX1QQ8dg8GdBnHX3KfTZsFReswH5t7blUlP14cp2OeGdhQD3pTzVou9lXHeiQorJgRN7C2WGJ0Ad5M4Sy6vaJRZFLbw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=74I-Qt4KUwbI7H95KxnCZw&_nc_oc=AdrN4xXSkB0Jd_kVkr7akzJYdg1O1gOvpm5Kb6B3iCfC9Jkd8Fgab1whEiJZx7w-4ak&ccb=10-5&oh=00_AQJCi_5bwX1663qA4VRPem-Vt36yuaoy_fmSv0SAHUkpGQ&oe=6AD175F3&_nc_sid=201bca",
+          "lat": 1.3729090042397,
+          "lon": 103.94946085318,
+          "captured_at": 1634375592541,
+          "compass_angle": 4.1184692382812,
+          "distance": 12.67496841052656
+        }
+      ],
+      "checkpointId": "PASIR_RIS__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 3,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.94933342664457,1.3728419690805276;103.9493499,1.3728833?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233bfbad450>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531812.215949
+}

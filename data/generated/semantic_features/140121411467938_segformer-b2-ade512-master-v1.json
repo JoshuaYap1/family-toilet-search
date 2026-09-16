@@ -1,0 +1,56 @@
+{
+  "mapillaryId": "140121411467938",
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512",
+  "modelVersion": "segformer-b2-ade512-master-v1",
+  "groups": {
+    "greenery": 0.006501939561631944,
+    "sky": 0.5950351291232638,
+    "road": 0.1338077121310764,
+    "pedestrian_space": 0.0735744900173611,
+    "built_frontage": 0.1051754421657986,
+    "vehicle": 0.03904554578993055,
+    "human": 0.011037190755208334
+  },
+  "topLabels": [
+    {
+      "label": "sky",
+      "proportion": 0.5950351291232638
+    },
+    {
+      "label": "road",
+      "proportion": 0.1275363498263889
+    },
+    {
+      "label": "building",
+      "proportion": 0.1051754421657986
+    },
+    {
+      "label": "sidewalk",
+      "proportion": 0.0735744900173611
+    },
+    {
+      "label": "bus",
+      "proportion": 0.03223843044704861
+    },
+    {
+      "label": "fence",
+      "proportion": 0.031411064995659724
+    },
+    {
+      "label": "person",
+      "proportion": 0.011037190755208334
+    },
+    {
+      "label": "streetlight",
+      "proportion": 0.0062713623046875
+    },
+    {
+      "label": "signboard",
+      "proportion": 0.005462646484375
+    },
+    {
+      "label": "traffic light",
+      "proportion": 0.004694620768229167
+    }
+  ]
+}

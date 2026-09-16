@@ -1,0 +1,105 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "CALDECOTT MRT",
+  "routeId": "CALDECOTT__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.337105316695643,
+    "lon": 103.83940673122467
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 8672388974,
+    "lat": 1.3372318,
+    "lon": 103.8396506,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "access": "yes",
+      "amenity": "toilets",
+      "fee": "no",
+      "layer": "-1",
+      "level": "-1",
+      "location": "Caldecott Station Exit 1"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 30.540698154487142,
+  "distance": 30.540698154487142,
+  "duration": 25.450581795405952,
+  "points": [
+    {
+      "lat": 1.337105316695643,
+      "lon": 103.83940673122467
+    },
+    {
+      "lat": 1.3372318,
+      "lon": 103.8396506
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.337105316695643,
+      "lon": 103.83940673122467,
+      "imageCandidates": [
+        {
+          "id": "1841256419855364",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-JQx0xaLl5b79nMeRPCAUUSCMZpiYg7sCBesHwZR3fdGtel_rgvQrPwW_YuYFn4ypJ14jWMYfU9qHhfpIF16nhV5d1zb6WOlELP6JKZnZfKD94bw184TJVKGncEJyj8ITFF03hwP8mjMxmjYfUTbo?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=I05WTmNjxT14P7pOI-K2zA&_nc_oc=AdrCX3h9nhqhf4W9d9OPEwYufZ0ctrFZ0_gS7E5Zzt6Cbio7mllvaIFC-OPWCa05QjM&ccb=10-5&oh=00_AQIwCSB8BaD36OK7l-h4bt8g6GXN4v4wx5dhqhAmDB12Ng&oe=6AD17728&_nc_sid=201bca",
+          "lat": 1.3375276,
+          "lon": 103.8396937,
+          "captured_at": 1766740712778,
+          "compass_angle": 103,
+          "distance": 56.83095073165041
+        },
+        {
+          "id": "857755620349988",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_hldHGRAk9U2AOAz0X0MKUjx6Njh2vEIxpUei2aJAw6ug4NUMiT1OjFGz4gZV9pIYxJopQTpHsvPQh6JoeYZEUxMPkGDJ39Him2iLHwscQeALaB85XO8tSdv-TJ05DDFFHbxdAOZGtv9Xkch5-xJo?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=I05WTmNjxT14P7pOI-K2zA&_nc_oc=AdoNV_Bb9ShoKQNoNJNSCRxpux0WHLhB7_v5mW_P0AI_hrXGDGDeS2MekhRmog6BC6w&ccb=10-5&oh=00_AQLA5zSow3vygd6GyPQ4waiwHl8vJjc4BlzKM4j1BL1wIg&oe=6AD18ED4&_nc_sid=201bca",
+          "lat": 1.3376808,
+          "lon": 103.8396387,
+          "captured_at": 1766740733040,
+          "compass_angle": 355,
+          "distance": 69.06876706636794
+        }
+      ],
+      "checkpointId": "CALDECOTT__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 30.540698154487142,
+      "lat": 1.3372318,
+      "lon": 103.8396506,
+      "imageCandidates": [
+        {
+          "id": "1841256419855364",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-JQx0xaLl5b79nMeRPCAUUSCMZpiYg7sCBesHwZR3fdGtel_rgvQrPwW_YuYFn4ypJ14jWMYfU9qHhfpIF16nhV5d1zb6WOlELP6JKZnZfKD94bw184TJVKGncEJyj8ITFF03hwP8mjMxmjYfUTbo?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=I05WTmNjxT14P7pOI-K2zA&_nc_oc=AdrCX3h9nhqhf4W9d9OPEwYufZ0ctrFZ0_gS7E5Zzt6Cbio7mllvaIFC-OPWCa05QjM&ccb=10-5&oh=00_AQIwCSB8BaD36OK7l-h4bt8g6GXN4v4wx5dhqhAmDB12Ng&oe=6AD17728&_nc_sid=201bca",
+          "lat": 1.3375276,
+          "lon": 103.8396937,
+          "captured_at": 1766740712778,
+          "compass_angle": 103,
+          "distance": 33.27597399453773
+        },
+        {
+          "id": "857755620349988",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_hldHGRAk9U2AOAz0X0MKUjx6Njh2vEIxpUei2aJAw6ug4NUMiT1OjFGz4gZV9pIYxJopQTpHsvPQh6JoeYZEUxMPkGDJ39Him2iLHwscQeALaB85XO8tSdv-TJ05DDFFHbxdAOZGtv9Xkch5-xJo?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=I05WTmNjxT14P7pOI-K2zA&_nc_oc=AdoNV_Bb9ShoKQNoNJNSCRxpux0WHLhB7_v5mW_P0AI_hrXGDGDeS2MekhRmog6BC6w&ccb=10-5&oh=00_AQLA5zSow3vygd6GyPQ4waiwHl8vJjc4BlzKM4j1BL1wIg&oe=6AD18ED4&_nc_sid=201bca",
+          "lat": 1.3376808,
+          "lon": 103.8396387,
+          "captured_at": 1766740733040,
+          "compass_angle": 355,
+          "distance": 50.00022195501117
+        }
+      ],
+      "checkpointId": "CALDECOTT__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 2,
+  "routingError": "429 Client Error: Too Many Requests for url: https://routing.openstreetmap.de/routed-foot/route/v1/driving/103.83940673122467,1.337105316695643;103.8396506,1.3372318?overview=full&geometries=geojson&steps=false",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531642.634344
+}

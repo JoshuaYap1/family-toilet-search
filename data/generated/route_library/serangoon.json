@@ -1,0 +1,101 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "SERANGOON MRT",
+  "routeId": "SERANGOON__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3494816802550018,
+    "lon": 103.87395739539099
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 8496084415,
+    "lat": 1.349217,
+    "lon": 103.8736497,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "access": "permissive",
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 45.12371645873789,
+  "distance": 45.12371645873789,
+  "duration": 37.60309704894824,
+  "points": [
+    {
+      "lat": 1.3494816802550018,
+      "lon": 103.87395739539099
+    },
+    {
+      "lat": 1.349217,
+      "lon": 103.8736497
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3494816802550018,
+      "lon": 103.87395739539099,
+      "imageCandidates": [
+        {
+          "id": "285208746608581",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-q09_2titPY7LpUsLGkKAFyIrhDEwpMnAXtee4N8yNsL8JeZd8lYXbJcAe9izBseQn_8pj7QDXQfePuUD0VfWCsfgMwhSRmjDwy1pWVqK1HyiWOvVtabkYvc4nFtoadZM6NECXKzxugGtqtkkJKA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pHIPVv60UhQjUluVhqZSSQ&_nc_oc=Adqep-eZEcrfNBEvGjjm2zK4ZcYRBYidlK0gI2S9kgb5D71xHvQJ3pa61tahvn1Amds&ccb=10-5&oh=00_AQI1Xp6Maq0LUewJedR7bEpmq5WlTvwrmH3XLlV4s6KJ1Q&oe=6AD19F44&_nc_sid=201bca",
+          "lat": 1.3495608309058,
+          "lon": 103.8738324011,
+          "captured_at": 1484389603000,
+          "compass_angle": 139.15459095972,
+          "distance": 16.466231072741675
+        },
+        {
+          "id": "481734529913941",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-JVGuqsU-6lHsouurvRHA7xjcJXDC7FKNCAwq42MXTG1c5Zl1jYlb8d6UwzadeaV733B65gFz4Ws67fzmct44q3CwNQ3l61PG82MPUF1WaexeOsE3_G9_kd1rf6zkp44zhYG69xZjgHh9XIQW9mg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pHIPVv60UhQjUluVhqZSSQ&_nc_oc=AdrBJ-vupySGGO6r1gGOC58ysG1cuB5n8nVjWWsoNHsQXYelib11woXrDaNZrSK2Lw8&ccb=10-5&oh=00_AQLFIHPTxCVxxB1mwkcCzWYhAGSWM3J5CzSUy2_0KI4k8g&oe=6AD17AE5&_nc_sid=201bca",
+          "lat": 1.3495490112251,
+          "lon": 103.87411729391,
+          "captured_at": 1484375714000,
+          "compass_angle": 228.07209187822,
+          "distance": 19.309067784131457
+        }
+      ],
+      "checkpointId": "SERANGOON__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 45.12371645873789,
+      "lat": 1.349217,
+      "lon": 103.8736497,
+      "imageCandidates": [
+        {
+          "id": "4102800109783435",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_273ewnr0A7HtG7I9LxbyU9v5Zf5WxoO5AJnVjKd0Fz-fvRMtW7OfPUUtPmMBEd0FLZHf_B3lqoctxlO9RwynTNcZCZsj4JB0b0peXe0vyMl6pyE4Z_A9-inwjf9_wf2VNrD2ZEKRFQ8gRHffm7g?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pHIPVv60UhQjUluVhqZSSQ&_nc_oc=AdpB6tbuU-9tK1NP0toOpAhdfBk-3m5hF2pl56EZDNEHs5Zef06LOLswZUEu66b_Fk0&ccb=10-5&oh=00_AQKwkTLv4Dqg3Y95kn9oHohshgYm9jOcO3-QtRHxhaLG6A&oe=6AD19287&_nc_sid=201bca",
+          "lat": 1.3493333444657,
+          "lon": 103.87348091596,
+          "captured_at": 1484389608000,
+          "compass_angle": 224.48628169596,
+          "distance": 22.81606327033055
+        },
+        {
+          "id": "872444210152326",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-1ZHfbrBSn8ajr2p6sFy4eXaMHcfl1YIxjEJmNsWEKa7k28c6HNX9kNMmXAD5l1rkbF36BVnzkC89aD28Y3ppsvdaSspoIQnEmIZNKdOCxfHqE0Cp8_RZ2faAhY-G44FAt3yvryOKi4N1sCBiwlw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=pHIPVv60UhQjUluVhqZSSQ&_nc_oc=Adpd3zanRrJE36w0GUZX5FAse56Ax3WhxQUpVBolTYwFrIpHVcM1y-kWbSfbwa4_PAA&ccb=10-5&oh=00_AQI6cdMW7USyCLP9AcCxAUfQG2WRy7SEwFIFAOIBj5mLfw&oe=6AD182FE&_nc_sid=201bca",
+          "lat": 1.3494101650394,
+          "lon": 103.87354672657,
+          "captured_at": 1484389607000,
+          "compass_angle": 222.77465759247,
+          "distance": 24.366211502883292
+        }
+      ],
+      "checkpointId": "SERANGOON__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.87395739539099,1.3494816802550018;103.8736497,1.349217?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c2bd90>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531855.3093526
+}

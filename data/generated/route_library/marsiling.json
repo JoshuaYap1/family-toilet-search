@@ -1,0 +1,405 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "MARSILING MRT",
+  "routeId": "MARSILING__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.432751371720061,
+    "lon": 103.77441052069655
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 6566042606,
+    "lat": 1.4294495,
+    "lon": 103.7823091,
+    "name": "Public toilet",
+    "changingTable": "yes",
+    "wheelchair": "limited",
+    "baby": null,
+    "tags": {
+      "access": "private",
+      "amenity": "toilets",
+      "changing_table": "yes",
+      "male": "yes",
+      "toilets:disposal": "flush",
+      "wheelchair": "limited"
+    },
+    "familyFeatures": [
+      "changing_table",
+      "wheelchair"
+    ]
+  },
+  "straightLineDistance": 951.6817610039607,
+  "distance": 951.6817610039607,
+  "duration": 793.0681341699673,
+  "points": [
+    {
+      "lat": 1.432751371720061,
+      "lon": 103.77441052069655
+    },
+    {
+      "lat": 1.4294495,
+      "lon": 103.7823091
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.432751371720061,
+      "lon": 103.77441052069655,
+      "imageCandidates": [
+        {
+          "id": "903305500512222",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_n7cEDfb7M3Xpwq-GgkQAOiig0jFcGGCh-_NA0x01guglFVsb_G0UVHPamY-OfNhBpCPdF0DMc_-oD3c-z_vkNrCnj_iVav0JCMDGH3XAGOTlLX3ozokgJ6bLlpQy2XTMH3TlnZAcWzV58e81zytg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=AdrFQQAlB1KbJrcxSMVZMiijSLNfZ1cq2q9fWF7eueoAySS8zwk5whDBCiT2t5iWSbs&ccb=10-5&oh=00_AQJTWimGztokE0xip-EhpQMG4Qc_Sar4SGUJ0wEUjEgokw&oe=6AD1979F&_nc_sid=201bca",
+          "lat": 1.4323697561889,
+          "lon": 103.77471064254,
+          "captured_at": 1484638088000,
+          "compass_angle": 356.9882108773,
+          "distance": 54.03863375094421
+        },
+        {
+          "id": "1256668014748056",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-ZWh3I46StqIvxyEn05FskLF_ZCtyglmVfzyvXuHYl22Vnu10-_qnlI4rT9L4Qv0uHYagJwj-rnR0ksnPfIGWlwHPhwMyrhUwxSGOJKHpa28n1jSG4KTmtB9H7KwBtrVvFdNsfGnruyA7WNwe8yN8?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=AdohVXsqJflFJOwqXg-FqroxSiA8DhGZWY9i5AXH8-yLaBkYDX6IUyePlZYKJ4OmXto&ccb=10-5&oh=00_AQLenBZ-GqXYQx4Z2E-9guBwV8JSLBwy29SeJS_c1e2zyQ&oe=6AD177BC&_nc_sid=201bca",
+          "lat": 1.432370769809,
+          "lon": 103.77471607918,
+          "captured_at": 1484638090000,
+          "compass_angle": 359.56221950462,
+          "distance": 54.32660429207755
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 80.0,
+      "lat": 1.4324738107239081,
+      "lon": 103.77507448881086,
+      "imageCandidates": [
+        {
+          "id": "522389562093224",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_dZyXrZrtz_XF-f9i7nFcFh65UIbFMNXSn5ahIXK4EldelTJDWAM2Icif2JwS76Uag-a_tWWqopvT-jm25QjmW0N7s7dqyOoJQ6mJ9UtZVcJSWJ4TX_U3cY_fKDzPjtiGVOEMJJnJ64mpD0pDozw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=AdqjPJHYGkqXIrmiqONwPaU-JMZsPFGeeu_vkAOFjZPXjH4yRd5oNSx71GeqM_Z1R0A&ccb=10-5&oh=00_AQI3AqomlGfYw8jWK5QXMtAFSt82mrD63x0dx1s0GNfTXw&oe=6AD17315&_nc_sid=201bca",
+          "lat": 1.432375381211,
+          "lon": 103.77500243685,
+          "captured_at": 1484638091000,
+          "compass_angle": 0.91853916371826,
+          "distance": 13.577667914404403
+        },
+        {
+          "id": "968905693918684",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9A1xcyEjTCCOpIzJLx9rB0UHbAlWX68EZICeqtqFnfCCi-hG4jdYYF5kjaDUxTQU2N_lqJKhNmSkr5tF5Jkj1QPRPwam9H0Yqs5dSYKebvLal2P5X8BZfpasCU2voOvAhZq2kuUMY620yF0vmiCw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=Adpai3wsnfdvEBlQWzuTnSLyFKREaQxT12hAW19k0bdX9Bbel4_wMzw_fO5DiyiIcqI&ccb=10-5&oh=00_AQIiXG8H8qjGvl_jTdItnhi7EWXbVaHKDDsAYr4Q-KiQ0A&oe=6AD17DA0&_nc_sid=201bca",
+          "lat": 1.432373043002,
+          "lon": 103.77514904727,
+          "captured_at": 1484638092000,
+          "compass_angle": 0.43463023602129,
+          "distance": 13.952630312865129
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C001"
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceFromStart": 160.0,
+      "lat": 1.4321962497277552,
+      "lon": 103.77573845692517,
+      "imageCandidates": [
+        {
+          "id": "833817164203614",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An90ESn4dx4JNXU4axA2AvNruL_FbNClWmoDxMVJ33q5fhiRyX6zpcAWym2Z6YC5qN8DQ8XOLdnTi8pU_Ro0-wZhtxKa7JUt-YlChlmHpE74E9H8xwhCdKoBwbVlYSL2AjiOzNcASIyKjvgy8wl24A?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=Ado4_8qSMZ4lBTCYgJEOCSCQOhcobPOWAia6mgYRPMSCq-NN3UQ1AZ66NcqSv603dNE&ccb=10-5&oh=00_AQJJLgWUPjAln_mJr14_jAu7lV7WLbuy75Gt1fzwIIAjwg&oe=6AD18029&_nc_sid=201bca",
+          "lat": 1.4322119011966,
+          "lon": 103.77581988779,
+          "captured_at": 1558935312000,
+          "compass_angle": 269.17001342773,
+          "distance": 9.228026399455844
+        },
+        {
+          "id": "907982876425187",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_cT884cMNfb0BrBzt54gD4dKEQnU01RGyGT9ZucLeREPJl3q3L0EsGEL6NshkhFU7jSEslNB8cJx2VPinh7fV1b5abfY90QcD00iLary7NkSxK7mGgDv4tQoeIX-KiF0tcvUYLeOmoQp_u98Z8wg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=Adp4IkF0gvbTYFvZix-24ku_EvKkT7JCQJXpwITN8-OqHSW0zBO_67bPCSW-uJ53R1U&ccb=10-5&oh=00_AQLrPc7UKbZgj7B-0FOhpkTItl-aU6T8NecaOXEDPexsbw&oe=6AD17382&_nc_sid=201bca",
+          "lat": 1.4322939958411,
+          "lon": 103.77572258793,
+          "captured_at": 1484638096000,
+          "compass_angle": 92.951149832406,
+          "distance": 11.023474096710409
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C002"
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceFromStart": 240.0,
+      "lat": 1.4319186887316022,
+      "lon": 103.77640242503948,
+      "imageCandidates": [
+        {
+          "id": "478009466769094",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-g8LwYl6bOtp50Hh1K7c_loAt9mckBmudisU2Maci1KE7EfAgIbrQcoEhv1jcg-hyloRlPUseIRjUTeEvPWYq2zoP0sbMe4OOa8LuSG43cfYLlz2ZrymPloobX8idhGhGsvVGVwO4Q7lJ0cZIA9w?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=AdpKSxv3zF6Dj_Ah3ddDNSqvdtD-Z6uHozWmzg1k-scGNwOYnrAgpAjPeOWC9L_Q_4E&ccb=10-5&oh=00_AQLb2mwDT2D8_amvsDGp2XHjNRTb_yqC19zkHLnACSgdNg&oe=6AD18B6D&_nc_sid=201bca",
+          "lat": 1.4321333974147,
+          "lon": 103.7761160089,
+          "captured_at": 1558926199000,
+          "compass_angle": 89.839996337891,
+          "distance": 39.839932957898235
+        },
+        {
+          "id": "523735022093573",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-0LY6f1w9Yb6yO6zMB3Q3Yu8W4iphnnlcBq254qbl-_QikCxMge-Tb50mVhox53vTMiD_cYvVIJdViRWHZ_bpqfKDHNmu0wAqEk7twsrkzB6IyxjN1pI6vLVXytXPvHiA5tn5u2fZFiQCvabpFlA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=AdpuekoCRuInXBbIcqWjCRjfiGI6LAFFlkyjZs-yrUum00PA-YJT8MKBPDIPuUpNpSQ&ccb=10-5&oh=00_AQJJtkC9v26SdEkY9tmU24bkqQ0y0TYTwClNvwhzK5yaVw&oe=6AD16D95&_nc_sid=201bca",
+          "lat": 1.4319721049886,
+          "lon": 103.77680652745,
+          "captured_at": 1558926200000,
+          "compass_angle": 89.449996948242,
+          "distance": 45.36205751250559
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C003"
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceFromStart": 320.0,
+      "lat": 1.431641127735449,
+      "lon": 103.77706639315379,
+      "imageCandidates": [
+        {
+          "id": "841852753102031",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9fGLRR4STJTf_nmWB5415dgbrekvFtZ8d0SNs2AGY43DXKzNPcthPoyB5I48AkUPMHNM12KZ2Lht1BY-z79SCIxnogV9FTqELsOycmAMjoJmJvdL73mAfJHlFkaQ3zyceVt7uBB0VbR591gjSqYA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=AdqXDekOx-GIddpCRMIlHiXEs1IsgG-P-S39uu0Waht1pEUCfnQ5Me9DuKiR-T4sNwM&ccb=10-5&oh=00_AQLhCZLYCFc-HhPKiM9pF_figJ0CsPwQZT_c2ZzxLyI1ZQ&oe=6AD19982&_nc_sid=201bca",
+          "lat": 1.4319720860901,
+          "lon": 103.77680660803,
+          "captured_at": 1558926201000,
+          "compass_angle": 90.230003356934,
+          "distance": 46.83114992394413
+        },
+        {
+          "id": "523735022093573",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-0LY6f1w9Yb6yO6zMB3Q3Yu8W4iphnnlcBq254qbl-_QikCxMge-Tb50mVhox53vTMiD_cYvVIJdViRWHZ_bpqfKDHNmu0wAqEk7twsrkzB6IyxjN1pI6vLVXytXPvHiA5tn5u2fZFiQCvabpFlA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=AdpuekoCRuInXBbIcqWjCRjfiGI6LAFFlkyjZs-yrUum00PA-YJT8MKBPDIPuUpNpSQ&ccb=10-5&oh=00_AQJJtkC9v26SdEkY9tmU24bkqQ0y0TYTwClNvwhzK5yaVw&oe=6AD16D95&_nc_sid=201bca",
+          "lat": 1.4319721049886,
+          "lon": 103.77680652745,
+          "captured_at": 1558926200000,
+          "compass_angle": 89.449996948242,
+          "distance": 46.83834115128171
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C004"
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceFromStart": 400.0,
+      "lat": 1.431363566739296,
+      "lon": 103.7777303612681,
+      "imageCandidates": [
+        {
+          "id": "813552846222108",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-VqAyBdGFs_h6D7AOHxAwHId9xQ2xP5WcIecsU67nt2hrqpyhKKk4AannlmNV0JBkTNb-B22LT0aVAliG76inq0Lr8tSTyr-Ze_CIj2SQ6Cx2TGCdxJitQFogXT4iWKmN7QKrXLLfZ34lUfwurmA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=Adr-3GwQ1WwAX1CMUecFlcqOs1e66WKVeEgkDtbAE2C93b5uCXcdxjp8aFxDPyNMXek&ccb=10-5&oh=00_AQJyxFhiwwtzhF91535JDB3Ssi4T4N3WuAD6AEdtgZ9EPA&oe=6AD19828&_nc_sid=201bca",
+          "lat": 1.4321492835909,
+          "lon": 103.77824595852,
+          "captured_at": 1548129612000,
+          "compass_angle": 267.32998657227,
+          "distance": 104.60678386191863
+        },
+        {
+          "id": "1151551131960030",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9L79-IPGrNtYT6hjR1Us0EsMmXSRaH8VRwGoHwnEcwY0-wAWswRtM7NBMR6SE_2tMAgjBrm8hSsinmWut-GeN5f0WiGVxYQUkpRYcfNZKjnJyIgvnd0WjmDQU6bPY9U1uAOF85Ujh1at8gfZIrAA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=t-jtbhL1CkZJ-GX9SmuD8g&_nc_oc=AdpHpvpaMeUwHf7EiBSCPRRFRKFONzzW68MzQVWPY83gcZxIvHxOoZWgzDQp9NVyHXU&ccb=10-5&oh=00_AQJ_B16G8XdI8wb8CM9_Mb_zmXF8KXxN3-imK4A0ilv25A&oe=6AD190F7&_nc_sid=201bca",
+          "lat": 1.4321762823279,
+          "lon": 103.77823621151,
+          "captured_at": 1558935298000,
+          "compass_angle": 267.54000854492,
+          "distance": 106.5554802025372
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C005"
+    },
+    {
+      "checkpointIndex": 6,
+      "distanceFromStart": 480.0,
+      "lat": 1.4310860057431432,
+      "lon": 103.77839432938241,
+      "imageCandidates": [
+        {
+          "id": "142256884619255",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-bZwvF8EAl-UCaw7QY7azBDj_wk-XAdxzpYrbixbDeLQhW8nK50STmYtx1ueBkNCNw3Fi-wMeDp3acaLsGfPWSDcXFUf3kwTkvvJha_9DFjKwchHXvM22B1nF1tcZVfzTPzpsWAAICWZbIanTDNw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=Adq5EcaXbc1GH1oCKM1_B3HVswZZE3rS35SAM1zmNBBtgLCg0CoWXCn6VRNYPibhu6U&ccb=10-5&oh=00_AQJfbSuenG0UIVlha3HL5e0lLUqLw9jiBx-V4-qnRLW5Fw&oe=6AD18F95&_nc_sid=201bca",
+          "lat": 1.4309651395955,
+          "lon": 103.77886042967,
+          "captured_at": 1558928426000,
+          "compass_angle": 265.76998901367,
+          "distance": 53.58674690246307
+        },
+        {
+          "id": "300920354964598",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9WcWeDfGn6KDe2vA3r0q7BQzula2q-kWStBDp0RJ8aZkbAaSQReGRKVPiObF8_2A2j5MSZ_aQal8twT8tdmwOHXTerAkiixqBn1S9mqUTjyyeKJwhWXLjB7oeFPQJ_c14Y3QKfYXGlrT363zwbFP0?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=Adrp7T8_XzKEZ-IN_8XS2k7vDwFHLLe7yzKitr-42fsx8Jv5v4ZeT88NMVYgKUL2ZSM&ccb=10-5&oh=00_AQLl6W4h_g46NONe0JYyUijJyKvSQqET5PGHpnS2zqkTCg&oe=6AD17E20&_nc_sid=201bca",
+          "lat": 1.4309641250584,
+          "lon": 103.7788616132,
+          "captured_at": 1558928425000,
+          "compass_angle": 276.67999267578,
+          "distance": 53.742648243357806
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C006"
+    },
+    {
+      "checkpointIndex": 7,
+      "distanceFromStart": 560.0,
+      "lat": 1.4308084447469902,
+      "lon": 103.77905829749672,
+      "imageCandidates": [
+        {
+          "id": "527659641724595",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An88hJyXwlWXyOjuEzSs67Fm6-Tmi2aJVTlI-RsWHMpk0Ey6S1hcAPhYqycg9ebLoageAfXVjaf0Att6TEGjQjAVeW6LtWDwqrCssiyRAbresq1uwqEHQ6Ce6HO9-jEY_Oqk_4IQtMvg3mbQlwhcIHg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=Adrp7DoxeBetCzOGcJUdfaXMG4RRzd1LNn8fYjpUuzU7aFkUfUwH5ps9XKoUydMUN38&ccb=10-5&oh=00_AQKVfjUsz9LA9Xw-ljzDxAdZQWiEqSLlCgmcM3Ief9gsCA&oe=6AD18845&_nc_sid=201bca",
+          "lat": 1.4308185605461,
+          "lon": 103.77901296662,
+          "captured_at": 1558929461000,
+          "compass_angle": 175.36000061035,
+          "distance": 5.168817378720207
+        },
+        {
+          "id": "166743102077928",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_rWMtT3LOFLosAoto8nt-N5qgflV3yIxmgXDLhj96orMPIioV7w_NKEpy3-e3U8aCto4SFIWFGkvjTR8ZiM5ZBCa1w2YdsYsB38WCmJnAEgb07n6VK8QHb-s8wEzrf5hY0bE7S-1KckKSfhRueAQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=AdrQe_oXMpkzv7MCCbfSqfepscBKpG3CaluBO7uInfYO6KE6nmgEjqGOp45-HOQ3gK4&ccb=10-5&oh=00_AQLe9cIfjzmooCpJMAP1qOLOW0CAKwTT_t7kd68XtMUNPQ&oe=6AD19901&_nc_sid=201bca",
+          "lat": 1.4307837097241,
+          "lon": 103.77901327356,
+          "captured_at": 1558929462000,
+          "compass_angle": 176,
+          "distance": 5.717246435884397
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C007"
+    },
+    {
+      "checkpointIndex": 8,
+      "distanceFromStart": 640.0,
+      "lat": 1.4305308837508373,
+      "lon": 103.77972226561103,
+      "imageCandidates": [
+        {
+          "id": "306678780986907",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_-l9iHU5O1pkWNrX0YsoyOI29UNywyKxPfpPHgpwmKTYBZyqMzG52tSe1Jpe0ltYpQWgx2DAYz-Bb23jXVl85Bm92kFMCRdHXtFHiChAxd75DN3u1lGyt9owZ_Lly4hVccoov8jHCBj0_3pKa-Xg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=Adr76dyXLC2tCUNLaVxSibeAcGif8HZnH1ogpY4kGdabWGLdOMPhiZv-Lq0hSoYYpJM&ccb=10-5&oh=00_AQJs1OQsPzPHZjeP_dBypb33AkvyaaUK065zVvlROGLnhg&oe=6AD16F85&_nc_sid=201bca",
+          "lat": 1.4307202705587,
+          "lon": 103.7796598179,
+          "captured_at": 1558929485000,
+          "compass_angle": 80.120002746582,
+          "distance": 22.198405223149276
+        },
+        {
+          "id": "4447094511990747",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-tP-C53q1Oeo_ryGbpRhIqD3M1zK8551HWYebx_9PwDP3R9QUJQEAQOK7CCv9502awvwrQ09iERgMo1R43nxYAcEnva2cM1I_M6d0pMmqvbdkFVee9TH6lPs8hslZ1oZz21ZHUk5WCJPsGXvLt1d4?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=Adra8XhBQ74zqQWSSrsY1FyhSLlkrS5jjjXdDpaVWc1upZeWRWo7L2duvtew5q0ilIA&ccb=10-5&oh=00_AQKgFfrFamB1vFFZ-K6qJ2xOaegSZlMvhNMcPkT3CvlOQQ&oe=6AD19BA8&_nc_sid=201bca",
+          "lat": 1.4307293045123,
+          "lon": 103.77969011445,
+          "captured_at": 1558929486000,
+          "compass_angle": 83.610000610352,
+          "distance": 22.37610960699012
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C008"
+    },
+    {
+      "checkpointIndex": 9,
+      "distanceFromStart": 720.0,
+      "lat": 1.4302533227546843,
+      "lon": 103.78038623372534,
+      "imageCandidates": [
+        {
+          "id": "1672360799615449",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8qgvnHkb24PcMn1PHkxSOQjGo2xjLSiL4UrqarSqdzkoN0SKC_U7lhyldAdf8QnIvsqfVIJlT2TSu-KRiPhHZWpqcVnRVYB9WHFiRbWV4bT7_hZ40_auwuv6hqvEzhYjZhOtF6xmMO5jU-eg2i3g?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=AdobP_9mmxh1AZn7zU4_1E3QzjdboIUg2vKrsjeVnYTjYn5M_bjcozTPMCEzy770CRc&ccb=10-5&oh=00_AQKbLIcidW7H4DHulKauPyLCh7k_QrbVNZo-I-DBPH7Wsw&oe=6AD18554&_nc_sid=201bca",
+          "lat": 1.4303833272808,
+          "lon": 103.78050696765,
+          "captured_at": 1558929872000,
+          "compass_angle": 282.04000854492,
+          "distance": 19.747545518150368
+        },
+        {
+          "id": "210134280951837",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8zGTmM-K7P0B8OeuSYBxhxE_IufLtwahA7Jl7W3Nkr9WeGPFM25BR92noMuN8iRQkitatrOF4ZpnR8d4eMuMLZNbPZcCaI1SGodCEv3rrMKx4rN4ADYvPU-VPxwykXgofDVFwYpk8XHBmvnbxfTg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=AdryV669c4K-ShcVaBXMCTGp5DnWsO9p8TTlMv2r_F51NRtrp_0Nx7oGNBgMBYyODLQ&ccb=10-5&oh=00_AQLxPom2pvKOMfs_0MjKUWqHvvLAN1ToB0hQVMBcKykK3w&oe=6AD17CD3&_nc_sid=201bca",
+          "lat": 1.4304074427769,
+          "lon": 103.78047493076,
+          "captured_at": 1558931812000,
+          "compass_angle": 294.17001342773,
+          "distance": 19.79344853335386
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C009"
+    },
+    {
+      "checkpointIndex": 10,
+      "distanceFromStart": 800.0,
+      "lat": 1.4299757617585314,
+      "lon": 103.78105020183965,
+      "imageCandidates": [
+        {
+          "id": "319637946303803",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An9H0Ed9UtjfbCb4JX24tdlzlkOOmXhrDEk1IDSUpAezpl5U6jHLT6No-KMUtlYg05awb2lqATy_nxkZoOLupy5MrapWyQXCPh5HmS78qfjht_mdDNXihUv5k_BdSED4JoX73WhEIjhxPAzWjfj49w?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=AdpQ4mR8bLXl3B2_645Qj82fDwiZGe9C2BcDQ9n58AiLCy0qbgfFN0orxcevRGIsoRQ&ccb=10-5&oh=00_AQJNPiIgz50HLFUlldHrfwopUropiR3BOZH_YuCQbYQYQQ&oe=6AD192AF&_nc_sid=201bca",
+          "lat": 1.4299617122384,
+          "lon": 103.78102933868,
+          "captured_at": 1558931805000,
+          "compass_angle": 297.83999633789,
+          "distance": 2.799403364997398
+        },
+        {
+          "id": "1145213512631985",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8l7HTzlrrx-7kCfUyhc5zJAXI3T-x5-49X_zu2xSQy2CCvRCc3eKPOutmgoveSZAb6y7PBEWMDnqmeTM7TAKTVXLHooODq5qv-SAV67rt2rRZ4O-U0xu_B24PZqc5jORNn8gkYq3k_PAtLqBWhPA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=AdqCA3UZ9xQYzHpvTKMNxfmaWu8mpH6r8sizCbd7UqT8UQsHPh_IQJVBuqZwN-p032o&ccb=10-5&oh=00_AQJjc_citYLFQfvvG8wz29XbY7pRr932jY1XabEBLcGpxg&oe=6AD191F4&_nc_sid=201bca",
+          "lat": 1.4299285164499,
+          "lon": 103.78104566174,
+          "captured_at": 1558929864000,
+          "compass_angle": 327.54998779297,
+          "distance": 5.283560622232111
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C010"
+    },
+    {
+      "checkpointIndex": 11,
+      "distanceFromStart": 880.0,
+      "lat": 1.4296982007623782,
+      "lon": 103.78171416995396,
+      "imageCandidates": [
+        {
+          "id": "142740664465489",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_zvD3K4U_NFyLLfTXhMehoBhIPXX4EIXe_xSz5BfZbPthEWMVfXyq93T_6ZE_rIC_8MJoMU5IQfkxwsxh8rEx4FjnPLoG8fb_3m3AeWAkbsSB3zwgMF9jpVKduw5SSVci1gmMrVKwYsfdJRXwkmQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=Adq_jStz9NBCNBgQymygH24KSAmQWNkxg-WN_6Y-9rBE5vRKm2nXgBvm3vkY2Pu2HWU&ccb=10-5&oh=00_AQJMhlwga7ocmqxXeR4hAjIK0-FUGbaARYFzLnqReBdbSQ&oe=6AD1A0BF&_nc_sid=201bca",
+          "lat": 1.4295930565412,
+          "lon": 103.78151400893,
+          "captured_at": 1548128059000,
+          "compass_angle": 153.89999389648,
+          "distance": 25.162950151898375
+        },
+        {
+          "id": "219671429716474",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An8k-rqpyJil7g0lFC5wMO6l5s6SH6igNGNvB-ZjUlzoXT6d-e67J5TCrIrW-neJvw-lHP2z_hosZ2ZMZK4IPZrJred6UuGPeXYafJqdZwKgfGsSnte_OxwEi8Vq6rmUF4yz5Jt5lYgyExnYR-yanDw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=Adqg-pC6FGtbbDZ1zWvMftFOJDr2nSrVrs2uoBo0PwrUvtRFd1CDguRKsXCaijjLc5E&ccb=10-5&oh=00_AQJ6J7jvMqF7L78QxH-rwbMBuVcDhwxcuwPuMAiGKrEaLA&oe=6AD16E36&_nc_sid=201bca",
+          "lat": 1.4295592658315,
+          "lon": 103.78152506878,
+          "captured_at": 1558931633000,
+          "compass_angle": 151.30000305176,
+          "distance": 26.116324005933922
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C011"
+    },
+    {
+      "checkpointIndex": 12,
+      "distanceFromStart": 951.6817610039607,
+      "lat": 1.4294495,
+      "lon": 103.7823091,
+      "imageCandidates": [
+        {
+          "id": "376471213785727",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An82Ydeqr1xS9ID1wtX9jYUhYv3rkS42MrvIYGknQZzDnzYG17x6fIfb0joY1_OekhkDO68SotKCmJ25Kie-haf6Y43n5D7m0mXciQFGyBdKZ9q7fkw4eN1JJOvUY9A-0resgCRohnG_gfl2kxr1oA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=Adrt1nW5Sn61pUntBb68MWnJgMlXVDfFFSgx30w_H0vBfjJTHluxGtC1JFh_OpNx9K0&ccb=10-5&oh=00_AQKDqpzzihGeiYuMWrFi0ezf-4S6OTDqnw5nYKq5k3KtwA&oe=6AD1721D&_nc_sid=201bca",
+          "lat": 1.4291646730221,
+          "lon": 103.7817377545,
+          "captured_at": 1558930957000,
+          "compass_angle": 153.22999572754,
+          "distance": 71.04963097944615
+        },
+        {
+          "id": "512838709841948",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An-X6z9pfZvj5uDVC6dZ0t0x11faamMT8sfkb92xH74R8uDATWyl2p94Lj8MXNrNxZA1083c3iVZBaNDuVL1dfCXizGk1tZibVmpkWMgq0mwR7dwsYzz947IiW0MUPasxmKCFhec8d7qhZzx4xmUbg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=WWKrgAi5ubvWUzn6GxbO4w&_nc_oc=Ado2J6CKyHsR7qtZOXmRZ9ak4EUMUh_e7tohclWWb-rFxgWEx4BelucCj1ep03pPozA&ccb=10-5&oh=00_AQJ8_w7QhV5o_nX-b1H4cu27PqObq5KEy08zv66A-iU9jw&oe=6AD19A7B&_nc_sid=201bca",
+          "lat": 1.4291580527341,
+          "lon": 103.78173913185,
+          "captured_at": 1558931641000,
+          "compass_angle": 157.50999450684,
+          "distance": 71.24506412344205
+        }
+      ],
+      "checkpointId": "MARSILING__R01__C012"
+    }
+  ],
+  "mapillaryImageCount": 26,
+  "uniqueMapillaryImageCount": 25,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.77441052069655,1.432751371720061;103.7823091,1.4294495?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c1c28910>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531773.7533388
+}

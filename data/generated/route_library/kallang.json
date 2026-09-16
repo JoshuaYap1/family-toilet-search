@@ -1,0 +1,100 @@
+{
+  "pipelineVersion": "all-mrt-family-route-v1",
+  "station": "KALLANG MRT",
+  "routeId": "KALLANG__R01",
+  "routeStatus": "complete",
+  "mapillaryStatus": "complete",
+  "routingMode": "approximate",
+  "origin": {
+    "lat": 1.3115404829755273,
+    "lon": 103.87173056416847
+  },
+  "toilet": {
+    "osmType": "node",
+    "osmId": 4281193590,
+    "lat": 1.3117935,
+    "lon": 103.8718942,
+    "name": "Public toilet",
+    "changingTable": null,
+    "wheelchair": null,
+    "baby": null,
+    "tags": {
+      "amenity": "toilets"
+    },
+    "familyFeatures": []
+  },
+  "straightLineDistance": 33.502769226929935,
+  "distance": 33.502769226929935,
+  "duration": 27.918974355774946,
+  "points": [
+    {
+      "lat": 1.3115404829755273,
+      "lon": 103.87173056416847
+    },
+    {
+      "lat": 1.3117935,
+      "lon": 103.8718942
+    }
+  ],
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceFromStart": 0.0,
+      "lat": 1.3115404829755273,
+      "lon": 103.87173056416847,
+      "imageCandidates": [
+        {
+          "id": "1550961626108093",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_6nEmXtd4aKOohh2hNAzVwwi9vqKXyxqxAT8NaTCsBLgo6XyssmD1z4mvC7NJgzztRDTo7Lhafu6DOj8YsYWEcjsQhzjgSMC3Chtrixgsu5Ojjq-v2NHHkd_F5WcTFbfSrvGurLD-PKNnAhoxdrQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=XTOqntflICRyRheuMQHwSA&_nc_oc=AdpOnlLJ54C9giHj148pfgUEiSLeFsnz2xPRcIp_27oIGVEWe6G-s_TEdPzbh_JBHpY&ccb=10-5&oh=00_AQLaZ5QE2cJUyqslVL1NFWL8eF2kIb7wLGakv_cPVqn0Rg&oe=6AD17E02&_nc_sid=201bca",
+          "lat": 1.3116031817159,
+          "lon": 103.8717264466,
+          "captured_at": 1766729932033,
+          "compass_angle": 358,
+          "distance": 6.9946507407975025
+        },
+        {
+          "id": "1547461736477964",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_9HRx7EehGmSINdbjTmspXNgs5Yg8UWh0sYUaC62NwGJr1tPixlKmii9N2HYlDN89uEBx-9nGItjNSdWW7PV4ZJFp55_n7Kku7ZlikTbFGQDqmzMKjVOCwP6RMF53igAy7Kzcs8-sSdwbdkA6rs-8?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=XTOqntflICRyRheuMQHwSA&_nc_oc=Adp0ZiZ7q8vOQ0gUOp4s87tJTvfGtrOYoI5ADqhW3oWRmpSLw71CP5d5YGm4FND0YIY&ccb=10-5&oh=00_AQJsNcJQOltq7La-T6sng_45XlvpfpHfAfMEfpRwCdEACQ&oe=6AD18F0D&_nc_sid=201bca",
+          "lat": 1.3115588628678,
+          "lon": 103.87165668343,
+          "captured_at": 1766729933036,
+          "compass_angle": 357,
+          "distance": 8.472998314823656
+        }
+      ],
+      "checkpointId": "KALLANG__R01__C000"
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceFromStart": 33.502769226929935,
+      "lat": 1.3117935,
+      "lon": 103.8718942,
+      "imageCandidates": [
+        {
+          "id": "454180995877054",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An93XpIQkn2AGD9Sufk3Zb6VjwGxfwjKjYVa21urhUKMDFl4VVcfyo4MoR0_4ZI2xWG8gOgvL6D2ep2zs0wuR92QNB0HJX8udwmGDmns81jGpSf3N9sdWWWr5mlKceBboUeeyernAm_PVirOrsHC6qo?stp=s1024x764&edm=AOnQwmMEAAAA&_nc_gid=XTOqntflICRyRheuMQHwSA&_nc_oc=AdoJXprpAErZ8C-KooI16PJjzo7qLtEk3Yv01bMI209nzOhtYZwCvK-RLD31hAVsJ9U&ccb=10-5&oh=00_AQI9Nsw4CPIjYIF4DWrA0rCsyYcHKTp6CjA-KN_aPDvD7Q&oe=6AD17BFC&_nc_sid=201bca",
+          "lat": 1.3118560028769,
+          "lon": 103.87191199078,
+          "captured_at": 1434163688110,
+          "compass_angle": 312.4777,
+          "distance": 7.234049145711286
+        },
+        {
+          "id": "1406273711086694",
+          "thumb_1024_url": "https://scontent.fsin15-2.fna.fbcdn.net/m1/v/t6/An_JLUkrBEIx0y1oiNnmnCQdtBd8uEWpNWDaGm-S-SNTzF7y9PGEySBFhqo1oYFLVH2RkkoIvpyhlWfsAQ7lXkn5XRvbEVG_Ju075rPtP2LL_B7cR0doroQFWCxxf5_R7-M4b_6xoDZJUhawfNsLses?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=XTOqntflICRyRheuMQHwSA&_nc_oc=Adpri8bZ8_5D99w6W-OKeAf4QpnYaQ9TGxH_4HJLyBGVBkK_m6uMtNK7OHYgPHOnjp8&ccb=10-5&oh=00_AQJ4XSrE-RznxiBU9b585cMdJv75013lzl4MFP8YB_0ErA&oe=6AD18F39&_nc_sid=201bca",
+          "lat": 1.3117480741606,
+          "lon": 103.87195416723,
+          "captured_at": 1766729929025,
+          "compass_angle": 353,
+          "distance": 8.373225843255629
+        }
+      ],
+      "checkpointId": "KALLANG__R01__C001"
+    }
+  ],
+  "mapillaryImageCount": 4,
+  "uniqueMapillaryImageCount": 4,
+  "routingError": "HTTPSConnectionPool(host='routing.openstreetmap.de', port=443): Max retries exceeded with url: /routed-foot/route/v1/driving/103.87173056416847,1.3115404829755273;103.8718942,1.3117935?overview=full&geometries=geojson&steps=false (Caused by ConnectTimeoutError(<HTTPSConnection(host='routing.openstreetmap.de', port=443) at 0x233c197ae90>, 'Connection to routing.openstreetmap.de timed out. (connect timeout=45)'))",
+  "imageryMode": "route",
+  "mapillaryCrawledAt": 1789531717.185265
+}
