@@ -1,0 +1,62 @@
+{
+  "0": {
+    "description": "High built frontage + high pedestrian space / low greenery",
+    "checkpointCount": 450,
+    "meanFeatures": {
+      "sky_exposure": 0.08974022513808877,
+      "greenery": 0.17322840361160727,
+      "road_exposure": 0.14138500424260333,
+      "pedestrian_space": 0.040979706307145584,
+      "built_frontage": 0.4484390811383932,
+      "vehicle_presence": 0.030525998847504395
+    }
+  },
+  "1": {
+    "description": "High sky exposure + high road exposure / low greenery",
+    "checkpointCount": 626,
+    "meanFeatures": {
+      "sky_exposure": 0.3258405119381689,
+      "greenery": 0.19938387818314482,
+      "road_exposure": 0.18348409438073993,
+      "pedestrian_space": 0.024075562284481114,
+      "built_frontage": 0.15825512039352488,
+      "vehicle_presence": 0.06203023567240332
+    }
+  },
+  "2": {
+    "description": "High pedestrian space + high built frontage / low road exposure",
+    "checkpointCount": 160,
+    "meanFeatures": {
+      "sky_exposure": 0.09300714400079516,
+      "greenery": 0.3121879160404205,
+      "road_exposure": 0.06016730268796285,
+      "pedestrian_space": 0.2049663927819994,
+      "built_frontage": 0.2336067650053236,
+      "vehicle_presence": 0.015151847071117825
+    }
+  },
+  "3": {
+    "description": "High greenery + high road exposure / low built frontage",
+    "checkpointCount": 733,
+    "meanFeatures": {
+      "sky_exposure": 0.11731641846816537,
+      "greenery": 0.5173583666443026,
+      "road_exposure": 0.16075379540924956,
+      "pedestrian_space": 0.021439600340949855,
+      "built_frontage": 0.10966569834292338,
+      "vehicle_presence": 0.028005334560087237
+    }
+  },
+  "4": {
+    "description": "High vehicle presence + high road exposure / low greenery",
+    "checkpointCount": 16,
+    "meanFeatures": {
+      "sky_exposure": 0.021843698289659288,
+      "greenery": 0.0656890869140625,
+      "road_exposure": 0.09553760952419704,
+      "pedestrian_space": 0.0028972625732421875,
+      "built_frontage": 0.015595753987630209,
+      "vehicle_presence": 0.7963957256740994
+    }
+  }
+}

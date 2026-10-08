@@ -1,0 +1,17 @@
+{
+  "imageId": "793808771251922",
+  "originalImage": "./data/generated/street_images/793808771251922.jpg",
+  "segmentationImage": "./data/generated/segmentation_images/793808771251922.png",
+  "features": {
+    "sky_exposure": 0.1583641899956597,
+    "greenery": 0.4650455050998264,
+    "road_exposure": 0.2202792697482639,
+    "pedestrian_space": 0.0112762451171875,
+    "built_frontage": 0.13556925455729166,
+    "vehicle_presence": 0.0034044053819444445,
+    "human_presence": 0.006154378255208333,
+    "visual_rest_support": 0.0
+  },
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512",
+  "modelVersion": "segformer-b2-ade512-family-v2"
+}

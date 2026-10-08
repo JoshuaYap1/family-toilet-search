@@ -1,753 +1,6580 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
 
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
-    />
+    >
+
+    <title>Family Journey Support Search</title>
 
 
-    <title>
-        Family Journey Search
-    </title>
-
-
-    <!-- =====================================================
+    <!-- ====================================================
          LEAFLET
-         ===================================================== -->
+    ===================================================== -->
 
     <link
         rel="stylesheet"
         href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    />
+    >
 
 
-    <script
-        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    ></script>
+    <!-- ====================================================
+         ALL FRONTEND CSS
+    ===================================================== -->
+
+    <style>
+
+        /* ==================================================
+           RESET
+        ================================================== */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+
+            font-family:
+                Inter,
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: #111;
+
+            background: #f2efe8;
+        }
+
+        button,
+        select,
+        input {
+            font: inherit;
+        }
 
 
-    <!-- =====================================================
-         PROJECT CSS
-         ===================================================== -->
+        /* ==================================================
+           HEADER
+        ================================================== */
 
-    <link
-        rel="stylesheet"
-        href="./style.css"
-    />
+        .topbar {
+            min-height: 145px;
+
+            padding:
+                30px
+                clamp(24px, 4vw, 72px);
+
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            gap: 40px;
+
+            background: #faf7f1;
+
+            border-top: 7px solid #160b08;
+            border-bottom: 1px solid #d8d0c5;
+        }
+
+        .topbar-copy {
+            max-width: 850px;
+        }
+
+        .eyebrow {
+            margin-bottom: 8px;
+
+            font-size: 10px;
+            font-weight: 800;
+
+            letter-spacing: 0.17em;
+
+            color: #00508d;
+        }
+
+        .topbar h1 {
+            margin:
+                0
+                0
+                10px;
+
+            font-size:
+                clamp(
+                    36px,
+                    4vw,
+                    54px
+                );
+
+            line-height: 0.98;
+
+            letter-spacing: -0.045em;
+        }
+
+        .topbar p {
+            margin: 0;
+
+            max-width: 780px;
+
+            color: #756b61;
+
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .system-status {
+            flex: 0 0 auto;
+
+            display: flex;
+            align-items: center;
+
+            gap: 8px;
+
+            padding:
+                9px
+                14px;
+
+            border-radius: 999px;
+
+            background: #f1eee8;
+
+            color: #736a61;
+
+            font-size: 11px;
+
+            white-space: nowrap;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+
+            background: #bcb3a8;
+        }
+
+        .status-dot.ready {
+            background: #43855e;
+        }
+
+        .status-dot.error {
+            background: #b85858;
+        }
+
+
+        /* ==================================================
+           APP
+        ================================================== */
+
+        .app {
+            width:
+                min(
+                    1780px,
+                    calc(100% - 40px)
+                );
+
+            margin:
+                20px
+                auto
+                60px;
+
+            display: grid;
+
+            grid-template-columns:
+                350px
+                minmax(0, 1fr);
+
+            gap: 18px;
+
+            align-items: start;
+        }
+
+
+        /* ==================================================
+           SIDEBAR
+        ================================================== */
+
+        .sidebar {
+            overflow: hidden;
+
+            background: #fffdfa;
+
+            border: 1px solid #d8d0c4;
+
+            border-radius: 17px;
+
+            position: sticky;
+            top: 16px;
+        }
+
+        .sidebar-intro {
+            padding: 24px 21px;
+
+            border-bottom: 1px solid #ddd5ca;
+        }
+
+        .sidebar-intro h2 {
+            margin:
+                0
+                0
+                8px;
+
+            font-size: 28px;
+
+            letter-spacing: -0.03em;
+        }
+
+        .sidebar-intro p {
+            margin: 0;
+
+            color: #776e65;
+
+            font-size: 12px;
+            line-height: 1.55;
+        }
+
+        .control-section {
+            padding: 21px;
+
+            border-bottom: 1px solid #ddd5ca;
+        }
+
+        .control-section:last-child {
+            border-bottom: none;
+        }
+
+        .step-heading {
+            margin-bottom: 18px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 12px;
+        }
+
+        .step-number {
+            width: 38px;
+            height: 38px;
+
+            flex: 0 0 38px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #e7f3fa;
+
+            color: #07558f;
+
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .step-heading small {
+            display: block;
+
+            margin-bottom: 3px;
+
+            color: #7e746b;
+
+            font-size: 9px;
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
+        }
+
+        .step-heading h3 {
+            margin: 0;
+
+            font-size: 16px;
+        }
+
+        .field-label {
+            display: block;
+
+            margin:
+                14px
+                0
+                7px;
+
+            font-size: 11px;
+            font-weight: 700;
+        }
+
+        select {
+            width: 100%;
+            height: 46px;
+
+            padding:
+                0
+                13px;
+
+            border: 1px solid #ccc2b6;
+
+            border-radius: 9px;
+
+            background: white;
+
+            color: #222;
+
+            font-size: 14px;
+        }
+
+        select:disabled {
+            opacity: 0.45;
+        }
+
+        .info-box {
+            margin-top: 10px;
+
+            padding: 12px;
+
+            border-radius: 8px;
+
+            background: #f5f2ed;
+
+            color: #756c63;
+
+            font-size: 10px;
+            line-height: 1.5;
+        }
+
+        .info-box.active {
+            background: #eaf5fb;
+
+            color: #23516f;
+        }
+
+        .info-box strong {
+            display: block;
+
+            margin-bottom: 3px;
+
+            font-size: 11px;
+        }
+
+        .checkbox-row {
+            margin-top: 17px;
+
+            display: flex;
+
+            gap: 9px;
+
+            align-items: flex-start;
+        }
+
+        .checkbox-row input {
+            margin-top: 3px;
+        }
+
+        .checkbox-copy {
+            display: grid;
+
+            gap: 2px;
+
+            font-size: 11px;
+        }
+
+        .checkbox-copy small {
+            color: #817870;
+
+            font-size: 9px;
+        }
+
+        .pipeline-box {
+            padding: 17px 20px 20px;
+
+            background: #f0f7fb;
+        }
+
+        .pipeline-box strong {
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: #07558f;
+
+            font-size: 10px;
+        }
+
+        .pipeline-box p {
+            margin: 0;
+
+            color: #547084;
+
+            font-size: 9px;
+            line-height: 1.65;
+        }
+
+
+        /* ==================================================
+           WORKSPACE
+        ================================================== */
+
+        .workspace {
+            min-width: 0;
+
+            display: grid;
+
+            gap: 16px;
+        }
+
+        .card {
+            overflow: hidden;
+
+            background: #fffdfa;
+
+            border: 1px solid #d8d0c4;
+
+            border-radius: 17px;
+        }
+
+        .card-header {
+            padding:
+                20px
+                22px
+                16px;
+
+            display: flex;
+            justify-content: space-between;
+
+            align-items: flex-start;
+
+            gap: 20px;
+        }
+
+        .card-header h2,
+        .section-heading h2 {
+            margin:
+                0
+                0
+                6px;
+
+            font-size: 27px;
+
+            letter-spacing: -0.03em;
+        }
+
+        .card-header p,
+        .section-heading p {
+            margin: 0;
+
+            color: #796f65;
+
+            font-size: 11px;
+            line-height: 1.5;
+        }
+
+        .badge {
+            flex: 0 0 auto;
+
+            padding:
+                8px
+                13px;
+
+            border-radius: 999px;
+
+            background: #f2eee8;
+
+            color: #756a60;
+
+            font-size: 10px;
+        }
+
+
+        /* ==================================================
+           MAP
+        ================================================== */
+
+        #map {
+            height: 500px;
+
+            margin:
+                0
+                16px;
+
+            border: 1px solid #d4ccc1;
+
+            border-radius: 13px;
+
+            background: #dfe6e6;
+        }
+
+        .map-placeholder {
+            height: 500px;
+
+            margin:
+                0
+                16px;
+
+            display: none;
+            place-items: center;
+
+            border-radius: 13px;
+
+            background: #ece9e3;
+
+            color: #776e65;
+
+            font-size: 12px;
+        }
+
+        .legend {
+            min-height: 44px;
+
+            padding:
+                11px
+                21px
+                13px;
+
+            display: flex;
+            align-items: center;
+
+            flex-wrap: wrap;
+
+            gap: 17px;
+
+            color: #756b61;
+
+            font-size: 9px;
+        }
+
+        .legend span {
+            display: flex;
+            align-items: center;
+
+            gap: 5px;
+        }
+
+        .legend-dot {
+            width: 8px;
+            height: 8px;
+
+            display: inline-block;
+
+            border-radius: 50%;
+        }
+
+        .legend-dot.mrt {
+            border: 2px solid #07558f;
+
+            background: white;
+        }
+
+        .legend-dot.home {
+            background: #07558f;
+        }
+
+        .legend-dot.support {
+            background: #4f936b;
+        }
+
+        .legend-dot.checkpoint {
+            background: #bb5f85;
+        }
+
+        .legend-line {
+            width: 24px;
+            height: 4px;
+
+            display: inline-block;
+
+            border-radius: 999px;
+
+            background: #2d84bd;
+        }
+
+
+        /* ==================================================
+           KPI
+        ================================================== */
+
+        .metrics {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    4,
+                    minmax(0, 1fr)
+                );
+
+            gap: 10px;
+        }
+
+        .metric {
+            padding:
+                17px
+                18px
+                15px;
+
+            background: #fffdfa;
+
+            border: 1px solid #d8d0c4;
+
+            border-radius: 13px;
+        }
+
+        .metric-label {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: #706253;
+
+            font-size: 8px;
+            font-weight: 800;
+
+            letter-spacing: 0.04em;
+        }
+
+        .metric-value {
+            display: block;
+
+            margin-bottom: 9px;
+
+            color: #07558f;
+
+            font-size: 29px;
+            font-weight: 800;
+        }
+
+        .metric-value.small {
+            font-size: 18px;
+        }
+
+        .metric-caption {
+            color: #897e73;
+
+            font-size: 9px;
+        }
+
+
+        /* ==================================================
+           TABS
+        ================================================== */
+
+        .tabs {
+            min-height: 49px;
+
+            padding:
+                0
+                18px;
+
+            display: flex;
+            align-items: stretch;
+
+            overflow-x: auto;
+
+            gap: 3px;
+
+            border-bottom: 1px solid #ddd5ca;
+        }
+
+        .tab {
+            padding:
+                0
+                14px;
+
+            border: none;
+
+            border-bottom: 2px solid transparent;
+
+            background: none;
+
+            color: #73665a;
+
+            font-size: 10px;
+
+            cursor: pointer;
+
+            white-space: nowrap;
+        }
+
+        .tab.active {
+            color: #07558f;
+
+            border-bottom-color: #07558f;
+
+            font-weight: 800;
+        }
+
+        .tab-panel {
+            display: none;
+
+            padding:
+                26px
+                23px
+                30px;
+        }
+
+        .tab-panel.active {
+            display: block;
+        }
+
+        .section-heading {
+            margin-bottom: 21px;
+        }
+
+
+        /* ==================================================
+           OVERVIEW
+        ================================================== */
+
+        .overview-grid {
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1.2fr)
+                minmax(300px, 0.8fr);
+
+            gap: 12px;
+        }
+
+        .subcard {
+            padding: 18px;
+
+            border: 1px solid #ddd5ca;
+
+            border-radius: 12px;
+
+            background: white;
+        }
+
+        .subcard h3 {
+            margin:
+                0
+                0
+                17px;
+
+            font-size: 13px;
+        }
+
+        .feature-bars {
+            display: grid;
+
+            gap: 15px;
+        }
+
+        .feature-row {
+            display: grid;
+
+            gap: 6px;
+        }
+
+        .feature-top {
+            display: flex;
+            justify-content: space-between;
+
+            gap: 15px;
+
+            font-size: 10px;
+        }
+
+        .feature-track {
+            height: 8px;
+
+            overflow: hidden;
+
+            border-radius: 999px;
+
+            background: #ece8e2;
+        }
+
+        .feature-fill {
+            height: 100%;
+
+            border-radius: 999px;
+
+            background: #267fb7;
+        }
+
+        .interpret-row {
+            padding:
+                12px
+                0;
+
+            display: flex;
+            justify-content: space-between;
+
+            gap: 20px;
+
+            border-bottom: 1px solid #eee9e2;
+
+            font-size: 10px;
+        }
+
+        .interpret-row:last-child {
+            border-bottom: none;
+        }
+
+
+        /* ==================================================
+           ROUTE PROFILE GRAPH
+        ================================================== */
+
+        .profile-card {
+            margin-top: 12px;
+
+            padding: 18px;
+
+            border: 1px solid #ddd5ca;
+
+            border-radius: 12px;
+
+            background: white;
+        }
+
+        .profile-card h3 {
+            margin:
+                0
+                0
+                5px;
+
+            font-size: 13px;
+        }
+
+        .profile-card p {
+            margin:
+                0
+                0
+                14px;
+
+            color: #7c7269;
+
+            font-size: 9px;
+        }
+
+        #routeProfile {
+            width: 100%;
+            min-height: 270px;
+        }
+
+        #routeProfile svg {
+            width: 100%;
+            height: auto;
+
+            display: block;
+        }
+
+
+        /* ==================================================
+           IMAGE EVIDENCE
+        ================================================== */
+
+        .image-layout {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(0, 1fr)
+                );
+
+            gap: 12px;
+        }
+
+        .image-section {
+            padding: 13px;
+
+            min-width: 0;
+
+            border: 1px solid #d9d1c6;
+
+            border-radius: 12px;
+
+            background: white;
+        }
+
+        .image-title {
+            margin-bottom: 12px;
+
+            display: flex;
+            align-items: center;
+
+            gap: 10px;
+        }
+
+        .image-letter {
+            width: 30px;
+            height: 30px;
+
+            flex: 0 0 30px;
+
+            display: grid;
+            place-items: center;
+
+            border-radius: 50%;
+
+            background: #e7f3fa;
+
+            color: #07558f;
+
+            font-size: 10px;
+            font-weight: 800;
+        }
+
+        .image-title strong {
+            display: block;
+
+            margin-bottom: 2px;
+
+            font-size: 12px;
+        }
+
+        .image-title small {
+            color: #81776e;
+
+            font-size: 9px;
+        }
+
+        .image-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    6,
+                    minmax(0, 1fr)
+                );
+
+            gap: 3px;
+        }
+
+        .image-cell {
+            position: relative;
+
+            overflow: hidden;
+
+            aspect-ratio: 1 / 1;
+
+            border-radius: 3px;
+
+            background: #ebe7e1;
+        }
+
+        .image-cell img {
+            width: 100%;
+            height: 100%;
+
+            display: block;
+
+            object-fit: cover;
+        }
+
+        .image-cell.pending {
+            display: grid;
+            place-items: center;
+
+            color: #998f85;
+
+            font-size: 7px;
+
+            text-align: center;
+        }
+
+        .image-index {
+            position: absolute;
+
+            left: 4px;
+            bottom: 4px;
+
+            padding:
+                2px
+                4px;
+
+            border-radius: 3px;
+
+            background:
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.62
+                );
+
+            color: white;
+
+            font-size: 7px;
+        }
+
+        .seg-legend {
+            margin-top: 13px;
+
+            padding: 11px;
+
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 14px;
+
+            border-radius: 8px;
+
+            background: #f5f2ed;
+
+            color: #70665d;
+
+            font-size: 9px;
+        }
+
+
+        /* ==================================================
+           ML
+        ================================================== */
+
+        .ml-stats {
+            margin-bottom: 12px;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    4,
+                    minmax(0, 1fr)
+                );
+
+            gap: 9px;
+        }
+
+        .ml-stat {
+            padding: 14px;
+
+            border: 1px solid #ddd5ca;
+
+            border-radius: 10px;
+
+            background: white;
+        }
+
+        .ml-stat span {
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: #786d63;
+
+            font-size: 8px;
+        }
+
+        .ml-stat strong {
+            color: #07558f;
+
+            font-size: 18px;
+        }
+
+        .graph-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    minmax(0, 1fr)
+                );
+
+            gap: 12px;
+        }
+
+        .graph-card {
+            min-height: 250px;
+
+            padding: 12px;
+
+            display: flex;
+            flex-direction: column;
+
+            border: 1px solid #ddd5ca;
+
+            border-radius: 11px;
+
+            background: white;
+        }
+
+        .graph-card strong {
+            margin-bottom: 9px;
+
+            font-size: 10px;
+        }
+
+        .graph-card img {
+            width: 100%;
+            height: auto;
+
+            display: block;
+        }
+
+        .graph-pending {
+            flex: 1;
+
+            display: grid;
+            place-items: center;
+
+            min-height: 200px;
+
+            background: #f5f2ed;
+
+            color: #8a8077;
+
+            font-size: 9px;
+
+            text-align: center;
+        }
+
+        .cluster-bars {
+            margin-top: 12px;
+
+            padding: 18px;
+
+            border: 1px solid #ddd5ca;
+
+            border-radius: 11px;
+
+            background: white;
+        }
+
+        .cluster-bars h3 {
+            margin:
+                0
+                0
+                14px;
+
+            font-size: 12px;
+        }
+
+        .cluster-bar {
+            margin-bottom: 10px;
+
+            display: grid;
+
+            grid-template-columns:
+                80px
+                minmax(0, 1fr)
+                45px;
+
+            gap: 8px;
+
+            align-items: center;
+
+            font-size: 9px;
+        }
+
+        .cluster-track {
+            height: 8px;
+
+            overflow: hidden;
+
+            border-radius: 99px;
+
+            background: #ece8e2;
+        }
+
+        .cluster-fill {
+            height: 100%;
+
+            background: #567f9a;
+        }
+
+
+        /* ==================================================
+           SUPPORT
+        ================================================== */
+
+        .support-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    minmax(0, 1fr)
+                );
+
+            gap: 10px;
+        }
+
+        .support-stat {
+            padding: 18px;
+
+            border: 1px solid #ddd5ca;
+
+            border-radius: 11px;
+
+            background: white;
+        }
+
+        .support-stat span {
+            display: block;
+
+            margin-bottom: 8px;
+
+            color: #786d63;
+
+            font-size: 8px;
+        }
+
+        .support-stat strong {
+            color: #07558f;
+
+            font-size: 20px;
+        }
+
+        .note {
+            margin-top: 14px;
+
+            padding:
+                14px
+                16px;
+
+            border-left: 3px solid #07558f;
+
+            background: #f1f6f9;
+
+            color: #696159;
+
+            font-size: 10px;
+            line-height: 1.55;
+        }
+
+
+        /* ==================================================
+           DESIGN
+        ================================================== */
+
+        .design-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    minmax(0, 1fr)
+                );
+
+            gap: 10px;
+        }
+
+        .design-card {
+            min-height: 110px;
+
+            padding: 17px;
+
+            display: grid;
+
+            align-content: center;
+
+            gap: 8px;
+
+            border: 1px solid #ddd5ca;
+
+            border-radius: 11px;
+
+            background: white;
+        }
+
+        .design-card strong {
+            font-size: 12px;
+        }
+
+        .design-card span {
+            color: #766d64;
+
+            font-size: 9px;
+            line-height: 1.45;
+        }
+
+        .design-arrow {
+            color: #07558f;
+
+            font-size: 17px;
+        }
+
+
+        /* ==================================================
+           EMPTY
+        ================================================== */
+
+        .empty {
+            padding: 24px;
+
+            border: 1px dashed #d1c7bb;
+
+            border-radius: 9px;
+
+            background: #faf7f2;
+
+            color: #81776e;
+
+            font-size: 10px;
+            line-height: 1.55;
+        }
+
+
+        /* ==================================================
+           RESPONSIVE
+        ================================================== */
+
+        @media (
+            max-width: 1150px
+        ) {
+
+            .app {
+                grid-template-columns:
+                    300px
+                    minmax(0, 1fr);
+            }
+
+            .metrics,
+            .ml-stats {
+                grid-template-columns:
+                    repeat(
+                        2,
+                        minmax(0, 1fr)
+                    );
+            }
+
+            .image-grid {
+                grid-template-columns:
+                    repeat(
+                        4,
+                        minmax(0, 1fr)
+                    );
+            }
+
+        }
+
+
+        @media (
+            max-width: 850px
+        ) {
+
+            .topbar {
+                align-items: flex-start;
+
+                flex-direction: column;
+            }
+
+            .app {
+                width:
+                    calc(100% - 20px);
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .overview-grid,
+            .image-layout,
+            .graph-grid,
+            .design-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+        }
+
+
+        @media (
+            max-width: 550px
+        ) {
+
+            .metrics,
+            .ml-stats,
+            .support-grid {
+                grid-template-columns:
+                    1fr;
+            }
+
+            .image-grid {
+                grid-template-columns:
+                    repeat(
+                        3,
+                        minmax(0, 1fr)
+                    );
+            }
+
+        }
+
+    </style>
 
 </head>
-
 
 
 <body>
 
 
-    <!-- =====================================================
-         HEADER
-         ===================================================== -->
+<!-- ========================================================
+     HEADER
+========================================================= -->
 
-    <header class="site-header">
+<header class="topbar">
 
-        <div class="site-header-inner">
+    <div class="topbar-copy">
 
-
-            <div class="brand-block">
-
-                <span class="brand-kicker">
-                    COMPUTATIONAL DESIGN SEARCH
-                </span>
-
-
-                <h1>
-                    Family Journey Search
-                </h1>
-
-
-                <p>
-                    Compare family-access journeys across
-                    demographically similar MRT contexts and
-                    inspect recurring street-level conditions.
-                </p>
-
-            </div>
-
-
-
-            <div class="header-status">
-
-                <span
-                    class="status-dot is-online"
-                ></span>
-
-
-                <span id="globalSystemStatus">
-
-                    Loading static analysis library…
-
-                </span>
-
-            </div>
-
+        <div class="eyebrow">
+            COMPUTATIONAL DESIGN SEARCH
         </div>
 
-    </header>
+        <h1>
+            Family Journey Support Search
+        </h1>
 
+        <p>
+            Search home-bound journeys from Singapore MRT stations,
+            examine recurring street-level conditions and identify
+            environmental parameters that can inform climate-responsive
+            family rest infrastructure.
+        </p>
 
+    </div>
 
-    <!-- =====================================================
-         APP
-         ===================================================== -->
 
-    <main class="app-shell">
+    <div class="system-status">
 
+        <span
+            id="statusDot"
+            class="status-dot"
+        ></span>
 
-        <!-- =================================================
-             SEARCH SIDEBAR
-             ================================================= -->
+        <span id="systemStatus">
+            Loading route library…
+        </span>
 
-        <aside class="search-column">
+    </div>
 
+</header>
 
-            <section class="panel search-panel">
 
-                <span class="panel-kicker">
-                    SEARCH
-                </span>
 
+<!-- ========================================================
+     APPLICATION
+========================================================= -->
 
-                <h2>
-                    Search context
-                </h2>
+<main class="app">
 
 
-                <p class="panel-intro">
+    <!-- ====================================================
+         SIDEBAR
+    ===================================================== -->
 
-                    Select a seed MRT and compare it with
-                    precomputed demographically similar MRT
-                    environments.
+    <aside class="sidebar">
 
-                    All journey and street-image analysis has
-                    already been processed offline.
 
-                </p>
+        <section class="sidebar-intro">
 
+            <div class="eyebrow">
+                JOURNEY SEARCH
+            </div>
 
+            <h2>
+                MRT → Home
+            </h2>
 
-                <!-- =========================================
-                     SEED
-                     ========================================= -->
+            <p>
+                Begin at an MRT station. The system retrieves the
+                precomputed residential journeys that connect to it.
+            </p>
 
-                <label
-                    class="field-label"
-                    for="locationSelect"
-                >
-                    Seed MRT
-                </label>
+        </section>
 
 
-                <select
-                    id="locationSelect"
-                    class="input-control"
-                ></select>
 
+        <!-- MRT -->
 
+        <section class="control-section">
 
-                <!-- =========================================
-                     SEED CONTEXT
-                     ========================================= -->
+            <div class="step-heading">
 
-                <div
-                    id="seedContextPreview"
-                    class="seed-context-preview"
-                >
-
-                    Click
-                    <b>Match MRT contexts</b>
-                    to begin.
-
-                </div>
-
-
-
-                <!-- =========================================
-                     SIMILARITY COUNT
-                     ========================================= -->
-
-                <label
-                    class="field-label"
-                    for="contextCountSelect"
-                >
-                    Similar MRTs
-                </label>
-
-
-                <select
-                    id="contextCountSelect"
-                    class="input-control"
-                >
-
-                    <option
-                        value="3"
-                        selected
-                    >
-                        3 similar MRTs
-                    </option>
-
-
-                    <option value="5">
-                        5 similar MRTs
-                    </option>
-
-
-                    <option value="8">
-                        8 similar MRTs
-                    </option>
-
-                </select>
-
-
-
-                <!-- =========================================
-                     MATCHED MRTS
-                     ========================================= -->
-
-                <div class="field-group">
-
-                    <span class="field-label">
-                        Matched contexts
-                    </span>
-
-
-                    <div
-                        id="comparableContextPreview"
-                        class="comparable-context-preview"
-                    >
-
-                        No contexts matched yet.
-
-                    </div>
-
-                </div>
-
-
-
-                <!-- =========================================
-                     STAGE 1
-                     ========================================= -->
-
-                <button
-                    id="matchContextsButton"
-                    class="primary-button"
-                    type="button"
-                >
-
-                    <span>
-                        1. Match MRT contexts
-                    </span>
-
-                    <span>
-                        →
-                    </span>
-
-                </button>
-
-
-
-                <!-- =========================================
-                     STAGE 2
-                     ========================================= -->
-
-                <button
-                    id="findJourneysButton"
-                    class="secondary-button"
-                    type="button"
-                    disabled
-                >
-
-                    <span>
-                        2. Load family-access journeys
-                    </span>
-
-                    <span>
-                        →
-                    </span>
-
-                </button>
-
-
-
-                <!-- =========================================
-                     ANALYSIS
-                     ========================================= -->
-
-                <details
-                    class="analysis-tools"
-                    open
-                >
-
-                    <summary>
-                        Analysis tools
-                    </summary>
-
-
-                    <div class="analysis-tool-list">
-
-
-                        <!-- =================================
-                             SOM
-                             ================================= -->
-
-                        <button
-                            id="showSomButton"
-                            class="analysis-tool-button"
-                            type="button"
-                            disabled
-                        >
-
-                            <span class="tool-badge">
-                                A
-                            </span>
-
-
-                            <span>
-
-                                <strong>
-                                    Show demographic SOM
-                                </strong>
-
-                                <small>
-                                    Static precomputed
-                                    component-plane analysis
-                                </small>
-
-                            </span>
-
-                        </button>
-
-
-
-                        <!-- =================================
-                             IMAGE EVIDENCE
-                             ================================= -->
-
-                        <button
-                            id="showImageAnalysisButton"
-                            class="analysis-tool-button"
-                            type="button"
-                            disabled
-                        >
-
-                            <span class="tool-badge">
-                                B
-                            </span>
-
-
-                            <span>
-
-                                <strong>
-                                    Show street-image analysis
-                                </strong>
-
-                                <small>
-                                    Stored Mapillary grid +
-                                    stored SegFormer grid
-                                </small>
-
-                            </span>
-
-                        </button>
-
-                    </div>
-
-
-
-                    <!-- =====================================
-                         STATIC IMAGE LOADING PROGRESS
-                         ===================================== -->
-
-                    <div
-                        id="imageAnalysisProgress"
-                        class="image-analysis-progress is-hidden"
-                    >
-
-                        <div class="progress-heading">
-
-                            <strong
-                                id="imageProgressTitle"
-                            >
-                                Loading stored imagery
-                            </strong>
-
-
-                            <span
-                                id="imageProgressPercent"
-                            >
-                                0%
-                            </span>
-
-                        </div>
-
-
-                        <div class="progress-track">
-
-                            <div
-                                id="imageProgressBar"
-                                class="progress-bar"
-                            ></div>
-
-                        </div>
-
-
-                        <small
-                            id="imageProgressMessage"
-                        >
-                            Reading static image library…
-                        </small>
-
-                    </div>
-
-                </details>
-
-
-
-                <!-- =========================================
-                     STATUS
-                     ========================================= -->
-
-                <div class="search-feedback">
-
-                    <div id="searchStatus">
-
-                        Loading static project data…
-
-                    </div>
-
-
-                    <div
-                        id="searchProgress"
-                        class="search-progress"
-                    ></div>
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =============================================
-                 MAP LAYERS
-                 ============================================= -->
-
-            <section class="panel display-panel">
-
-                <span class="panel-kicker">
-                    MAP DISPLAY
-                </span>
-
-
-                <h3>
-                    Spatial layers
-                </h3>
-
-
-                <label class="check-row">
-
-                    <input
-                        id="contextLayerToggle"
-                        type="checkbox"
-                        checked
-                    />
-
-                    <span>
-                        Comparable MRT contexts
-                    </span>
-
-                </label>
-
-
-                <label class="check-row">
-
-                    <input
-                        id="journeyLayerToggle"
-                        type="checkbox"
-                        checked
-                    />
-
-                    <span>
-                        Precomputed walking routes
-                    </span>
-
-                </label>
-
-
-                <label class="check-row">
-
-                    <input
-                        id="destinationLayerToggle"
-                        type="checkbox"
-                        checked
-                    />
-
-                    <span>
-                        Family-support destinations
-                    </span>
-
-                </label>
-
-            </section>
-
-        </aside>
-
-
-
-        <!-- =================================================
-             WORKSPACE
-             ================================================= -->
-
-        <section class="workspace">
-
-
-            <!-- =============================================
-                 MAP
-                 ============================================= -->
-
-            <section class="panel map-panel">
-
-                <div class="map-heading">
-
-                    <div>
-
-                        <span class="panel-kicker">
-                            SPATIAL SEARCH
-                        </span>
-
-
-                        <h2>
-                            Comparable family-access journeys
-                        </h2>
-
-
-                        <p>
-
-                            Compare precomputed family-support
-                            journeys across demographically
-                            similar MRT environments.
-
-                        </p>
-
-                    </div>
-
-
-                    <div
-                        id="mapSearchSummary"
-                        class="map-summary"
-                    >
-
-                        Select a seed MRT
-
-                    </div>
-
-                </div>
-
-
-                <div
-                    id="map"
-                    class="map-container"
-                ></div>
-
-            </section>
-
-
-
-            <!-- =============================================
-                 INITIAL STATE
-                 ============================================= -->
-
-            <section
-                id="preSearchState"
-                class="empty-state"
-            >
-
-                <span>
+                <div class="step-number">
                     01
-                </span>
-
+                </div>
 
                 <div>
 
+                    <small>
+                        JOURNEY ROOT
+                    </small>
+
+                    <h3>
+                        MRT station
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <label
+                class="field-label"
+                for="mrtSelect"
+            >
+                Begin journey from
+            </label>
+
+            <select id="mrtSelect">
+
+                <option value="">
+                    Select MRT station
+                </option>
+
+            </select>
+
+
+            <div
+                id="mrtInfo"
+                class="info-box"
+            >
+                Select an MRT to retrieve linked home journeys.
+            </div>
+
+        </section>
+
+
+
+        <!-- HOME -->
+
+        <section class="control-section">
+
+            <div class="step-heading">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div>
+
+                    <small>
+                        JOURNEY HOME
+                    </small>
+
+                    <h3>
+                        Residential destination
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <label
+                class="field-label"
+                for="routeSelect"
+            >
+                Home journey
+            </label>
+
+            <select
+                id="routeSelect"
+                disabled
+            >
+
+                <option value="">
+                    Select MRT first
+                </option>
+
+            </select>
+
+
+            <div
+                id="routeInfo"
+                class="info-box"
+            >
+                Route information will appear here.
+            </div>
+
+        </section>
+
+
+
+        <!-- PROFILE -->
+
+        <section class="control-section">
+
+            <div class="step-heading">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div>
+
+                    <small>
+                        USER PROFILE
+                    </small>
+
+                    <h3>
+                        Young-family conditions
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <label
+                class="field-label"
+                for="childAge"
+            >
+                Child age
+            </label>
+
+            <select id="childAge">
+
+                <option>
+                    0–2 years
+                </option>
+
+                <option>
+                    3–4 years
+                </option>
+
+                <option>
+                    5–6 years
+                </option>
+
+            </select>
+
+
+            <label class="checkbox-row">
+
+                <input
+                    type="checkbox"
+                    checked
+                >
+
+                <span class="checkbox-copy">
+
+                    <strong>
+                        Travelling with stroller
+                    </strong>
+
+                    <small>
+                        Considers step-free continuity and stopping space.
+                    </small>
+
+                </span>
+
+            </label>
+
+        </section>
+
+
+
+        <section class="pipeline-box">
+
+            <strong>
+                ANALYTICAL PIPELINE
+            </strong>
+
+            <p>
+                MRT → home route → Mapillary imagery → SegFormer →
+                numerical environmental features → K-means →
+                PCA → hierarchy test → Decision Tree →
+                Grasshopper design parameters
+            </p>
+
+        </section>
+
+
+    </aside>
+
+
+
+    <!-- ====================================================
+         WORKSPACE
+    ===================================================== -->
+
+    <section class="workspace">
+
+
+        <!-- MAP -->
+
+        <article class="card">
+
+            <div class="card-header">
+
+                <div>
+
+                    <div class="eyebrow">
+                        SPATIAL ASSESSMENT
+                    </div>
+
                     <h2>
-                        Begin with demographic context.
+                        Journey home
                     </h2>
 
-
                     <p>
-
-                        The search compares an MRT with
-                        precomputed similar demographic
-                        contexts, their family-support journeys,
-                        and stored street-view evidence.
-
+                        MRT root, walking route, residential destination,
+                        existing support and sampled image checkpoints.
                     </p>
 
                 </div>
 
-            </section>
+
+                <span
+                    id="journeyBadge"
+                    class="badge"
+                >
+                    No journey selected
+                </span>
+
+            </div>
+
+
+            <div id="map"></div>
+
+            <div
+                id="mapFallback"
+                class="map-placeholder"
+            >
+                Map library could not be loaded.
+            </div>
+
+
+            <div class="legend">
+
+                <span>
+                    <i class="legend-dot mrt"></i>
+                    MRT root
+                </span>
+
+                <span>
+                    <i class="legend-line"></i>
+                    Walking route
+                </span>
+
+                <span>
+                    <i class="legend-dot home"></i>
+                    Home
+                </span>
+
+                <span>
+                    <i class="legend-dot support"></i>
+                    Recorded support
+                </span>
+
+                <span>
+                    <i class="legend-dot checkpoint"></i>
+                    Image checkpoint
+                </span>
+
+            </div>
+
+        </article>
 
 
 
-            <!-- =============================================
-                 RESULTS
-                 ============================================= -->
+        <!-- KPI -->
+
+        <section class="metrics">
+
+            <article class="metric">
+
+                <span class="metric-label">
+                    ROUTE DISTANCE
+                </span>
+
+                <strong
+                    id="metricDistance"
+                    class="metric-value"
+                >
+                    —
+                </strong>
+
+                <small class="metric-caption">
+                    walking journey
+                </small>
+
+            </article>
+
+
+            <article class="metric">
+
+                <span class="metric-label">
+                    RECORDED SUPPORT
+                </span>
+
+                <strong
+                    id="metricSupport"
+                    class="metric-value"
+                >
+                    —
+                </strong>
+
+                <small class="metric-caption">
+                    mapped opportunities
+                </small>
+
+            </article>
+
+
+            <article class="metric">
+
+                <span class="metric-label">
+                    IMAGE CHECKPOINTS
+                </span>
+
+                <strong
+                    id="metricImages"
+                    class="metric-value"
+                >
+                    —
+                </strong>
+
+                <small class="metric-caption">
+                    street observations
+                </small>
+
+            </article>
+
+
+            <article class="metric">
+
+                <span class="metric-label">
+                    ML TYPOLOGY
+                </span>
+
+                <strong
+                    id="metricCluster"
+                    class="metric-value small"
+                >
+                    Pending
+                </strong>
+
+                <small class="metric-caption">
+                    recurring environment
+                </small>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ANALYSIS -->
+
+        <article class="card">
+
+
+            <nav class="tabs">
+
+                <button
+                    class="tab active"
+                    data-tab="overview"
+                >
+                    Overview
+                </button>
+
+                <button
+                    class="tab"
+                    data-tab="images"
+                >
+                    Image evidence
+                </button>
+
+                <button
+                    class="tab"
+                    data-tab="ml"
+                >
+                    ML evidence
+                </button>
+
+                <button
+                    class="tab"
+                    data-tab="support"
+                >
+                    Support gaps
+                </button>
+
+                <button
+                    class="tab"
+                    data-tab="design"
+                >
+                    Design translation
+                </button>
+
+            </nav>
+
+
+
+            <!-- ============================================
+                 OVERVIEW
+            ============================================= -->
 
             <section
-                id="searchResultsSection"
-                class="results-section is-hidden"
+                id="panel-overview"
+                class="tab-panel active"
             >
 
                 <div class="section-heading">
 
-                    <div>
-
-                        <span class="panel-kicker">
-                            SEARCH RESULTS
-                        </span>
-
-
-                        <h2>
-                            Comparable journeys
-                        </h2>
-
-
-                        <p>
-
-                            These routes were precomputed by the
-                            all-MRT route preprocessing backend.
-
-                        </p>
-
+                    <div class="eyebrow">
+                        ROUTE EVIDENCE
                     </div>
 
+                    <h2>
+                        Environmental route profile
+                    </h2>
 
-                    <span
-                        id="resultCount"
-                        class="result-count"
-                    >
+                    <p>
+                        Environmental quantities are measured from
+                        semantic segmentation rather than combined into
+                        an arbitrary stress score.
+                    </p>
 
-                        0 journeys
+                </div>
 
-                    </span>
+
+                <div class="overview-grid">
+
+
+                    <article class="subcard">
+
+                        <h3>
+                            Mean environmental composition
+                        </h3>
+
+                        <div
+                            id="featureBars"
+                            class="feature-bars"
+                        >
+
+                            <div class="empty">
+                                Select a journey to begin.
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="subcard">
+
+                        <h3>
+                            Journey interpretation
+                        </h3>
+
+                        <div id="interpretation">
+
+                            <div class="empty">
+                                Select a journey to begin.
+                            </div>
+
+                        </div>
+
+                    </article>
+
 
                 </div>
 
 
 
-                <div id="journeyResults"></div>
+                <article class="profile-card">
+
+                    <h3>
+                        Conditions along the walking route
+                    </h3>
+
+                    <p>
+                        SegFormer-derived proportions plotted against
+                        distance along the journey.
+                    </p>
+
+                    <div id="routeProfile">
+
+                        <div class="empty">
+                            Route profile will appear after ML analysis
+                            has been exported.
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </section>
 
 
 
-                <!-- =========================================
-                     ANALYSIS WORKSPACE
-                     ========================================= -->
+            <!-- ============================================
+                 IMAGE EVIDENCE
+            ============================================= -->
 
-                <section
-                    id="analysisWorkspace"
-                    class="analysis-workspace is-hidden"
-                >
+            <section
+                id="panel-images"
+                class="tab-panel"
+            >
 
-                    <div class="analysis-header">
+                <div class="section-heading">
 
-                        <div>
+                    <div class="eyebrow">
+                        VISUAL EVIDENCE
+                    </div>
 
-                            <span class="panel-kicker">
-                                SELECTED ANALYSIS
+                    <h2>
+                        6 × 6 journey imagery
+                    </h2>
+
+                    <p>
+                        Images are sampled evenly along the route.
+                        Segmentation tiles are loaded progressively from
+                        the cache currently being generated by Cell 9.
+                    </p>
+
+                </div>
+
+
+                <div class="image-layout">
+
+
+                    <article class="image-section">
+
+                        <div class="image-title">
+
+                            <span class="image-letter">
+                                A
                             </span>
 
+                            <div>
 
-                            <h2 id="selectedJourneyTitle">
-                                Analysis
-                            </h2>
+                                <strong>
+                                    Original street view
+                                </strong>
+
+                                <small>
+                                    Mapillary observations
+                                </small>
+
+                            </div>
 
                         </div>
 
 
-                        <button
-                            id="closeAnalysisButton"
-                            class="ghost-button"
-                            type="button"
-                        >
-                            Close
-                        </button>
+                        <div
+                            id="originalGrid"
+                            class="image-grid"
+                        ></div>
 
-                    </div>
+                    </article>
 
 
 
-                    <nav class="analysis-tabs">
+                    <article class="image-section">
+
+                        <div class="image-title">
+
+                            <span class="image-letter">
+                                B
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Semantic segmentation
+                                </strong>
+
+                                <small>
+                                    SegFormer analysis
+                                </small>
+
+                            </div>
+
+                        </div>
 
 
-                        <button
-                            class="analysis-tab is-active"
-                            data-analysis-tab="overview"
-                            type="button"
-                        >
-                            Overview
-                        </button>
+                        <div
+                            id="segmentationGrid"
+                            class="image-grid"
+                        ></div>
+
+                    </article>
 
 
-                        <button
-                            class="analysis-tab"
-                            data-analysis-tab="context"
-                            type="button"
-                        >
-                            Demographic context
-                        </button>
+                </div>
 
 
-                        <button
-                            class="analysis-tab"
-                            data-analysis-tab="images"
-                            type="button"
-                        >
-                            Image evidence
-                        </button>
+                <div class="seg-legend">
 
+                    <span>
+                        Segmentation → numerical image proportions
+                    </span>
 
-                        <button
-                            class="analysis-tab"
-                            data-analysis-tab="opportunities"
-                            type="button"
-                        >
-                            Design opportunities
-                        </button>
+                    <span>
+                        Sky
+                    </span>
 
-                    </nav>
+                    <span>
+                        Greenery
+                    </span>
 
+                    <span>
+                        Road
+                    </span>
 
-                    <div
-                        id="analysisPanel"
-                        class="analysis-panel"
-                    ></div>
+                    <span>
+                        Pedestrian space
+                    </span>
 
-                </section>
+                    <span>
+                        Built frontage
+                    </span>
+
+                    <span>
+                        Vehicle presence
+                    </span>
+
+                </div>
 
             </section>
 
-        </section>
-
-    </main>
 
 
+            <!-- ============================================
+                 MACHINE LEARNING
+            ============================================= -->
 
-    <script
-        type="module"
-        src="./script.js"
-    ></script>
+            <section
+                id="panel-ml"
+                class="tab-panel"
+            >
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">
+                        MACHINE LEARNING
+                    </div>
+
+                    <h2>
+                        Recurring environmental conditions
+                    </h2>
+
+                    <p>
+                        Unsupervised learning discovers recurring route
+                        types; PCA visualises their environmental spectrum;
+                        hierarchical clustering checks their structure;
+                        Decision Trees explain the features.
+                    </p>
+
+                </div>
+
+
+                <div
+                    id="mlStats"
+                    class="ml-stats"
+                ></div>
+
+
+                <div
+                    id="clusterDistribution"
+                    class="cluster-bars"
+                >
+
+                    <h3>
+                        Selected-route cluster distribution
+                    </h3>
+
+                    <div class="empty">
+                        ML analysis pending.
+                    </div>
+
+                </div>
+
+
+                <div class="graph-grid">
+
+
+                    <article class="graph-card">
+
+                        <strong>
+                            PCA environmental spectrum
+                        </strong>
+
+                        <img
+                            id="pcaGraph"
+                            alt=""
+                        >
+
+                        <div
+                            id="pcaPending"
+                            class="graph-pending"
+                        >
+                            Generated after PCA analysis completes.
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="graph-card">
+
+                        <strong>
+                            Environmental cluster heatmap
+                        </strong>
+
+                        <img
+                            id="heatmapGraph"
+                            alt=""
+                        >
+
+                        <div
+                            id="heatmapPending"
+                            class="graph-pending"
+                        >
+                            Generated after K-means analysis completes.
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="graph-card">
+
+                        <strong>
+                            Hierarchical dendrogram
+                        </strong>
+
+                        <img
+                            id="dendrogramGraph"
+                            alt=""
+                        >
+
+                        <div
+                            id="dendrogramPending"
+                            class="graph-pending"
+                        >
+                            Generated after hierarchy testing completes.
+                        </div>
+
+                    </article>
+
+
+
+                    <article class="graph-card">
+
+                        <strong>
+                            Decision-tree feature importance
+                        </strong>
+
+                        <img
+                            id="importanceGraph"
+                            alt=""
+                        >
+
+                        <div
+                            id="importancePending"
+                            class="graph-pending"
+                        >
+                            Generated after Decision Tree analysis completes.
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ============================================
+                 SUPPORT
+            ============================================= -->
+
+            <section
+                id="panel-support"
+                class="tab-panel"
+            >
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">
+                        EXISTING SUPPORT
+                    </div>
+
+                    <h2>
+                        Support gaps along the journey
+                    </h2>
+
+                    <p>
+                        Recorded support is treated as spatial evidence,
+                        not as proof that all unrecorded locations lack
+                        informal resting opportunities.
+                    </p>
+
+                </div>
+
+
+                <div id="supportContent">
+
+                    <div class="empty">
+                        Select a route.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ============================================
+                 DESIGN
+            ============================================= -->
+
+            <section
+                id="panel-design"
+                class="tab-panel"
+            >
+
+                <div class="section-heading">
+
+                    <div class="eyebrow">
+                        ARCHITECTURAL RESPONSE
+                    </div>
+
+                    <h2>
+                        Translating evidence into rest-node form
+                    </h2>
+
+                </div>
+
+
+                <div class="design-grid">
+
+
+                    <article class="design-card">
+
+                        <strong>
+                            Sky exposure
+                        </strong>
+
+                        <div class="design-arrow">
+                            ↓
+                        </div>
+
+                        <span>
+                            Canopy depth and sheltered footprint
+                        </span>
+
+                    </article>
+
+
+                    <article class="design-card">
+
+                        <strong>
+                            Road exposure
+                        </strong>
+
+                        <div class="design-arrow">
+                            ↓
+                        </div>
+
+                        <span>
+                            Buffer thickness and protective edge
+                        </span>
+
+                    </article>
+
+
+                    <article class="design-card">
+
+                        <strong>
+                            Pedestrian space
+                        </strong>
+
+                        <div class="design-arrow">
+                            ↓
+                        </div>
+
+                        <span>
+                            Stroller clearance and node width
+                        </span>
+
+                    </article>
+
+
+                    <article class="design-card">
+
+                        <strong>
+                            Greenery
+                        </strong>
+
+                        <div class="design-arrow">
+                            ↓
+                        </div>
+
+                        <span>
+                            Planting density and cooling layer
+                        </span>
+
+                    </article>
+
+
+                    <article class="design-card">
+
+                        <strong>
+                            Existing support gap
+                        </strong>
+
+                        <div class="design-arrow">
+                            ↓
+                        </div>
+
+                        <span>
+                            Intervention frequency and spacing
+                        </span>
+
+                    </article>
+
+
+                    <article class="design-card">
+
+                        <strong>
+                            PCA + environment cluster
+                        </strong>
+
+                        <div class="design-arrow">
+                            ↓
+                        </div>
+
+                        <span>
+                            Parametric Grasshopper form family
+                        </span>
+
+                    </article>
+
+
+                </div>
+
+            </section>
+
+
+        </article>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- ========================================================
+     LEAFLET JS
+========================================================= -->
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+></script>
+
+
+
+<!-- ========================================================
+     ALL FRONTEND JAVASCRIPT
+========================================================= -->
+
+<script>
+
+"use strict";
+
+
+// ==========================================================
+// FILES
+// ==========================================================
+
+const ROUTE_LIBRARY_URL =
+    "./data/generated/residential_route_library.json";
+
+const ML_ANALYSIS_URL =
+    "./data/generated/family_route_analysis.json";
+
+
+// ==========================================================
+// STATE
+// ==========================================================
+
+let routeLibrary = null;
+
+let mlAnalysis = null;
+
+let routes = [];
+
+let routesById = {};
+
+let routesByMrt = {};
+
+let mlRoutesById = {};
+
+let selectedRouteId = null;
+
+let map = null;
+
+let mapLayers = [];
+
+
+// ==========================================================
+// ELEMENTS
+// ==========================================================
+
+const mrtSelect =
+    document.getElementById(
+        "mrtSelect"
+    );
+
+const routeSelect =
+    document.getElementById(
+        "routeSelect"
+    );
+
+const mrtInfo =
+    document.getElementById(
+        "mrtInfo"
+    );
+
+const routeInfo =
+    document.getElementById(
+        "routeInfo"
+    );
+
+
+// ==========================================================
+// INITIALISE
+// ==========================================================
+
+window.addEventListener(
+    "DOMContentLoaded",
+    initialise
+);
+
+
+async function initialise() {
+
+    initialiseTabs();
+
+    initialiseMap();
+
+    try {
+
+        await loadRouteData();
+
+        buildIndexes();
+
+        populateMrtDropdown();
+
+        loadGlobalMlGraphs();
+
+        setStatus(
+            `Ready · ${routes.length} routes`,
+            "ready"
+        );
+
+    }
+    catch (
+        error
+    ) {
+
+        console.error(
+            error
+        );
+
+        setStatus(
+            "Route data failed to load",
+            "error"
+        );
+
+        mrtInfo.innerHTML = `
+            <strong>
+                Route library error
+            </strong>
+
+            ${escapeHtml(
+                error.message
+            )}
+        `;
+
+    }
+
+}
+
+
+// ==========================================================
+// MAP
+// ==========================================================
+
+function initialiseMap() {
+
+    if (
+        typeof L
+        ===
+        "undefined"
+    ) {
+
+        document.getElementById(
+            "map"
+        ).style.display =
+            "none";
+
+
+        document.getElementById(
+            "mapFallback"
+        ).style.display =
+            "grid";
+
+
+        return;
+
+    }
+
+
+    map =
+        L.map(
+            "map",
+            {
+                preferCanvas:
+                    true
+            }
+        )
+        .setView(
+            [
+                1.3521,
+                103.8198
+            ],
+            11
+        );
+
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            maxZoom:
+                19,
+
+            attribution:
+                "&copy; OpenStreetMap contributors"
+        }
+    )
+    .addTo(
+        map
+    );
+
+}
+
+
+// ==========================================================
+// LOAD DATA
+// ==========================================================
+
+async function fetchJson(
+    url,
+    optional = false
+) {
+
+    try {
+
+        const response =
+            await fetch(
+                url,
+                {
+                    cache:
+                        "no-store"
+                }
+            );
+
+
+        if (
+            !response.ok
+        ) {
+
+            if (
+                optional
+            ) {
+
+                return null;
+
+            }
+
+
+            throw new Error(
+                `${url} returned HTTP ${response.status}`
+            );
+
+        }
+
+
+        return await response.json();
+
+    }
+    catch (
+        error
+    ) {
+
+        if (
+            optional
+        ) {
+
+            console.warn(
+                "Optional dataset unavailable:",
+                url
+            );
+
+            return null;
+
+        }
+
+
+        throw error;
+
+    }
+
+}
+
+
+async function loadRouteData() {
+
+    setStatus(
+        "Loading route library…",
+        ""
+    );
+
+
+    routeLibrary =
+        await fetchJson(
+            ROUTE_LIBRARY_URL
+        );
+
+
+    routes =
+        Array.isArray(
+            routeLibrary.routes
+        )
+        ?
+        routeLibrary.routes
+        :
+        Object.values(
+            routeLibrary.routesById
+            ||
+            {}
+        );
+
+
+    if (
+        routes.length
+        ===
+        0
+    ) {
+
+        throw new Error(
+            "residential_route_library.json contains no routes."
+        );
+
+    }
+
+
+    const possibleMl =
+        await fetchJson(
+            ML_ANALYSIS_URL,
+            true
+        );
+
+
+    /*
+       Ignore old analysis files.
+       Only use the new ML export.
+    */
+
+    if (
+        possibleMl
+        &&
+        (
+            Number(
+                possibleMl.version
+            )
+            >=
+            2
+
+            ||
+
+            Array.isArray(
+                possibleMl.environmentalFeatures
+            )
+        )
+    ) {
+
+        mlAnalysis =
+            possibleMl;
+
+
+        mlRoutesById =
+            mlAnalysis.routesById
+            ||
+            {};
+
+    }
+
+}
+
+
+// ==========================================================
+// BUILD MRT → HOME INDEX
+// ==========================================================
+
+function buildIndexes() {
+
+    routesById = {};
+
+    routesByMrt = {};
+
+
+    for (
+        const route
+        of routes
+    ) {
+
+        const routeId =
+            getRouteId(
+                route
+            );
+
+
+        if (
+            !routeId
+        ) {
+
+            continue;
+
+        }
+
+
+        routesById[
+            routeId
+        ] =
+            route;
+
+
+        const mrt =
+            route.destination
+            ||
+            {};
+
+
+        const mrtName =
+            mrt.name
+            ||
+            mrt.station
+            ||
+            "Unknown MRT";
+
+
+        const mrtId =
+            mrt.id
+            ||
+            slugify(
+                mrtName
+            );
+
+
+        if (
+            !routesByMrt[
+                mrtId
+            ]
+        ) {
+
+            routesByMrt[
+                mrtId
+            ] = {
+
+                id:
+                    mrtId,
+
+                name:
+                    mrtName,
+
+                lat:
+                    Number(
+                        mrt.lat
+                    ),
+
+                lon:
+                    Number(
+                        mrt.lon
+                    ),
+
+                routes:
+                    []
+
+            };
+
+        }
+
+
+        routesByMrt[
+            mrtId
+        ].routes.push(
+            route
+        );
+
+    }
+
+
+    /*
+       Shortest journey first.
+    */
+
+    for (
+        const mrt
+        of Object.values(
+            routesByMrt
+        )
+    ) {
+
+        mrt.routes.sort(
+            (
+                a,
+                b
+            ) =>
+
+                getRouteDistance(
+                    a
+                )
+
+                -
+
+                getRouteDistance(
+                    b
+                )
+        );
+
+    }
+
+}
+
+
+// ==========================================================
+// MRT DROPDOWN
+// ==========================================================
+
+function populateMrtDropdown() {
+
+    mrtSelect.innerHTML =
+        `
+        <option value="">
+            Select MRT station
+        </option>
+        `;
+
+
+    const mrtList =
+        Object.values(
+            routesByMrt
+        )
+        .sort(
+            (
+                a,
+                b
+            ) =>
+                a.name.localeCompare(
+                    b.name
+                )
+        );
+
+
+    for (
+        const mrt
+        of mrtList
+    ) {
+
+        const option =
+            document.createElement(
+                "option"
+            );
+
+
+        option.value =
+            mrt.id;
+
+
+        option.textContent =
+            mrt.name;
+
+
+        mrtSelect.appendChild(
+            option
+        );
+
+    }
+
+
+    mrtSelect.addEventListener(
+        "change",
+        () =>
+            selectMrt(
+                mrtSelect.value
+            )
+    );
+
+}
+
+
+// ==========================================================
+// SELECT MRT
+// ==========================================================
+
+function selectMrt(
+    mrtId
+) {
+
+    resetRouteUi();
+
+
+    const mrt =
+        routesByMrt[
+            mrtId
+        ];
+
+
+    if (
+        !mrt
+    ) {
+
+        mrtInfo.classList.remove(
+            "active"
+        );
+
+
+        mrtInfo.textContent =
+            "Select an MRT to retrieve linked home journeys.";
+
+
+        return;
+
+    }
+
+
+    mrtInfo.classList.add(
+        "active"
+    );
+
+
+    mrtInfo.innerHTML = `
+
+        <strong>
+            ${escapeHtml(
+                mrt.name
+            )}
+        </strong>
+
+        ${
+            mrt.routes.length
+        }
+        linked residential
+        ${
+            mrt.routes.length === 1
+            ?
+            "journey"
+            :
+            "journeys"
+        }.
+
+    `;
+
+
+    routeSelect.disabled =
+        false;
+
+
+    routeSelect.innerHTML =
+        `
+        <option value="">
+            Select journey home
+        </option>
+        `;
+
+
+    mrt.routes.forEach(
+        (
+            route,
+            index
+        ) => {
+
+            const routeId =
+                getRouteId(
+                    route
+                );
+
+
+            const distance =
+                getRouteDistance(
+                    route
+                );
+
+
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+
+            option.value =
+                routeId;
+
+
+            option.textContent =
+                `Home ${letterForIndex(index)}`
+                +
+                (
+                    distance
+                    ?
+                    ` · ${Math.round(distance)} m`
+                    :
+                    ""
+                );
+
+
+            routeSelect.appendChild(
+                option
+            );
+
+        }
+    );
+
+
+    routeSelect.onchange =
+        () => {
+
+            if (
+                routeSelect.value
+            ) {
+
+                selectRoute(
+                    routeSelect.value
+                );
+
+            }
+
+        };
+
+
+    /*
+       Automatically load first journey.
+    */
+
+    if (
+        mrt.routes.length
+        >
+        0
+    ) {
+
+        const firstId =
+            getRouteId(
+                mrt.routes[
+                    0
+                ]
+            );
+
+
+        routeSelect.value =
+            firstId;
+
+
+        selectRoute(
+            firstId
+        );
+
+    }
+
+}
+
+
+// ==========================================================
+// SELECT ROUTE
+// ==========================================================
+
+function selectRoute(
+    routeId
+) {
+
+    selectedRouteId =
+        routeId;
+
+
+    const baseRoute =
+        routesById[
+            routeId
+        ];
+
+
+    if (
+        !baseRoute
+    ) {
+
+        return;
+
+    }
+
+
+    /*
+       The ML export contains a full enriched copy
+       of each route. Prefer it when available.
+    */
+
+    const route =
+        mlRoutesById[
+            routeId
+        ]
+        ||
+        baseRoute;
+
+
+    renderRouteInfo(
+        route
+    );
+
+
+    renderMap(
+        route
+    );
+
+
+    renderMetrics(
+        route
+    );
+
+
+    renderOverview(
+        route
+    );
+
+
+    renderImageEvidence(
+        route
+    );
+
+
+    renderMl(
+        route
+    );
+
+
+    renderSupport(
+        route
+    );
+
+}
+
+
+// ==========================================================
+// ROUTE INFO
+// ==========================================================
+
+function renderRouteInfo(
+    route
+) {
+
+    const distance =
+        getRouteDistance(
+            route
+        );
+
+
+    const checkpoints =
+        route.checkpoints
+        ||
+        [];
+
+
+    routeInfo.classList.add(
+        "active"
+    );
+
+
+    routeInfo.innerHTML = `
+
+        <strong>
+            ${
+                escapeHtml(
+                    route.destination?.name
+                    ||
+                    "MRT"
+                )
+            }
+            → Home
+        </strong>
+
+        ${
+            distance
+            ?
+            `${Math.round(distance)} m`
+            :
+            "Distance unavailable"
+        }
+
+        ·
+
+        ${checkpoints.length}
+        checkpoints
+
+    `;
+
+
+    document.getElementById(
+        "journeyBadge"
+    ).textContent =
+        distance
+        ?
+        `${Math.round(distance)} m journey`
+        :
+        "Journey selected";
+
+}
+
+
+// ==========================================================
+// RENDER MAP
+// ==========================================================
+
+function clearMapLayers() {
+
+    if (
+        !map
+    ) {
+
+        return;
+
+    }
+
+
+    for (
+        const layer
+        of mapLayers
+    ) {
+
+        map.removeLayer(
+            layer
+        );
+
+    }
+
+
+    mapLayers =
+        [];
+
+}
+
+
+function addMapLayer(
+    layer
+) {
+
+    if (
+        !map
+    ) {
+
+        return null;
+
+    }
+
+
+    layer.addTo(
+        map
+    );
+
+
+    mapLayers.push(
+        layer
+    );
+
+
+    return layer;
+
+}
+
+
+function renderMap(
+    route
+) {
+
+    if (
+        !map
+    ) {
+
+        return;
+
+    }
+
+
+    clearMapLayers();
+
+
+    const bounds =
+        [];
+
+
+    const routePoints =
+        normaliseRoutePoints(
+            route.points
+            ||
+            []
+        );
+
+
+    /*
+       WALKING ROUTE
+    */
+
+    if (
+        routePoints.length
+        >
+        1
+    ) {
+
+        const latlngs =
+            routePoints.map(
+                point => [
+                    point.lat,
+                    point.lon
+                ]
+            );
+
+
+        addMapLayer(
+
+            L.polyline(
+                latlngs,
+                {
+                    color:
+                        "#287fb7",
+
+                    weight:
+                        5,
+
+                    opacity:
+                        0.92
+                }
+            )
+
+        );
+
+
+        bounds.push(
+            ...latlngs
+        );
+
+    }
+
+
+    /*
+       MRT
+    */
+
+    const mrt =
+        route.destination
+        ||
+        {};
+
+
+    if (
+        validPoint(
+            mrt
+        )
+    ) {
+
+        addMapLayer(
+
+            L.circleMarker(
+                [
+                    Number(
+                        mrt.lat
+                    ),
+                    Number(
+                        mrt.lon
+                    )
+                ],
+                {
+                    radius:
+                        9,
+
+                    color:
+                        "#07558f",
+
+                    weight:
+                        3,
+
+                    fillColor:
+                        "#ffffff",
+
+                    fillOpacity:
+                        1
+                }
+            )
+            .bindPopup(
+                `
+                <strong>
+                    ${
+                        escapeHtml(
+                            mrt.name
+                            ||
+                            "MRT"
+                        )
+                    }
+                </strong>
+
+                <br>
+
+                Journey root
+                `
+            )
+
+        );
+
+
+        bounds.push(
+            [
+                Number(
+                    mrt.lat
+                ),
+                Number(
+                    mrt.lon
+                )
+            ]
+        );
+
+    }
+
+
+    /*
+       HOME
+    */
+
+    const home =
+        route.origin
+        ||
+        {};
+
+
+    if (
+        validPoint(
+            home
+        )
+    ) {
+
+        addMapLayer(
+
+            L.circleMarker(
+                [
+                    Number(
+                        home.lat
+                    ),
+                    Number(
+                        home.lon
+                    )
+                ],
+                {
+                    radius:
+                        9,
+
+                    color:
+                        "#07558f",
+
+                    weight:
+                        2,
+
+                    fillColor:
+                        "#07558f",
+
+                    fillOpacity:
+                        1
+                }
+            )
+            .bindPopup(
+                "Residential destination"
+            )
+
+        );
+
+
+        bounds.push(
+            [
+                Number(
+                    home.lat
+                ),
+                Number(
+                    home.lon
+                )
+            ]
+        );
+
+    }
+
+
+    /*
+       SUPPORT
+    */
+
+    for (
+        const support
+        of
+        (
+            route.recordedSupport
+            ||
+            []
+        )
+    ) {
+
+        if (
+            !validPoint(
+                support
+            )
+        ) {
+
+            continue;
+
+        }
+
+
+        addMapLayer(
+
+            L.circleMarker(
+                [
+                    Number(
+                        support.lat
+                    ),
+                    Number(
+                        support.lon
+                    )
+                ],
+                {
+                    radius:
+                        5,
+
+                    color:
+                        "#4f936b",
+
+                    fillColor:
+                        "#4f936b",
+
+                    fillOpacity:
+                        0.9,
+
+                    weight:
+                        1
+                }
+            )
+            .bindPopup(
+                `
+                ${
+                    escapeHtml(
+                        support.name
+                        ||
+                        support.primaryCategory
+                        ||
+                        "Recorded family support"
+                    )
+                }
+                `
+            )
+
+        );
+
+    }
+
+
+    /*
+       CHECKPOINTS
+    */
+
+    const checkpoints =
+        route.checkpoints
+        ||
+        [];
+
+
+    checkpoints.forEach(
+        (
+            checkpoint,
+            index
+        ) => {
+
+            if (
+                !validPoint(
+                    checkpoint
+                )
+            ) {
+
+                return;
+
+            }
+
+
+            addMapLayer(
+
+                L.circleMarker(
+                    [
+                        Number(
+                            checkpoint.lat
+                        ),
+                        Number(
+                            checkpoint.lon
+                        )
+                    ],
+                    {
+                        radius:
+                            2.5,
+
+                        color:
+                            "#bb5f85",
+
+                        fillColor:
+                            "#bb5f85",
+
+                        fillOpacity:
+                            0.75,
+
+                        weight:
+                            1
+                    }
+                )
+                .bindPopup(
+                    `Image checkpoint ${index + 1}`
+                )
+
+            );
+
+        }
+    );
+
+
+    if (
+        bounds.length
+        >
+        1
+    ) {
+
+        map.fitBounds(
+            bounds,
+            {
+                padding:
+                    [
+                        30,
+                        30
+                    ]
+            }
+        );
+
+    }
+
+
+    setTimeout(
+        () =>
+            map.invalidateSize(),
+        100
+    );
+
+}
+
+
+// ==========================================================
+// METRICS
+// ==========================================================
+
+function renderMetrics(
+    route
+) {
+
+    const distance =
+        getRouteDistance(
+            route
+        );
+
+
+    const supportCount =
+        (
+            route.recordedSupportIds
+            ||
+            []
+        ).length;
+
+
+    const checkpoints =
+        route.checkpoints
+        ||
+        [];
+
+
+    const imageCount =
+        checkpoints
+        .filter(
+            checkpoint =>
+                getCandidate(
+                    checkpoint
+                )
+                ||
+                checkpoint.originalImage
+        )
+        .length;
+
+
+    const cluster =
+        dominantCluster(
+            route
+        );
+
+
+    document.getElementById(
+        "metricDistance"
+    ).textContent =
+        distance
+        ?
+        `${Math.round(distance)} m`
+        :
+        "—";
+
+
+    document.getElementById(
+        "metricSupport"
+    ).textContent =
+        supportCount;
+
+
+    document.getElementById(
+        "metricImages"
+    ).textContent =
+        imageCount;
+
+
+    document.getElementById(
+        "metricCluster"
+    ).textContent =
+        cluster === null
+        ?
+        "Pending"
+        :
+        `Cluster ${cluster}`;
+
+}
+
+
+// ==========================================================
+// ENVIRONMENTAL OVERVIEW
+// ==========================================================
+
+const FEATURES = [
+
+    {
+        key:
+            "sky_exposure",
+
+        label:
+            "Sky exposure"
+    },
+
+    {
+        key:
+            "greenery",
+
+        label:
+            "Greenery"
+    },
+
+    {
+        key:
+            "road_exposure",
+
+        label:
+            "Road exposure"
+    },
+
+    {
+        key:
+            "pedestrian_space",
+
+        label:
+            "Pedestrian space"
+    },
+
+    {
+        key:
+            "built_frontage",
+
+        label:
+            "Built frontage"
+    },
+
+    {
+        key:
+            "vehicle_presence",
+
+        label:
+            "Vehicle presence"
+    }
+
+];
+
+
+function renderOverview(
+    route
+) {
+
+    renderMeanFeatures(
+        route
+    );
+
+
+    renderInterpretation(
+        route
+    );
+
+
+    renderRouteProfile(
+        route
+    );
+
+}
+
+
+function meanFeatures(
+    route
+) {
+
+    const checkpoints =
+        (
+            route.checkpoints
+            ||
+            []
+        )
+        .filter(
+            checkpoint =>
+                checkpoint.environmentalFeatures
+        );
+
+
+    if (
+        checkpoints.length
+        ===
+        0
+    ) {
+
+        return null;
+
+    }
+
+
+    const output =
+        {};
+
+
+    for (
+        const feature
+        of FEATURES
+    ) {
+
+        const values =
+            checkpoints
+            .map(
+                checkpoint =>
+                    Number(
+                        checkpoint
+                        .environmentalFeatures[
+                            feature.key
+                        ]
+                    )
+            )
+            .filter(
+                Number.isFinite
+            );
+
+
+        output[
+            feature.key
+        ] =
+            values.length
+            ?
+            values.reduce(
+                (
+                    sum,
+                    value
+                ) =>
+                    sum + value,
+                0
+            )
+            /
+            values.length
+            :
+            0;
+
+    }
+
+
+    return output;
+
+}
+
+
+function renderMeanFeatures(
+    route
+) {
+
+    const container =
+        document.getElementById(
+            "featureBars"
+        );
+
+
+    const data =
+        meanFeatures(
+            route
+        );
+
+
+    if (
+        !data
+    ) {
+
+        container.innerHTML = `
+
+            <div class="empty">
+
+                Numerical SegFormer features will appear
+                after the ML notebook exports
+                family_route_analysis.json.
+
+                <br><br>
+
+                You can already inspect the progressively
+                generated segmentation images in
+                <strong>Image evidence</strong>.
+
+            </div>
+
+        `;
+
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        FEATURES
+        .map(
+            feature => {
+
+                const value =
+                    Math.max(
+                        0,
+                        Math.min(
+                            1,
+                            Number(
+                                data[
+                                    feature.key
+                                ]
+                            )
+                            ||
+                            0
+                        )
+                    );
+
+
+                return `
+
+                    <div class="feature-row">
+
+                        <div class="feature-top">
+
+                            <span>
+                                ${
+                                    feature.label
+                                }
+                            </span>
+
+                            <strong>
+                                ${
+                                    Math.round(
+                                        value
+                                        *
+                                        100
+                                    )
+                                }%
+                            </strong>
+
+                        </div>
+
+                        <div class="feature-track">
+
+                            <div
+                                class="feature-fill"
+
+                                style="
+                                    width:
+                                    ${
+                                        value
+                                        *
+                                        100
+                                    }%;
+                                "
+                            ></div>
+
+                        </div>
+
+                    </div>
+
+                `;
+
+            }
+        )
+        .join("");
+
+}
+
+
+function renderInterpretation(
+    route
+) {
+
+    const container =
+        document.getElementById(
+            "interpretation"
+        );
+
+
+    const cluster =
+        dominantCluster(
+            route
+        );
+
+
+    const typology =
+        dominantTypology(
+            route
+        );
+
+
+    const analysedCount =
+        (
+            route.checkpoints
+            ||
+            []
+        )
+        .filter(
+            checkpoint =>
+                checkpoint.environmentalFeatures
+        )
+        .length;
+
+
+    const supportCount =
+        (
+            route.recordedSupportIds
+            ||
+            []
+        ).length;
+
+
+    container.innerHTML = `
+
+        <div class="interpret-row">
+
+            <span>
+                Analysed checkpoints
+            </span>
+
+            <strong>
+                ${
+                    analysedCount
+                    ||
+                    "Pending"
+                }
+            </strong>
+
+        </div>
+
+
+        <div class="interpret-row">
+
+            <span>
+                Dominant cluster
+            </span>
+
+            <strong>
+                ${
+                    cluster === null
+                    ?
+                    "Pending"
+                    :
+                    `Cluster ${cluster}`
+                }
+            </strong>
+
+        </div>
+
+
+        <div class="interpret-row">
+
+            <span>
+                Environmental typology
+            </span>
+
+            <strong>
+                ${
+                    escapeHtml(
+                        typology
+                        ||
+                        "Pending ML"
+                    )
+                }
+            </strong>
+
+        </div>
+
+
+        <div class="interpret-row">
+
+            <span>
+                Recorded support
+            </span>
+
+            <strong>
+                ${supportCount}
+            </strong>
+
+        </div>
+
+    `;
+
+}
+
+
+// ==========================================================
+// ROUTE PROFILE SVG
+// ==========================================================
+
+function renderRouteProfile(
+    route
+) {
+
+    const container =
+        document.getElementById(
+            "routeProfile"
+        );
+
+
+    const checkpoints =
+        (
+            route.checkpoints
+            ||
+            []
+        )
+        .filter(
+            checkpoint =>
+                checkpoint.environmentalFeatures
+        )
+        .sort(
+            (
+                a,
+                b
+            ) =>
+                Number(
+                    a.distance_from_origin_m
+                    ??
+                    a.distanceFromOriginM
+                    ??
+                    0
+                )
+
+                -
+
+                Number(
+                    b.distance_from_origin_m
+                    ??
+                    b.distanceFromOriginM
+                    ??
+                    0
+                )
+        );
+
+
+    if (
+        checkpoints.length
+        <
+        2
+    ) {
+
+        container.innerHTML = `
+
+            <div class="empty">
+
+                The route-profile graph will appear once
+                Cell 9 finishes and the later ML cells export
+                their numerical checkpoint data.
+
+            </div>
+
+        `;
+
+
+        return;
+
+    }
+
+
+    const width =
+        900;
+
+    const height =
+        270;
+
+    const margin =
+        {
+            left:
+                50,
+
+            right:
+                20,
+
+            top:
+                20,
+
+            bottom:
+                35
+        };
+
+
+    const plotWidth =
+        width
+        -
+        margin.left
+        -
+        margin.right;
+
+
+    const plotHeight =
+        height
+        -
+        margin.top
+        -
+        margin.bottom;
+
+
+    const maxDistance =
+        Math.max(
+            ...checkpoints.map(
+                checkpoint =>
+                    Number(
+                        checkpoint.distance_from_origin_m
+                        ??
+                        checkpoint.distanceFromOriginM
+                        ??
+                        0
+                    )
+            ),
+            1
+        );
+
+
+    const series =
+        [
+
+            {
+                key:
+                    "sky_exposure",
+
+                label:
+                    "Sky",
+
+                colour:
+                    "#3b82c4"
+            },
+
+            {
+                key:
+                    "greenery",
+
+                label:
+                    "Greenery",
+
+                colour:
+                    "#4c9368"
+            },
+
+            {
+                key:
+                    "road_exposure",
+
+                label:
+                    "Road",
+
+                colour:
+                    "#bf6c55"
+            },
+
+            {
+                key:
+                    "pedestrian_space",
+
+                label:
+                    "Pedestrian",
+
+                colour:
+                    "#8061a7"
+            }
+
+        ];
+
+
+    function x(
+        distance
+    ) {
+
+        return (
+            margin.left
+            +
+            (
+                distance
+                /
+                maxDistance
+            )
+            *
+            plotWidth
+        );
+
+    }
+
+
+    function y(
+        value
+    ) {
+
+        return (
+            margin.top
+            +
+            (
+                1
+                -
+                Math.max(
+                    0,
+                    Math.min(
+                        1,
+                        value
+                    )
+                )
+            )
+            *
+            plotHeight
+        );
+
+    }
+
+
+    const paths =
+        series
+        .map(
+            item => {
+
+                const points =
+                    checkpoints
+                    .map(
+                        checkpoint => {
+
+                            const distance =
+                                Number(
+                                    checkpoint.distance_from_origin_m
+                                    ??
+                                    checkpoint.distanceFromOriginM
+                                    ??
+                                    0
+                                );
+
+
+                            const value =
+                                Number(
+                                    checkpoint
+                                    .environmentalFeatures[
+                                        item.key
+                                    ]
+                                    ||
+                                    0
+                                );
+
+
+                            return (
+                                `${x(distance)},${y(value)}`
+                            );
+
+                        }
+                    )
+                    .join(
+                        " "
+                    );
+
+
+                return `
+
+                    <polyline
+                        points="${points}"
+
+                        fill="none"
+
+                        stroke="${item.colour}"
+
+                        stroke-width="3"
+
+                        stroke-linecap="round"
+
+                        stroke-linejoin="round"
+                    />
+
+                `;
+
+            }
+        )
+        .join("");
+
+
+    const legends =
+        series
+        .map(
+            (
+                item,
+                index
+            ) => {
+
+                const lx =
+                    65
+                    +
+                    index
+                    *
+                    130;
+
+
+                return `
+
+                    <line
+                        x1="${lx}"
+                        y1="255"
+                        x2="${lx + 20}"
+                        y2="255"
+
+                        stroke="${item.colour}"
+
+                        stroke-width="3"
+                    />
+
+                    <text
+                        x="${lx + 26}"
+                        y="259"
+
+                        font-size="10"
+
+                        fill="#6f665d"
+                    >
+                        ${item.label}
+                    </text>
+
+                `;
+
+            }
+        )
+        .join("");
+
+
+    container.innerHTML = `
+
+        <svg
+            viewBox="0 0 ${width} ${height}"
+            role="img"
+        >
+
+            <line
+                x1="${margin.left}"
+                y1="${margin.top}"
+                x2="${margin.left}"
+                y2="${margin.top + plotHeight}"
+
+                stroke="#cfc7bc"
+            />
+
+            <line
+                x1="${margin.left}"
+                y1="${margin.top + plotHeight}"
+                x2="${width - margin.right}"
+                y2="${margin.top + plotHeight}"
+
+                stroke="#cfc7bc"
+            />
+
+
+            <text
+                x="4"
+                y="${margin.top + 5}"
+
+                font-size="9"
+
+                fill="#80766d"
+            >
+                100%
+            </text>
+
+
+            <text
+                x="18"
+                y="${margin.top + plotHeight}"
+
+                font-size="9"
+
+                fill="#80766d"
+            >
+                0%
+            </text>
+
+
+            <text
+                x="${margin.left}"
+                y="${height - 42}"
+
+                font-size="9"
+
+                fill="#80766d"
+            >
+                MRT / Home route distance
+            </text>
+
+
+            ${paths}
+
+            ${legends}
+
+        </svg>
+
+    `;
+
+}
+
+
+// ==========================================================
+// IMAGE EVIDENCE
+// ==========================================================
+
+function renderImageEvidence(
+    route
+) {
+
+    const checkpoints =
+        route.checkpoints
+        ||
+        [];
+
+
+    const observations =
+        checkpoints
+        .map(
+            (
+                checkpoint,
+                index
+            ) => {
+
+                const candidate =
+                    getCandidate(
+                        checkpoint
+                    );
+
+
+                if (
+                    !candidate
+                    &&
+                    !checkpoint.originalImage
+                ) {
+
+                    return null;
+
+                }
+
+
+                const imageId =
+                    candidate?.id
+                    ||
+                    extractImageIdFromPath(
+                        checkpoint.originalImage
+                    );
+
+
+                return {
+
+                    checkpoint:
+                        checkpoint,
+
+                    index:
+                        index,
+
+                    imageId:
+                        imageId,
+
+                    remoteOriginal:
+                        candidate?.url
+                        ||
+                        candidate?.imageUrl
+                        ||
+                        candidate?.thumb_1024_url
+                        ||
+                        null,
+
+                    explicitOriginal:
+                        checkpoint.originalImage
+                        ||
+                        null,
+
+                    explicitSegmentation:
+                        checkpoint.segmentationImage
+                        ||
+                        null
+
+                };
+
+            }
+        )
+        .filter(
+            Boolean
+        );
+
+
+    const sampled =
+        evenlySample(
+            observations,
+            36
+        );
+
+
+    renderOriginalGrid(
+        sampled
+    );
+
+
+    renderSegmentationGrid(
+        sampled
+    );
+
+}
+
+
+// ==========================================================
+// ORIGINAL GRID
+// ==========================================================
+
+function renderOriginalGrid(
+    observations
+) {
+
+    const container =
+        document.getElementById(
+            "originalGrid"
+        );
+
+
+    container.innerHTML =
+        "";
+
+
+    if (
+        observations.length
+        ===
+        0
+    ) {
+
+        container.innerHTML = `
+
+            <div
+                class="empty"
+                style="grid-column:1/-1"
+            >
+                No street imagery is associated with
+                this route.
+            </div>
+
+        `;
+
+
+        return;
+
+    }
+
+
+    observations.forEach(
+        (
+            observation,
+            index
+        ) => {
+
+            const cell =
+                document.createElement(
+                    "div"
+                );
+
+
+            cell.className =
+                "image-cell";
+
+
+            const img =
+                document.createElement(
+                    "img"
+                );
+
+
+            /*
+               Prefer local cached image.
+               If it does not exist yet,
+               fall back to original Mapillary URL.
+            */
+
+            const local =
+                observation.imageId
+                ?
+                localStreetImagePath(
+                    observation.imageId
+                )
+                :
+                observation.explicitOriginal;
+
+
+            let fallbackUsed =
+                false;
+
+
+            img.src =
+                normalisePath(
+                    observation.explicitOriginal
+                    ||
+                    local
+                );
+
+
+            img.loading =
+                "lazy";
+
+
+            img.onerror =
+                () => {
+
+                    if (
+                        !fallbackUsed
+                        &&
+                        observation.remoteOriginal
+                    ) {
+
+                        fallbackUsed =
+                            true;
+
+
+                        img.src =
+                            observation.remoteOriginal;
+
+
+                        return;
+
+                    }
+
+
+                    cell.classList.add(
+                        "pending"
+                    );
+
+
+                    cell.innerHTML =
+                        "Image unavailable";
+
+                };
+
+
+            const label =
+                document.createElement(
+                    "span"
+                );
+
+
+            label.className =
+                "image-index";
+
+
+            label.textContent =
+                `${index + 1}`;
+
+
+            cell.appendChild(
+                img
+            );
+
+
+            cell.appendChild(
+                label
+            );
+
+
+            container.appendChild(
+                cell
+            );
+
+        }
+    );
+
+}
+
+
+// ==========================================================
+// SEGMENTATION GRID
+// ==========================================================
+
+function renderSegmentationGrid(
+    observations
+) {
+
+    const container =
+        document.getElementById(
+            "segmentationGrid"
+        );
+
+
+    container.innerHTML =
+        "";
+
+
+    if (
+        observations.length
+        ===
+        0
+    ) {
+
+        container.innerHTML = `
+
+            <div
+                class="empty"
+                style="grid-column:1/-1"
+            >
+                No image checkpoints available.
+            </div>
+
+        `;
+
+
+        return;
+
+    }
+
+
+    observations.forEach(
+        (
+            observation,
+            index
+        ) => {
+
+            const cell =
+                document.createElement(
+                    "div"
+                );
+
+
+            cell.className =
+                "image-cell";
+
+
+            if (
+                !observation.imageId
+                &&
+                !observation.explicitSegmentation
+            ) {
+
+                cell.classList.add(
+                    "pending"
+                );
+
+
+                cell.textContent =
+                    "Pending";
+
+
+                container.appendChild(
+                    cell
+                );
+
+
+                return;
+
+            }
+
+
+            const img =
+                document.createElement(
+                    "img"
+                );
+
+
+            /*
+               CRITICAL:
+               This directly accesses the segmentation PNGs
+               Cell 9 is currently writing.
+
+               It means you do NOT have to wait for
+               family_route_analysis.json before seeing them.
+            */
+
+            img.src =
+                normalisePath(
+                    observation.explicitSegmentation
+                    ||
+                    localSegmentationPath(
+                        observation.imageId
+                    )
+                );
+
+
+            img.loading =
+                "lazy";
+
+
+            img.onerror =
+                () => {
+
+                    cell.classList.add(
+                        "pending"
+                    );
+
+
+                    cell.innerHTML =
+                        `
+                        Segmentation
+                        <br>
+                        pending
+                        `;
+
+                };
+
+
+            const label =
+                document.createElement(
+                    "span"
+                );
+
+
+            label.className =
+                "image-index";
+
+
+            label.textContent =
+                `${index + 1}`;
+
+
+            cell.appendChild(
+                img
+            );
+
+
+            cell.appendChild(
+                label
+            );
+
+
+            container.appendChild(
+                cell
+            );
+
+        }
+    );
+
+}
+
+
+// ==========================================================
+// ML
+// ==========================================================
+
+function renderMl(
+    route
+) {
+
+    renderMlStats(
+        route
+    );
+
+
+    renderClusterDistribution(
+        route
+    );
+
+}
+
+
+function renderMlStats(
+    route
+) {
+
+    const container =
+        document.getElementById(
+            "mlStats"
+        );
+
+
+    if (
+        !mlAnalysis
+    ) {
+
+        container.innerHTML = `
+
+            <div
+                class="empty"
+                style="grid-column:1/-1"
+            >
+
+                Cell 9 is currently generating segmentation
+                data. The K-means, PCA, hierarchical and
+                Decision Tree statistics will appear after
+                the remaining notebook cells are executed.
+
+            </div>
+
+        `;
+
+
+        return;
+
+    }
+
+
+    const k =
+        mlAnalysis
+        ?.kMeans
+        ?.selectedK;
+
+
+    const ari =
+        mlAnalysis
+        ?.hierarchicalClustering
+        ?.adjustedRandIndexAgainstKMeans;
+
+
+    const accuracy =
+        mlAnalysis
+        ?.decisionTree
+        ?.surrogateAccuracy;
+
+
+    const cluster =
+        dominantCluster(
+            route
+        );
+
+
+    container.innerHTML = `
+
+        ${mlStat(
+            "SELECTED K",
+            k
+            ??
+            "—"
+        )}
+
+        ${mlStat(
+            "ROUTE TYPOLOGY",
+            cluster === null
+            ?
+            "—"
+            :
+            `Cluster ${cluster}`
+        )}
+
+        ${mlStat(
+            "K-MEANS / HIERARCHY ARI",
+            Number.isFinite(
+                Number(
+                    ari
+                )
+            )
+            ?
+            Number(
+                ari
+            ).toFixed(
+                2
+            )
+            :
+            "—"
+        )}
+
+        ${mlStat(
+            "TREE EXPLANATION ACCURACY",
+            Number.isFinite(
+                Number(
+                    accuracy
+                )
+            )
+            ?
+            `${
+                Math.round(
+                    Number(
+                        accuracy
+                    )
+                    *
+                    100
+                )
+            }%`
+            :
+            "—"
+        )}
+
+    `;
+
+}
+
+
+function mlStat(
+    label,
+    value
+) {
+
+    return `
+
+        <article class="ml-stat">
+
+            <span>
+                ${label}
+            </span>
+
+            <strong>
+                ${value}
+            </strong>
+
+        </article>
+
+    `;
+
+}
+
+
+// ==========================================================
+// CLUSTER DISTRIBUTION
+// ==========================================================
+
+function renderClusterDistribution(
+    route
+) {
+
+    const container =
+        document.getElementById(
+            "clusterDistribution"
+        );
+
+
+    const counts =
+        {};
+
+
+    for (
+        const checkpoint
+        of
+        (
+            route.checkpoints
+            ||
+            []
+        )
+    ) {
+
+        const cluster =
+            checkpoint.environmentCluster;
+
+
+        if (
+            cluster === undefined
+            ||
+            cluster === null
+        ) {
+
+            continue;
+
+        }
+
+
+        counts[
+            cluster
+        ] =
+            (
+                counts[
+                    cluster
+                ]
+                ||
+                0
+            )
+            +
+            1;
+
+    }
+
+
+    const entries =
+        Object.entries(
+            counts
+        );
+
+
+    if (
+        entries.length
+        ===
+        0
+    ) {
+
+        container.innerHTML = `
+
+            <h3>
+                Selected-route cluster distribution
+            </h3>
+
+            <div class="empty">
+                Cluster assignments will appear after
+                K-means is executed.
+            </div>
+
+        `;
+
+
+        return;
+
+    }
+
+
+    const total =
+        entries.reduce(
+            (
+                sum,
+                entry
+            ) =>
+                sum
+                +
+                entry[
+                    1
+                ],
+            0
+        );
+
+
+    container.innerHTML = `
+
+        <h3>
+            Selected-route cluster distribution
+        </h3>
+
+        ${
+            entries
+            .sort(
+                (
+                    a,
+                    b
+                ) =>
+                    Number(
+                        a[
+                            0
+                        ]
+                    )
+                    -
+                    Number(
+                        b[
+                            0
+                        ]
+                    )
+            )
+            .map(
+                (
+                    [
+                        cluster,
+                        count
+                    ]
+                ) => {
+
+                    const percent =
+                        (
+                            count
+                            /
+                            total
+                        )
+                        *
+                        100;
+
+
+                    return `
+
+                        <div class="cluster-bar">
+
+                            <span>
+                                Cluster ${cluster}
+                            </span>
+
+                            <div class="cluster-track">
+
+                                <div
+                                    class="cluster-fill"
+
+                                    style="
+                                        width:
+                                        ${percent}%;
+                                    "
+                                ></div>
+
+                            </div>
+
+                            <strong>
+                                ${
+                                    Math.round(
+                                        percent
+                                    )
+                                }%
+                            </strong>
+
+                        </div>
+
+                    `;
+
+                }
+            )
+            .join("")
+        }
+
+    `;
+
+}
+
+
+// ==========================================================
+// GLOBAL GRAPH IMAGES
+// ==========================================================
+
+function loadGlobalMlGraphs() {
+
+    const defaults =
+        {
+
+            pca:
+                "./data/generated/ml_analysis/visuals/pca_environmental_spectrum.png",
+
+            heatmap:
+                "./data/generated/ml_analysis/visuals/cluster_environment_heatmap.png",
+
+            dendrogram:
+                "./data/generated/ml_analysis/visuals/hierarchical_dendrogram.png",
+
+            importance:
+                "./data/generated/ml_analysis/visuals/decision_tree_feature_importance.png"
+
+        };
+
+
+    const assets =
+        mlAnalysis
+        ?.visualAssets
+        ||
+        {};
+
+
+    loadGraph(
+        "pcaGraph",
+        "pcaPending",
+        assets.pcaSpectrum
+        ||
+        defaults.pca
+    );
+
+
+    loadGraph(
+        "heatmapGraph",
+        "heatmapPending",
+        assets.clusterHeatmap
+        ||
+        defaults.heatmap
+    );
+
+
+    loadGraph(
+        "dendrogramGraph",
+        "dendrogramPending",
+        assets.dendrogram
+        ||
+        defaults.dendrogram
+    );
+
+
+    loadGraph(
+        "importanceGraph",
+        "importancePending",
+        assets.featureImportance
+        ||
+        defaults.importance
+    );
+
+}
+
+
+function loadGraph(
+    imageId,
+    pendingId,
+    src
+) {
+
+    const image =
+        document.getElementById(
+            imageId
+        );
+
+
+    const pending =
+        document.getElementById(
+            pendingId
+        );
+
+
+    image.onload =
+        () => {
+
+            image.style.display =
+                "block";
+
+
+            pending.style.display =
+                "none";
+
+        };
+
+
+    image.onerror =
+        () => {
+
+            image.style.display =
+                "none";
+
+
+            pending.style.display =
+                "grid";
+
+        };
+
+
+    image.src =
+        src;
+
+}
+
+
+// ==========================================================
+// SUPPORT
+// ==========================================================
+
+function renderSupport(
+    route
+) {
+
+    const container =
+        document.getElementById(
+            "supportContent"
+        );
+
+
+    const supportCount =
+        (
+            route.recordedSupportIds
+            ||
+            []
+        ).length;
+
+
+    const checkpoints =
+        route.checkpoints
+        ||
+        [];
+
+
+    const gaps =
+        checkpoints
+        .map(
+            checkpoint =>
+                Number(
+                    checkpoint
+                    .distanceToNearestRecordedSupportM
+                )
+        )
+        .filter(
+            Number.isFinite
+        );
+
+
+    const percentiles =
+        checkpoints
+        .map(
+            checkpoint =>
+                Number(
+                    checkpoint
+                    .supportGapPercentile
+                )
+        )
+        .filter(
+            Number.isFinite
+        );
+
+
+    const largestGap =
+        gaps.length
+        ?
+        Math.max(
+            ...gaps
+        )
+        :
+        null;
+
+
+    const largestPercentile =
+        percentiles.length
+        ?
+        Math.max(
+            ...percentiles
+        )
+        :
+        null;
+
+
+    container.innerHTML = `
+
+        <div class="support-grid">
+
+
+            <article class="support-stat">
+
+                <span>
+                    RECORDED SUPPORT
+                </span>
+
+                <strong>
+                    ${supportCount}
+                </strong>
+
+            </article>
+
+
+            <article class="support-stat">
+
+                <span>
+                    LARGEST MEASURED SUPPORT DISTANCE
+                </span>
+
+                <strong>
+                    ${
+                        largestGap === null
+                        ?
+                        "Pending"
+                        :
+                        `${Math.round(
+                            largestGap
+                        )} m`
+                    }
+                </strong>
+
+            </article>
+
+
+            <article class="support-stat">
+
+                <span>
+                    LARGEST RELATIVE GAP
+                </span>
+
+                <strong>
+                    ${
+                        largestPercentile === null
+                        ?
+                        "Pending"
+                        :
+                        `${
+                            Math.round(
+                                largestPercentile
+                                *
+                                100
+                            )
+                        }th percentile`
+                    }
+                </strong>
+
+            </article>
+
+
+        </div>
+
+
+        <div class="note">
+
+            The support library currently identifies recorded
+            facilities and family-support opportunities near the
+            journey. A route with zero recorded support does not
+            imply that no informal physical resting space exists.
+
+        </div>
+
+    `;
+
+}
+
+
+// ==========================================================
+// TABS
+// ==========================================================
+
+function initialiseTabs() {
+
+    const tabs =
+        document.querySelectorAll(
+            ".tab"
+        );
+
+
+    tabs.forEach(
+        tab => {
+
+            tab.addEventListener(
+                "click",
+                () => {
+
+                    tabs.forEach(
+                        item =>
+                            item.classList.remove(
+                                "active"
+                            )
+                    );
+
+
+                    document
+                    .querySelectorAll(
+                        ".tab-panel"
+                    )
+                    .forEach(
+                        panel =>
+                            panel.classList.remove(
+                                "active"
+                            )
+                    );
+
+
+                    tab.classList.add(
+                        "active"
+                    );
+
+
+                    document
+                    .getElementById(
+                        `panel-${tab.dataset.tab}`
+                    )
+                    .classList.add(
+                        "active"
+                    );
+
+
+                    if (
+                        map
+                    ) {
+
+                        setTimeout(
+                            () =>
+                                map.invalidateSize(),
+                            80
+                        );
+
+                    }
+
+                }
+            );
+
+        }
+    );
+
+}
+
+
+// ==========================================================
+// RESET ROUTE
+// ==========================================================
+
+function resetRouteUi() {
+
+    selectedRouteId =
+        null;
+
+
+    routeSelect.disabled =
+        true;
+
+
+    routeSelect.innerHTML =
+        `
+        <option value="">
+            Select MRT first
+        </option>
+        `;
+
+
+    routeInfo.classList.remove(
+        "active"
+    );
+
+
+    routeInfo.textContent =
+        "Route information will appear here.";
+
+
+    document.getElementById(
+        "journeyBadge"
+    ).textContent =
+        "No journey selected";
+
+
+    document.getElementById(
+        "metricDistance"
+    ).textContent =
+        "—";
+
+
+    document.getElementById(
+        "metricSupport"
+    ).textContent =
+        "—";
+
+
+    document.getElementById(
+        "metricImages"
+    ).textContent =
+        "—";
+
+
+    document.getElementById(
+        "metricCluster"
+    ).textContent =
+        "Pending";
+
+
+    clearMapLayers();
+
+}
+
+
+// ==========================================================
+// PATHS TO CELL 9 CACHE
+// ==========================================================
+
+function safeImageId(
+    value
+) {
+
+    return String(
+        value
+        ??
+        ""
+    )
+    .replaceAll(
+        "/",
+        "_"
+    )
+    .replaceAll(
+        "\\",
+        "_"
+    )
+    .replaceAll(
+        ":",
+        "_"
+    );
+
+}
+
+
+function localStreetImagePath(
+    imageId
+) {
+
+    return (
+        "./data/generated/street_images/"
+        +
+        safeImageId(
+            imageId
+        )
+        +
+        ".jpg"
+    );
+
+}
+
+
+function localSegmentationPath(
+    imageId
+) {
+
+    return (
+        "./data/generated/segmentation_images/"
+        +
+        safeImageId(
+            imageId
+        )
+        +
+        ".png"
+    );
+
+}
+
+
+// ==========================================================
+// HELPERS
+// ==========================================================
+
+function getRouteId(
+    route
+) {
+
+    return (
+        route.id
+        ||
+        route.route_id
+        ||
+        route.routeId
+        ||
+        null
+    );
+
+}
+
+
+function getRouteDistance(
+    route
+) {
+
+    const value =
+        Number(
+            route.distance_m
+            ??
+            route.route_distance_m
+            ??
+            route.routeDistanceM
+            ??
+            0
+        );
+
+
+    return (
+        Number.isFinite(
+            value
+        )
+        ?
+        value
+        :
+        0
+    );
+
+}
+
+
+function getCandidate(
+    checkpoint
+) {
+
+    const candidates =
+        checkpoint.imageCandidates
+        ||
+        [];
+
+
+    if (
+        candidates.length
+        ===
+        0
+    ) {
+
+        return null;
+
+    }
+
+
+    return candidates[
+        0
+    ];
+
+}
+
+
+function extractImageIdFromPath(
+    path
+) {
+
+    if (
+        !path
+    ) {
+
+        return null;
+
+    }
+
+
+    const filename =
+        String(
+            path
+        )
+        .split(
+            "/"
+        )
+        .pop()
+        .split(
+            "\\"
+        )
+        .pop();
+
+
+    return filename
+        .replace(
+            /\.[^.]+$/,
+            ""
+        );
+
+}
+
+
+function normaliseRoutePoints(
+    points
+) {
+
+    return points
+        .map(
+            point => {
+
+                if (
+                    Array.isArray(
+                        point
+                    )
+                ) {
+
+                    /*
+                       GeoJSON style is commonly [lon, lat],
+                       but our Python backend stores objects.
+                       This branch handles either.
+                    */
+
+                    const first =
+                        Number(
+                            point[
+                                0
+                            ]
+                        );
+
+
+                    const second =
+                        Number(
+                            point[
+                                1
+                            ]
+                        );
+
+
+                    if (
+                        first
+                        >
+                        90
+                    ) {
+
+                        return {
+
+                            lat:
+                                second,
+
+                            lon:
+                                first
+
+                        };
+
+                    }
+
+
+                    return {
+
+                        lat:
+                            first,
+
+                        lon:
+                            second
+
+                    };
+
+                }
+
+
+                return {
+
+                    lat:
+                        Number(
+                            point.lat
+                        ),
+
+                    lon:
+                        Number(
+                            point.lon
+                            ??
+                            point.lng
+                        )
+
+                };
+
+            }
+        )
+        .filter(
+            validPoint
+        );
+
+}
+
+
+function validPoint(
+    point
+) {
+
+    return Boolean(
+
+        point
+
+        &&
+
+        Number.isFinite(
+            Number(
+                point.lat
+            )
+        )
+
+        &&
+
+        Number.isFinite(
+            Number(
+                point.lon
+                ??
+                point.lng
+            )
+        )
+
+    );
+
+}
+
+
+function dominantCluster(
+    route
+) {
+
+    const counts =
+        {};
+
+
+    for (
+        const checkpoint
+        of
+        (
+            route.checkpoints
+            ||
+            []
+        )
+    ) {
+
+        const cluster =
+            checkpoint.environmentCluster;
+
+
+        if (
+            cluster === undefined
+            ||
+            cluster === null
+        ) {
+
+            continue;
+
+        }
+
+
+        counts[
+            cluster
+        ] =
+            (
+                counts[
+                    cluster
+                ]
+                ||
+                0
+            )
+            +
+            1;
+
+    }
+
+
+    const entries =
+        Object.entries(
+            counts
+        );
+
+
+    if (
+        entries.length
+        ===
+        0
+    ) {
+
+        return null;
+
+    }
+
+
+    entries.sort(
+        (
+            a,
+            b
+        ) =>
+            b[
+                1
+            ]
+            -
+            a[
+                1
+            ]
+    );
+
+
+    return entries[
+        0
+    ][
+        0
+    ];
+
+}
+
+
+function dominantTypology(
+    route
+) {
+
+    const counts =
+        {};
+
+
+    for (
+        const checkpoint
+        of
+        (
+            route.checkpoints
+            ||
+            []
+        )
+    ) {
+
+        const typology =
+            checkpoint.environmentTypology;
+
+
+        if (
+            !typology
+        ) {
+
+            continue;
+
+        }
+
+
+        counts[
+            typology
+        ] =
+            (
+                counts[
+                    typology
+                ]
+                ||
+                0
+            )
+            +
+            1;
+
+    }
+
+
+    const entries =
+        Object.entries(
+            counts
+        );
+
+
+    if (
+        entries.length
+        ===
+        0
+    ) {
+
+        return null;
+
+    }
+
+
+    entries.sort(
+        (
+            a,
+            b
+        ) =>
+            b[
+                1
+            ]
+            -
+            a[
+                1
+            ]
+    );
+
+
+    return entries[
+        0
+    ][
+        0
+    ];
+
+}
+
+
+function evenlySample(
+    array,
+    count
+) {
+
+    if (
+        array.length
+        <=
+        count
+    ) {
+
+        return array;
+
+    }
+
+
+    const result =
+        [];
+
+
+    const step =
+        (
+            array.length
+            -
+            1
+        )
+        /
+        (
+            count
+            -
+            1
+        );
+
+
+    for (
+        let index = 0;
+        index < count;
+        index++
+    ) {
+
+        result.push(
+
+            array[
+                Math.round(
+                    index
+                    *
+                    step
+                )
+            ]
+
+        );
+
+    }
+
+
+    return result;
+
+}
+
+
+function letterForIndex(
+    index
+) {
+
+    if (
+        index
+        <
+        26
+    ) {
+
+        return String.fromCharCode(
+            65
+            +
+            index
+        );
+
+    }
+
+
+    return (
+        "A"
+        +
+        (
+            index
+            -
+            25
+        )
+    );
+
+}
+
+
+function normalisePath(
+    path
+) {
+
+    if (
+        !path
+    ) {
+
+        return "";
+
+    }
+
+
+    if (
+        String(
+            path
+        )
+        .startsWith(
+            "http://"
+        )
+
+        ||
+
+        String(
+            path
+        )
+        .startsWith(
+            "https://"
+        )
+    ) {
+
+        return path;
+
+    }
+
+
+    return (
+        String(
+            path
+        )
+        .startsWith(
+            "./"
+        )
+        ?
+        path
+        :
+        "./"
+        +
+        path
+    );
+
+}
+
+
+function slugify(
+    text
+) {
+
+    return String(
+        text
+        ??
+        ""
+    )
+    .toLowerCase()
+    .trim()
+    .replace(
+        /[^a-z0-9]+/g,
+        "-"
+    )
+    .replace(
+        /^-+|-+$/g,
+        ""
+    );
+
+}
+
+
+function escapeHtml(
+    text
+) {
+
+    return String(
+        text
+        ??
+        ""
+    )
+    .replaceAll(
+        "&",
+        "&amp;"
+    )
+    .replaceAll(
+        "<",
+        "&lt;"
+    )
+    .replaceAll(
+        ">",
+        "&gt;"
+    )
+    .replaceAll(
+        '"',
+        "&quot;"
+    )
+    .replaceAll(
+        "'",
+        "&#039;"
+    );
+
+}
+
+
+function setStatus(
+    text,
+    mode
+) {
+
+    document.getElementById(
+        "systemStatus"
+    ).textContent =
+        text;
+
+
+    const dot =
+        document.getElementById(
+            "statusDot"
+        );
+
+
+    dot.className =
+        "status-dot";
+
+
+    if (
+        mode
+    ) {
+
+        dot.classList.add(
+            mode
+        );
+
+    }
+
+}
+
+</script>
+
 
 </body>
 

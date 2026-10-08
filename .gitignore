@@ -80,3 +80,25 @@ data/generated/street_image_grid_*.png
 # ============================================================
 
 data/raw_demographics/*.geojson
+
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+
+# Local runtime/cache
+.venv/
+venv/
+.env
+.env.*
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large/raw working data
+data/raw_demographics/
+
+# Keep generated frontend outputs
+# DO NOT ignore data/generated/

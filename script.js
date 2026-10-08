@@ -1,328 +1,94 @@
 // ============================================================
-// FAMILY JOURNEY SEARCH
-//
-// FINAL STATIC FRONTEND
-//
-// NO OVERPASS
-// NO WALKING-ROUTE API
-// NO MAPILLARY API
-// NO SEGFORMER
-// NO FLASK
-// NO PORT 5000 / 5001
-//
-// Browser only reads precomputed files.
+// FAMILY JOURNEY SUPPORT SEARCH
+// MRT-FIRST FRONTEND
 // ============================================================
 
 
+const ROUTE_LIBRARY_URL =
+    "./data/generated/residential_route_library.json";
 
-// ============================================================
-// IMPORTS
-// ============================================================
-
-import {
-
-    loadMRTContexts,
-
-    loadRouteLibrary,
-
-    loadImageQueryIndex,
-
-    indexRoutesByStation,
-
-    normalizeMRTName,
-
-    findMRTContext,
-
-    findImageQuery,
-
-    getQueryContexts
-
-} from "./data/analysis.js";
+const ML_ANALYSIS_URL =
+    "./data/generated/family_route_analysis.json";
 
 
-import {
+let routeLibrary = null;
 
-    renderAnalysisPanel
+let routes = [];
 
-} from "./ui/journeyAnalysisPanel.js";
+let routeById = {};
+
+let routesByMrt = {};
+
+let mlAnalysis = null;
+
+let mlRoutes = {};
 
 
+let selectedRouteId = null;
 
-// ============================================================
-// STATE
-// ============================================================
 
 let map;
 
-
-let mrtContexts =
-    [];
-
-
-let routeLibrary =
-    [];
-
-
-let routesByStation =
-    new Map();
-
-
-let imageQueryIndex =
-    null;
-
-
-let comparableContexts =
-    [];
-
-
-let journeys =
-    [];
-
-
-let selectedJourney =
-    null;
-
-
-let currentImageAnalysis =
-    null;
-
-
-let currentAnalysisTab =
-    "overview";
-
-
-let contextLayer;
-
-let journeyLayer;
-
-let destinationLayer;
+let activeLayers = [];
 
 
 
 // ============================================================
-// DOM
+// ELEMENTS
 // ============================================================
 
-const $ =
-    id =>
-        document.getElementById(
-            id
-        );
+const mrtSelect =
+    document.getElementById(
+        "mrtSelect"
+    );
 
+const routeSelect =
+    document.getElementById(
+        "routeSelect"
+    );
 
-const els = {
+const mrtInfo =
+    document.getElementById(
+        "mrtInfo"
+    );
 
-    location:
-        $("locationSelect"),
-
-    contextCount:
-        $("contextCountSelect"),
-
-
-    match:
-        $("matchContextsButton"),
-
-    find:
-        $("findJourneysButton"),
-
-    som:
-        $("showSomButton"),
-
-    images:
-        $("showImageAnalysisButton"),
-
-
-    seedPreview:
-        $("seedContextPreview"),
-
-    comparablePreview:
-        $("comparableContextPreview"),
-
-
-    status:
-        $("searchStatus"),
-
-    progress:
-        $("searchProgress"),
-
-    globalStatus:
-        $("globalSystemStatus"),
-
-
-    imageProgress:
-        $("imageAnalysisProgress"),
-
-    imageProgressBar:
-        $("imageProgressBar"),
-
-    imageProgressPercent:
-        $("imageProgressPercent"),
-
-    imageProgressTitle:
-        $("imageProgressTitle"),
-
-    imageProgressMessage:
-        $("imageProgressMessage"),
-
-
-    mapSummary:
-        $("mapSearchSummary"),
-
-
-    preSearch:
-        $("preSearchState"),
-
-    resultsSection:
-        $("searchResultsSection"),
-
-    results:
-        $("journeyResults"),
-
-    resultCount:
-        $("resultCount"),
-
-
-    analysisWorkspace:
-        $("analysisWorkspace"),
-
-    analysisPanel:
-        $("analysisPanel"),
-
-    analysisTitle:
-        $("selectedJourneyTitle"),
-
-    closeAnalysis:
-        $("closeAnalysisButton")
-
-};
-
-
-
-// ============================================================
-// INITIALISE
-// ============================================================
-
-document.addEventListener(
-
-    "DOMContentLoaded",
-
-    initialise
-
-);
-
-
-async function initialise() {
-
-    initialiseMap();
-
-
-    installReloadProtection();
-
-
-    setStatus(
-        "Loading static project libraries…"
+const routeInfo =
+    document.getElementById(
+        "routeInfo"
     );
 
 
+
+// ============================================================
+// START
+// ============================================================
+
+window.addEventListener(
+    "DOMContentLoaded",
+    startApp
+);
+
+
+async function startApp() {
+
     try {
 
-        // ====================================================
-        // LOAD CONTEXTS + ROUTES
-        // ====================================================
+        initialiseMap();
 
-        const [
+        initialiseTabs();
 
-            contexts,
+        await loadLibraries();
 
-            routes
+        buildRouteIndexes();
 
-        ] =
-            await Promise.all([
-
-                loadMRTContexts(),
-
-                loadRouteLibrary()
-
-            ]);
-
-
-        mrtContexts =
-            contexts;
-
-
-        routeLibrary =
-            routes;
-
-
-        routesByStation =
-            indexRoutesByStation(
-                routeLibrary
-            );
-
-
-        // ====================================================
-        // IMAGE LIBRARY
-        //
-        // If image_analysis has not finished yet,
-        // everything else still works.
-        // ====================================================
-
-        try {
-
-            imageQueryIndex =
-                await loadImageQueryIndex();
-
-        }
-
-        catch (error) {
-
-            console.warn(
-                "Image query index unavailable:",
-                error
-            );
-
-
-            imageQueryIndex =
-                null;
-        }
-
-
-        populateMRTDropdown();
-
-
-        bindEvents();
-
-
-        bindLayerToggles();
-
-
-        resetWorkflow();
-
-
-        const imageStatus =
-
-            imageQueryIndex
-
-                ?
-
-                `${imageQueryIndex.queryCount || 0} image queries ready`
-
-                :
-
-                "image library not built yet";
-
-
-        els.globalStatus.textContent =
-
-            `Static analysis ready · ${routeLibrary.length} routes · ${imageStatus}`;
-
+        populateMrtDropdown();
 
         setStatus(
-            "Match MRT contexts to begin."
+            "Route library ready",
+            true
         );
 
     }
-
     catch (error) {
 
         console.error(
@@ -331,57 +97,669 @@ async function initialise() {
 
 
         setStatus(
-
-            `Startup failed: ${error.message}`
-
+            "Route library failed to load",
+            false
         );
 
 
-        els.globalStatus.textContent =
-            "Static library load failed";
+        mrtInfo.innerHTML = `
+            <strong>
+                Data loading error
+            </strong>
+
+            <br>
+
+            ${escapeHTML(
+                error.message
+            )}
+        `;
 
     }
+
 }
 
 
 
 // ============================================================
-// RELOAD PROTECTION
+// LOAD JSON
 // ============================================================
 
-function installReloadProtection() {
+async function fetchJson(
+    url,
+    optional = false
+) {
 
-    document
-    .querySelectorAll(
-        "button"
-    )
-    .forEach(
-        button => {
+    try {
 
-            button.type =
-                "button";
+        const response =
+            await fetch(
+                url,
+                {
+                    cache:
+                        "no-store"
+                }
+            );
+
+
+        if (!response.ok) {
+
+            if (optional) {
+
+                return null;
+
+            }
+
+
+            throw new Error(
+                `${url} returned ${response.status}`
+            );
+
+        }
+
+
+        return await response.json();
+
+    }
+    catch (error) {
+
+        if (optional) {
+
+            console.warn(
+                "Optional data unavailable:",
+                url
+            );
+
+
+            return null;
+
+        }
+
+
+        throw error;
+
+    }
+
+}
+
+
+async function loadLibraries() {
+
+    setStatus(
+        "Loading route library…",
+        false
+    );
+
+
+    routeLibrary =
+        await fetchJson(
+            ROUTE_LIBRARY_URL
+        );
+
+
+    routes =
+        routeLibrary.routes
+        ||
+        Object.values(
+            routeLibrary.routesById
+            ||
+            {}
+        );
+
+
+    if (
+        routes.length
+        ===
+        0
+    ) {
+
+        throw new Error(
+            "No routes found in residential_route_library.json"
+        );
+
+    }
+
+
+    mlAnalysis =
+        await fetchJson(
+            ML_ANALYSIS_URL,
+            true
+        );
+
+
+    if (mlAnalysis) {
+
+        mlRoutes =
+            mlAnalysis.routesById
+            ||
+            {};
+
+
+        loadGraphAssets();
+
+    }
+
+
+    console.log(
+        `Loaded ${routes.length} routes`
+    );
+
+}
+
+
+
+// ============================================================
+// INDEX ROUTES
+// ============================================================
+
+function buildRouteIndexes() {
+
+    routeById = {};
+
+    routesByMrt = {};
+
+
+    for (
+        const route
+        of routes
+    ) {
+
+        const routeId =
+            getRouteId(
+                route
+            );
+
+
+        if (!routeId) {
+
+            continue;
+
+        }
+
+
+        routeById[
+            routeId
+        ] =
+            route;
+
+
+        const destination =
+            route.destination
+            ||
+            {};
+
+
+        const mrtId =
+            destination.id
+            ||
+            slugify(
+                destination.name
+                ||
+                "unknown-mrt"
+            );
+
+
+        const mrtName =
+            destination.name
+            ||
+            mrtId;
+
+
+        if (
+            !routesByMrt[
+                mrtId
+            ]
+        ) {
+
+            routesByMrt[
+                mrtId
+            ] = {
+
+                id:
+                    mrtId,
+
+                name:
+                    mrtName,
+
+                routes:
+                    []
+
+            };
+
+        }
+
+
+        routesByMrt[
+            mrtId
+        ].routes.push(
+            route
+        );
+
+    }
+
+
+    // Sort routes within MRT
+
+    for (
+        const group
+        of Object.values(
+            routesByMrt
+        )
+    ) {
+
+        group.routes.sort(
+            (
+                a,
+                b
+            ) => {
+
+                const aDistance =
+                    Number(
+                        a.distance_m
+                        ??
+                        999999
+                    );
+
+
+                const bDistance =
+                    Number(
+                        b.distance_m
+                        ??
+                        999999
+                    );
+
+
+                return (
+                    aDistance
+                    -
+                    bDistance
+                );
+
+            }
+        );
+
+    }
+
+}
+
+
+
+// ============================================================
+// MRT DROPDOWN
+// ============================================================
+
+function populateMrtDropdown() {
+
+    const mrtGroups =
+        Object.values(
+            routesByMrt
+        )
+        .sort(
+            (
+                a,
+                b
+            ) =>
+                a.name.localeCompare(
+                    b.name
+                )
+        );
+
+
+    mrtSelect.innerHTML =
+        `<option value="">
+            Select MRT station
+        </option>`;
+
+
+    for (
+        const group
+        of mrtGroups
+    ) {
+
+        const option =
+            document.createElement(
+                "option"
+            );
+
+
+        option.value =
+            group.id;
+
+
+        option.textContent =
+            group.name;
+
+
+        mrtSelect.appendChild(
+            option
+        );
+
+    }
+
+
+    mrtSelect.addEventListener(
+        "change",
+        () => {
+
+            handleMrtChange(
+                mrtSelect.value
+            );
+
+        }
+    );
+
+}
+
+
+
+// ============================================================
+// MRT CHANGE
+// ============================================================
+
+function handleMrtChange(
+    mrtId
+) {
+
+    clearSelectedRoute();
+
+
+    const group =
+        routesByMrt[
+            mrtId
+        ];
+
+
+    if (!group) {
+
+        routeSelect.disabled =
+            true;
+
+
+        routeSelect.innerHTML =
+            `<option>
+                Select MRT first
+            </option>`;
+
+
+        mrtInfo.textContent =
+            "Select an MRT to reveal linked home journeys.";
+
+
+        return;
+
+    }
+
+
+    mrtInfo.innerHTML = `
+        <strong>
+            ${escapeHTML(
+                group.name
+            )}
+        </strong>
+
+        <br>
+
+        ${group.routes.length}
+        residential journey
+        ${group.routes.length === 1 ? "" : "s"}
+        connected to this MRT.
+    `;
+
+
+    routeSelect.disabled =
+        false;
+
+
+    routeSelect.innerHTML =
+        `<option value="">
+            Select journey home
+        </option>`;
+
+
+    group.routes.forEach(
+        (
+            route,
+            index
+        ) => {
+
+            const routeId =
+                getRouteId(
+                    route
+                );
+
+
+            const letter =
+                clusterLetter(
+                    index
+                );
+
+
+            const distance =
+                Number(
+                    route.distance_m
+                    ??
+                    0
+                );
+
+
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+
+            option.value =
+                routeId;
+
+
+            option.textContent =
+                `Home Cluster ${letter}`
+                +
+                (
+                    distance
+                    ?
+                    ` · ${Math.round(distance)} m`
+                    :
+                    ""
+                );
+
+
+            routeSelect.appendChild(
+                option
+            );
 
         }
     );
 
 
-    // There should be no forms in index.html,
-    // but keep this safeguard.
+    routeSelect.onchange =
+        () => {
 
-    document
-    .addEventListener(
+            if (
+                routeSelect.value
+            ) {
 
-        "submit",
+                selectRoute(
+                    routeSelect.value
+                );
 
-        event => {
+            }
 
-            event.preventDefault();
+        };
 
-            event.stopPropagation();
 
+    if (
+        group.routes.length
+        >
+        0
+    ) {
+
+        const firstRoute =
+            group.routes[
+                0
+            ];
+
+
+        const firstRouteId =
+            getRouteId(
+                firstRoute
+            );
+
+
+        routeSelect.value =
+            firstRouteId;
+
+
+        selectRoute(
+            firstRouteId
+        );
+
+    }
+
+}
+
+
+
+// ============================================================
+// SELECT ROUTE
+// ============================================================
+
+function selectRoute(
+    routeId
+) {
+
+    selectedRouteId =
+        routeId;
+
+
+    const baseRoute =
+        routeById[
+            routeId
+        ];
+
+
+    if (!baseRoute) {
+
+        return;
+
+    }
+
+
+    const analysedRoute =
+        mlRoutes[
+            routeId
+        ]
+        ||
+        null;
+
+
+    const route =
+        analysedRoute
+        ||
+        baseRoute;
+
+
+    renderRouteInfo(
+        route
+    );
+
+
+    renderMap(
+        route
+    );
+
+
+    renderMetrics(
+        route
+    );
+
+
+    renderOverview(
+        route
+    );
+
+
+    renderImages(
+        route
+    );
+
+
+    renderMl(
+        route
+    );
+
+
+    renderSupport(
+        route
+    );
+
+}
+
+
+
+// ============================================================
+// ROUTE INFO
+// ============================================================
+
+function renderRouteInfo(
+    route
+) {
+
+    const distance =
+        Number(
+            route.distance_m
+            ??
+            0
+        );
+
+
+    const checkpointCount =
+        (
+            route.checkpoints
+            ||
+            []
+        ).length;
+
+
+    routeInfo.innerHTML = `
+        <strong>
+            ${escapeHTML(
+                route.destination?.name
+                ||
+                "MRT"
+            )}
+            → Home
+        </strong>
+
+        <br>
+
+        ${
+            distance
+            ?
+            `${Math.round(
+                distance
+            )} m`
+            :
+            "Distance unavailable"
         }
 
-    );
+        ·
+
+        ${checkpointCount}
+        checkpoints
+    `;
+
+
+    document.getElementById(
+        "journeyBadge"
+    ).textContent =
+        distance
+        ?
+        `${Math.round(
+            distance
+        )} m journey`
+        :
+        "Journey selected";
+
 }
 
 
@@ -394,2354 +772,1203 @@ function initialiseMap() {
 
     map =
         L.map(
-
-            "map",
-
-            {
-
-                center: [
-                    1.3521,
-                    103.8198
-                ],
-
-                zoom:
-                    11
-
-            }
-
+            "map"
+        )
+        .setView(
+            [
+                1.3521,
+                103.8198
+            ],
+            11
         );
 
 
     L.tileLayer(
-
         "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-
         {
-
             maxZoom:
                 19,
 
             attribution:
                 "&copy; OpenStreetMap contributors"
-
         }
-
     )
     .addTo(
         map
     );
 
-
-    contextLayer =
-        L.layerGroup()
-        .addTo(
-            map
-        );
-
-
-    journeyLayer =
-        L.layerGroup()
-        .addTo(
-            map
-        );
-
-
-    destinationLayer =
-        L.layerGroup()
-        .addTo(
-            map
-        );
-
-
-    requestAnimationFrame(
-        () =>
-            map.invalidateSize()
-    );
 }
 
 
+function clearMap() {
 
-// ============================================================
-// MRT DROPDOWN
-// ============================================================
-
-function populateMRTDropdown() {
-
-    const stations = [
-
-        ...new Set(
-
-            mrtContexts
-
-            .map(
-                context =>
-                    normalizeMRTName(
-                        context.station
-                    )
-            )
-
-            .filter(
-                Boolean
-            )
-
-        )
-
-    ];
-
-
-    stations.sort(
-        (
-            a,
-            b
-        ) =>
-            a.localeCompare(
-                b
-            )
-    );
-
-
-    els.location.innerHTML =
-        stations
-
-        .map(
-            station => `
-
-                <option
-                    value="${escapeHTML(station)}"
-                >
-
-                    ${escapeHTML(station)}
-
-                </option>
-
-            `
-        )
-
-        .join("");
-
-
-    const clementiIndex =
-        stations.indexOf(
-            "CLEMENTI MRT"
-        );
-
-
-    if (
-        clementiIndex >= 0
+    for (
+        const layer
+        of activeLayers
     ) {
 
-        els.location.selectedIndex =
-            clementiIndex;
+        map.removeLayer(
+            layer
+        );
+
     }
+
+
+    activeLayers = [];
+
 }
 
 
-
-// ============================================================
-// EVENTS
-// ============================================================
-
-function bindEvents() {
-
-    els.location
-    .addEventListener(
-
-        "change",
-
-        resetWorkflow
-
-    );
-
-
-    els.contextCount
-    .addEventListener(
-
-        "change",
-
-        resetWorkflow
-
-    );
-
-
-    els.match
-    .addEventListener(
-
-        "click",
-
-        event => {
-
-            event.preventDefault();
-
-            event.stopPropagation();
-
-            matchContexts();
-
-        }
-
-    );
-
-
-    els.find
-    .addEventListener(
-
-        "click",
-
-        event => {
-
-            event.preventDefault();
-
-            event.stopPropagation();
-
-            loadPrecomputedJourneys();
-
-        }
-
-    );
-
-
-    els.som
-    .addEventListener(
-
-        "click",
-
-        event => {
-
-            event.preventDefault();
-
-            event.stopPropagation();
-
-            showDemographicSOM();
-
-        }
-
-    );
-
-
-    els.images
-    .addEventListener(
-
-        "click",
-
-        event => {
-
-            event.preventDefault();
-
-            event.stopPropagation();
-
-            showStoredImageAnalysis();
-
-        }
-
-    );
-
-
-    els.closeAnalysis
-    .addEventListener(
-
-        "click",
-
-        event => {
-
-            event.preventDefault();
-
-
-            els.analysisWorkspace
-            .classList
-            .add(
-                "is-hidden"
-            );
-
-        }
-
-    );
-
-
-    // ========================================================
-    // ANALYSIS TABS
-    // ========================================================
-
-    document
-    .querySelector(
-        ".analysis-tabs"
-    )
-    ?.addEventListener(
-
-        "click",
-
-        event => {
-
-            const button =
-                event.target
-                .closest(
-                    "[data-analysis-tab]"
-                );
-
-
-            if (!button) {
-
-                return;
-            }
-
-
-            event.preventDefault();
-
-
-            currentAnalysisTab =
-                button.dataset
-                .analysisTab;
-
-
-            updateAnalysisTabs();
-
-
-            renderCurrentAnalysis();
-
-        }
-
-    );
-
-
-    // ========================================================
-    // JOURNEY ROWS
-    // ========================================================
-
-    els.results
-    .addEventListener(
-
-        "click",
-
-        event => {
-
-            const row =
-                event.target
-                .closest(
-                    "[data-journey-index]"
-                );
-
-
-            if (!row) {
-
-                return;
-            }
-
-
-            event.preventDefault();
-
-
-            const index =
-                Number(
-                    row.dataset
-                    .journeyIndex
-                );
-
-
-            if (
-                !Number.isInteger(
-                    index
-                )
-                ||
-                !journeys[
-                    index
-                ]
-            ) {
-
-                return;
-            }
-
-
-            selectedJourney =
-                journeys[
-                    index
-                ];
-
-
-            currentAnalysisTab =
-                "overview";
-
-
-            renderJourneyTable();
-
-
-            updateAnalysisTabs();
-
-
-            showSelectedJourney();
-
-        }
-
-    );
-}
-
-
-
-// ============================================================
-// RESET
-// ============================================================
-
-function resetWorkflow() {
-
-    comparableContexts =
-        [];
-
-
-    journeys =
-        [];
-
-
-    selectedJourney =
-        null;
-
-
-    currentImageAnalysis =
-        null;
-
-
-    contextLayer
-    ?.clearLayers();
-
-
-    journeyLayer
-    ?.clearLayers();
-
-
-    destinationLayer
-    ?.clearLayers();
-
-
-    els.find.disabled =
-        true;
-
-
-    els.som.disabled =
-        true;
-
-
-    els.images.disabled =
-        true;
-
-
-    els.seedPreview.innerHTML = `
-
-        Click
-        <b>Match MRT contexts</b>
-        to begin.
-
-    `;
-
-
-    els.comparablePreview.textContent =
-        "No contexts matched yet.";
-
-
-    els.mapSummary.textContent =
-        "Select a seed MRT";
-
-
-    els.results.innerHTML =
-        "";
-
-
-    els.resultCount.textContent =
-        "0 journeys";
-
-
-    els.resultsSection
-    .classList
-    .add(
-        "is-hidden"
-    );
-
-
-    els.analysisWorkspace
-    .classList
-    .add(
-        "is-hidden"
-    );
-
-
-    els.preSearch
-    .classList
-    .remove(
-        "is-hidden"
-    );
-
-
-    hideImageProgress();
-
-
-    setStatus(
-        "Match MRT contexts to begin."
-    );
-
-
-    setProgress(
-        ""
-    );
-}
-
-
-
-// ============================================================
-// STAGE 1
-// MATCH MRT CONTEXTS
-//
-// IMPORTANT:
-//
-// image_query_index.json is authoritative.
-//
-// The frontend therefore uses EXACTLY the same MRT ordering
-// that generated the image grids.
-// ============================================================
-
-function matchContexts() {
-
-    const seedStation =
-        normalizeMRTName(
-            els.location.value
-        );
-
-
-    const similarCount =
-        Number(
-            els.contextCount.value
-            ||
-            3
-        );
-
-
-    const seed =
-        findMRTContext(
-
-            mrtContexts,
-
-            seedStation
-
-        );
-
-
-    if (!seed) {
-
-        setStatus(
-            "Seed demographic context was not found."
-        );
-
-        return;
-    }
-
-
-    comparableContexts =
-        getQueryContexts(
-
-            mrtContexts,
-
-            imageQueryIndex,
-
-            seedStation,
-
-            similarCount
-
-        );
-
-
-    currentImageAnalysis =
-        null;
-
-
-    selectedJourney =
-        null;
-
-
-    journeys =
-        [];
-
-
-    // ========================================================
-    // SEED PREVIEW
-    // ========================================================
-
-    els.seedPreview.innerHTML = `
-
-        <span class="seed-context-kicker">
-            DEMOGRAPHIC SOM
-        </span>
-
-
-        <strong>
-
-            ${
-                escapeHTML(
-                    seed.contextDescriptor
-                    ||
-                    "mixed-context"
-                )
-            }
-
-        </strong>
-
-
-        <span>
-
-            SOM cell
-
-            ${
-                escapeHTML(
-                    seed.somCell
-                    ??
-                    "—"
-                )
-            }
-
-        </span>
-
-    `;
-
-
-    // ========================================================
-    // MATCHED CONTEXTS
-    // ========================================================
-
-    els.comparablePreview.innerHTML =
-        comparableContexts
-
-        .map(
-            context => `
-
-                <div
-                    class="
-                        context-chip
-                        ${
-                            context.isSeed
-                                ?
-                                "is-seed"
-                                :
-                                ""
-                        }
-                    "
-                >
-
-                    <strong>
-
-                        ${
-                            escapeHTML(
-                                context.station
-                            )
-                        }
-
-                    </strong>
-
-
-                    <span>
-
-                        ${
-                            context.isSeed
-
-                                ?
-
-                                "seed"
-
-                                :
-
-                                `${
-                                    Math.round(
-                                        (
-                                            context.similarity
-                                            ||
-                                            0
-                                        )
-                                        *
-                                        100
-                                    )
-                                }% similar`
-                        }
-
-                    </span>
-
-                </div>
-
-            `
-        )
-
-        .join("");
-
-
-    drawComparableContexts();
-
-
-    els.find.disabled =
-        false;
-
-
-    els.som.disabled =
-        false;
-
-
-    // Image grids are available immediately after Stage 1
-    // because they are already precomputed.
-
-    els.images.disabled =
-        !findImageQuery(
-
-            imageQueryIndex,
-
-            seedStation,
-
-            similarCount
-
-        );
-
-
-    els.mapSummary.textContent =
-
-        `${similarCount} similar MRTs + seed`;
-
-
-    setStatus(
-
-        `${
-            comparableContexts.length
-        } MRT contexts loaded from the static search library.`
-
-    );
-
-
-    setProgress(
-        "No backend computation required."
-    );
-}
-
-
-
-// ============================================================
-// STAGE 2
-// LOAD PRECOMPUTED ROUTES
-// ============================================================
-
-function loadPrecomputedJourneys() {
-
-    if (
-        comparableContexts.length ===
-        0
-    ) {
-
-        return;
-    }
-
-
-    journeys =
-        comparableContexts
-
-        .map(
-            context => {
-
-                const station =
-                    normalizeMRTName(
-                        context.station
-                    );
-
-
-                const route =
-                    routesByStation.get(
-                        station
-                    );
-
-
-                if (
-                    !route
-                    ||
-                    route.routeStatus
-                    !==
-                    "complete"
-                ) {
-
-                    return null;
-                }
-
-
-                const origin =
-                    route.origin
-                    ||
-                    {};
-
-
-                const toilet =
-                    route.toilet
-                    ||
-                    {};
-
-
-                const points =
-                    normalizeRoutePoints(
-
-                        route.points
-                        ||
-                        []
-
-                    );
-
-
-                return {
-
-                    id:
-                        route.routeId
-                        ||
-                        `${slugify(station)}-route`,
-
-                    origin: {
-
-                        station,
-
-                        lat:
-                            Number(
-                                origin.lat
-                            ),
-
-                        lon:
-                            Number(
-                                origin.lon
-                            ),
-
-                        contextDescriptor:
-                            context.contextDescriptor,
-
-                        somCell:
-                            context.somCell
-
-                    },
-
-                    toilet: {
-
-                        ...toilet,
-
-                        name:
-                            toilet.name
-                            ||
-                            "Public toilet",
-
-                        lat:
-                            Number(
-                                toilet.lat
-                            ),
-
-                        lon:
-                            Number(
-                                toilet.lon
-                            )
-
-                    },
-
-                    route: {
-
-                        points,
-
-                        distance:
-                            Number(
-                                route.distance
-                                ||
-                                0
-                            ),
-
-                        duration:
-                            Number(
-                                route.duration
-                                ||
-                                0
-                            ),
-
-                        isApproximate:
-
-                            route.routingMode
-                            !==
-                            "walking"
-
-                    },
-
-                    imageryMode:
-                        route.imageryMode,
-
-                    mapillaryImageCount:
-                        Number(
-                            route.uniqueMapillaryImageCount
-                            ||
-                            0
-                        ),
-
-                    raw:
-                        route
-
-                };
-
-            }
-        )
-
-        .filter(
-            Boolean
-        );
-
-
-    selectedJourney =
-        journeys[0]
-        ||
-        null;
-
-
-    renderJourneyTable();
-
-
-    drawJourneys();
-
-
-    els.resultsSection
-    .classList
-    .remove(
-        "is-hidden"
-    );
-
-
-    els.preSearch
-    .classList
-    .add(
-        "is-hidden"
-    );
-
-
-    els.resultCount.textContent =
-
-        `${journeys.length} ${
-            journeys.length === 1
-                ?
-                "journey"
-                :
-                "journeys"
-        }`;
-
-
-    setStatus(
-
-        `${journeys.length} precomputed family-access journeys loaded.`
-
-    );
-
-
-    setProgress(
-
-        "Routes were calculated during offline preprocessing."
-
-    );
-}
-
-
-
-// ============================================================
-// STATIC IMAGE ANALYSIS
-//
-// No Python.
-// No HTTP API.
-// No model.
-//
-// Just:
-// query lookup → two local files → display.
-// ============================================================
-
-async function showStoredImageAnalysis() {
-
-    const seedStation =
-        normalizeMRTName(
-            els.location.value
-        );
-
-
-    const similarCount =
-        Number(
-            els.contextCount.value
-            ||
-            3
-        );
-
-
-    const query =
-        findImageQuery(
-
-            imageQueryIndex,
-
-            seedStation,
-
-            similarCount
-
-        );
-
-
-    if (!query) {
-
-        setStatus(
-
-            `No stored image query exists for ${seedStation}|${similarCount}.`
-
-        );
-
-
-        return;
-    }
-
-
-    els.images.disabled =
-        true;
-
-
-    showImageProgress(
-
-        10,
-
-        "Reading stored query record…"
-
-    );
-
-
-    try {
-
-        const version =
-
-            imageQueryIndex
-            ?.generatedAt
-
-            ||
-
-            1;
-
-
-        updateImageProgress(
-
-            25,
-
-            "Loading original street-view grid…"
-
-        );
-
-
-        await preloadImage(
-
-            addVersion(
-
-                query.originalGrid,
-
-                version
-
-            )
-
-        );
-
-
-        updateImageProgress(
-
-            60,
-
-            "Loading SegFormer segmentation grid…"
-
-        );
-
-
-        await preloadImage(
-
-            addVersion(
-
-                query.segmentationGrid,
-
-                version
-
-            )
-
-        );
-
-
-        updateImageProgress(
-
-            90,
-
-            "Preparing analysis workspace…"
-
-        );
-
-
-        currentImageAnalysis = {
-
-            ...query,
-
-            generatedAt:
-                version
-
-        };
-
-
-        showImageAnalysis();
-
-
-        updateImageProgress(
-
-            100,
-
-            "Stored image evidence ready."
-
-        );
-
-
-        setStatus(
-
-            `${query.imageCount || 0} stored street images loaded for ${seedStation} + ${similarCount} similar MRTs.`
-
-        );
-
-
-        setProgress(
-
-            "Static lookup only — no Mapillary or SegFormer computation."
-
-        );
-
-
-        await wait(
-            450
-        );
-
-
-        hideImageProgress();
-
-    }
-
-    catch (error) {
-
-        console.error(
-            error
-        );
-
-
-        updateImageProgress(
-
-            100,
-
-            `Image file unavailable: ${error.message}`
-
-        );
-
-
-        setStatus(
-
-            "The query exists but one of its stored preview files could not be loaded."
-
-        );
-
-
-        await wait(
-            1500
-        );
-
-
-        hideImageProgress();
-
-    }
-
-    finally {
-
-        els.images.disabled =
-            false;
-    }
-}
-
-
-
-// ============================================================
-// PRELOAD STATIC IMAGE
-// ============================================================
-
-function preloadImage(
-    src
+function addLayer(
+    layer
 ) {
 
-    return new Promise(
-        (
-            resolve,
-            reject
-        ) => {
-
-            const image =
-                new Image();
-
-
-            image.onload =
-                () =>
-                    resolve(
-                        image
-                    );
-
-
-            image.onerror =
-                () =>
-                    reject(
-                        new Error(
-                            src
-                        )
-                    );
-
-
-            image.src =
-                src;
-
-        }
+    layer.addTo(
+        map
     );
+
+
+    activeLayers.push(
+        layer
+    );
+
+
+    return layer;
+
 }
 
 
-
-// ============================================================
-// IMAGE VERSIONING
-//
-// Prevents old generated grids from browser cache.
-// ============================================================
-
-function addVersion(
-    path,
-    version
+function renderMap(
+    route
 ) {
 
-    if (!path) {
-
-        return path;
-    }
+    clearMap();
 
 
-    const separator =
-        path.includes(
-            "?"
-        )
-
-            ?
-
-            "&"
-
-            :
-
-            "?";
-
-
-    return (
-
-        path
-
-        +
-
-        separator
-
-        +
-
-        "v="
-
-        +
-
-        encodeURIComponent(
-            version
-        )
-
-    );
-}
-
-
-
-// ============================================================
-// SHOW IMAGE WORKSPACE
-// ============================================================
-
-function showImageAnalysis() {
-
-    currentAnalysisTab =
-        "images";
-
-
-    selectedJourney =
-        selectedJourney
-        ||
-        journeys[0]
-        ||
-        null;
-
-
-    els.analysisTitle.textContent =
-        "Street-view image analysis";
-
-
-    updateAnalysisTabs();
-
-
-    renderCurrentAnalysis();
-
-
-    showAnalysisWorkspace();
-}
-
-
-
-// ============================================================
-// SOM
-// ============================================================
-
-function showDemographicSOM() {
-
-    currentAnalysisTab =
-        "context";
-
-
-    const seed =
-        normalizeMRTName(
-            els.location.value
+    const points =
+        normaliseRoutePoints(
+            route.points
+            ||
+            []
         );
-
-
-    els.analysisTitle.textContent =
-
-        `${seed} demographic context`;
-
-
-    updateAnalysisTabs();
-
-
-    renderCurrentAnalysis();
-
-
-    showAnalysisWorkspace();
-}
-
-
-
-// ============================================================
-// SELECTED JOURNEY
-// ============================================================
-
-function showSelectedJourney() {
-
-    if (!selectedJourney) {
-
-        return;
-    }
-
-
-    els.analysisTitle.textContent =
-
-        `${selectedJourney.origin.station} → ${selectedJourney.toilet.name}`;
-
-
-    renderCurrentAnalysis();
-
-
-    showAnalysisWorkspace();
-}
-
-
-
-// ============================================================
-// RENDER ANALYSIS
-// ============================================================
-
-function renderCurrentAnalysis() {
-
-    const station =
-
-        selectedJourney
-        ?.origin
-        ?.station
-
-        ||
-
-        els.location.value;
-
-
-    const context =
-        findMRTContext(
-
-            mrtContexts,
-
-            station
-
-        );
-
-
-    renderAnalysisPanel(
-
-        els.analysisPanel,
-
-        {
-
-            journey:
-                selectedJourney,
-
-            demographicContext:
-                makeContextRecord(
-                    context
-                ),
-
-            imageAnalysis:
-                currentImageAnalysis
-
-        },
-
-        currentAnalysisTab
-
-    );
-}
-
-
-
-// ============================================================
-// CONTEXT FORMAT
-// ============================================================
-
-function makeContextRecord(
-    context
-) {
-
-    if (!context) {
-
-        return {};
-    }
-
-
-    return {
-
-        station:
-            context.station,
-
-        somCell:
-            context.somCell,
-
-        descriptor:
-            context.contextDescriptor,
-
-        populationDensity:
-            context.population_density,
-
-        childrenPercent:
-            context.children_percent,
-
-        averageHouseholdSize:
-            context.avg_household_size,
-
-        hdbPercent:
-            context.hdb_percent,
-
-        privateHousingPercent:
-            context.private_housing_percent,
-
-        elderlyPercent:
-            context.elderly_percent,
-
-        commercialIntensity:
-            context.commercial_intensity
-
-    };
-}
-
-
-
-// ============================================================
-// ANALYSIS WORKSPACE
-// ============================================================
-
-function showAnalysisWorkspace() {
-
-    els.resultsSection
-    .classList
-    .remove(
-        "is-hidden"
-    );
-
-
-    els.preSearch
-    .classList
-    .add(
-        "is-hidden"
-    );
-
-
-    els.analysisWorkspace
-    .classList
-    .remove(
-        "is-hidden"
-    );
-
-
-    requestAnimationFrame(
-        () => {
-
-            els.analysisWorkspace
-            .scrollIntoView({
-
-                behavior:
-                    "smooth",
-
-                block:
-                    "start"
-
-            });
-
-        }
-    );
-}
-
-
-
-// ============================================================
-// TAB STATE
-// ============================================================
-
-function updateAnalysisTabs() {
-
-    document
-    .querySelectorAll(
-        ".analysis-tab"
-    )
-    .forEach(
-        button => {
-
-            button.classList.toggle(
-
-                "is-active",
-
-                button.dataset
-                    .analysisTab
-                ===
-                currentAnalysisTab
-
-            );
-
-        }
-    );
-}
-
-
-
-// ============================================================
-// JOURNEY TABLE
-// ============================================================
-
-function renderJourneyTable() {
-
-    if (
-        journeys.length === 0
-    ) {
-
-        els.results.innerHTML = `
-
-            <div class="empty-result">
-
-                <h3>
-                    No stored route found.
-                </h3>
-
-                <p>
-                    This MRT does not currently have a
-                    precomputed route record.
-                </p>
-
-            </div>
-
-        `;
-
-
-        return;
-    }
-
-
-    els.results.innerHTML = `
-
-        <div class="journey-table">
-
-
-            <div class="journey-table-head">
-
-                <span>
-                    MRT context
-                </span>
-
-                <span>
-                    Demographic profile
-                </span>
-
-                <span>
-                    Destination
-                </span>
-
-                <span>
-                    Distance
-                </span>
-
-                <span>
-                    Images
-                </span>
-
-            </div>
-
-
-            ${
-                journeys
-
-                .map(
-                    (
-                        journey,
-                        index
-                    ) => `
-
-                        <button
-
-                            type="button"
-
-                            class="
-                                journey-row
-
-                                ${
-                                    selectedJourney
-                                    ?.id
-                                    ===
-                                    journey.id
-
-                                        ?
-
-                                        "is-selected"
-
-                                        :
-
-                                        ""
-                                }
-                            "
-
-                            data-journey-index="${index}"
-                        >
-
-                            <span>
-
-                                <strong>
-
-                                    ${
-                                        escapeHTML(
-                                            journey.origin
-                                                .station
-                                        )
-                                    }
-
-                                </strong>
-
-                                <small>
-
-                                    SOM
-                                    ${
-                                        escapeHTML(
-                                            journey.origin
-                                                .somCell
-                                            ??
-                                            "—"
-                                        )
-                                    }
-
-                                </small>
-
-                            </span>
-
-
-                            <span>
-
-                                ${
-                                    escapeHTML(
-                                        journey.origin
-                                            .contextDescriptor
-                                        ||
-                                        "mixed-context"
-                                    )
-                                }
-
-                            </span>
-
-
-                            <span>
-
-                                ${
-                                    escapeHTML(
-                                        journey.toilet
-                                            .name
-                                    )
-                                }
-
-                            </span>
-
-
-                            <span>
-
-                                ${
-                                    Math.round(
-                                        journey.route
-                                            .distance
-                                        ||
-                                        0
-                                    )
-                                } m
-
-                            </span>
-
-
-                            <span>
-
-                                ${
-                                    journey.mapillaryImageCount
-                                    ||
-                                    0
-                                }
-
-                                images
-
-                            </span>
-
-                        </button>
-
-                    `
-                )
-
-                .join("")
-            }
-
-
-        </div>
-
-    `;
-}
-
-
-
-// ============================================================
-// MAP — CONTEXTS
-// ============================================================
-
-function drawComparableContexts() {
-
-    contextLayer
-    .clearLayers();
 
 
     const bounds =
         [];
 
 
-    for (
-        const context
-        of comparableContexts
+    if (
+        points.length
+        >
+        1
     ) {
 
-        const lat =
-            Number(
-                context.lat
+        const latlngs =
+            points.map(
+                point => [
+                    point.lat,
+                    point.lon
+                ]
             );
 
 
-        const lon =
-            Number(
-                context.lon
-            );
+        addLayer(
 
+            L.polyline(
+                latlngs,
+                {
+                    color:
+                        "#2b82bb",
 
-        if (
-            !Number.isFinite(
-                lat
+                    weight:
+                        5
+                }
             )
-            ||
-            !Number.isFinite(
-                lon
+
+        );
+
+
+        bounds.push(
+            ...latlngs
+        );
+
+    }
+
+
+    const mrt =
+        route.destination
+        ||
+        {};
+
+
+    if (
+        validPoint(
+            mrt
+        )
+    ) {
+
+        addLayer(
+
+            L.circleMarker(
+                [
+                    mrt.lat,
+                    mrt.lon
+                ],
+                {
+                    radius:
+                        8,
+
+                    color:
+                        "#07558f",
+
+                    weight:
+                        3,
+
+                    fillColor:
+                        "#ffffff",
+
+                    fillOpacity:
+                        1
+                }
             )
-        ) {
+            .bindPopup(
+                `<strong>${escapeHTML(
+                    mrt.name
+                    ||
+                    "MRT"
+                )}</strong>`
+            )
 
-            continue;
-        }
-
-
-        L.circleMarker(
-
-            [
-                lat,
-                lon
-            ],
-
-            {
-
-                radius:
-                    context.isSeed
-                        ?
-                        9
-                        :
-                        6,
-
-                weight:
-                    2,
-
-                fillOpacity:
-                    0.9
-
-            }
-
-        )
-
-        .bindTooltip(
-            context.station
-        )
-
-        .addTo(
-            contextLayer
         );
 
 
         bounds.push(
             [
-                lat,
-                lon
+                mrt.lat,
+                mrt.lon
             ]
         );
+
     }
+
+
+    const home =
+        route.origin
+        ||
+        {};
 
 
     if (
-        bounds.length > 1
-    ) {
-
-        map.fitBounds(
-
-            bounds,
-
-            {
-
-                padding: [
-                    40,
-                    40
-                ]
-
-            }
-
-        );
-    }
-}
-
-
-
-// ============================================================
-// MAP — PRECOMPUTED JOURNEYS
-// ============================================================
-
-function drawJourneys() {
-
-    journeyLayer
-    .clearLayers();
-
-
-    destinationLayer
-    .clearLayers();
-
-
-    const bounds =
-        [];
-
-
-    for (
-        const journey
-        of journeys
-    ) {
-
-        const coordinates =
-            journey.route
-            .points
-
-            .map(
-                point => [
-
-                    Number(
-                        point.lat
-                    ),
-
-                    Number(
-                        point.lon
-                    )
-
-                ]
-            )
-
-            .filter(
-                (
-                    [
-                        lat,
-                        lon
-                    ]
-                ) =>
-
-                    Number.isFinite(
-                        lat
-                    )
-
-                    &&
-
-                    Number.isFinite(
-                        lon
-                    )
-            );
-
-
-        if (
-            coordinates.length > 1
-        ) {
-
-            L.polyline(
-
-                coordinates,
-
-                {
-
-                    weight:
-                        4,
-
-                    opacity:
-                        0.82,
-
-                    dashArray:
-
-                        journey.route
-                            .isApproximate
-
-                            ?
-
-                            "7 7"
-
-                            :
-
-                            null
-
-                }
-
-            )
-
-            .addTo(
-                journeyLayer
-            );
-
-
-            bounds.push(
-                ...coordinates
-            );
-        }
-
-
-        const toiletLat =
-            Number(
-                journey.toilet
-                    .lat
-            );
-
-
-        const toiletLon =
-            Number(
-                journey.toilet
-                    .lon
-            );
-
-
-        if (
-            Number.isFinite(
-                toiletLat
-            )
-            &&
-            Number.isFinite(
-                toiletLon
-            )
-        ) {
-
-            L.circleMarker(
-
-                [
-                    toiletLat,
-                    toiletLon
-                ],
-
-                {
-
-                    radius:
-                        6,
-
-                    weight:
-                        2,
-
-                    fillOpacity:
-                        1
-
-                }
-
-            )
-
-            .bindTooltip(
-                journey.toilet
-                    .name
-            )
-
-            .addTo(
-                destinationLayer
-            );
-        }
-    }
-
-
-    if (
-        bounds.length > 1
-    ) {
-
-        map.fitBounds(
-
-            bounds,
-
-            {
-
-                padding: [
-                    40,
-                    40
-                ]
-
-            }
-
-        );
-    }
-}
-
-
-
-// ============================================================
-// ROUTE POINT NORMALISATION
-// ============================================================
-
-function normalizeRoutePoints(
-    points
-) {
-
-    if (
-        !Array.isArray(
-            points
+        validPoint(
+            home
         )
     ) {
 
-        return [];
+        addLayer(
+
+            L.circleMarker(
+                [
+                    home.lat,
+                    home.lon
+                ],
+                {
+                    radius:
+                        8,
+
+                    color:
+                        "#07558f",
+
+                    fillColor:
+                        "#07558f",
+
+                    fillOpacity:
+                        1
+                }
+            )
+            .bindPopup(
+                "Residential destination"
+            )
+
+        );
+
+
+        bounds.push(
+            [
+                home.lat,
+                home.lon
+            ]
+        );
+
     }
 
 
-    return points
+    for (
+        const support
+        of
+        (
+            route.recordedSupport
+            ||
+            []
+        )
+    ) {
 
-    .map(
-        point => {
+        if (
+            !validPoint(
+                support
+            )
+        ) {
 
-            if (
-                Array.isArray(
-                    point
-                )
-                &&
-                point.length >= 2
-            ) {
-
-                return {
-
-                    lat:
-                        Number(
-                            point[1]
-                        ),
-
-                    lon:
-                        Number(
-                            point[0]
-                        )
-
-                };
-            }
-
-
-            if (
-                point
-                &&
-                typeof point ===
-                "object"
-            ) {
-
-                return {
-
-                    lat:
-                        Number(
-
-                            point.lat
-
-                            ??
-
-                            point.latitude
-
-                        ),
-
-                    lon:
-                        Number(
-
-                            point.lon
-
-                            ??
-
-                            point.lng
-
-                            ??
-
-                            point.longitude
-
-                        )
-
-                };
-            }
-
-
-            return null;
+            continue;
 
         }
-    )
 
-    .filter(
-        point =>
 
-            point
+        addLayer(
 
-            &&
+            L.circleMarker(
+                [
+                    support.lat,
+                    support.lon
+                ],
+                {
+                    radius:
+                        5,
 
-            Number.isFinite(
-                point.lat
+                    color:
+                        "#4a8e66",
+
+                    fillColor:
+                        "#4a8e66",
+
+                    fillOpacity:
+                        0.9
+                }
             )
 
-            &&
+        );
 
-            Number.isFinite(
-                point.lon
+    }
+
+
+    for (
+        const checkpoint
+        of
+        (
+            route.checkpoints
+            ||
+            []
+        )
+    ) {
+
+        if (
+            !validPoint(
+                checkpoint
             )
+        ) {
+
+            continue;
+
+        }
+
+
+        addLayer(
+
+            L.circleMarker(
+                [
+                    checkpoint.lat,
+                    checkpoint.lon
+                ],
+                {
+                    radius:
+                        2.5,
+
+                    color:
+                        "#b85c83",
+
+                    fillColor:
+                        "#b85c83",
+
+                    fillOpacity:
+                        0.7,
+
+                    weight:
+                        1
+                }
+            )
+
+        );
+
+    }
+
+
+    if (
+        bounds.length
+        >
+        1
+    ) {
+
+        map.fitBounds(
+            bounds,
+            {
+                padding:
+                    [
+                        25,
+                        25
+                    ]
+            }
+        );
+
+    }
+
+
+    setTimeout(
+        () =>
+            map.invalidateSize(),
+        100
     );
+
 }
 
 
 
 // ============================================================
-// MAP LAYER TOGGLES
+// METRICS
 // ============================================================
 
-function bindLayerToggles() {
-
-    bindLayerToggle(
-
-        "contextLayerToggle",
-
-        contextLayer
-
-    );
-
-
-    bindLayerToggle(
-
-        "journeyLayerToggle",
-
-        journeyLayer
-
-    );
-
-
-    bindLayerToggle(
-
-        "destinationLayerToggle",
-
-        destinationLayer
-
-    );
-}
-
-
-function bindLayerToggle(
-    id,
-    layer
+function renderMetrics(
+    route
 ) {
 
-    const checkbox =
-        $(
+    const distance =
+        Number(
+            route.distance_m
+            ??
+            0
+        );
+
+
+    document.getElementById(
+        "metricDistance"
+    ).textContent =
+        distance
+        ?
+        `${Math.round(
+            distance
+        )} m`
+        :
+        "—";
+
+
+    document.getElementById(
+        "metricSupport"
+    ).textContent =
+        (
+            route.recordedSupportIds
+            ||
+            []
+        ).length;
+
+
+    document.getElementById(
+        "metricImages"
+    ).textContent =
+        (
+            route.checkpoints
+            ||
+            []
+        )
+        .filter(
+            cp =>
+                getOriginalImage(
+                    cp
+                )
+        )
+        .length;
+
+
+    const cluster =
+        dominantCluster(
+            route
+        );
+
+
+    document.getElementById(
+        "metricCluster"
+    ).textContent =
+        cluster === null
+        ?
+        "Pending"
+        :
+        `Cluster ${cluster}`;
+
+}
+
+
+
+// ============================================================
+// OVERVIEW
+// ============================================================
+
+const FEATURE_DEFINITIONS = [
+
+    [
+        "sky_exposure",
+        "Sky exposure"
+    ],
+
+    [
+        "greenery",
+        "Greenery"
+    ],
+
+    [
+        "road_exposure",
+        "Road exposure"
+    ],
+
+    [
+        "pedestrian_space",
+        "Pedestrian space"
+    ],
+
+    [
+        "built_frontage",
+        "Built frontage"
+    ],
+
+    [
+        "vehicle_presence",
+        "Vehicle presence"
+    ]
+
+];
+
+
+function renderOverview(
+    route
+) {
+
+    const features =
+        meanFeatures(
+            route
+        );
+
+
+    const featureBars =
+        document.getElementById(
+            "featureBars"
+        );
+
+
+    if (!features) {
+
+        featureBars.innerHTML = `
+            <div class="placeholder">
+                SegFormer analysis is still processing
+                or has not yet been exported.
+            </div>
+        `;
+
+    }
+    else {
+
+        featureBars.innerHTML =
+            FEATURE_DEFINITIONS
+            .map(
+                (
+                    [
+                        key,
+                        label
+                    ]
+                ) => {
+
+                    const value =
+                        Number(
+                            features[
+                                key
+                            ]
+                            ||
+                            0
+                        );
+
+
+                    return `
+                        <div class="feature-row">
+
+                            <div class="feature-row-head">
+
+                                <span>
+                                    ${label}
+                                </span>
+
+                                <strong>
+                                    ${Math.round(
+                                        value
+                                        *
+                                        100
+                                    )}%
+                                </strong>
+
+                            </div>
+
+                            <div class="feature-track">
+
+                                <div
+                                    style="
+                                        width:
+                                        ${Math.min(
+                                            100,
+                                            value
+                                            *
+                                            100
+                                        )}%;
+                                    "
+                                ></div>
+
+                            </div>
+
+                        </div>
+                    `;
+
+                }
+            )
+            .join("");
+
+    }
+
+
+    const cluster =
+        dominantCluster(
+            route
+        );
+
+
+    const typology =
+        dominantTypology(
+            route
+        );
+
+
+    document.getElementById(
+        "journeyInterpretation"
+    ).innerHTML = `
+
+        <div class="interpret-row">
+
+            <span>
+                Dominant ML cluster
+            </span>
+
+            <strong>
+                ${
+                    cluster === null
+                    ?
+                    "Pending"
+                    :
+                    `Cluster ${cluster}`
+                }
+            </strong>
+
+        </div>
+
+
+        <div class="interpret-row">
+
+            <span>
+                Environmental typology
+            </span>
+
+            <strong>
+                ${
+                    escapeHTML(
+                        typology
+                        ||
+                        "Pending analysis"
+                    )
+                }
+            </strong>
+
+        </div>
+
+
+        <div class="interpret-row">
+
+            <span>
+                Recorded support
+            </span>
+
+            <strong>
+                ${
+                    (
+                        route.recordedSupportIds
+                        ||
+                        []
+                    ).length
+                }
+            </strong>
+
+        </div>
+
+    `;
+
+}
+
+
+
+// ============================================================
+// IMAGE GRID
+// ============================================================
+
+function renderImages(
+    route
+) {
+
+    const observations =
+        (
+            route.checkpoints
+            ||
+            []
+        )
+        .map(
+            checkpoint => ({
+
+                checkpoint,
+
+                original:
+                    getOriginalImage(
+                        checkpoint
+                    ),
+
+                segmentation:
+                    checkpoint.segmentationImage
+                    ||
+                    null
+
+            })
+        )
+        .filter(
+            item =>
+                item.original
+                ||
+                item.segmentation
+        );
+
+
+    const sampled =
+        evenlySample(
+            observations,
+            36
+        );
+
+
+    renderImageGrid(
+        document.getElementById(
+            "streetImageGrid"
+        ),
+        sampled,
+        "original"
+    );
+
+
+    renderImageGrid(
+        document.getElementById(
+            "segmentationGrid"
+        ),
+        sampled,
+        "segmentation"
+    );
+
+}
+
+
+function renderImageGrid(
+    container,
+    items,
+    field
+) {
+
+    if (
+        items.length
+        ===
+        0
+    ) {
+
+        container.innerHTML = `
+
+            <div
+                class="placeholder"
+                style="
+                    grid-column:
+                    1 / -1;
+                "
+            >
+                No imagery available yet.
+            </div>
+        `;
+
+
+        return;
+
+    }
+
+
+    container.innerHTML =
+        items.map(
+            item => {
+
+                const src =
+                    item[
+                        field
+                    ];
+
+
+                if (!src) {
+
+                    return `
+                        <div class="image-cell empty">
+                            Pending
+                        </div>
+                    `;
+
+                }
+
+
+                return `
+                    <div class="image-cell">
+
+                        <img
+                            loading="lazy"
+                            src="${escapeHTML(
+                                normalisePath(
+                                    src
+                                )
+                            )}"
+                            alt=""
+                        >
+
+                    </div>
+                `;
+
+            }
+        )
+        .join("");
+
+}
+
+
+
+// ============================================================
+// ML
+// ============================================================
+
+function renderMl(
+    route
+) {
+
+    const container =
+        document.getElementById(
+            "mlStats"
+        );
+
+
+    if (!mlAnalysis) {
+
+        container.innerHTML = `
+
+            <div
+                class="placeholder"
+                style="
+                    grid-column:
+                    1 / -1;
+                "
+            >
+                image_analysis.ipynb is still processing.
+                ML graphs will appear after
+                family_route_analysis.json is generated.
+            </div>
+        `;
+
+
+        return;
+
+    }
+
+
+    const selectedK =
+        mlAnalysis
+        .kMeans
+        ?.selectedK;
+
+
+    const ari =
+        mlAnalysis
+        .hierarchicalClustering
+        ?.adjustedRandIndexAgainstKMeans;
+
+
+    const accuracy =
+        mlAnalysis
+        .decisionTree
+        ?.surrogateAccuracy;
+
+
+    const cluster =
+        dominantCluster(
+            route
+        );
+
+
+    container.innerHTML = `
+
+        ${mlStat(
+            "Selected K",
+            selectedK
+            ??
+            "—"
+        )}
+
+        ${mlStat(
+            "Dominant cluster",
+            cluster === null
+            ?
+            "—"
+            :
+            `Cluster ${cluster}`
+        )}
+
+        ${mlStat(
+            "K-means / hierarchy ARI",
+            ari === undefined
+            ?
+            "—"
+            :
+            Number(
+                ari
+            ).toFixed(
+                2
+            )
+        )}
+
+        ${mlStat(
+            "Decision-tree accuracy",
+            accuracy === undefined
+            ?
+            "—"
+            :
+            `${Math.round(
+                accuracy
+                *
+                100
+            )}%`
+        )}
+
+    `;
+
+}
+
+
+function mlStat(
+    label,
+    value
+) {
+
+    return `
+        <div class="ml-stat">
+
+            <span>
+                ${label}
+            </span>
+
+            <strong>
+                ${value}
+            </strong>
+
+        </div>
+    `;
+
+}
+
+
+function loadGraphAssets() {
+
+    const assets =
+        mlAnalysis.visualAssets
+        ||
+        {};
+
+
+    setGraph(
+        "graphPca",
+        assets.pcaSpectrum
+    );
+
+
+    setGraph(
+        "graphHeatmap",
+        assets.clusterHeatmap
+    );
+
+
+    setGraph(
+        "graphDendrogram",
+        assets.dendrogram
+    );
+
+
+    setGraph(
+        "graphImportance",
+        assets.featureImportance
+    );
+
+}
+
+
+function setGraph(
+    id,
+    path
+) {
+
+    if (!path) {
+
+        return;
+
+    }
+
+
+    const image =
+        document.getElementById(
             id
         );
 
 
-    if (!checkbox) {
-
-        return;
-    }
-
-
-    checkbox
-    .addEventListener(
-
-        "change",
-
-        event => {
-
-            if (
-                event.target
-                    .checked
-            ) {
-
-                if (
-                    !map.hasLayer(
-                        layer
-                    )
-                ) {
-
-                    layer.addTo(
-                        map
-                    );
-                }
-
-            }
-
-            else {
-
-                if (
-                    map.hasLayer(
-                        layer
-                    )
-                ) {
-
-                    map.removeLayer(
-                        layer
-                    );
-                }
-            }
-
-        }
-
-    );
-}
-
-
-
-// ============================================================
-// IMAGE PROGRESS
-// ============================================================
-
-function showImageProgress(
-    percentage,
-    message
-) {
-
-    els.imageProgress
-    .classList
-    .remove(
-        "is-hidden"
-    );
-
-
-    updateImageProgress(
-
-        percentage,
-
-        message
-
-    );
-}
-
-
-function updateImageProgress(
-    percentage,
-    message
-) {
-
-    const value =
-        Math.max(
-
-            0,
-
-            Math.min(
-
-                100,
-
-                Number(
-                    percentage
-                )
-                ||
-                0
-
-            )
-
+    image.src =
+        normalisePath(
+            path
         );
 
 
-    els.imageProgressBar
-    .style
-    .width =
-        `${value}%`;
+    image.style.display =
+        "block";
 
-
-    els.imageProgressPercent
-    .textContent =
-        `${Math.round(value)}%`;
-
-
-    els.imageProgressMessage
-    .textContent =
-        message
-        ||
-        "Loading…";
-
-
-    els.imageProgressTitle
-    .textContent =
-
-        value >= 100
-
-            ?
-
-            "Stored image analysis ready"
-
-            :
-
-            "Loading stored image analysis";
 }
 
 
-function hideImageProgress() {
 
-    els.imageProgress
-    .classList
-    .add(
-        "is-hidden"
+// ============================================================
+// SUPPORT
+// ============================================================
+
+function renderSupport(
+    route
+) {
+
+    const supportCount =
+        (
+            route.recordedSupportIds
+            ||
+            []
+        ).length;
+
+
+    const checkpoints =
+        route.checkpoints
+        ||
+        [];
+
+
+    const distances =
+        checkpoints
+        .map(
+            cp =>
+                Number(
+                    cp.distanceToNearestRecordedSupportM
+                )
+        )
+        .filter(
+            Number.isFinite
+        );
+
+
+    const percentiles =
+        checkpoints
+        .map(
+            cp =>
+                Number(
+                    cp.supportGapPercentile
+                )
+        )
+        .filter(
+            Number.isFinite
+        );
+
+
+    const largestDistance =
+        distances.length
+        ?
+        Math.max(
+            ...distances
+        )
+        :
+        null;
+
+
+    const largestPercentile =
+        percentiles.length
+        ?
+        Math.max(
+            ...percentiles
+        )
+        :
+        null;
+
+
+    document.getElementById(
+        "supportPanel"
+    ).innerHTML = `
+
+        <div class="support-grid">
+
+            <article>
+
+                <span>
+                    Recorded opportunities
+                </span>
+
+                <strong>
+                    ${supportCount}
+                </strong>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    Largest mapped support distance
+                </span>
+
+                <strong>
+                    ${
+                        largestDistance === null
+                        ?
+                        "Pending"
+                        :
+                        `${Math.round(
+                            largestDistance
+                        )} m`
+                    }
+                </strong>
+
+            </article>
+
+
+            <article>
+
+                <span>
+                    Largest relative support gap
+                </span>
+
+                <strong>
+                    ${
+                        largestPercentile === null
+                        ?
+                        "Pending"
+                        :
+                        `${Math.round(
+                            largestPercentile
+                            *
+                            100
+                        )}th`
+                    }
+                </strong>
+
+            </article>
+
+        </div>
+
+
+        <div class="support-note">
+
+            These values describe the available support
+            recorded in the local family-support library.
+            Zero recorded opportunities does not prove
+            that no physical resting place exists.
+
+        </div>
+
+    `;
+
+}
+
+
+
+// ============================================================
+// TABS
+// ============================================================
+
+function initialiseTabs() {
+
+    document
+    .querySelectorAll(
+        ".tab"
+    )
+    .forEach(
+        button => {
+
+            button.addEventListener(
+                "click",
+                () => {
+
+                    document
+                    .querySelectorAll(
+                        ".tab"
+                    )
+                    .forEach(
+                        item =>
+                            item.classList.remove(
+                                "active"
+                            )
+                    );
+
+
+                    document
+                    .querySelectorAll(
+                        ".tab-panel"
+                    )
+                    .forEach(
+                        item =>
+                            item.classList.remove(
+                                "active"
+                            )
+                    );
+
+
+                    button.classList.add(
+                        "active"
+                    );
+
+
+                    document
+                    .getElementById(
+                        `panel-${button.dataset.tab}`
+                    )
+                    .classList.add(
+                        "active"
+                    );
+
+
+                    setTimeout(
+                        () =>
+                            map.invalidateSize(),
+                        50
+                    );
+
+                }
+            );
+
+        }
     );
 
-
-    els.imageProgressBar
-    .style
-    .width =
-        "0%";
-
-
-    els.imageProgressPercent
-    .textContent =
-        "0%";
-}
-
-
-
-// ============================================================
-// STATUS
-// ============================================================
-
-function setStatus(
-    text
-) {
-
-    els.status.textContent =
-        text;
-}
-
-
-function setProgress(
-    text
-) {
-
-    els.progress.textContent =
-        text;
 }
 
 
@@ -2749,6 +1976,510 @@ function setProgress(
 // ============================================================
 // HELPERS
 // ============================================================
+
+function getRouteId(
+    route
+) {
+
+    return (
+        route.id
+        ||
+        route.route_id
+        ||
+        route.routeId
+        ||
+        null
+    );
+
+}
+
+
+function getOriginalImage(
+    checkpoint
+) {
+
+    if (
+        checkpoint.originalImage
+    ) {
+
+        return checkpoint.originalImage;
+
+    }
+
+
+    const first =
+        (
+            checkpoint.imageCandidates
+            ||
+            []
+        )[0];
+
+
+    return (
+        first?.url
+        ||
+        first?.imageUrl
+        ||
+        first?.thumb_1024_url
+        ||
+        null
+    );
+
+}
+
+
+function meanFeatures(
+    route
+) {
+
+    const valid =
+        (
+            route.checkpoints
+            ||
+            []
+        )
+        .filter(
+            cp =>
+                cp.environmentalFeatures
+        );
+
+
+    if (
+        valid.length
+        ===
+        0
+    ) {
+
+        return null;
+
+    }
+
+
+    const result = {};
+
+
+    for (
+        const [
+            key
+        ]
+        of FEATURE_DEFINITIONS
+    ) {
+
+        const values =
+            valid
+            .map(
+                cp =>
+                    Number(
+                        cp.environmentalFeatures[
+                            key
+                        ]
+                    )
+            )
+            .filter(
+                Number.isFinite
+            );
+
+
+        result[
+            key
+        ] =
+            values.length
+            ?
+            values.reduce(
+                (
+                    a,
+                    b
+                ) =>
+                    a + b,
+                0
+            )
+            /
+            values.length
+            :
+            0;
+
+    }
+
+
+    return result;
+
+}
+
+
+function dominantCluster(
+    route
+) {
+
+    const counter = {};
+
+
+    for (
+        const cp
+        of
+        (
+            route.checkpoints
+            ||
+            []
+        )
+    ) {
+
+        const cluster =
+            cp.environmentCluster;
+
+
+        if (
+            cluster === null
+            ||
+            cluster === undefined
+        ) {
+
+            continue;
+
+        }
+
+
+        counter[
+            cluster
+        ] =
+            (
+                counter[
+                    cluster
+                ]
+                ||
+                0
+            )
+            +
+            1;
+
+    }
+
+
+    const entries =
+        Object.entries(
+            counter
+        );
+
+
+    if (
+        entries.length
+        ===
+        0
+    ) {
+
+        return null;
+
+    }
+
+
+    entries.sort(
+        (
+            a,
+            b
+        ) =>
+            b[
+                1
+            ]
+            -
+            a[
+                1
+            ]
+    );
+
+
+    return entries[
+        0
+    ][0];
+
+}
+
+
+function dominantTypology(
+    route
+) {
+
+    const counter = {};
+
+
+    for (
+        const cp
+        of
+        (
+            route.checkpoints
+            ||
+            []
+        )
+    ) {
+
+        const value =
+            cp.environmentTypology;
+
+
+        if (!value) {
+
+            continue;
+
+        }
+
+
+        counter[
+            value
+        ] =
+            (
+                counter[
+                    value
+                ]
+                ||
+                0
+            )
+            +
+            1;
+
+    }
+
+
+    const entries =
+        Object.entries(
+            counter
+        );
+
+
+    if (
+        entries.length
+        ===
+        0
+    ) {
+
+        return null;
+
+    }
+
+
+    entries.sort(
+        (
+            a,
+            b
+        ) =>
+            b[
+                1
+            ]
+            -
+            a[
+                1
+            ]
+    );
+
+
+    return entries[
+        0
+    ][0];
+
+}
+
+
+function normaliseRoutePoints(
+    points
+) {
+
+    return points
+        .map(
+            point => {
+
+                if (
+                    Array.isArray(
+                        point
+                    )
+                ) {
+
+                    return {
+
+                        lat:
+                            Number(
+                                point[
+                                    0
+                                ]
+                            ),
+
+                        lon:
+                            Number(
+                                point[
+                                    1
+                                ]
+                            )
+
+                    };
+
+                }
+
+
+                return {
+
+                    lat:
+                        Number(
+                            point.lat
+                        ),
+
+                    lon:
+                        Number(
+                            point.lon
+                            ??
+                            point.lng
+                        )
+
+                };
+
+            }
+        )
+        .filter(
+            validPoint
+        );
+
+}
+
+
+function validPoint(
+    point
+) {
+
+    return (
+        point
+        &&
+        Number.isFinite(
+            Number(
+                point.lat
+            )
+        )
+        &&
+        Number.isFinite(
+            Number(
+                point.lon
+                ??
+                point.lng
+            )
+        )
+    );
+
+}
+
+
+function evenlySample(
+    array,
+    maxCount
+) {
+
+    if (
+        array.length
+        <=
+        maxCount
+    ) {
+
+        return array;
+
+    }
+
+
+    const result = [];
+
+
+    const step =
+        (
+            array.length
+            -
+            1
+        )
+        /
+        (
+            maxCount
+            -
+            1
+        );
+
+
+    for (
+        let i = 0;
+        i < maxCount;
+        i++
+    ) {
+
+        result.push(
+            array[
+                Math.round(
+                    i
+                    *
+                    step
+                )
+            ]
+        );
+
+    }
+
+
+    return result;
+
+}
+
+
+function clusterLetter(
+    index
+) {
+
+    if (
+        index
+        <
+        26
+    ) {
+
+        return String.fromCharCode(
+            65
+            +
+            index
+        );
+
+    }
+
+
+    return `A${index - 25}`;
+
+}
+
+
+function normalisePath(
+    path
+) {
+
+    if (!path) {
+
+        return "";
+
+    }
+
+
+    if (
+        path.startsWith(
+            "http://"
+        )
+        ||
+        path.startsWith(
+            "https://"
+        )
+    ) {
+
+        return path;
+
+    }
+
+
+    return (
+        path.startsWith(
+            "./"
+        )
+        ?
+        path
+        :
+        `./${path}`
+    );
+
+}
+
 
 function slugify(
     value
@@ -2759,20 +2490,17 @@ function slugify(
         ||
         ""
     )
-
     .toLowerCase()
-
     .trim()
-
     .replace(
         /[^a-z0-9]+/g,
         "-"
     )
-
     .replace(
-        /^-+|-+$/g,
+        /^-|-$/g,
         ""
     );
+
 }
 
 
@@ -2785,38 +2513,85 @@ function escapeHTML(
         ??
         ""
     )
-
     .replaceAll(
         "&",
         "&amp;"
     )
-
     .replaceAll(
         "<",
         "&lt;"
     )
-
     .replaceAll(
         ">",
         "&gt;"
     )
-
     .replaceAll(
         '"',
         "&quot;"
+    )
+    .replaceAll(
+        "'",
+        "&#039;"
     );
+
 }
 
 
-function wait(
-    milliseconds
+function setStatus(
+    message,
+    ready
 ) {
 
-    return new Promise(
-        resolve =>
-            setTimeout(
-                resolve,
-                milliseconds
-            )
+    document.getElementById(
+        "systemStatus"
+    ).textContent =
+        message;
+
+
+    document.getElementById(
+        "statusDot"
+    ).classList.toggle(
+        "ready",
+        ready
     );
+
+}
+
+
+function clearSelectedRoute() {
+
+    selectedRouteId =
+        null;
+
+
+    routeInfo.textContent =
+        "Route information will appear here.";
+
+
+    clearMap();
+
+
+    document.getElementById(
+        "metricDistance"
+    ).textContent =
+        "—";
+
+
+    document.getElementById(
+        "metricSupport"
+    ).textContent =
+        "—";
+
+
+    document.getElementById(
+        "metricImages"
+    ).textContent =
+        "—";
+
+
+    document.getElementById(
+        "metricCluster"
+    ).textContent =
+        "—";
+
 }
