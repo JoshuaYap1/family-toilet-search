@@ -1,104 +1,108 @@
-.ipynb_checkpoints/
-**/.ipynb_checkpoints/
-*.sqlite
-*.sqlite3
-*.db
-.env
-__pycache__/
+# ============================================================
+# JUPYTER / PYTHON
+# ============================================================
 
-# Jupyter
 .ipynb_checkpoints/
 **/.ipynb_checkpoints/
 
-# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Local databases / caches
+*.nbconvert.ipynb
+
+
+# ============================================================
+# PYTHON ENVIRONMENTS
+# ============================================================
+
+venv/
+.venv/
+env/
+
+
+# ============================================================
+# LOCAL DATABASES / CACHE
+# ============================================================
+
 *.sqlite
 *.sqlite3
 *.db
 *.db-journal
 
-# Environment / secrets
+.young_family_access/
+
+
+# ============================================================
+# ENVIRONMENT / SECRETS
+# ============================================================
+
 .env
 .env.*
+
 *.key
 *.pem
 *.token
+
 secrets.*
 credentials.*
 
-# Vercel local metadata
+
+# ============================================================
+# VERCEL LOCAL METADATA
+# ============================================================
+
 .vercel/
 
-# OS junk
+
+# ============================================================
+# OS / TEMP FILES
+# ============================================================
+
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# VS Code local-only settings if desired
-# .vscode/
-
-# Runtime cache outside project, just in case copied in
-.young_family_access/
-
-# Temporary files
 *.tmp
 *.temp
 *.log
 
-# Python virtual environments
-venv/
-.venv/
-env/
-
-# Notebook autosave / temp
-*.nbconvert.ipynb
-
-.vercel
 
 # ============================================================
-# Heavy generated intermediates
-# Final query previews remain committed for the live website.
+# LARGE RAW PREPROCESSING DATA
 # ============================================================
 
-data/generated/street_images/
-data/generated/segmentation_images/
+data/raw_demographics/
+
+
+# ============================================================
+# LARGE / TEMPORARY GENERATED FILES
+# ============================================================
+
+# Ignore temporary image batches only
 data/generated/image_batches/
 
-# Old/debug generated grids
+# Ignore old/debug grid outputs
 data/generated/street_analysis_grid.png
 data/generated/street_image_grid_*.png
 
+
 # ============================================================
-# Large raw demographic GIS source files
-# These are preprocessing inputs only.
-# Final SOM outputs remain committed.
+# IMPORTANT:
+# THESE GENERATED OUTPUTS MUST STAY TRACKED FOR VERCEL
 # ============================================================
 
-data/raw_demographics/*.geojson
+!data/generated/
+!data/generated/segmentation_images/
+!data/generated/segmentation_images/**
+!data/generated/semantic_features/
+!data/generated/semantic_features/**
+!data/generated/ml_analysis/
+!data/generated/ml_analysis/**
 
-# Python / Jupyter
-__pycache__/
-.ipynb_checkpoints/
-*.pyc
+# Keep generated JSON outputs
+!data/generated/*.json
 
-# Local runtime/cache
-.venv/
-venv/
-.env
-.env.*
-*.sqlite
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Large/raw working data
-data/raw_demographics/
-
-# Keep generated frontend outputs
-# DO NOT ignore data/generated/
+# Keep generated visual outputs
+!data/generated/*.png
