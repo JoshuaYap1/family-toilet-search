@@ -1,0 +1,20 @@
+{
+  "groupShares": {
+    "vegetation": 1.0
+  },
+  "spatialShares": {
+    "bottomBand": {
+      "vegetation": 1.0
+    },
+    "middleBand": {
+      "vegetation": 1.0
+    },
+    "leftHalf": {
+      "vegetation": 1.0
+    },
+    "rightHalf": {
+      "vegetation": 1.0
+    }
+  },
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512"
+}

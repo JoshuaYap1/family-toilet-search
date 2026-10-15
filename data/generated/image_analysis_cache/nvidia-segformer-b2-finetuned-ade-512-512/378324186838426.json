@@ -1,0 +1,57 @@
+{
+  "groupShares": {
+    "sky": 0.2972158,
+    "building": 0.1232334,
+    "vegetation": 0.3916202,
+    "road": 0.0906016,
+    "person": 0.002182,
+    "vehicle": 0.0836165,
+    "barrier": 0.0078549,
+    "street_furniture": 0.0008952,
+    "pedestrian_surface": 0.0027805
+  },
+  "spatialShares": {
+    "bottomBand": {
+      "building": 0.1526113,
+      "vegetation": 0.3423989,
+      "sky": 0.01612,
+      "road": 0.2328812,
+      "person": 0.005739,
+      "vehicle": 0.2199228,
+      "barrier": 0.0206594,
+      "street_furniture": 0.0023545,
+      "pedestrian_surface": 0.0073131
+    },
+    "middleBand": {
+      "building": 0.2182956,
+      "vegetation": 0.5101657,
+      "sky": 0.2055935,
+      "road": 0.0168287,
+      "person": 0.004364,
+      "vehicle": 0.0257297,
+      "barrier": 0.0116713,
+      "street_furniture": 0.0017904,
+      "pedestrian_surface": 0.005561
+    },
+    "leftHalf": {
+      "sky": 0.1113654,
+      "building": 0.0892707,
+      "vegetation": 0.6673652,
+      "road": 0.0530429,
+      "vehicle": 0.0749173,
+      "barrier": 0.0040385
+    },
+    "rightHalf": {
+      "sky": 0.4830661,
+      "vegetation": 0.1158752,
+      "road": 0.1281603,
+      "building": 0.157196,
+      "person": 0.004364,
+      "vehicle": 0.0923157,
+      "barrier": 0.0116713,
+      "street_furniture": 0.0017904,
+      "pedestrian_surface": 0.005561
+    }
+  },
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512"
+}

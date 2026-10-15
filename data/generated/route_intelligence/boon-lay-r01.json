@@ -1,0 +1,150 @@
+{
+  "version": 6,
+  "routeId": "BOON_LAY__R01",
+  "station": "BOON LAY MRT",
+  "stationType": null,
+  "destination": "Public toilet",
+  "toilet": "Public toilet",
+  "somCell": "6-0",
+  "contextDescriptor": "high-density / more-children / HDB-dominant",
+  "routePoints": [
+    {
+      "lat": 1.338599,
+      "lon": 103.705662
+    },
+    {
+      "lat": 1.338632,
+      "lon": 103.70575
+    },
+    {
+      "lat": 1.338822,
+      "lon": 103.705674
+    },
+    {
+      "lat": 1.338756,
+      "lon": 103.705488
+    }
+  ],
+  "routeSummary": {
+    "distance_m": 55.14,
+    "checkpointSpacing_m": 15,
+    "checkpointCount": 5,
+    "checkpointCountWithImages": 0,
+    "mapillaryRouteCandidateCount": 0,
+    "osmFeatureCount": 0,
+    "analysisSeconds": 3.05
+  },
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceAlongRoute_m": 0.0,
+      "lat": 1.338599,
+      "lon": 103.705662,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": false,
+        "reason": "no_nearby_unique_imagery",
+        "candidateCount": 0,
+        "images": []
+      }
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceAlongRoute_m": 15.0,
+      "lat": 1.33867,
+      "lon": 103.7057348,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": false,
+        "reason": "no_nearby_unique_imagery",
+        "candidateCount": 0,
+        "images": []
+      }
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceAlongRoute_m": 30.0,
+      "lat": 1.3387953,
+      "lon": 103.7056847,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": false,
+        "reason": "no_nearby_unique_imagery",
+        "candidateCount": 0,
+        "images": []
+      }
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceAlongRoute_m": 45.0,
+      "lat": 1.3387865,
+      "lon": 103.705574,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": false,
+        "reason": "no_nearby_unique_imagery",
+        "candidateCount": 0,
+        "images": []
+      }
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceAlongRoute_m": 55.14,
+      "lat": 1.338756,
+      "lon": 103.705488,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": false,
+        "reason": "no_nearby_unique_imagery",
+        "candidateCount": 0,
+        "images": []
+      }
+    }
+  ],
+  "source": "C:\\Users\\MSI\\OneDrive\\Desktop\\family-toilet-search\\data\\generated\\mrt_route_library.json"
+}

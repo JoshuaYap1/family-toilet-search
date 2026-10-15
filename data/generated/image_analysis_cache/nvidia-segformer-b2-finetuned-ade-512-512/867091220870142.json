@@ -1,0 +1,25 @@
+{
+  "groupShares": {
+    "vegetation": 0.9602593,
+    "water": 0.0397407
+  },
+  "spatialShares": {
+    "bottomBand": {
+      "vegetation": 0.8954766,
+      "water": 0.1045234
+    },
+    "middleBand": {
+      "vegetation": 0.9395684,
+      "water": 0.0604316
+    },
+    "leftHalf": {
+      "vegetation": 0.9970025,
+      "water": 0.0029975
+    },
+    "rightHalf": {
+      "vegetation": 0.9235162,
+      "water": 0.0764838
+    }
+  },
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512"
+}

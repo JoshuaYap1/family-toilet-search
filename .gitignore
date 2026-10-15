@@ -9,7 +9,6 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-
 *.nbconvert.ipynb
 
 
@@ -32,6 +31,7 @@ env/
 *.db-journal
 
 .young_family_access/
+.cache/
 
 
 # ============================================================
@@ -40,7 +40,6 @@ env/
 
 .env
 .env.*
-
 *.key
 *.pem
 *.token
@@ -50,15 +49,11 @@ credentials.*
 
 
 # ============================================================
-# VERCEL LOCAL METADATA
+# VERCEL / EDITOR / OS
 # ============================================================
 
 .vercel/
-
-
-# ============================================================
-# OS / TEMP FILES
-# ============================================================
+.vscode/
 
 .DS_Store
 Thumbs.db
@@ -70,42 +65,51 @@ desktop.ini
 
 
 # ============================================================
-# LARGE RAW PREPROCESSING DATA
+# LARGE RAW SOURCE DATA
 # ============================================================
 
 data/raw_demographics/
 
 
 # ============================================================
-# LARGE / TEMPORARY GENERATED FILES
+# TEMPORARY / DEBUG GENERATED OUTPUTS
 # ============================================================
 
-# Ignore temporary image batches only
 data/generated/image_batches/
 
-# Ignore old/debug grid outputs
 data/generated/street_analysis_grid.png
 data/generated/street_image_grid_*.png
+data/generated/street_segmentation_grid_*.png
 
 
 # ============================================================
-# IMPORTANT:
-# THESE GENERATED OUTPUTS MUST STAY TRACKED FOR VERCEL
+# KEEP FRONTEND-REQUIRED GENERATED OUTPUTS
 # ============================================================
 
-!data/generated/
+# Route / ML / frontend JSON
+!data/generated/*.json
+
+# V4 diagnostic segmentation imagery
+!data/generated/diagnostic_segmentations_v4/
+!data/generated/diagnostic_segmentations_v4/**
+
+# Existing segmentation imagery used by frontend
 !data/generated/segmentation_images/
 !data/generated/segmentation_images/**
+
+# Semantic / ML outputs
 !data/generated/semantic_features/
 !data/generated/semantic_features/**
+
 !data/generated/ml_analysis/
 !data/generated/ml_analysis/**
 
-# Keep generated JSON outputs
-!data/generated/*.json
 
-# Keep generated visual outputs
-!data/generated/*.png
+# ============================================================
+# OPTIONAL LARGE STREET IMAGE CACHE
+#
+# Ignore original downloaded Mapillary images if the frontend
+# does not directly depend on them.
+# ============================================================
 
-data/generated/street_analysis_grid.png
-data/generated/street_image_grid_*.png
+data/generated/street_images/

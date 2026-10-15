@@ -1,0 +1,120 @@
+{
+  "version": 6,
+  "routeId": "TAMPINES__R01",
+  "station": "TAMPINES MRT",
+  "stationType": null,
+  "destination": "Public toilet",
+  "toilet": "Public toilet",
+  "somCell": "4-0",
+  "contextDescriptor": "high-density / HDB-dominant",
+  "routePoints": [
+    {
+      "lat": 1.3541939276064219,
+      "lon": 103.94265368187834
+    },
+    {
+      "lat": 1.3539424,
+      "lon": 103.9427907
+    }
+  ],
+  "routeSummary": {
+    "distance_m": 31.85,
+    "checkpointSpacing_m": 15,
+    "checkpointCount": 4,
+    "checkpointCountWithImages": 0,
+    "mapillaryRouteCandidateCount": 0,
+    "osmFeatureCount": 0,
+    "analysisSeconds": 2.45
+  },
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceAlongRoute_m": 0.0,
+      "lat": 1.3541939,
+      "lon": 103.9426537,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": false,
+        "reason": "no_nearby_unique_imagery",
+        "candidateCount": 0,
+        "images": []
+      }
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceAlongRoute_m": 15.0,
+      "lat": 1.3540755,
+      "lon": 103.9427182,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": false,
+        "reason": "no_nearby_unique_imagery",
+        "candidateCount": 0,
+        "images": []
+      }
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceAlongRoute_m": 30.0,
+      "lat": 1.353957,
+      "lon": 103.9427828,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": false,
+        "reason": "no_nearby_unique_imagery",
+        "candidateCount": 0,
+        "images": []
+      }
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceAlongRoute_m": 31.85,
+      "lat": 1.3539424,
+      "lon": 103.9427907,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": false,
+        "reason": "no_nearby_unique_imagery",
+        "candidateCount": 0,
+        "images": []
+      }
+    }
+  ],
+  "source": "C:\\Users\\MSI\\OneDrive\\Desktop\\family-toilet-search\\data\\generated\\mrt_route_library.json"
+}

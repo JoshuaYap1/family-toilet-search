@@ -1,0 +1,27 @@
+{
+  "groupShares": {
+    "vegetation": 0.9811351,
+    "sky": 0.0177782,
+    "barrier": 0.0010868
+  },
+  "spatialShares": {
+    "bottomBand": {
+      "vegetation": 0.9971417,
+      "barrier": 0.0028583
+    },
+    "middleBand": {
+      "vegetation": 0.998386,
+      "sky": 0.001614
+    },
+    "leftHalf": {
+      "vegetation": 0.981252,
+      "sky": 0.0165744,
+      "barrier": 0.0021735
+    },
+    "rightHalf": {
+      "vegetation": 0.9810181,
+      "sky": 0.0189819
+    }
+  },
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512"
+}

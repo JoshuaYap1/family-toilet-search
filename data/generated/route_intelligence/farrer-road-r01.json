@@ -1,0 +1,827 @@
+{
+  "version": 6,
+  "routeId": "FARRER_ROAD__R01",
+  "station": "FARRER ROAD MRT",
+  "stationType": null,
+  "destination": "Public toilet",
+  "toilet": "Public toilet",
+  "somCell": "6-4",
+  "contextDescriptor": "more-children / private-housing",
+  "routePoints": [
+    {
+      "lat": 1.3175520161722278,
+      "lon": 103.80738923455762
+    },
+    {
+      "lat": 1.3163716,
+      "lon": 103.8059305
+    }
+  ],
+  "routeSummary": {
+    "distance_m": 208.63,
+    "checkpointSpacing_m": 15,
+    "checkpointCount": 15,
+    "checkpointCountWithImages": 15,
+    "mapillaryRouteCandidateCount": 518,
+    "osmFeatureCount": 0,
+    "analysisSeconds": 5.02
+  },
+  "checkpoints": [
+    {
+      "checkpointIndex": 0,
+      "distanceAlongRoute_m": 0.0,
+      "lat": 1.317552,
+      "lon": 103.8073892,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 115,
+        "images": [
+          {
+            "id": "765110050809079",
+            "lat": 1.3175413345055,
+            "lon": 103.80734277528,
+            "captured_at": 1435201801943,
+            "compass_angle": 39.91785,
+            "sequence": "FGso3RmTzlTGcSfktSi7ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOsUIX14l5xZmySzAzd3OPFeo6kJRKYM9WL0iiIxI5Uf48jQdYqwTVSFo-8B8W-i0jAgC8LeK1GJgT02nPM9CMhBiemVECmA3alJ0rNmI4Z17c1GkLDjV6L-hiJTffaITZVCXnfn9v7LMZiHPjtmTmQcaAdFhoWGYtSh4-yJaG7EQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdpFo-fl7GuNmeXug7kipbSBJa5MhspBnofboMkDu61PjuhVd6GkT0H8Xrpb4wgWvRM&ccb=10-5&oh=00_AQNOO3rOu4_epJ-tW-JiWjLIEXeGD0v2SGON1aSRwgB7HA&oe=6AF6A894&_nc_sid=201bca",
+            "distance_m": 5.3
+          },
+          {
+            "id": "456450708787092",
+            "lat": 1.3174596920974,
+            "lon": 103.80745066045,
+            "captured_at": 1484799822000,
+            "compass_angle": 315.80295087019,
+            "sequence": "N3E0FWljzLAUMQd8LBEYHw",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOlimIKNX3QRliCKvF-HEEj4ZbGKxOcyxI9PAu3RtmsqGSqZ1ontb4vr9TCEIn52kouTrySNX3VQTlx7iE3x68bYx-9YILxK1jEl9b7-3diO8cBkdhTBFE1eVsp20KuCYk3_Q4PU8Jg2XABj7ui0BNxPFYwKs264T2DrmDcdZoO-w?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Ado7JBY_2z3K47r_a9hdBv_EZf1OrFK4vu_-s-9vMo8fFfaUMxHP_V0zrIxh2dQApG0&ccb=10-5&oh=00_AQOfdMA-_lHSwcUta3Jja7E70zTDXmeyWDAp0DodWPVHrg&oe=6AF6AE2B&_nc_sid=201bca",
+            "distance_m": 12.33
+          },
+          {
+            "id": "318876316262692",
+            "lat": 1.3173734524677,
+            "lon": 103.80739360069,
+            "captured_at": 1439613470708,
+            "compass_angle": 98.74005,
+            "sequence": "u90foYtFRfwwUKww0Mz2jA",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOJxNFpYv7tpViq0KOzn4EujVfKLjjKa0jnJwMlGV-vNBVs1EosuB7wcYnplGSQOYW5Rvf4Llv08lCeKId39LAu4gg5qV9_IFQfBMxySI_xBIb2EFsvS5GpYT7GisqdPVRvikbOAV9KXwzdnGBpBvU7uOnK1UukjjOGgWh65q2Q7h8?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqNea0LEBkoSQX-h5AwoRbCizKTrWZysJLpYT0GErWzvnDAwqZpvAQLSjQfYTmoq6I&ccb=10-5&oh=00_AQPqHfusTEYAXjnOedm-T-jHu_DLj9qqLZvts_qcRLpKCQ&oe=6AF6BE7A&_nc_sid=201bca",
+            "distance_m": 19.86
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 1,
+      "distanceAlongRoute_m": 15.0,
+      "lat": 1.3174671,
+      "lon": 103.8072844,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 111,
+        "images": [
+          {
+            "id": "316824496694528",
+            "lat": 1.3173733480036,
+            "lon": 103.8073467251,
+            "captured_at": 1438246192209,
+            "compass_angle": 18.28137,
+            "sequence": "F2UJc-VNt7UGLc1_pPjl3Q",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQNFOmTUPL3mBN0NLWRRe78QQ57agxkjhCYYlJrpWkyGmHno6pPDrqZGavcZyKh5ZsZDdQWLrbBLxkG6I8qZNnxFCMLSZ7HKdPVHVzqGlMJifWvIQ_mjinYn4a3qGArJinyywPSgWB7kLrvqa9FJ5t9ozFO7sYsu2_10zHfCR1UJzJk?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adr4Suu-5dMC3AzFjopMEhOXBy5q2PQdO3utoIsRAIZlPMjqD36nlcKv0ff8hl0_Nkw&ccb=10-5&oh=00_AQOW-p3dJuAgXGm_q_Yk-Y-7VuSe5RLSN1OI5ZQPwQK0tQ&oe=6AF6981F&_nc_sid=201bca",
+            "distance_m": 12.52
+          },
+          {
+            "id": "866057434263405",
+            "lat": 1.3173566867217,
+            "lon": 103.80735239062,
+            "captured_at": 1484799821000,
+            "compass_angle": 316.5237826412,
+            "sequence": "N3E0FWljzLAUMQd8LBEYHw",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQM415ucTqi168lsN6Kvu3_msteNvYmh0W1Nxzi5NIe7D36O5B4XbBtmhTiLPo7bdohMDUSVY60nX_QOx9SZkRuxuWxyYhll3Fb0wbgbLWC60AvAuF4b8mKsk0Vqg7IW9SsZmFIf76RGMd3p5AE-HLmgZJBCmWmUst4EhxzDmHlgzQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adqf1k5oHaloIWRR0fKsI-mvjF4SSpjXHUT0mPo7Lmvz-fry4H_Qm_tGJmbEO4L1Fdc&ccb=10-5&oh=00_AQPmbjVp_zSKp54p_pdOMbsYHUyj9W8--LqiOP09-dJcnA&oe=6AF68EE9&_nc_sid=201bca",
+            "distance_m": 14.42
+          },
+          {
+            "id": "883062087109422",
+            "lat": 1.3173078648451,
+            "lon": 103.80746650698,
+            "captured_at": 1726927623957,
+            "compass_angle": 227.60983596907,
+            "sequence": "K6EjYqBLmedOtngG18oP5D",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQMQ-i9vUPxNdvQ3a9C0qzhDcpp65-X1r1BOnJzfS4ZcW95BlEh3jAvMwzvxvMWb8ws3sZpkljP0HyYNjhIaQddnUr94GoKHvJa0oDydyoZnnvw8gEDodEx4tqbibM5HIcJXcLQh04bITq1bX99EON_gVTXzHdGzaU3c70CUGMRMQg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Ado95CWv-3dw9DHXLtOiGVsqRLd-Rt6knIXneOBeZ01_vhLe9AzOB-MF7GVaKi5dqJ4&ccb=10-5&oh=00_AQNTBBxV3la3hGemYwlN9_40ao9QOqsc2n9qBZ-TezwA5Q&oe=6AF6A36A&_nc_sid=201bca",
+            "distance_m": 26.89
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 2,
+      "distanceAlongRoute_m": 30.0,
+      "lat": 1.3173823,
+      "lon": 103.8071795,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 112,
+        "images": [
+          {
+            "id": "708062771495210",
+            "lat": 1.3173044283383,
+            "lon": 103.80719436511,
+            "captured_at": 1711160846739,
+            "compass_angle": 45.733824832457,
+            "sequence": "LkJOheEpdiITGu52sl7MXo",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQP3lmyLEJgGpxcipegI5zoVHk9q-r2ApeRTYUB_XMzlQ_qzYmZSNzsXHM0gC6PvT9J9qveW-PaIWZ2mxpXGS_5u6Y59WfchxVPY5492_hkvT4D5xHXDCkax0mWo38eamW9gyl-ByX9MZ6HGl8WMFHlIM50xt-8JDLUO5BUwS-iJmiI?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adopx1AwLU4soFnGqLNC-Z4TmpAbtdHRqfrcaudi-XMmaOFzeLMjw1CgRaratceCQ7M&ccb=10-5&oh=00_AQMgScYQpJPmEDgrsmSkJdw4wqecOuE3rX65wuIcKkbxmQ&oe=6AF691EF&_nc_sid=201bca",
+            "distance_m": 8.82
+          },
+          {
+            "id": "982567759146961",
+            "lat": 1.3172657470563,
+            "lon": 103.80723989137,
+            "captured_at": 1484799820000,
+            "compass_angle": 317.93115621535,
+            "sequence": "N3E0FWljzLAUMQd8LBEYHw",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOs-0cXBpj0xNsryCvawX7zfARGwxKpDvh7XrM9L-mNfWwH8WeMp7FE3w_eUc7RQJhfRRN_sRG25wY8uwdmsTQ8KbEE9rjR3knxuJtdzmAaIi9lee4vcApkK2dJJ5MmY48XORixhtWPljmvniBJLX_1E3Fch4S2gHAwQ30LI9Azgw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdrlztvwJvPq2Mxyr1yXkoCng-JStrqJiX_XG3BBGih2KP-f-dS92NG_7qUKdj1rAPE&ccb=10-5&oh=00_AQNYV2DxttWRd-ravgTFZP3DsqNVfbf8obyQeRowlT_urQ&oe=6AF69EB1&_nc_sid=201bca",
+            "distance_m": 14.6
+          },
+          {
+            "id": "526575198347288",
+            "lat": 1.3171805849078,
+            "lon": 103.80718338474,
+            "captured_at": 1439613468710,
+            "compass_angle": 106.2754,
+            "sequence": "u90foYtFRfwwUKww0Mz2jA",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOjy9oT6pBu9vC4MJZXkkBj4FOSj3glObgjgL46LHw4G-t_9tyuLCzPdWpsHwB16XhpAWqDz4H7SJhvg-iYul49n6uw_UgpArUvbshPfqDIQM7JEE_wofwMjzSWtJj1eVlKq4jEuElCJYNe1h32B6CLYCYtHuUvlGRqQSF_0sG0wQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdoTQ6r1pth8wfcOqxrfBEEe1UEGJQsRTespGMDxH4yllKdht7hhe0h9xzOb1nxb1Dk&ccb=10-5&oh=00_AQOupNf3D2q-wdHwF6MCtq5Lfqa3TX_rX3ZVY5_5u8TJkA&oe=6AF6882F&_nc_sid=201bca",
+            "distance_m": 22.43
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 3,
+      "distanceAlongRoute_m": 45.0,
+      "lat": 1.3172974,
+      "lon": 103.8070746,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 103,
+        "images": [
+          {
+            "id": "977201546444835",
+            "lat": 1.3172420267251,
+            "lon": 103.80714245288,
+            "captured_at": 1435123735784,
+            "compass_angle": 64.11829,
+            "sequence": "iqszxxPtfEtOYKuFaBfz8w",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQMNFl73LDIpl8tpGRWKWLmkMhgO0KDwinzSTKnl1rbrUrrhEW5yfKQWt0Ci3YOVxy5TDCHVgowXc-zmq5TxGuB2seRX12y1A8TuI5sOPsvRoVz0-4Ln55acqSCI_Im56VgtZlmkEXLYNK4dYXKWwlhoZd06P5MFEGn84RrTq9bdoQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdrEvNkK2a9URv_gj1ALBDQcLv6TmkXX2wL4UpBHaElbl1jkohbPo4DpCVnC82mCvw4&ccb=10-5&oh=00_AQOTocnD1KIDL_rL_9tf3D52g_RxbV1SijxVFtHo96keBw&oe=6AF6AAD2&_nc_sid=201bca",
+            "distance_m": 9.74
+          },
+          {
+            "id": "780539609521790",
+            "lat": 1.3171543275209,
+            "lon": 103.80713491288,
+            "captured_at": 1484799819000,
+            "compass_angle": 314.28237398822,
+            "sequence": "N3E0FWljzLAUMQd8LBEYHw",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQPyqNUgAn9N2qr_KB_swH9FZ0Mm2olhTpCTKm33lzt3FqcukMWxZrX-gzuT0bnZdLT-gezHRvqOSBlrhxdKHvDP40OSTXLuFtq4vJprsbTEgITmOQw2YmJGrNTYfGvwtM58zpWzxCjviDTBUhmA5X66y2vVvjDcJHL8FCabIFdn-A?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdrcBFEMvgFd3-d1Yp5dWaO39GvYXcs4_alo5VuQ0y9Sccmp8S7dEMd6Tluw7ZnqCk4&ccb=10-5&oh=00_AQM-LMdxuxCMWhqCVCoslonffovjUGYAbZOszlUYlkxkTA&oe=6AF6BCA4&_nc_sid=201bca",
+            "distance_m": 17.26
+          },
+          {
+            "id": "1266244478143404",
+            "lat": 1.3170802805944,
+            "lon": 103.80722659883,
+            "captured_at": 1726927625997,
+            "compass_angle": 227.60983596907,
+            "sequence": "K6EjYqBLmedOtngG18oP5D",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOREwYKYYTp7glUKYArLsCLPaDCluejowLUe4yj32cr2_sFtA_bfAG6zrnyGhHM0-d8zCPJh6wj42xZuDy7S48p21ODFomIVMQYdsAgWpfJgicktfwRFtCnly0pW_h7WC0DU-H4CqQlwdTKhztGd4OS4FirRbDOm_QubqUn3lGbgg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdpIRdM-DYz845vddSfIqB2zwjawYWWLz_Cbx08b8tWkOVr0qEEjt_gWvjtz4shtUns&ccb=10-5&oh=00_AQNfvIJYoctuOviwL6ruOAXtklQAiFFEr_-jHiOXirscsw&oe=6AF696A4&_nc_sid=201bca",
+            "distance_m": 29.47
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 4,
+      "distanceAlongRoute_m": 60.0,
+      "lat": 1.3172125,
+      "lon": 103.8069697,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 102,
+        "images": [
+          {
+            "id": "1125174185333536",
+            "lat": 1.3171318307897,
+            "lon": 103.80707165163,
+            "captured_at": 1711160845741,
+            "compass_angle": 45.667343707095,
+            "sequence": "LkJOheEpdiITGu52sl7MXo",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQPzzgUykGV9FX1ynCVrgN3z2b34EVNxhrxKa8kK9KhJwMP8M-u9ODaxMOZ3SPqjFkfmdVgDM7CpmQ0z2yfYUXeOhn5uO4lFZ--w7L9CCIAqcRUsJ-kSkZ94wxLa29Amjkq5Cv1xutdlZbk2C_71v5Y6JlikR4vpRp_QQDO54Y88Gw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqZ1n73u4rULEfOet4yJSH1bsvVeIYslAFdBquUe8bXkxi3W4eOKTN32ocUdQRtqbE&ccb=10-5&oh=00_AQM6xRJLWc1swe3RFOEsM3k8F2-3Wh-A2bV92lelIlw9eg&oe=6AF6B615&_nc_sid=201bca",
+            "distance_m": 14.45
+          },
+          {
+            "id": "297690515331505",
+            "lat": 1.3170459986536,
+            "lon": 103.80701858694,
+            "captured_at": 1484799818000,
+            "compass_angle": 317.04395017132,
+            "sequence": "N3E0FWljzLAUMQd8LBEYHw",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOVxweFStz3q4zQxQn1-gaAv_R1nSobvSaws7zg7EYXSJ4k_6OpO525usbKj1dYbk7fTmsgWlcJGu5LNGdqDbTlHov_JBKTAG8mF6wW4xsCP2nMU41z6KBdu9kKbTMdFyC6z3ZYOdz7T-CYB_if1VHWpMTmkdbFgS0D6bylrlyknFI?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adqwr1_kQWPY7YqW5fRMA7d8ZRLykr20WZEftFSXNdr1F8Ro596RwpZvn5Lq22pK6lc&ccb=10-5&oh=00_AQMxTgzTfO6tsAMSh_T9JzyeTvV4FZ1qEbzf5RdVRtrtDQ&oe=6AF6AE11&_nc_sid=201bca",
+            "distance_m": 19.3
+          },
+          {
+            "id": "238334891418070",
+            "lat": 1.31701888176,
+            "lon": 103.80700709369,
+            "captured_at": 1439613466714,
+            "compass_angle": 92.28391,
+            "sequence": "u90foYtFRfwwUKww0Mz2jA",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQN-ziozQjTRbQNdWC3TiAdxoE7yRCUX-XbwohEdWUOb_Pa5THxcpcDC41qfguaBVdEbm5JZZg_Fa-irhBdyi72cExOLSemcX5OBB8WSJ-D1ckt0MbbgcbLFpUDS88I0y6pcRXYK50zZzkPY6DqWmWN-cJs22xfPWT6MHRky01SPLw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdrK9pE9GnBtNGkZFEmxdRs4x4VAMNjUmIDqmImQZddeohHVItxpV5JPDygn0vbC4pk&ccb=10-5&oh=00_AQMQR3_fHZc7i0rhw9Ak8gFJC2yJh6A5VZkWwHiiu9W5VA&oe=6AF68906&_nc_sid=201bca",
+            "distance_m": 21.93
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 5,
+      "distanceAlongRoute_m": 75.0,
+      "lat": 1.3171277,
+      "lon": 103.8068648,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 116,
+        "images": [
+          {
+            "id": "1736753173517934",
+            "lat": 1.3170039660978,
+            "lon": 103.80693747679,
+            "captured_at": 1711160844742,
+            "compass_angle": 45.667343707095,
+            "sequence": "LkJOheEpdiITGu52sl7MXo",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQNS3t6RjW1ddoLdMEjt8RsQU1LofsDwnuodSGRPHsLfCtsh-O25F9ssTbQM_pM7oTg2KsQNYTHC-i6Au5lHyHllRl_VbyHwEIowUiOuPNEZNJcqSaR60b4ExGWfuaS8K0XaFBGue3YljO5heATSmcJRdB68vsiqXE0b9WvniRL-Gw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdokI8ty67UxX205DlSZQbdDU5knbA0PYhEq3owbS6AuY2Zjr0XIEQeeLwx85yMI26g&ccb=10-5&oh=00_AQN4zriSolzrI5S7RRixk9m7YcfhlTp_ljnh60xZfTejvA&oe=6AF693E9&_nc_sid=201bca",
+            "distance_m": 15.96
+          },
+          {
+            "id": "296603715421499",
+            "lat": 1.3169298990021,
+            "lon": 103.80689626082,
+            "captured_at": 1484799817000,
+            "compass_angle": 316.48291980333,
+            "sequence": "N3E0FWljzLAUMQd8LBEYHw",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOcluOK-TaCrnr4S2dLqNuVb0QzOMrIJQxPhyRFVhrVQxdWgS6yfdDJ1jay8ws59vr8vannxWJHoEIJInP5-vd0UT_ru_VnmwzAy3zlCfDAJqJl5dSLN3MZgRtQJ0gT44nqVyXp7L978OALoiYht6hj_sIq1Ym6vEdSe2vzowZRig?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqaDorlnsuajMCXoC6GeaQ75lPbc4ovy-C3F2c-jLQr9Ccdx9EkcF_bfHNz09dPKh8&ccb=10-5&oh=00_AQMAAkoFaSZ4I8dum0GsRbjjSU7R5ZsZWU3dWQnqQKIypA&oe=6AF68C14&_nc_sid=201bca",
+            "distance_m": 22.27
+          },
+          {
+            "id": "510867773250497",
+            "lat": 1.3168735173395,
+            "lon": 103.80684516783,
+            "captured_at": 1439613464712,
+            "compass_angle": 119.4859,
+            "sequence": "u90foYtFRfwwUKww0Mz2jA",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQMAnhTtLDpAuXrNbGVkOQMi5lOpwQat_-eVxw8GeAOAqusW6t-_ZOCHBtst66OkTJ1NKMIBkZJGcC1QaYqV-XlDFlEyQaPCoqSQuIkxVBvoCmolNYi5Cb87BcHfRlKIYXtvg8bxmmslxAerba6wNy5kyCk8NjH4d9GfWZ86vDd8O0Q?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdrLEayb1BuM2NCmkepB37mgSuZq7iEcvc8l_j9BWzf_vEoUssO9TUDV3o_0lQoxZCw&ccb=10-5&oh=00_AQO8U6V7okhWST2yXlCeb3-QRUqeQcHmRSBxBgN_qyFaMA&oe=6AF68CD9&_nc_sid=201bca",
+            "distance_m": 28.35
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 6,
+      "distanceAlongRoute_m": 90.0,
+      "lat": 1.3170428,
+      "lon": 103.8067599,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 133,
+        "images": [
+          {
+            "id": "215296397067855",
+            "lat": 1.316974477753,
+            "lon": 103.80690023193,
+            "captured_at": 1435201795948,
+            "compass_angle": 37.26318,
+            "sequence": "FGso3RmTzlTGcSfktSi7ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQMquhayKeWlGvWPuqpLBttiaNCduXZrOtKhGN2tlz6v1nIybpAYwejGpQXvFLJH_dXpfOmnkcgjEBUHncb8JY_ohu_Z1M7lINSnaa9rEHW7jMBXtTWCIvrXUnAT1sB8UY8rOk6mnJdHdAVctByeZuIFFsnDzVfyFlHqcOdX1yGrXA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adq6kC5-0nuFyRf5kgzBo-IXLq83Q377cbSXWXKrVsr7L8R5DZmETvhMk8e3QC6c0cs&ccb=10-5&oh=00_AQN-_78gQJe-CyMh1p5oZE2i2vAn5H6_Km4W3nmSFnAkkA&oe=6AF69724&_nc_sid=201bca",
+            "distance_m": 17.35
+          },
+          {
+            "id": "766632367548342",
+            "lat": 1.3168282772792,
+            "lon": 103.80677138219,
+            "captured_at": 1484799816000,
+            "compass_angle": 320.87122201812,
+            "sequence": "N3E0FWljzLAUMQd8LBEYHw",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQNj7x5EyaRNQyei9-xShfshIt4gX9_i36_9q0PnEmDhxIVw31tNkLJ8rWnMeMu1afDpn7WxAJ4p8UqowL56-AM6tlnkWiGGjU07LLwrwRRSVg940kkfj8tXCcO2Z0sttTHah8Njujyiz9x0faxiaNUalywAFtwLEwRja3dd2Ahddg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdpqWdbutNSlJ46OqHc7gNsSM5ZSAKju0-13tFYmW59nHxzGsaY6-wAU-nccJEENMU8&ccb=10-5&oh=00_AQNrD2Ar9gUj8JDlt5nprjjMXWzn_HbXdKlvvWgzMCzrjA&oe=6AF6931B&_nc_sid=201bca",
+            "distance_m": 23.89
+          },
+          {
+            "id": "106940094814244",
+            "lat": 1.3169450528538,
+            "lon": 103.80655756239,
+            "captured_at": 1484550937000,
+            "compass_angle": 222.61302780625,
+            "sequence": "YWU8ZesTV2s_RinC3dalAQ",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOjmsYcANHVywmPebmtq8D1LhQfsKo_Ju4IYRC_SWjcN4NZdd8tVx1HOa37yHURvLg8ai9mrwUmc9B_XqQl6aiFLS32Ecm1Xc_6YCoY4wwZgL3mlkiabg0PH_nwbQtLJHIRRzsFIHypjNQ5ZmrjdDwEuWQGjaA6QsjIXREk4AcHmg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqCmJ4UoGx9VktURAQd-BruyufskR8KueeNXcjP77DqveXrW0W_8bzE2ZMeGJRuH8E&ccb=10-5&oh=00_AQP4sHyqL4T1vDvKasKOZR5zPdB1OiRhVgloBQO3YaH6zg&oe=6AF6A316&_nc_sid=201bca",
+            "distance_m": 24.98
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 7,
+      "distanceAlongRoute_m": 105.0,
+      "lat": 1.3169579,
+      "lon": 103.8066551,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 137,
+        "images": [
+          {
+            "id": "2749644758660844",
+            "lat": 1.3169062251336,
+            "lon": 103.80658134657,
+            "captured_at": 1484550936000,
+            "compass_angle": 233.5501214139,
+            "sequence": "YWU8ZesTV2s_RinC3dalAQ",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQPvYffiYFpIx3La2-JpEoIX18OonrXVvNefOmuD9Sc_Geu6tPhW65IdLgUV4xf5-rO89ABdUxyuMdhqyYdqy3_8RehjGSN-w4Pir2oXrLoNmy-CP41MBYFXsvJqv34IQWdR8qATc0ecMOWXaZ-os3n7FA6t52cAzEMfphU3vn8v7tc?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqD4B1ZR-7Tmo-qTp-kq5-W0uyI_wV-pHGNP2UbgdFLf1daAZ6cdMcp0sQLjB5GAV4&ccb=10-5&oh=00_AQNU3x0-8kJk5hT-mubyu-rnuZnKonhPHlK5bN0sdZYXKw&oe=6AF6B73F&_nc_sid=201bca",
+            "distance_m": 10.01
+          },
+          {
+            "id": "3955143151232643",
+            "lat": 1.3168394996866,
+            "lon": 103.80677698507,
+            "captured_at": 1435201793947,
+            "compass_angle": 43.74414,
+            "sequence": "FGso3RmTzlTGcSfktSi7ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQN_Y3FGjgkTfaqZ9y0RprljrQKnVByHm0YTt7-q7i-b29Ly-3QhgwglqvYhbT8uK8kiKiOLOasMUXgY-uxPM7M91LTlyxPJ1iLaWw2qjIE0rV907M07TgPawXsRzbmbtCPuXfqSB99IJwCHrcq1QZIJrmpQR2IvJeDs-nWm9oh2fA?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adr9mJ_8_zWLJFbNC_mHBK-vx7E0DJ7Gg4-rcrJRYTAp-8FLekUSRfHAvuOCg2LXJbg&ccb=10-5&oh=00_AQNI1K3fJRwLjR0MGOQ6AXmOBdUCSBGA28tzytuFt3D7kA&oe=6AF69682&_nc_sid=201bca",
+            "distance_m": 18.89
+          },
+          {
+            "id": "516180059551663",
+            "lat": 1.3167596167295,
+            "lon": 103.80671721585,
+            "captured_at": 1439613462785,
+            "compass_angle": 98.97467,
+            "sequence": "u90foYtFRfwwUKww0Mz2jA",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQPSH3FY7YrCbpnPPsK5HNXaDa7u0XVdb9DbFuG2lliwloqld46ZL1W_DSiRwe6OG4Fl8OKTcSjSwxKtzL6x6wU22z4KPc6M4QcEmun3TSpgVXkK7TE_1acy5ehgLVeTIXtdIdEo7xqoZN3QscNEVsNavUmDGXeQwbf9BrkT9x1Uvw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdpL62ig5AdWyn-1t7heiBH70dPbxhfI7iWK2JYLdcS6V_lnBUhdYy2pVvrK_V8CVLM&ccb=10-5&oh=00_AQMt9F_idmof1ycMR3p_RYShImfiljzwWLOI_HkwDVWhnw&oe=6AF6B448&_nc_sid=201bca",
+            "distance_m": 23.1
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 8,
+      "distanceAlongRoute_m": 120.0,
+      "lat": 1.316873,
+      "lon": 103.8065502,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 136,
+        "images": [
+          {
+            "id": "156683423080137",
+            "lat": 1.3168691557747,
+            "lon": 103.80660039898,
+            "captured_at": 1484550935000,
+            "compass_angle": 243.25994796098,
+            "sequence": "YWU8ZesTV2s_RinC3dalAQ",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOkx9dW1KMPbwGI6nZZ129eGRmUabmQEtXP6foJILJivpF07XgtLNy0_JlNzjiR5k3n4NPFXFqYNoYhb3WyD3ur7oCe1PnfpCYzlkP_jULwGvlcOJZv25SS07_sNpDvZbFEWtkl7hiHjQYThwIZKylRmYfokut7qTteTS2z86aI8g?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqyLZU3N-_H9_Cp0qqlMkDJZKz6L5_Akj1FVGYWSexY0HNoy7_CAy-a05hcQA5AYpg&ccb=10-5&oh=00_AQPyl1uYsYwwX1UiwnETA_3EMgbgb7sak84yj6vW3lJEFg&oe=6AF6AFFB&_nc_sid=201bca",
+            "distance_m": 5.6
+          },
+          {
+            "id": "320535529452762",
+            "lat": 1.3168152815279,
+            "lon": 103.80649450278,
+            "captured_at": 1484550938000,
+            "compass_angle": 317.27807372733,
+            "sequence": "x77AeL4QTGrxS1jc4c42ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOlxDIwnBgLge_W9tCf72WEtVkUmBUBlp0-D_We9HPkOb1RKTZAZ3ussc45TtkoGbw5b_gh9aW24swCTLJTZIOg8wLxFe7guHf-foE9gsqNICbCNlseDtthwDvDyQBRBCli2Mo0FaSOmLgMIYKBCA7hWpATovDdLtrmDARV7_Bhgw?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adog49DhqiFGot-JIaXbSMxZq7lMBFpFNc0DEavJzEmV-XlMcKpNBP12A1pyDg-o4-g&ccb=10-5&oh=00_AQNbhBlGrfwTJqHRNVbX8LwCHUrdMThgPXZJyIDxPuIixg&oe=6AF68DBC&_nc_sid=201bca",
+            "distance_m": 8.92
+          },
+          {
+            "id": "169935691688161",
+            "lat": 1.3167444994322,
+            "lon": 103.8066747404,
+            "captured_at": 1438246186212,
+            "compass_angle": 30.7774,
+            "sequence": "F2UJc-VNt7UGLc1_pPjl3Q",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQO4v18HSI0RXJ60l6bLzZaHXnkfCiKNAGwXF6_61JbBhhHwFlIYXHI55xe80_MOZ6tZQwl0ezkhx6SunZqDaTDGMapkoarOvws6H-Zn5vOqWjO3EWwrTrt6AQgAn5GyBadfGkukxvgpY5LcZDkXmM5eQiWp3D7r4U0n-LwfbfLsNQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Ado3NnMyLUIKGhfaxu8tENIXH00-L_G7WuoK7Dg8LR5iPMHSRwRbZ9fzEXwJDIheUlU&ccb=10-5&oh=00_AQP6ndPahdfoATvn1WVDtphhMvad3IQFyrLCmFdbsSkuLw&oe=6AF68E43&_nc_sid=201bca",
+            "distance_m": 19.9
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 9,
+      "distanceAlongRoute_m": 135.0,
+      "lat": 1.3167882,
+      "lon": 103.8064453,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 139,
+        "images": [
+          {
+            "id": "571077014283703",
+            "lat": 1.3168462583213,
+            "lon": 103.80647342617,
+            "captured_at": 1484550939000,
+            "compass_angle": 311.35521968614,
+            "sequence": "x77AeL4QTGrxS1jc4c42ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQNLfK7g09vvk1NBjlsVcuYqhGWPNfULQbkOTqgXYVng-q3GG66gXLWYsjigPV_pVQTZtqDbIXcMhMdgJgQ0F_46xYoKNLIfqbI_CFVER3rq1fMMDZ857s7661wIrHGeNh8x04R7u3r_NFs4AgsaGeHBwOnSBqK-7M2U0pXk-umxkr4?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdodleFmCI4l-DME3TneZ5YGDbZ8RVN1UWK3_SUsvVHv4T5lzyj4BqMNMJwyBgOG-0Y&ccb=10-5&oh=00_AQNPH6lGW8JT-WcO63-o3hrBBX85ndqFJjCfc0SHLrpFkw&oe=6AF6A815&_nc_sid=201bca",
+            "distance_m": 7.17
+          },
+          {
+            "id": "1932296790261243",
+            "lat": 1.316689042981,
+            "lon": 103.80653509965,
+            "captured_at": 1484550934000,
+            "compass_angle": 14.088255061791,
+            "sequence": "x77AeL4QTGrxS1jc4c42ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQPuz_jhcBMIoAiPPIxJ894CnRvi0FMMoFIkcDOtvVO4vkH3FHGpJ04_AUmxM2Tns_ycEbwLc_qm_OARrcB_KtHgrI_uxYQYTIS9iHj-LThgEh9_VHj0UfTpoe29HL--ShZaaIpgIHQAHqzA5DAj2IyAQz9byWt-hT-55J2OsMdXrA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adrhv-Si_TBw5wtG6Srnj3fc6Tu3xT-LBSbIBWpkK1o81OZwBH6x5Ofcmw_izSFdrM4&ccb=10-5&oh=00_AQO1tdrLZiG8sKnlUf45ubPD93hfxBy80HaBNXFZVMIuYg&oe=6AF6B334&_nc_sid=201bca",
+            "distance_m": 14.87
+          },
+          {
+            "id": "528815864776274",
+            "lat": 1.3167707917014,
+            "lon": 103.8065998446,
+            "captured_at": 1484550931000,
+            "compass_angle": 253.81472721673,
+            "sequence": "YWU8ZesTV2s_RinC3dalAQ",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOyA4SFfgKr9lQBvRHX21ypgR0rp4uCOfvkPajsiFS5OKE7Cjqhp2gLD2if9Xg0gdlS-rVSzm-8klCmmsUeOZsdJStX8mLz_pYQtwoOugiLMKbywNGI7niW8To1p-d25V1_USpDcmBHU-R1_9Qj8j7nCDQr5NVuYwKLcqY9hmjLXt4?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqkgwvhECCh6JWgXGrYdVRN10MgbBiyauxc72OHMojlUXXigXL6B42lVqDx5fRkB7Y&ccb=10-5&oh=00_AQN1V4GkQMMuHk542UgxhtWT9IABCjQw-D2d-JDggoV4Pg&oe=6AF69A15&_nc_sid=201bca",
+            "distance_m": 17.29
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 10,
+      "distanceAlongRoute_m": 150.0,
+      "lat": 1.3167033,
+      "lon": 103.8063404,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 133,
+        "images": [
+          {
+            "id": "751219432229944",
+            "lat": 1.3166024930279,
+            "lon": 103.80646689849,
+            "captured_at": 1484550925000,
+            "compass_angle": 309.54304309562,
+            "sequence": "YWU8ZesTV2s_RinC3dalAQ",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQN7lIdb2qJLSBlG9C56gxSJvfocIrxGMxYzXQZw9kg9VCRmRerkAI2rDr0c5svFW4-8AJ7CX9SRchnu9UVCh8UH_l4KJKTBd6NlhO1K8VfGQ1_I8rolqc6kqsEjemhHNVPVmGtal1WpOpafIvjWBz96FpnMnGyIkD6GRiMyUN7qtQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdoeSeuntk7N3mYlWk6Qdo1a7gKUX9NrmUjZr-BQr4TZ5JVswaRWRKpwnxVD-Jjx3iU&ccb=10-5&oh=00_AQPGp-LMzyANw-AqeTHbjGQ4LX2FWbcaMZr3B6EHQzv5lg&oe=6AF6A4C6&_nc_sid=201bca",
+            "distance_m": 17.98
+          },
+          {
+            "id": "467356321024355",
+            "lat": 1.3165864915778,
+            "lon": 103.80648900705,
+            "captured_at": 1484550929000,
+            "compass_angle": 46.776014359556,
+            "sequence": "x77AeL4QTGrxS1jc4c42ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQPznTGri1szcfTDp0TpG6_Z5QfXUhJSL3Dz9kPFzDF58AmiApiSzHAtppb6L5n8NZLVKdnyYjswU-3ZIoj7X7Y9TM2YWfVmr2FgEhycchIGGCBtdbX5Q7phe1Rreq4TZlR6udX4oI4-tMFL8PUmxU7IG4yr3GC-B9OTjz4bPQpwzQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdrXFNb9F2kjlG9y9I_bKI3UMvXxWHO9mR8Xqpb0HemYEC438OEW_dCxSQ1DmLQ0f_E&ccb=10-5&oh=00_AQMVB-uQ7uE-1FcXvsi2NFtguXL2I3KGYEGpJCtemMEELA&oe=6AF6977B&_nc_sid=201bca",
+            "distance_m": 21.01
+          },
+          {
+            "id": "499948774773758",
+            "lat": 1.3166395274875,
+            "lon": 103.80652247256,
+            "captured_at": 1484550931000,
+            "compass_angle": 92.260906687543,
+            "sequence": "x77AeL4QTGrxS1jc4c42ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOciknlF3czTO93V8NKUHdXvzLcnIxTB7jkRQ9YB8vq5MsplYzpVMXkehIZMsnxHyyqR1qHMokuJgqda0wycf6NmUXCjq-znTfMTw91sMbKph7dLZoLP25fD4qiP76dJBw8Y6QIb0YNaW4fOHC4vkgtSLJEQgXrtntOikVuQ0IQyA?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqvOsjkkCJyFYAzl3UK8IauLNInrumpEra9-ImPuF4uc3BMMZypNZ07DQwQjirvnTk&ccb=10-5&oh=00_AQPFogd5pceWiiVHC_5w42ZvFKMzj4Bai2ve2SLcDhgMBQ&oe=6AF68E14&_nc_sid=201bca",
+            "distance_m": 21.45
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 11,
+      "distanceAlongRoute_m": 165.0,
+      "lat": 1.3166184,
+      "lon": 103.8062355,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 125,
+        "images": [
+          {
+            "id": "306010837828653",
+            "lat": 1.3164862202174,
+            "lon": 103.806358474,
+            "captured_at": 1484550923000,
+            "compass_angle": 314.0942337077,
+            "sequence": "YWU8ZesTV2s_RinC3dalAQ",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQN00RNDyle_sSrp8AhgJ3kAS-r8jWX3r-56Jrzl7aP57C-7y-kEA7i_m0tb8aeHrw1b7ikG-D2q0tQ_0pty8sGbJwRXIj3EaHZSq-GfucJr9jyOPHvzOpCtxak25OZZul-dSIzpI700m-_T0znpFj1FEkvYGdATosv3COxB70BPxg8?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdoueFm_sFvlAzwAqgo07EVghAyl6KAyVn2hyCa7yNdEL4Mgl8N_ElrsN0YBmCBNbnA&ccb=10-5&oh=00_AQP7Mzsw-hAkIY5mkcbEwvztRoH647lEjxZDRi8I4WMxTw&oe=6AF6BCA9&_nc_sid=201bca",
+            "distance_m": 20.07
+          },
+          {
+            "id": "441652288749955",
+            "lat": 1.3164279717238,
+            "lon": 103.80626890381,
+            "captured_at": 1719110956281,
+            "compass_angle": 46.36266814741,
+            "sequence": "aOgQztwpdLfhD5HUm1njX4",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOT-1HTGQAQAksvHgjbbMXdMm-YGEpHAgPO8YnjK8Wi86L2c2FOJiG-RVXjDs_xUaPkLeNPqdtD8-QQxvMRZt0mfWQ18UZ7FtCyGDdISI_QEpjm0TYR-_7mEKS6z3S5ctTjECFCEhJ1bNfzQd757yNU-s3ATr2BiI2OsDzgYNPZmQ?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adpqj4hZQqXDwHB6wOBl9TkVC1eDfMtdGtqUfX0xHgd21Ymj7M_VswWOqkb09aYE6wk&ccb=10-5&oh=00_AQMNkZFt-xn7R2tUGvAz99svYKOyTdtF8Oq3HJfc2IdIFA&oe=6AF692C0&_nc_sid=201bca",
+            "distance_m": 21.5
+          },
+          {
+            "id": "491578025374755",
+            "lat": 1.3166557879561,
+            "lon": 103.8065286114,
+            "captured_at": 1484550932000,
+            "compass_angle": 355.06921938264,
+            "sequence": "x77AeL4QTGrxS1jc4c42ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQOx26MM6QurvrBdSV7FDrh_XrxGp9YCR-RjXNxOk7mSoWU7Rqcfx1GmYfNNoynD-9MqGs3PeTuHZmwGb1q87ooyR0ns9IfrQCdkfT0jV37_8N9fAjkC67sZ-mv5jd9IkjD3XeWs_8l0-oA_LSAP5uwErAZ7RwW_zzVpfq1b7wp6qQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqNknQNzjenE9gQv7D0on1ODjHbYLAFcE1cmgMlBtVy-wuVSo8qJPwb73pmsQizE4g&ccb=10-5&oh=00_AQPiE3KENjgfF8X4FUxinfG7KONAx64ZR6wVYFMWv03wLw&oe=6AF6A114&_nc_sid=201bca",
+            "distance_m": 32.85
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 12,
+      "distanceAlongRoute_m": 180.0,
+      "lat": 1.3165336,
+      "lon": 103.8061307,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 111,
+        "images": [
+          {
+            "id": "305242787766432",
+            "lat": 1.3164174563775,
+            "lon": 103.80628603727,
+            "captured_at": 1484550922000,
+            "compass_angle": 316.59019717766,
+            "sequence": "YWU8ZesTV2s_RinC3dalAQ",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQPPYKJ-sR1kuPAEB_A7wsXpbXf66kfK_yAof3Esj1STdRIG_CL20pLMN0lO0lqurrQQ9hgOazvvdCT8I6P3Csbqs9m2LgrEPAARv8Ss_RmGNnZcUZVL4jK1f23QiEhqBO1pUwzwd1NU2tGpIuT8SsgpX8NYXE02GU-ji0OMFZUSBQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdrG5A11qCsQ-QfoBFA9j5AohRBW37RA1eJxrCjd_cfZ12o64FC261KPcP3OkzZ9Hv8&ccb=10-5&oh=00_AQM4D5vwXBYO_DPwYaD9vqReLYAuZdkfe5UIPWNVYdqtBw&oe=6AF6883C&_nc_sid=201bca",
+            "distance_m": 21.56
+          },
+          {
+            "id": "498024801341790",
+            "lat": 1.3164020466048,
+            "lon": 103.80630388853,
+            "captured_at": 1484550925000,
+            "compass_angle": 42.216361386223,
+            "sequence": "x77AeL4QTGrxS1jc4c42ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQN7vuWARY2I5mkHTW0N5RxQtNjvzWdsIOm36NHlsX9rAVT9cFgNqfjpN3R2Orqfdc7p_3YseddWOB9PRds4U33Ufz3yaVQ-ZpuxuxuFaPAuZC7YjZ7OANrQoGyjBI5G0AeFgG1XnBsWX8x11ue1UG7tsMcYQ4uBkAfT94uXWUmfnhg?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqF38_L-5nFRgwdNY3iTSNr1R9PNMm2bCQFXGYdfNjLww3oYtXoPTOH1nx1cCIeXUM&ccb=10-5&oh=00_AQMHTYCqvecnX3XmupMaIj27qEugZIi-6XZYND85GeoYcA&oe=6AF6B349&_nc_sid=201bca",
+            "distance_m": 24.18
+          },
+          {
+            "id": "347554268347552",
+            "lat": 1.3162314425359,
+            "lon": 103.80627146525,
+            "captured_at": 1726927633896,
+            "compass_angle": 227.84565309706,
+            "sequence": "K6EjYqBLmedOtngG18oP5D",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQNgoMsookvqcgfzIBfsSoc0xOXR-RH74QOCbUND_BZWo40GaPM0PV4lByZjB2Bv9y9ewTMjOWT4z5o9jLaXzQj87z6ayuB2DAnS2QkZ-lPbSb0ZtxMCvtrLvyai8AeOxnN7vJXL8eem2BYjC7SFanW6qMPlsbZOA_OJLlYhZ6-9urU?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdpTMQyi5L2rBrcbA43J-1pw56aaOL8_5WVtqNhion8FgZd7q_kfrmVWlfKKOB_03oc&ccb=10-5&oh=00_AQObuRpzaaH2_nwkBuotyvQ8eU7kkUDEfc5zEldLvKc-Xg&oe=6AF68F3E&_nc_sid=201bca",
+            "distance_m": 37.06
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 13,
+      "distanceAlongRoute_m": 195.0,
+      "lat": 1.3164487,
+      "lon": 103.8060258,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 95,
+        "images": [
+          {
+            "id": "881482929068898",
+            "lat": 1.3162835353139,
+            "lon": 103.80606481497,
+            "captured_at": 1484550920000,
+            "compass_angle": 322.12427378282,
+            "sequence": "YWU8ZesTV2s_RinC3dalAQ",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQPHv2rsxzxcPT85Xyq96EAOYr62h6dwNgTOFJsItjPMpr1DX-y-aJp4NsPGCqbNtSmxtGLhXAJoZLEYIcdV4aPgiZ5zPxRmYae53EhdvrkPrmypW7tdYjcR-AlVWbuMXO13wbd5mFwr3LTYolAq-ahSSfdBdhJaiiY9SxxQvU_bzQ?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdoTq4B54gWdPEuEOZpzWzZ-E9H8EqW8VBSbD3k4JsKW5NsT4jwrq9hEq7HqUp4Ol5U&ccb=10-5&oh=00_AQOf8CxjDtdXrVJugcPheTTBB_xzz065Ji4qrAb7usHxHg&oe=6AF6A9BB&_nc_sid=201bca",
+            "distance_m": 18.87
+          },
+          {
+            "id": "282846363517296",
+            "lat": 1.3163222866906,
+            "lon": 103.80618997133,
+            "captured_at": 1435201781947,
+            "compass_angle": 39.77295,
+            "sequence": "FGso3RmTzlTGcSfktSi7ow",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQMOJXPhyjnmHR00ja7J2SOBXqz6xeeOyBvlb0EMw7ehXvikpyK-imeTs3fWHe41C_lCFLSLuQv_tNPQ0KdQx4iBfN1BCVbdqEOYTZahpdBfaJpDPQf_RHSbbiAjtwYVbE_iihT1pP7SBf81IuKCdHcXXqOQfvEn4OWnJAVSoMVUnkc?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdoIaaBc9hN-mXCwQgC510F41z1z9Ps-559mirBp6xbh4hNl0p174shXNZiaXCL4YTY&ccb=10-5&oh=00_AQOwwD_MzPlfwIR9T9K8bBdCvzpzgvFR2YFrcC1sfkxPwA&oe=6AF694AD&_nc_sid=201bca",
+            "distance_m": 23.04
+          },
+          {
+            "id": "1009918830877537",
+            "lat": 1.3161290187872,
+            "lon": 103.80616175144,
+            "captured_at": 1726927634922,
+            "compass_angle": 228.22000320641,
+            "sequence": "K6EjYqBLmedOtngG18oP5D",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQM-K9NkFSdWQri9cB-4IVM-u1WLDyN2PfAIYH0ZpkKAvVp8ZcvzFXfJx4h5BBxoZWA_bVNyYisXs9iA5kv8lfFwp72esE_f7_MW3BTzXRCqVLn1HFADukT2gTjksnMkKEYYeDFSQf8sagHE63A3zGbOcqhElQKKp_5ngXUED0AJYw?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdoZe06jNbJFtZmUWmRLqo1vpdQvECWyqseJbHJCEycwR82eN9s5I-xbFb975RELQn4&ccb=10-5&oh=00_AQNqXdIOaCCVdkRXngn9rhPFt-ZqRlmre4mdPX2V6WJGsA&oe=6AF6BDA5&_nc_sid=201bca",
+            "distance_m": 38.63
+          }
+        ]
+      }
+    },
+    {
+      "checkpointIndex": 14,
+      "distanceAlongRoute_m": 208.63,
+      "lat": 1.3163716,
+      "lon": 103.8059305,
+      "localSupport": {
+        "count": 0,
+        "summary": {},
+        "nodes": []
+      },
+      "osm": {
+        "count": 0,
+        "summary": {},
+        "features": []
+      },
+      "imagery": {
+        "available": true,
+        "reason": null,
+        "candidateCount": 88,
+        "images": [
+          {
+            "id": "747402692625009",
+            "lat": 1.3162040835751,
+            "lon": 103.80599596085,
+            "captured_at": 1484799810000,
+            "compass_angle": 324.38513945733,
+            "sequence": "N3E0FWljzLAUMQd8LBEYHw",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQMKIulRIio0T6dfuRY7tX-qYpCVrV3AG3-6I85p6FF_tokOXuHbZOe-1Cisowz__niZfK0osfS8bm7JkXp244aauNHZIU9GhZLoE6KkJHIYE5aGsjGd8u_PLlNxNDwfiT5AhHhhx8-By0kSY4-3lbrpZqfnM-Zzb8s0xzuakyr_4Q?stp=s1024x576&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=Adp43luRW08dI7GaRK6fDq-lcRWIsWqrp_nlqmo4KTs-5Ore5R2gj2W4hRXtudOgiPE&ccb=10-5&oh=00_AQOqQSn4owDXjANGLJmsEXpguZuvADTE9MS66qPvT14TGA&oe=6AF69E2B&_nc_sid=201bca",
+            "distance_m": 20.0
+          },
+          {
+            "id": "329101858637906",
+            "lat": 1.3162239074589,
+            "lon": 103.80611407702,
+            "captured_at": 1435050449142,
+            "compass_angle": 41.06567,
+            "sequence": "9L2rZG01J_8RUOTBSZ8lGQ",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQNvmXdidZb27ZihYaoIaCmnwXkcUjsoPvX43QVaXBvnS8-7U0kgRDpXB3xcblTCCY-IIO_OQPQCFpS7-e1ueysIBJnG0vVNJ3CMkAUfzQQ_TusBMXXUKbAs3BNhons4Cla2Nu7unNQUT6BF9a0ysLf5n3F0NV5dhVjxr6OOWO-6Qg?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdqT67RZCkHnJAOnhXzkYY2JuvGNIUPs80PEzerS6h_mwwLm1KbO4xbVz-5bL6PLlNg&ccb=10-5&oh=00_AQOeaqO1RH7BpLcp4tXSBM5-RnhmSAde1isVALvM9cl8tQ&oe=6AF6A5B2&_nc_sid=201bca",
+            "distance_m": 26.19
+          },
+          {
+            "id": "1228876024963583",
+            "lat": 1.3160346645215,
+            "lon": 103.80605208496,
+            "captured_at": 1726927635916,
+            "compass_angle": 228.22000320641,
+            "sequence": "K6EjYqBLmedOtngG18oP5D",
+            "thumb_1024_url": "https://scontent-sin2-2.xx.fbcdn.net/m1/v/t6/AQM2YUMzX6oFROjqSAoLrtcbwSNRs-AgLHWAi_syn9oytONXhDUZFYeX5hzQ7nj9XJfM1Eo0OmsJRDKGWNTy2-IrvzXAm-ax_6Fi5gxlACFbT4AQ7xDkAswS6DMxxKM5vnTVRkULw3X0sC_VNX1Yb4MfhnLRGG9IMjvxnTJrpVqS_w?stp=s1024x768&edm=AOnQwmMEAAAA&_nc_gid=qBBqw-D3O66lV6o585pLRQ&_nc_oc=AdrBx_JW02rPylLeBDkFJZu4GpYFJRq1kkUP8wQSn0y9Y8izebsGFJPoPyIbU2VbTJs&ccb=10-5&oh=00_AQOtPcmpQKPDM4rKwFp-vGvUt8UN54XgX8BmF88cT8GkBQ&oe=6AF6AF04&_nc_sid=201bca",
+            "distance_m": 39.83
+          }
+        ]
+      }
+    }
+  ],
+  "source": "C:\\Users\\MSI\\OneDrive\\Desktop\\family-toilet-search\\data\\generated\\mrt_route_library.json"
+}

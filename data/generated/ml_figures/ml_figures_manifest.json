@@ -1,0 +1,26 @@
+{
+  "sampleCount": 356,
+  "clusterCount": 10,
+  "features": [
+    "Sky exposure",
+    "Greenery",
+    "Road exposure",
+    "Pedestrian space",
+    "Built frontage",
+    "Vehicle presence"
+  ],
+  "pca": {
+    "pc1VariancePercent": 28.32,
+    "pc2VariancePercent": 23.941,
+    "firstTwoComponentsPercent": 52.261
+  },
+  "figures": {
+    "pcaClusters": "./data/generated/ml_figures/pca_clusters.png",
+    "pcaBiplot": "./data/generated/ml_figures/pca_biplot.png",
+    "clusterHeatmap": "./data/generated/ml_figures/cluster_feature_heatmap.png",
+    "featureImportance": "./data/generated/ml_figures/feature_importance.png",
+    "dendrogram": "./data/generated/ml_figures/hierarchical_dendrogram.png",
+    "decisionTree": "./data/generated/ml_figures/decision_tree.png",
+    "routeProfile": "./data/generated/ml_figures/route_profile_example.png"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "groupShares": {
+    "sky": 0.2225418,
+    "building": 0.386776,
+    "vegetation": 0.1891174,
+    "person": 0.0920658,
+    "other": 1.91e-05,
+    "pedestrian_surface": 0.1094799
+  },
+  "spatialShares": {
+    "bottomBand": {
+      "person": 0.2416617,
+      "building": 0.2155599,
+      "sky": 0.011899,
+      "vegetation": 0.2433744,
+      "other": 5.01e-05,
+      "pedestrian_surface": 0.2874549
+    },
+    "middleBand": {
+      "vegetation": 0.2356033,
+      "building": 0.5540504,
+      "sky": 0.1109886,
+      "person": 0.084877,
+      "other": 3.81e-05,
+      "pedestrian_surface": 0.0144424
+    },
+    "leftHalf": {
+      "sky": 0.3747711,
+      "building": 0.3062935,
+      "vegetation": 0.1004448,
+      "person": 0.1635971,
+      "other": 3.81e-05,
+      "pedestrian_surface": 0.0548553
+    },
+    "rightHalf": {
+      "sky": 0.0703125,
+      "building": 0.4672585,
+      "vegetation": 0.2777901,
+      "person": 0.0205345,
+      "pedestrian_surface": 0.1641045
+    }
+  },
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512"
+}

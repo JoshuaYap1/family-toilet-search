@@ -1,269 +1,979 @@
 // ============================================================
-// PYTHON ANALYSIS BRIDGE
+// YOUNG FAMILY URBAN ACCESS
+// PYTHON / JUPYTER BACKEND BRIDGE
+// ============================================================
+//
+// Route intelligence:
+// http://127.0.0.1:5000
+//
+// Image analysis:
+// http://127.0.0.1:5001
+//
 // ============================================================
 
-const ROUTE_BACKEND =
-    "http://127.0.0.1:5000";
+
+// ============================================================
+// CONFIGURATION
+// ============================================================
+
+const ROUTE_BACKEND_URL =
+  "http://127.0.0.1:5000";
 
 
-const IMAGE_BACKEND =
-    "http://127.0.0.1:5001";
+const IMAGE_BACKEND_URL =
+  "http://127.0.0.1:5001";
 
 
+const DEFAULT_CHECKPOINT_SPACING_M =
+  15;
 
-async function jsonRequest(
-    url,
-    options = {},
-    timeoutMs = 10000
+
+// Dense route analysis can involve dozens
+// of checkpoints per route.
+const ROUTE_REQUEST_TIMEOUT_MS =
+  20
+  *
+  60
+  *
+  1000;
+
+
+// CPU SegFormer can take a long time.
+const IMAGE_REQUEST_TIMEOUT_MS =
+  45
+  *
+  60
+  *
+  1000;
+
+
+// ============================================================
+// ABORT / TIMEOUT
+// ============================================================
+
+function createTimeoutController(
+  timeoutMs
 ) {
 
-    const controller =
-        new AbortController();
+  const controller =
+    new AbortController();
 
 
-    const timer =
-        setTimeout(
-            () =>
-                controller.abort(),
-            timeoutMs
-        );
+  const timeoutId =
+    setTimeout(
+
+      () =>
+        controller.abort(),
+
+      timeoutMs
+
+    );
+
+
+  return {
+
+    controller,
+
+    timeoutId
+
+  };
+}
+
+
+// ============================================================
+// FETCH JSON
+// ============================================================
+
+async function fetchJson(
+  url,
+  options = {},
+  timeoutMs = 120000
+) {
+
+  const {
+    controller,
+    timeoutId
+  } =
+    createTimeoutController(
+      timeoutMs
+    );
+
+
+  try {
+
+    const response =
+      await fetch(
+
+        url,
+
+        {
+
+          ...options,
+
+          signal:
+            controller.signal,
+
+          cache:
+            options.cache
+            ||
+            "no-store"
+
+        }
+
+      );
+
+
+    let payload =
+      null;
 
 
     try {
 
-        const response =
-            await fetch(
-                url,
-                {
-                    ...options,
+      payload =
+        await response.json();
 
-                    signal:
-                        controller.signal,
+    }
+    catch {
 
-                    cache:
-                        "no-store"
-                }
-            );
-
-
-        const payload =
-            await response.json();
-
-
-        if (!response.ok) {
-
-            throw new Error(
-
-                payload?.message
-
-                ||
-
-                `HTTP ${response.status}`
-
-            );
-        }
-
-
-        return payload;
+      payload =
+        null;
 
     }
 
-    finally {
 
-        clearTimeout(timer);
+    if (
+      !response.ok
+    ) {
+
+      throw new Error(
+
+        payload?.error
+
+        ||
+
+        payload?.message
+
+        ||
+
+        `HTTP ${
+          response.status
+        }`
+
+      );
+
     }
+
+
+    return payload;
+
+  }
+  catch (
+    error
+  ) {
+
+    if (
+      error?.name ===
+      "AbortError"
+    ) {
+
+      throw new Error(
+
+        `Backend request exceeded ${
+          Math.round(
+            timeoutMs
+            /
+            60000
+          )
+        } minute(s).`
+
+      );
+
+    }
+
+
+    throw error;
+
+  }
+  finally {
+
+    clearTimeout(
+      timeoutId
+    );
+
+  }
+
 }
-
 
 
 // ============================================================
 // HEALTH
 // ============================================================
 
-export async function checkPythonBackend() {
+async function endpointIsAlive(
+  url,
+  timeoutMs = 5000
+) {
 
-    try {
+  try {
 
-        await jsonRequest(
-            `${ROUTE_BACKEND}/health`,
-            {},
-            2500
-        );
+    const payload =
+      await fetchJson(
 
-        return true;
+        url,
 
-    }
+        {
 
-    catch {
+          method:
+            "GET",
 
-        return false;
-    }
+          cache:
+            "no-store"
+
+        },
+
+        timeoutMs
+
+      );
+
+
+    return Boolean(
+
+      payload
+
+      &&
+
+      (
+
+        payload.ok === true
+
+        ||
+
+        payload.status ===
+        "ok"
+
+        ||
+
+        payload.status ===
+        "ready"
+
+        ||
+
+        payload.service
+
+      )
+
+    );
+
+  }
+  catch {
+
+    return false;
+
+  }
+
 }
 
+
+// ============================================================
+// ROUTE BACKEND
+// ============================================================
+
+export async function checkPythonBackend() {
+
+  return endpointIsAlive(
+    `${ROUTE_BACKEND_URL}/health`
+  );
+
+}
+
+
+// ============================================================
+// IMAGE BACKEND
+// ============================================================
 
 export async function checkImageBackend() {
 
-    try {
+  return endpointIsAlive(
+    `${IMAGE_BACKEND_URL}/health`
+  );
 
-        await jsonRequest(
-            `${IMAGE_BACKEND}/health`,
-            {},
-            2500
-        );
-
-        return true;
-
-    }
-
-    catch {
-
-        return false;
-    }
 }
 
 
+// ============================================================
+// CLEAN ROUTE POINTS
+// ============================================================
+
+function cleanRoutePoints(
+  points
+) {
+
+  if (
+    !Array.isArray(
+      points
+    )
+  ) {
+
+    return [];
+
+  }
+
+
+  const cleaned =
+    [];
+
+
+  for (
+    const point
+    of points
+  ) {
+
+    const lat =
+      Number(
+        point?.lat
+      );
+
+
+    const lon =
+      Number(
+        point?.lon
+      );
+
+
+    if (
+
+      !Number.isFinite(
+        lat
+      )
+
+      ||
+
+      !Number.isFinite(
+        lon
+      )
+
+      ||
+
+      lat < -90
+
+      ||
+
+      lat > 90
+
+      ||
+
+      lon < -180
+
+      ||
+
+      lon > 180
+
+    ) {
+
+      continue;
+
+    }
+
+
+    const previous =
+      cleaned[
+        cleaned.length - 1
+      ];
+
+
+    if (
+
+      previous
+
+      &&
+
+      previous.lat ===
+      lat
+
+      &&
+
+      previous.lon ===
+      lon
+
+    ) {
+
+      continue;
+
+    }
+
+
+    cleaned.push({
+
+      lat,
+
+      lon
+
+    });
+
+  }
+
+
+  return cleaned;
+}
+
 
 // ============================================================
-// ROUTE IMAGERY
+// NORMALISE ROUTE PAYLOAD
+// ============================================================
+
+function normaliseRoutePayload(
+  route,
+  index
+) {
+
+  const points =
+    cleanRoutePoints(
+      route?.points
+    );
+
+
+  if (
+    points.length < 2
+  ) {
+
+    throw new Error(
+
+      `Route ${
+        index + 1
+      } has fewer than two valid geometry points.`
+
+    );
+
+  }
+
+
+  return {
+
+    routeId:
+      route?.routeId
+      ||
+      `route-${index + 1}`,
+
+
+    station:
+      route?.station
+      ||
+      null,
+
+
+    stationType:
+      route?.stationType
+      ||
+      null,
+
+
+    toilet:
+      route?.toilet
+      ||
+      null,
+
+
+    destination:
+      route?.destination
+      ||
+      route?.toilet
+      ||
+      null,
+
+
+    points
+
+  };
+
+}
+
+
+// ============================================================
+// BATCH ROUTE ANALYSIS
 // ============================================================
 
 export async function analyseRoutesWithPython(
-    routes,
-    checkpointSpacing = 80
+  routePayloads,
+  checkpointSpacingM =
+    DEFAULT_CHECKPOINT_SPACING_M,
+  force =
+    false
 ) {
 
-    return jsonRequest(
+  if (
 
-        `${ROUTE_BACKEND}/analyse-routes`,
+    !Array.isArray(
+      routePayloads
+    )
 
-        {
+    ||
 
-            method:
-                "POST",
+    !routePayloads.length
 
-            headers: {
-                "Content-Type":
-                    "application/json"
-            },
+  ) {
 
-            body:
-                JSON.stringify({
+    throw new Error(
+      "No route payloads were provided."
+    );
 
-                    routes,
+  }
 
-                    checkpointSpacing,
 
-                    // Do NOT deliberately invalidate cache.
-                    forceRefresh:
-                        false
+  const routes =
+    routePayloads.map(
 
-                })
+      (
+        route,
+        index
+      ) =>
+        normaliseRoutePayload(
+          route,
+          index
+        )
+
+    );
+
+
+  const spacing =
+    Math.max(
+
+      8,
+
+      Number(
+        checkpointSpacingM
+      )
+
+      ||
+
+      DEFAULT_CHECKPOINT_SPACING_M
+
+    );
+
+
+  console.log(
+
+    `Analysing ${
+      routes.length
+    } route(s) at ${
+      spacing
+    } m checkpoint spacing.`
+
+  );
+
+
+  const payload =
+    await fetchJson(
+
+      `${ROUTE_BACKEND_URL}/analyse-routes`,
+
+      {
+
+        method:
+          "POST",
+
+
+        headers: {
+
+          "Content-Type":
+            "application/json"
+
         },
 
-        240000
+
+        body:
+          JSON.stringify({
+
+            routes,
+
+            checkpointSpacingM:
+              spacing,
+
+            force:
+              Boolean(
+                force
+              )
+
+          })
+
+      },
+
+      ROUTE_REQUEST_TIMEOUT_MS
 
     );
+
+
+  if (
+
+    !payload
+
+    ||
+
+    payload.ok ===
+    false
+
+  ) {
+
+    throw new Error(
+
+      payload?.error
+
+      ||
+
+      "Route-intelligence analysis failed."
+
+    );
+
+  }
+
+
+  return payload;
 }
 
 
-
 // ============================================================
-// IMAGE BATCH CACHE
+// SINGLE ROUTE ANALYSIS
 // ============================================================
 
-export async function lookupImageBatch(
-    seedStation,
-    stations,
-    gridSize = 5
+export async function analyseRouteWithPython(
+  routePayload,
+  checkpointSpacingM =
+    DEFAULT_CHECKPOINT_SPACING_M,
+  force =
+    false
 ) {
 
-    return jsonRequest(
+  const route =
+    normaliseRoutePayload(
 
-        `${IMAGE_BACKEND}/cache/lookup`,
+      routePayload,
 
-        {
+      0
 
-            method:
-                "POST",
+    );
 
-            headers: {
-                "Content-Type":
-                    "application/json"
-            },
 
-            body:
-                JSON.stringify({
+  const payload =
+    await fetchJson(
 
-                    seedStation,
-                    stations,
-                    gridSize
+      `${ROUTE_BACKEND_URL}/analyse-route`,
 
-                })
+      {
+
+        method:
+          "POST",
+
+
+        headers: {
+
+          "Content-Type":
+            "application/json"
+
         },
 
-        5000
+
+        body:
+          JSON.stringify({
+
+            ...route,
+
+            checkpointSpacingM,
+
+            force:
+              Boolean(
+                force
+              )
+
+          })
+
+      },
+
+      ROUTE_REQUEST_TIMEOUT_MS
 
     );
+
+
+  if (
+    payload?.ok ===
+    false
+  ) {
+
+    throw new Error(
+
+      payload.error
+
+      ||
+
+      "Route analysis failed."
+
+    );
+
+  }
+
+
+  return (
+
+    payload?.result
+
+    ||
+
+    payload
+
+  );
 }
 
 
-
 // ============================================================
-// START IMAGE JOB
+// IMAGE COMPILATION
 // ============================================================
 
-export async function startImageBatch(
-    seedStation,
-    stations,
-    gridSize = 5
+export async function compileStreetImages(
+  options = {}
 ) {
 
-    return jsonRequest(
+  const requestBody = {
 
-        `${IMAGE_BACKEND}/compile/start`,
+    maxImages:
+      Math.max(
 
-        {
+        1,
 
-            method:
-                "POST",
+        Number(
+          options.maxImages
+        )
 
-            headers: {
-                "Content-Type":
-                    "application/json"
-            },
+        ||
 
-            body:
-                JSON.stringify({
+        360
 
-                    seedStation,
-                    stations,
-                    gridSize
+      ),
 
-                })
+
+    clusterCount:
+      Math.max(
+
+        2,
+
+        Number(
+          options.clusterCount
+        )
+
+        ||
+
+        10
+
+      ),
+
+
+    force:
+      Boolean(
+        options.force
+      )
+
+  };
+
+
+  console.log(
+
+    "Starting image compiler:",
+
+    requestBody
+
+  );
+
+
+  const payload =
+    await fetchJson(
+
+      `${IMAGE_BACKEND_URL}/compile`,
+
+      {
+
+        method:
+          "POST",
+
+
+        headers: {
+
+          "Content-Type":
+            "application/json"
+
         },
 
-        10000
+
+        body:
+          JSON.stringify(
+            requestBody
+          )
+
+      },
+
+      IMAGE_REQUEST_TIMEOUT_MS
 
     );
+
+
+  if (
+
+    !payload
+
+    ||
+
+    payload.ok ===
+    false
+
+  ) {
+
+    throw new Error(
+
+      payload?.error
+
+      ||
+
+      "Image compilation failed."
+
+    );
+
+  }
+
+
+  return payload;
 }
 
 
-
 // ============================================================
-// POLL IMAGE JOB
+// SAVED ROUTE
 // ============================================================
 
-export async function getImageBatchStatus(
-    jobId
+export async function getRouteAnalysis(
+  routeId
 ) {
 
-    return jsonRequest(
+  if (!routeId) {
 
-        `${IMAGE_BACKEND}/compile/status/${encodeURIComponent(jobId)}`,
+    throw new Error(
+      "routeId is required."
+    );
 
-        {},
+  }
 
-        5000
+
+  const payload =
+    await fetchJson(
+
+      `${ROUTE_BACKEND_URL}/route/${
+        encodeURIComponent(
+          routeId
+        )
+      }`,
+
+      {
+
+        method:
+          "GET",
+
+        cache:
+          "no-store"
+
+      }
 
     );
+
+
+  if (
+    payload?.ok ===
+    false
+  ) {
+
+    throw new Error(
+
+      payload.error
+
+      ||
+
+      "Route analysis unavailable."
+
+    );
+
+  }
+
+
+  return (
+
+    payload?.result
+
+    ||
+
+    payload
+
+  );
 }
+
+
+// ============================================================
+// LATEST ROUTE BATCH
+// ============================================================
+
+export async function getLatestRouteBatch() {
+
+  return fetchJson(
+
+    `${ROUTE_BACKEND_URL}/latest-batch`,
+
+    {
+
+      method:
+        "GET",
+
+      cache:
+        "no-store"
+
+    }
+
+  );
+
+}
+
+
+// ============================================================
+// IMAGE STATUS
+// ============================================================
+
+export async function getImageBackendStatus() {
+
+  return fetchJson(
+
+    `${IMAGE_BACKEND_URL}/status`,
+
+    {
+
+      method:
+        "GET",
+
+      cache:
+        "no-store"
+
+    },
+
+    5000
+
+  );
+
+}
+
+
+// ============================================================
+// CONFIG EXPORT
+// ============================================================
+
+export const PYTHON_BACKENDS = {
+
+  route:
+    ROUTE_BACKEND_URL,
+
+  image:
+    IMAGE_BACKEND_URL,
+
+  checkpointSpacingM:
+    DEFAULT_CHECKPOINT_SPACING_M
+
+};

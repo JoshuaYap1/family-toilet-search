@@ -1,0 +1,29 @@
+{
+  "groupShares": {
+    "barrier": 0.5731196,
+    "other": 0.4244016,
+    "person": 0.0024788
+  },
+  "spatialShares": {
+    "bottomBand": {
+      "barrier": 0.5054223,
+      "other": 0.4941767,
+      "person": 0.000401
+    },
+    "middleBand": {
+      "barrier": 0.5635147,
+      "other": 0.4318333,
+      "person": 0.004652
+    },
+    "leftHalf": {
+      "barrier": 0.4223372,
+      "other": 0.5727003,
+      "person": 0.0049625
+    },
+    "rightHalf": {
+      "barrier": 0.7236074,
+      "other": 0.2763926
+    }
+  },
+  "model": "nvidia/segformer-b2-finetuned-ade-512-512"
+}
