@@ -1,0 +1,124 @@
+
+/* ML Environmental Analysis */
+
+.ml-research {
+  background: #fff;
+  border: 1px solid #e8e3db;
+  border-radius: 22px;
+  padding: clamp(20px, 3vw, 38px);
+  margin: 28px 0;
+  color: #25292b;
+}
+
+.ml-research h3 {
+  font-size: clamp(23px, 3vw, 32px);
+  margin: 9px 0 12px;
+}
+
+.ml-research h4 {
+  font-size: 18px;
+  margin: 28px 0 14px;
+}
+
+.ml-research p {
+  line-height: 1.65;
+  color: #676d70;
+}
+
+.ml-kicker {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #438b62;
+  font-weight: 800;
+}
+
+.ml-route-ribbon {
+  width: 100%;
+  height: auto;
+}
+
+.ml-cluster-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(190px, 1fr));
+  gap: 10px;
+}
+
+.ml-cluster {
+  display: flex;
+  gap: 10px;
+  background: #f7f5f1;
+  padding: 14px;
+  border-radius: 12px;
+}
+
+.ml-cluster small,
+.ml-metric small {
+  display: block;
+  color: #697073;
+  line-height: 1.5;
+}
+
+.ml-dot {
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.ml-som-layout {
+  display: grid;
+  grid-template-columns:
+    minmax(200px, 360px) 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.ml-som-svg {
+  width: 100%;
+  max-width: 370px;
+  height: auto;
+}
+
+.ml-metric-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(145px, 1fr));
+  gap: 12px;
+}
+
+.ml-metric {
+  border: 1px solid #e7e4de;
+  border-radius: 14px;
+  padding: 15px;
+}
+
+.ml-metric strong {
+  display: block;
+  font-size: 25px;
+  margin: 5px 0 8px;
+}
+
+.ml-meter {
+  height: 7px;
+  border-radius: 8px;
+  background: #ecebe8;
+  margin-bottom: 7px;
+  overflow: hidden;
+}
+
+.ml-meter i {
+  height: 100%;
+  display: block;
+}
+
+.ml-footnote {
+  font-size: 12px;
+}
+
+@media (max-width: 650px) {
+  .ml-som-layout {
+    grid-template-columns: 1fr;
+  }
+}
